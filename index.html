@@ -1,3 +1,486 @@
-<html>
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Concordo</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+  <meta name="keywords"
+    content="aulas de nuvem, certificação aws, AWS Certified Cloud Practitioner, exame de certificação aws, computação em nuvem, curso AWS">
+  <meta name="description"
+    content="Aulas sem enrolação de nuvem AWS, do básico ao avançado, para você aprender e passar no exame de certificação AWS">
+  <meta itemprop="name" content="Você Certificado AWS">
+  <meta itemprop="description"
+    content="Aulas sem enrolação de nuvem AWS, do básico ao avançado, para você aprender e passar no exame de certificação AWS">
+  <meta itemprop="image"
+    content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3w3knnz6W5BHnT-9nBwoA7ria6ReqIXKazFUnxNo2h4wNDsRHjhXR6K4FMoFUYABAYn0WQVlG2cAC1ie2-wn_g8oAwaxc2t8cHViILRRi09qIEr-KVXklpxqxPIk9lmT3I2WDt50VaCpOdIwawbt9oEGc0EOoNuMSm-9Ngu4AV9ohYkQSrNpM9nsd/s2048/Curso%20AWS%20-%20Banner%202022.png">
+  <meta property="og:url" content="https://www.vocecertificadoaws.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Você Certificado AWS">
+  <meta property="og:description"
+    content="Aulas sem enrolação de nuvem AWS, do básico ao avançado, para você aprender e passar no exame de certificação AWS">
+  <meta property="og:image"
+    content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3w3knnz6W5BHnT-9nBwoA7ria6ReqIXKazFUnxNo2h4wNDsRHjhXR6K4FMoFUYABAYn0WQVlG2cAC1ie2-wn_g8oAwaxc2t8cHViILRRi09qIEr-KVXklpxqxPIk9lmT3I2WDt50VaCpOdIwawbt9oEGc0EOoNuMSm-9Ngu4AV9ohYkQSrNpM9nsd/s2048/Curso%20AWS%20-%20Banner%202022.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Você Certificado AWS">
+  <meta name="twitter:description"
+    content="Aulas sem enrolação de nuvem AWS, do básico ao avançado, para você aprender e passar no exame de certificação AWS">
+  <meta name="twitter:image"
+    content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3w3knnz6W5BHnT-9nBwoA7ria6ReqIXKazFUnxNo2h4wNDsRHjhXR6K4FMoFUYABAYn0WQVlG2cAC1ie2-wn_g8oAwaxc2t8cHViILRRi09qIEr-KVXklpxqxPIk9lmT3I2WDt50VaCpOdIwawbt9oEGc0EOoNuMSm-9Ngu4AV9ohYkQSrNpM9nsd/s2048/Curso%20AWS%20-%20Banner%202022.png">
+  <title>Você Certificado AWS</title>
+  <link rel="stylesheet" href="https://vocecertificadoaws.github.io/www/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+  <script src="https://vocecertificadoaws.github.io/www/main.min.js"></script>
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="#cursos">CURSOS AWS</a></li>
+              <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="#instrutor">INSTRUTOR</a></li>
+              <li><a href="#faq">PERGUNTAS FREQUENTES</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="#cursos">CURSOS AWS</a></li>
+          <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="#instrutor">INSTRUTOR</a></li>
+          <li><a href="#faq">PERGUNTAS FREQUENTES</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="cursos" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">CURSOS AWS & SIMULADOS DO EXAME</h2>
+        <div class="uk-margin-medium-top uk-child-width-1-2@m uk-grid-match-" data-uk-grid>
+          <div class>
+            <div id="mini-simulado" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-cloud-practitioner-white.png"
+                    alt="Mini Simulado AWS Certified Cloud Practitioner" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Mini Simulado do exame AWS Certified Cloud Practitioner
+                    </h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$39,90</s>por R$0,00</span></div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin><a
+                        href="https://www.udemy.com/course/mini-simulado-aws-certified-cloud-practitioner/?referralCode=AE5A8BF23266F9203A97"
+                        class="uk-button uk-button-small uk-button-primary uk-margin-small-right" target="_blank">Eu
+                        Quero</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class>
+            <div id="curso-clf-c02" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-cloud-practitioner.png"
+                    alt="Curso AWS Certified Cloud Practitioner (CLF-C02)" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Curso AWS Certified Cloud Practitioner (CLF-C02)</h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$199</s>por R$139,99</span></div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin><a
+                        href="https://www.udemy.com/course/preparatorio-exame-aws-certified-cloud-practitioner-clf-c01/?couponCode=DESCONTO0923"
+                        class="uk-button uk-button-small uk-button-primary uk-margin-small-right" target="_blank">Eu
+                        Quero</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class>
+            <div id="Simulado-CLF-C01" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-cloud-practitioner-white.png"
+                    alt="Simulado Comentado AWS Certified Cloud Practitioner (CLF-C01)" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Simulado Comentado AWS Certified Cloud Practitioner
+                      (CLF-C01)</h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$119</s>por R$89,99</span></div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin><a
+                        href="https://www.udemy.com/course/simulado-comentado-aws-certified-cloud-practitioner/?couponCode=DESCONTO0923"
+                        class="uk-button uk-button-small uk-button-primary uk-margin-small-right" target="_blank">Eu
+                        Quero</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class>
+            <div id="Simulado-CLF-C02" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-cloud-practitioner.png"
+                    alt="Simulado Comentado AWS Certified Cloud Practitioner (CLF-C02)" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Simulado Comentado AWS Certified Cloud Practitioner
+                      (CLF-C02)</h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span data-uk-icon="icon: future; ratio: 0.9"></span></span>
+                      </div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Em desenvolvimento</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class>
+            <div id="Simulado-SAA-C03" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-solutions-architect-white.png"
+                    alt="Simulado Comentado AWS Solutions Architect Associate (SAA-C03)" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Simulado Comentado AWS Solutions Architect Associate
+                      (SAA-C03)</h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span data-uk-icon="icon: future; ratio: 0.9"></span></span>
+                      </div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Em desenvolvimento</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class>
+            <div id="Curso-SAA-C03" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l"><img
+                    data-src="imagens/aws-certified-solutions-architect.png"
+                    alt="Curso AWS Solutions Architect Associate (SAA-C03)" data-uk-img></div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-position-relative">
+                    <h3 class="uk-card-title uk-margin-remove">Curso AWS Solutions Architect Associate (SAA-C03)</h3>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
+                      <div><span class="uk-label-overlay"><span data-uk-icon="icon: future; ratio: 0.9"></span></span>
+                      </div>
+                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Em desenvolvimento</span>
+                      </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
+                    <div class="uk-margin-top uk-visible@m" uk-margin></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="depoimentos" class="uk-cover-container" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative uk-text-center">
+        <div class="section-title-center uk-margin-large-bottom">
+          <h2 class="section-title uk-margin-remove uk-text-center">DEPOIMENTOS DOS ALUNOS</h2>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-flex-center" data-uk-grid>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/michelealves.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Professor muito didático e explica muito bem! Sempre disponível com as mensagens de dúvidas.</p>
+                <p>Passei na certificação Cloud Practitioner estudando com Eduardo Lara. Obrigada professor!</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Michele">Michele Alves</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/allysonsouza.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Muito top de linha o curso, bem direto ao ponto sem enrolações!!!</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Alysson">Alysson Souza</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/gabrielvieira.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Amei o curso! A didática do Lara é sensacional!! FUI APROVADO DE PRIMEIRA, não sou um Desenvolvedor,
+                  sou um Technical Product Manager, então nunca tinha realmente colocado a mão na AWS para criar um S3,
+                  EC2 etc, então os Labs fizeram toda a diferença não só para o exame!</p>
+                <p>Recomendo totalmente, muito obrigado, Lara!</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Gabriel">Gabriel Vieira</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/aldrybasilio.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Claro e objetivo, com dicas valiosas para realização do exame.</p>
+                <p>Muito obrigado pela ajuda!</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Aldry">Aldry Basilio</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/danubiacarvalho.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Esse curso é um dos melhores que já fiz. O professor possui uma didática impecável e entende bem do
+                  assunto. Havia feito e refiz para reforçar pois iria realizar a certificação e deu bom. Passei na
+                  prova! 🤩</p>
+                <p>Não tenho mais palavras pra descrever o quanto esse curso me ajudou. Indico sempre que posso.
+                  Obrigada professor... por tudo mesmo!!! 👏👏👏 Por mais pessoas assim... #certificaçãonamão 🙌</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Danubia">Danubia Carvalho</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/barbarapinheiro.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Estava em outro curso sobre este tema, mas por um grupo de estudos na empresa fui convidada a
+                  conhecer e seguir por este.</p>
+                <p>Realmente achei a didática ótima, explicações aprofundas em conhecimento e me encaminhou a outro
+                  nível de entendimento.</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Barbara">Barbara Pinheiro</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/josianemuniz.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Muito bem explicadinho.</p>
+                <p>Parabéns!</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Josiane">Josiane Muniz</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/fabianosouza.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Curso top e de muita qualidade, consegui minha certificação com uma ótima pontuação! Podem usar esse
+                  curso sem medo para se preparar para prova.</p>
+                <p>Conteúdo vai a além da prova, muito top, parabéns pessoal.</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Fabiano">Fabiano Souza</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-none">
+              <div class="uk-card-media-top"><img data-src="imagens/alunos/camilagabriela.jpg" alt="Depoimento"
+                  data-uk-img></div>
+              <div class="uk-card-body">
+                <p>Consegui minha primeira certificação graças ao Eduardo Lara! Eu gostaria de agradecer a você
+                  professor, pela dedicação e qualidade na hora de preparar este curso. Eu consegui algo que nada pode
+                  tirar de mim! O conhecimento e o certificado disso.</p>
+                <p>O conteúdo está completo e caiu tudo o que foi dito nas dicas do que cairia no exame. Eu consegui
+                  algo que nada pode tirar de mim! O conhecimento e o certificado disso.</p>
+                <p class="uk-text-warning">★★★★★</p>
+                <h4 class="uk-margin-remove" id="Camila">Camila Gabriela</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="instrutor" class="uk-cover-container uk-section-secondary" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <div class="uk-child-width-expand@m uk-grid-match uk-flex-center" data-uk-grid>
+          <div>
+            <div class="uk-card uk-card-large uk-card-none uk-grid-collapse uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-width-1-2@m"><img data-src="imagens/eduardolara-rs.jpg" height="50"
+                  alt="Eduardo Lara" data-uk-img></div>
+              <div class="uk-flex uk-flex-middle uk-width-expand@m">
+                <div class="uk-card-body">
+                  <h2 class="section-title uk-margin-remove uk-text-center">QUEM SOU?</h2>
+                  <p>Desenvolvi o curso certificação AWS Cloud Practitioner em português mais bem avaliado na Udemy no
+                    idioma português-brasileiro, que treinou mais de 17.000 alunos, para aprenderem e passarem no exame
+                    Amazon Web Services.</p>
+                  <p>Eu também sou AWS Solutions Architect Associate, AWS SysOps Administrator Associate, e gosto de
+                    ensinar e falar sobre os serviços da AWS.</p>
+                  <p>Nas horas vagas leio livros de biografia, psicologia e ficção científica, além de estudar japonês e
+                    amar minha família.</p>
+                  <h4 id="Sobre Mim">Eduardo Lara</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="faq" class="uk-cover-container uk-background-cover uk-background-center-center">
+    <div class="uk-position-cover"></div>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-container-xsmall uk-position-relative">
+        <div class="section-title-center uk-margin-large-bottom uk-light">
+          <h2 class="section-title uk-margin-remove uk-text-center" style="color:#000">PERGUNTAS FREQUENTES</h2>
+          <p>
+          <div><span style="color:#000"><b>1. Quanto tempo tenho para concluir o curso?</b><br>Os vídeos do curso e os
+              laboratórios práticos estão disponíveis para acesso vitalício na plataforma Udemy. Você pode acessá-los a
+              qualquer momento e em qualquer lugar.<p><b>2. Quais são os pré-requisitos para os cursos?</b><br>Os cursos
+                foram projetados para serem acessíveis a qualquer pessoa com conhecimento básico em redes de
+                computadores.
+              <p><b>3. O curso está atualizado?</b><br>Sim, o curso é atualizado com base no feedback dos alunos, além
+                de incorporar as atualizações oficiais e correções necessárias. Nós valorizamos os depoimentos dos
+                alunos para aprimorar o conteúdo.
+              <p><b>4. Haverá Certificado de Conclusão do Curso?</b><br>Absolutamente! Ao concluir o curso, você
+                receberá um certificado assinado pelo instrutor na Udemy. Este certificado atesta a sua conclusão
+                bem-sucedida do curso.<br>
+            </span></div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/falecomlara/" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">© 2019-2023 – ELara Você Certificado<br>CNPJ
+        46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="#cursos">CURSOS AWS</a></li>
+        <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="#instrutor">INSTRUTOR</a></li>
+        <li><a href="#faq">PERGUNTAS FREQUENTES</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column"><a href="https://www.instagram.com/falecomlara/" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
