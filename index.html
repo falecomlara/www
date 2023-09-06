@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Concordo</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
   <style type="text/css">
     .cookie-consent-banner {
       position: fixed;
@@ -39,6 +39,11 @@
       display: inline-block;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+   
+
+
+
   </style>
   <meta charset="UTF-8">
   <meta content="width=device-width,initial-scale=1" name="viewport">
@@ -146,9 +151,10 @@
                     </h3>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
                       <div><span class="uk-label-overlay"><span
-                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$39,90</s>por R$0,00</span></div>
-                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
-                      </div>
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$39,90</s> por R$00,00 </span></div>
+                            <span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      <!-- div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      </div -->
                     </div>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
                     <div class="uk-margin-top uk-visible@m" uk-margin><a
@@ -175,9 +181,9 @@
                     <h3 class="uk-card-title uk-margin-remove">Curso AWS Certified Cloud Practitioner (CLF-C02)</h3>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
                       <div><span class="uk-label-overlay"><span
-                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$199</s>por R$139,99</span></div>
-                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
-                      </div>
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$199</s> por R$139,99</span></div>
+                      <span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      
                     </div>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
                     <div class="uk-margin-top uk-visible@m" uk-margin><a
@@ -205,9 +211,9 @@
                       (CLF-C01)</h3>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid>
                       <div><span class="uk-label-overlay"><span
-                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$119</s>por R$89,99</span></div>
-                      <div class="uk-width-expand"><span class="uk-label uk-label-bestseller">Preço Promocional</span>
-                      </div>
+                            data-uk-icon="icon: cart; ratio: 0.9"></span><s>R$119,90</s> por R$89,99</span></div>
+                      <span class="uk-label uk-label-bestseller">Preço Promocional</span>
+                      
                     </div>
                     <div class="uk-grid-small uk-child-width-auto uk-margin-xsmall" data-uk-grid></div>
                     <div class="uk-margin-top uk-visible@m" uk-margin><a
@@ -481,8 +487,8 @@
               aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
         </div>
       </div>
-      <div class="uk-margin-medium uk-text-small copyright">© 2019-2023 – ELara Você Certificado<br>CNPJ
-        46.047.918/0001-97</div>
+      <div class="uk-margin-medium uk-text-small copyright">© 2019-2023 Você Certificado AWS: Da Nuvem à Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
     </div>
   </footer>
   <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
