@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, noimageindex, nofollow, nosnippet, noarchive">
+    <meta name="description" content="Timer">
+    <meta name="author" content="Eduardo Lara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOCÊ CERTIFICADO AWS: Timer</title>
+    <script type="text/javascript">
+        // Função para redimensionar o texto
+        function resizeText(multiplier) {
+            var elem = document.getElementById('message');
+            if (elem.style.fontSize == "") {
+                elem.style.fontSize = "5.0em";
+            }
+            elem.style.fontSize = parseFloat(elem.style.fontSize) + (multiplier * 0.2) + "em";
+        }
+
+        // Função para alternar o modo de tela cheia
+        function toggleFullScreen() {
+            if (window.innerHeight == screen.height) {
+                // Sair do modo de tela cheia
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            } else {
+                // Entrar no modo de tela cheia
+                var elem = document.documentElement;
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        /* Estilos CSS aqui */
+        #page {
+            background-color: white;
+            padding: 5em;
+        }
+
+        #message {
+            width: 100%;
+            font-size: 5em;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            border-style: none;
+            padding-left: 10px;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 20%;
+        }
+
+        .title {
+            width: 100%;
+            background-color: #FF9900;
+            font-size: 2em;
+            padding-left: 10px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        #options {
+            text-align: right;
+            padding-bottom: 10px;
+        }
+
+        .option {
+            color: darkgrey;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="page">
+        <div id="options">
+            <a class="option" href="#" onclick="resizeText(1);">[A+]</a>
+            <a class="option" href="#" onclick="resizeText(-1);">[A-]</a>
+            <a class="option" href="#" onclick="toggleFullScreen();">[Xx]</a>
+        </div>
+        <div class="title">O que está acontecendo?</div>
+        <textarea id="message" rows="3"></textarea>
+        <br>
+        <div class="title">Quanto tempo falta?</div>
+        <br>
+        <iframe src="https://e.ggtimer.com/"></iframe>
+    </div>
+
+    <!-- iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6aTaZa0K6VA?utm_source=generator" width="100%"
+        height="80" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe -->
+
+</body>
+
+</html>
