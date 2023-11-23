@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">ARMAZENAMENTO</h2>
+
+        <div>
+
+          <p>Dentro da AWS Cloud, existem v&aacute;rias op&ccedil;&otilde;es de servi&ccedil;os para diferentes tipos de
+            arquiteturas. No que diz respeito aos diferentes tipos de servi&ccedil;os de armazenamento da AWS, este guia
+            fornecer&aacute; uma vis&atilde;o abrangente sobre como decidir qual das op&ccedil;&otilde;es de
+            armazenamento da AWS escolher e qual dos servi&ccedil;os de armazenamento da AWS &eacute; ideal para
+            qualquer caso de uso espec&iacute;fico.</p>
+
+          <p>Embora possa parecer desafiador escolher o servi&ccedil;o de armazenamento correto da lista de
+            servi&ccedil;os de armazenamento da AWS, este guia tornar&aacute; essa tarefa gerenci&aacute;vel, fornecendo
+            uma compara&ccedil;&atilde;o sucinta de cada servi&ccedil;o de armazenamento da AWS.</p>
+
+          <p><strong>Amazon Simple Storage Service (S3)</strong></p>
+
+          <p>O Amazon S3 &eacute; um armazenamento de objetos projetado para armazenar e recuperar qualquer quantidade
+            de dados de qualquer lugar - sites e aplicativos m&oacute;veis, aplicativos corporativos e dados de sensores
+            ou dispositivos IoT.</p>
+
+          <p>Voc&ecirc; pode armazenar qualquer tipo de arquivo no S3.</p>
+
+          <p>O S3 &eacute; projetado para fornecer durabilidade de 99,999999999% e armazena dados para milh&otilde;es de
+            aplicativos usados por l&iacute;deres de mercado em todas as ind&uacute;strias.</p>
+
+          <p>O S3 oferece recursos abrangentes de seguran&ccedil;a e conformidade que atendem at&eacute; mesmo aos
+            requisitos regulat&oacute;rios mais rigorosos.</p>
+
+          <p>O S3 oferece flexibilidade aos clientes na forma como gerenciam dados para otimiza&ccedil;&atilde;o de
+            custos, controle de acesso e conformidade.</p>
+
+          <p>Casos de uso t&iacute;picos incluem:</p>
+
+          <ul>
+            <li>Backup e Armazenamento - Fornecer servi&ccedil;os de backup e armazenamento de dados para terceiros.
+            </li>
+            <li>Hospedagem de Aplicativos - Fornecer servi&ccedil;os que implantam, instalam e gerenciam aplicativos da
+              web.</li>
+            <li>Hospedagem de M&iacute;dia - Construir uma infraestrutura redundante, escal&aacute;vel e altamente
+              dispon&iacute;vel que hospeda uploads e downloads de v&iacute;deo, foto ou m&uacute;sica.</li>
+            <li>Entrega de Software - Hospedar seus aplicativos de software que os clientes podem baixar.</li>
+            <li>Site Est&aacute;tico - voc&ecirc; pode configurar um site est&aacute;tico para ser executado a partir de
+              um bucket S3.</li>
+          </ul>
+
+          <p>O S3 fornece funcionalidade de consulta no local, permitindo executar an&aacute;lises poderosas diretamente
+            em seus dados em repouso no S3. E o Amazon S3 &eacute; o servi&ccedil;o de armazenamento em nuvem mais
+            compat&iacute;vel, com integra&ccedil;&atilde;o da maior comunidade de solu&ccedil;&otilde;es de terceiros,
+            parceiros integradores de sistemas e outros servi&ccedil;os da AWS.</p>
+
+          <p>Os arquivos podem ter de 0 bytes a 5 TB.</p>
+
+          <p>N&atilde;o h&aacute; limite de armazenamento dispon&iacute;vel.</p>
+
+          <p>Os arquivos s&atilde;o armazenados em buckets e s&atilde;o chamados de objetos.</p>
+
+          <p>Buckets s&atilde;o pastas de n&iacute;vel raiz.</p>
+
+          <p>Qualquer subpasta em um bucket, &eacute; conhecida como &quot;pasta&quot;.</p>
+
+          <p>O S3 &eacute; um namespace universal, ent&atilde;o os nomes de buckets devem ser exclusivos globalmente.
+          </p>
+
+          <p>Existem sete classes de armazenamento do S3.</p>
+
+          <ol>
+            <li>S3 Padr&atilde;o (dur&aacute;vel, imediatamente dispon&iacute;vel, acessado com frequ&ecirc;ncia).</li>
+            <li>S3 Intelligent-Tiering (move automaticamente dados para a camada mais econ&ocirc;mica).</li>
+            <li>S3 Padr&atilde;o-IA (dur&aacute;vel, imediatamente dispon&iacute;vel, acessado com pouca
+              frequ&ecirc;ncia).</li>
+            <li>S3 One Zone-IA (custo mais baixo para dados acessados com pouca frequ&ecirc;ncia, com menos
+              resili&ecirc;ncia).</li>
+            <li>S3 Glacier Instant Retrieval (dados raramente acessados e que exigem recupera&ccedil;&atilde;o em
+              milissegundos).</li>
+            <li>S3 Glacier Flexible Retrieval (dados arquivados, tempos de recupera&ccedil;&atilde;o em minutos ou
+              horas).</li>
+            <li>S3 Glacier Deep Archive (classe de armazenamento de menor custo para reten&ccedil;&atilde;o de longo
+              prazo).</li>
+          </ol>
+
+          <p>Quando voc&ecirc; carrega com sucesso um arquivo no S3, recebe um c&oacute;digo HTTP 200.</p>
+
+          <p>O S3 &eacute; um armazenamento de dados persistente e altamente dur&aacute;vel.</p>
+
+          <p>Armazenamentos de dados persistentes s&atilde;o sistemas de armazenamento n&atilde;o vol&aacute;teis que
+            mant&ecirc;m os dados quando desligados.</p>
+
+          <p>Isso contrasta com armazenamentos de dados transit&oacute;rios e armazenamentos ef&ecirc;meros que perdem
+            os dados quando desligados.</p>
+
+          <p>A tabela a seguir fornece uma descri&ccedil;&atilde;o de armazenamentos de dados persistentes,
+            transit&oacute;rios e ef&ecirc;meros e qual servi&ccedil;o da AWS usar:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th style="width:120px">Tipo de Armazenamento</th>
+                <th style="width:683px">Descri&ccedil;&atilde;o</th>
+                <th style="width:358px">Exemplos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width:120px">Persistente</td>
+                <td style="width:683px">Dados s&atilde;o dur&aacute;veis e permanecem ap&oacute;s
+                  reinicializa&ccedil;&otilde;es, rein&iacute;cios ou ciclos de energia</td>
+                <td style="width:358px">S3, Glacier, EBS, EFS</td>
+              </tr>
+              <tr>
+                <td style="width:120px">Transit&oacute;rio</td>
+                <td style="width:683px">Dados s&atilde;o apenas armazenados temporariamente e passados para outro
+                  processo ou armazenamento persistente</td>
+                <td style="width:358px">SQS, SNS</td>
+              </tr>
+              <tr>
+                <td style="width:120px">Ef&ecirc;mero</td>
+                <td style="width:683px">Dados s&atilde;o perdidos quando o sistema &eacute; desligado</td>
+                <td style="width:358px">Armazenamento de Inst&acirc;ncia EC2, Memcached</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Os nomes dos buckets devem seguir um conjunto de regras:</p>
+
+          <ol>
+            <li>Nomes devem ser &uacute;nicos em toda a AWS.</li>
+            <li>Nomes devem ter de 3 a 63 caracteres de comprimento.</li>
+            <li>Nomes podem conter apenas letras min&uacute;sculas, n&uacute;meros e h&iacute;fens.</li>
+            <li>Nomes n&atilde;o podem ser formatados como um endere&ccedil;o IP.</li>
+          </ol>
+
+          <p>Objetos consistem em:</p>
+
+          <ol>
+            <li>
+              <p>Chave (nome do objeto).</p>
+            </li>
+            <li>
+              <p>Valor (dados compostos por uma sequ&ecirc;ncia de bytes).</p>
+            </li>
+            <li>
+              <p>ID da Vers&atilde;o (usado para versionamento).</p>
+            </li>
+            <li>
+              <p>Metadados (dados sobre os dados armazenados).</p>
+            </li>
+            <li>
+              <p>Subrecursos:</p>
+
+              <ul>
+                <li>Listas de Controle de Acesso.</li>
+                <li>Torrent.</li>
+                <li>Compartilhamento de objetos - a capacidade de tornar qualquer objeto dispon&iacute;vel publicamente
+                  por meio de uma URL.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <p><strong>Gerenciamento de ciclo de vida</strong> - define regras para transferir objetos entre classes de
+            armazenamento em intervalos de tempo definidos.</p>
+
+          <p><strong>Versionamento</strong> - mant&eacute;m automaticamente v&aacute;rias vers&otilde;es de um objeto
+            (quando ativado).</p>
+
+          <p>A criptografia pode ser habilitada para o bucket.</p>
+
+          <p>Os dados s&atilde;o protegidos usando ACLs e pol&iacute;ticas de bucket.</p>
+
+          <p>Cobran&ccedil;as:</p>
+
+          <ol>
+            <li>Armazenamento.</li>
+            <li>Requisi&ccedil;&otilde;es.</li>
+            <li>Custos de gerenciamento de armazenamento.</li>
+            <li>Custos de transfer&ecirc;ncia de dados.</li>
+            <li>Acelera&ccedil;&atilde;o de transfer&ecirc;ncia.</li>
+          </ol>
+
+          <p>Ao criar um bucket, voc&ecirc; precisa selecionar a regi&atilde;o onde ele ser&aacute; criado.</p>
+
+          <p><strong>Aten&ccedil;&atilde;o</strong>: Enquanto o Amazon S3 &eacute; um servi&ccedil;o global, o Bucket S3
+            &eacute; um servi&ccedil;o regional.</p>
+
+          <p>&Eacute; uma pr&aacute;tica recomendada criar buckets em regi&otilde;es fisicamente mais pr&oacute;ximas de
+            seus usu&aacute;rios para reduzir a lat&ecirc;ncia.</p>
+
+          <p>Recursos adicionais oferecidos pelo Amazon S3 incluem:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th>Capacidade Adicional do S3</th>
+                <th>Como Funciona</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Acelera&ccedil;&atilde;o de Transfer&ecirc;ncia</td>
+                <td>Acelera uploads de dados usando o CloudFront em sentido inverso.</td>
+              </tr>
+              <tr>
+                <td>Solicitante Paga</td>
+                <td>O solicitante, em vez do propriet&aacute;rio do bucket, paga por solicita&ccedil;&otilde;es e
+                  transfer&ecirc;ncia de dados.</td>
+              </tr>
+              <tr>
+                <td>Tags</td>
+                <td>Atribui tags a objetos para uso em custos, faturamento, seguran&ccedil;a etc.</td>
+              </tr>
+              <tr>
+                <td>Eventos</td>
+                <td>Dispara notifica&ccedil;&otilde;es para SNS, SQS ou Lambda quando ocorrem eventos espec&iacute;ficos
+                  em seu bucket.</td>
+              </tr>
+              <tr>
+                <td>Hospedagem Est&aacute;tica na Web</td>
+                <td>Hospedagem de site est&aacute;tico simples e massivamente escal&aacute;vel.</td>
+              </tr>
+              <tr>
+                <td>BitTorrent</td>
+                <td>Usa o protocolo BitTorrent para recuperar qualquer objeto dispon&iacute;vel publicamente, gerando
+                  automaticamente um arquivo .torrent.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+          <p><strong>AWS Snowball</strong></p>
+
+          <p>Com o AWS Snowball, voc&ecirc; pode transferir centenas de terabytes ou petabytes de dados entre seus data
+            centers locais e o Amazon Simple Storage Service (Amazon S3).</p>
+
+          <p>Utiliza um dispositivo de armazenamento seguro para transporte f&iacute;sico.</p>
+
+          <p>O AWS Snowball Client &eacute; um software instalado em um computador local e &eacute; usado para
+            identificar, compactar, criptografar e transferir dados.</p>
+
+          <p>Utiliza criptografia de 256 bits (gerenciada com o AWS KMS) e inv&oacute;lucros &agrave; prova de
+            viola&ccedil;&atilde;o com TPM.</p>
+
+          <p>A tabela abaixo descreve as ofertas do AWS Snow em um n&iacute;vel elevado:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th>Servi&ccedil;o</th>
+                <th>Descri&ccedil;&atilde;o</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AWS Snowball</td>
+                <td>Transfer&ecirc;ncia massiva de dados, armazenamento de borda e computa&ccedil;&atilde;o de borda
+                </td>
+              </tr>
+              <tr>
+                <td>AWS Snowmobile</td>
+                <td>Um caminh&atilde;o de transporte, para armazenamento&nbsp; de at&eacute; 100PB</td>
+              </tr>
+              <tr>
+                <td>AWS Snowcone</td>
+                <td>O menor dispositivo da linha, mais adequado para ambientes in&oacute;spitos, miss&otilde;es e locais
+                  onde a Internet &eacute; limitada ou n&atilde;o existe</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Snowball pode importar para o S3 ou exportar do S3.</p>
+
+          <p>O Snowball deve ser solicitado e devolvido &agrave; mesma regi&atilde;o.</p>
+
+          <p>Para acelerar a transfer&ecirc;ncia de dados, &eacute; recomend&aacute;vel executar inst&acirc;ncias
+            simult&acirc;neas do AWS Snowball Client em terminais m&uacute;ltiplos e transferir pequenos arquivos em
+            lotes.</p>
+
+          <hr />
+          <p><strong>Amazon Elastic Block Store (EBS)</strong></p>
+
+          <p>O Amazon Elastic Block Store (Amazon EBS) fornece volumes de armazenamento de bloco persistentes para uso
+            com inst&acirc;ncias Amazon EC2 na AWS Cloud.</p>
+
+          <p>Cada volume do Amazon EBS &eacute; automaticamente replicado dentro da sua Zona de Disponibilidade para
+            proteg&ecirc;-lo contra falhas de componentes, oferecendo alta disponibilidade e durabilidade.</p>
+
+          <p>Os volumes do Amazon EBS oferecem desempenho consistente e baixa lat&ecirc;ncia necess&aacute;rios para
+            executar suas cargas de trabalho.</p>
+
+          <p>Com o Amazon EBS, voc&ecirc; pode dimensionar o uso para cima ou para baixo em minutos - tudo isso pagando
+            um pre&ccedil;o baixo apenas pelo que voc&ecirc; provisiona.</p>
+
+          <p>Os seguintes volumes EBS aparecem com mais frequ&ecirc;ncia nos exames da AWS:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th>Tipo de Volume</th>
+                <th>EBS Provisioned IOPS SSD (io1/io2)</th>
+                <th>EBS General Purpose SSD (gp2/gp3)</th>
+                <th>Throughput Optimized HDD (st1)</th>
+                <th>Cold HDD (sc1)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Descri&ccedil;&atilde;o Curta</td>
+                <td>Volume SSD de mais alto desempenho projetado para cargas de trabalho transacionais sens&iacute;veis
+                  &agrave; lat&ecirc;ncia</td>
+                <td>Volume SSD de prop&oacute;sito geral que equilibra desempenho de pre&ccedil;o para uma ampla
+                  variedade de cargas de trabalho transacionais</td>
+                <td>Volume HDD de baixo custo, projetado para acesso frequente. Cargas de trabalho intensivas em
+                  throughput</td>
+                <td>Volume HDD de custo mais baixo projetado para cargas de trabalho acessadas com menos
+                  frequ&ecirc;ncia</td>
+              </tr>
+              <tr>
+                <td>Casos de Uso</td>
+                <td>Bancos de dados NoSQL e relacionais intensivos em I/O</td>
+                <td>Volumes de inicializa&ccedil;&atilde;o, aplicativos interativos de baixa lat&ecirc;ncia,
+                  desenvolvimento e teste</td>
+                <td>Big data, data warehouses, processamento de logs</td>
+                <td>Dados mais frios que requerem menos varreduras por dia</td>
+              </tr>
+              <tr>
+                <td>Tamanho do Volume</td>
+                <td>4 GiB &ndash; 16 TiB</td>
+                <td>1 GiB &ndash; 16 TiB</td>
+                <td>125 GB &ndash; 16 TiB</td>
+                <td>125 GB &ndash; 16 TiB</td>
+              </tr>
+              <tr>
+                <td>M&aacute;x. IOPS / Volume</td>
+                <td>64.000</td>
+                <td>16.000</td>
+                <td>500</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>M&aacute;x. Throughput / Volume</td>
+                <td>1.000 MiB/s</td>
+                <td>250 MiB/s (gp2), 1000 MiB/s (gp3)</td>
+                <td>500 MiB/s</td>
+                <td>250 MiB/s</td>
+              </tr>
+              <tr>
+                <td>Pode ser volume de inicializa&ccedil;&atilde;o?</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>N&atilde;o</td>
+                <td>N&atilde;o</td>
+              </tr>
+              <tr>
+                <td>EBS Multi-attach</td>
+                <td>Suportado</td>
+                <td>N&atilde;o Suportado</td>
+                <td>N&atilde;o Suportado</td>
+                <td>N&atilde;o Suportado</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Os dados do volume EBS persistem independentemente da vida da inst&acirc;ncia.</p>
+
+          <p>Os volumes EBS n&atilde;o precisam estar anexados a uma inst&acirc;ncia.</p>
+
+          <p>Voc&ecirc; pode anexar v&aacute;rios volumes EBS a uma inst&acirc;ncia.</p>
+
+          <p>Voc&ecirc; n&atilde;o pode anexar um volume EBS a v&aacute;rias inst&acirc;ncias (use o EFS - Elastic File
+            Store em vez disso).</p>
+
+          <p>Os volumes EBS devem estar na mesma Zona de Disponibilidade das inst&acirc;ncias &agrave;s quais
+            est&atilde;o anexados.</p>
+
+          <p>A prote&ccedil;&atilde;o contra termina&ccedil;&atilde;o est&aacute; desativada por padr&atilde;o e deve
+            ser ativada manualmente (mant&eacute;m o volume/dados quando a inst&acirc;ncia &eacute; terminada).</p>
+
+          <p>Os volumes EBS de raiz s&atilde;o exclu&iacute;dos por padr&atilde;o na termina&ccedil;&atilde;o.</p>
+
+          <p>Volumes adicionais n&atilde;o de inicializa&ccedil;&atilde;o n&atilde;o s&atilde;o exclu&iacute;dos por
+            padr&atilde;o na termina&ccedil;&atilde;o.</p>
+
+          <p>O comportamento pode ser alterado alterando o atributo &quot;DeleteOnTermination&quot;.</p>
+
+          <p><strong>Snapshots do EBS:</strong></p>
+
+          <ul>
+            <li>Capturam um estado pontual de uma inst&acirc;ncia.</li>
+            <li>S&atilde;o armazenados no S3.</li>
+            <li>N&atilde;o oferecem backup granular (n&atilde;o substituem software de backup).</li>
+            <li>Se voc&ecirc; criar snapshots peri&oacute;dicos de um volume, os snapshots s&atilde;o incrementais, o
+              que significa que apenas os blocos no dispositivo que mudaram desde o &uacute;ltimo snapshot s&atilde;o
+              salvos no novo snapshot.</li>
+            <li>Mesmo que os snapshots sejam salvos incrementalmente, o processo de exclus&atilde;o de snapshots
+              &eacute; projetado para que voc&ecirc; precise manter apenas o snapshot mais recente para restaurar o
+              volume.</li>
+            <li>Os snapshots s&oacute; podem ser acessados por meio das APIs da EC2.</li>
+            <li>Os volumes EBS s&atilde;o espec&iacute;ficos da Zona de Disponibilidade, mas os snapshots s&atilde;o
+              espec&iacute;ficos da regi&atilde;o.</li>
+          </ul>
+
+          <p><strong>Volumes da Store de Inst&acirc;ncias:</strong></p>
+
+          <ul>
+            <li>Os volumes da store de inst&acirc;ncias s&atilde;o discos locais de alta performance fisicamente
+              conectados ao computador host em que uma inst&acirc;ncia EC2 &eacute; executada.</li>
+            <li>As stores de inst&acirc;ncias s&atilde;o ef&ecirc;meras, o que significa que os dados s&atilde;o
+              perdidos quando desligados (n&atilde;o persistentes).</li>
+            <li>As stores de inst&acirc;ncias s&atilde;o ideais para o armazenamento tempor&aacute;rio de
+              informa&ccedil;&otilde;es que mudam com frequ&ecirc;ncia, como buffers, caches ou dados
+              tempor&aacute;rios.</li>
+            <li>Os volumes da store de inst&acirc;ncias raiz s&atilde;o criados a partir de modelos de AMI armazenados
+              no S3.</li>
+            <li>Os volumes da store de inst&acirc;ncias n&atilde;o podem ser destacados/reattached.</li>
+          </ul>
+
+          <hr />
+          <p><strong>Amazon Elastic File System (EFS):</strong></p>
+
+          <p>O EFS &eacute; um servi&ccedil;o totalmente gerenciado que facilita a configura&ccedil;&atilde;o e o
+            dimensionamento do armazenamento de arquivos na Amazon Cloud.</p>
+
+          <p>Bom para big data e an&aacute;lises, fluxos de trabalho de processamento de m&iacute;dia, gerenciamento de
+            conte&uacute;do, servidores web, diret&oacute;rios dom&eacute;sticos, etc.</p>
+
+          <p>O EFS usa o protocolo NFS.</p>
+
+          <p>Pague pelo que voc&ecirc; usa (nenhuma pr&eacute;-provisionamento &eacute; necess&aacute;rio).</p>
+
+          <p>Pode escalar at&eacute; petabytes.</p>
+
+          <p>O EFS &eacute; el&aacute;stico e cresce e diminui &agrave; medida que voc&ecirc; adiciona e remove dados.
+          </p>
+
+          <p>Pode conectar simultaneamente de 1 a milhares de inst&acirc;ncias EC2, de v&aacute;rias Zonas de
+            Disponibilidade.</p>
+
+          <p>Um sistema de arquivos pode ser acessado simultaneamente de todas as Zonas de Disponibilidade na
+            regi&atilde;o onde est&aacute; localizado.</p>
+
+          <p>Por padr&atilde;o, voc&ecirc; pode criar at&eacute; 10 sistemas de arquivos por conta.</p>
+
+          <p>O acesso local pode ser habilitado via Direct Connect ou AWS VPN.</p>
+
+          <p>Pode escolher Geral ou M&aacute;x. I/O (ambos SSD).</p>
+
+          <p>A VPC da inst&acirc;ncia conectada deve ter os nomes de host DNS habilitados.</p>
+
+          <p>O EFS fornece uma interface de sistema de arquivos, sem&acirc;ntica de acesso ao sistema de arquivos (como
+            consist&ecirc;ncia forte e bloqueio de arquivos).</p>
+
+          <p>Os dados s&atilde;o armazenados em v&aacute;rias Zonas de Disponibilidade dentro de uma regi&atilde;o.</p>
+
+          <p>Consist&ecirc;ncia de leitura ap&oacute;s grava&ccedil;&atilde;o.</p>
+
+          <p>&Eacute; necess&aacute;rio criar alvos de montagem e escolher Zonas de Disponibilidade para incluir
+            (recomendado incluir todas as Zonas de Disponibilidade).</p>
+
+          <p>As inst&acirc;ncias podem estar atr&aacute;s de um ELB.</p>
+
+          <p>Existem dois modos de desempenho:</p>
+
+          <ul>
+            <li>O modo de desempenho &quot;Geral&quot; &eacute; apropriado para a maioria dos sistemas de arquivos.</li>
+            <li>O modo de desempenho &quot;M&aacute;x. I/O&quot; &eacute; otimizado para aplicativos nos quais dezenas,
+              centenas ou milhares de inst&acirc;ncias EC2 est&atilde;o acessando o sistema de arquivos.</li>
+          </ul>
+
+          <p>O Amazon EFS &eacute; projetado para fazer burst para permitir n&iacute;veis de throughput elevados por
+            per&iacute;odos de tempo.</p>
+
+          <hr />
+          <p><strong>AWS Storage Gateway:</strong></p>
+
+          <p>O AWS Storage Gateway &eacute; um servi&ccedil;o de armazenamento em nuvem h&iacute;brida que oferece
+            acesso local a praticamente armazenamento em nuvem ilimitado.</p>
+
+          <p>Os clientes usam o Storage Gateway para simplificar a gest&atilde;o de armazenamento e reduzir custos para
+            casos de uso-chave de armazenamento em nuvem h&iacute;brida.</p>
+
+          <p>Estes incluem mover backups para a nuvem, usar compartilhamentos de arquivos locais apoiados por
+            armazenamento em nuvem e fornecer acesso de baixa lat&ecirc;ncia a dados na AWS para aplicativos locais.</p>
+
+          <p>Para suportar esses casos de uso, o Storage Gateway oferece tr&ecirc;s tipos diferentes de gateways:</p>
+
+          <ul>
+            <li>File Gateway - fornece interfaces de sistema de arquivos para servidores locais.</li>
+            <li>Volume Gateway - fornece acesso baseado em bloco para servidores locais.</li>
+            <li>Tape Gateway - fornece uma biblioteca de fitas virtual compat&iacute;vel com software comum de backup
+              (interfaces de bloco e arquivo).</li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS Backup:</strong></p>
+
+          <p>O servi&ccedil;o AWS Backup oferece um console de backup centralizado, APIs e interface de linha de comando
+            para gerenciar backups em servi&ccedil;os da AWS, incluindo:</p>
+
+          <ul>
+            <li>Amazon Simple Storage Service (S3)</li>
+            <li>Amazon Elastic Block Store (EBS)</li>
+            <li>Amazon FSx</li>
+            <li>Amazon Elastic Compute Cloud (EC2)</li>
+            <li>Amazon Relational Database Service (RDS)</li>
+            <li>Amazon DynamoDB</li>
+            <li>Amazon Elastic File System (EFS)</li>
+            <li>AWS Storage Gateway ... e mais</li>
+          </ul>
+
+          <p>O AWS Backup permite gerenciar centralmente pol&iacute;ticas de backup que atendem aos requisitos de backup
+            e aplic&aacute;-las em todos os seus recursos da AWS em servi&ccedil;os da AWS, bem como em cargas de
+            trabalho de nuvem h&iacute;brida. Isso permite fazer backup consistentemente dos dados de sua
+            aplica&ccedil;&atilde;o e em conformidade com os requisitos de conformidade. Al&eacute;m disso, o console de
+            backup centralizado do AWS Backup oferece uma vis&atilde;o consolidada dos backups e logs de atividades de
+            backup, tornando mais f&aacute;cil auditar seus backups.</p>
+
+          <hr />
+          <p><strong>Amazon FSX para Lustre:</strong></p>
+
+          <p>Para cargas de trabalho de computa&ccedil;&atilde;o, o Amazon FSx para Lustre fornece armazenamento
+            escal&aacute;vel, de alto desempenho e de custo efetivo. Baseado no Lustre, o sistema de arquivos de alto
+            desempenho mais popular do mundo, o FSx para Lustre fornece armazenamento compartilhado com lat&ecirc;ncias
+            sub-ms, at&eacute; terabytes de throughput e milh&otilde;es de IOPS. Tamb&eacute;m &eacute; poss&iacute;vel
+            vincular sistemas de arquivos FSx para Lustre aos buckets do Amazon Simple Storage Service (S3), permitindo
+            acessar e processar dados simultaneamente de ambos.</p>
+
+          <p>Alguns dos computadores mais r&aacute;pidos do mundo usam o sistema de arquivos Lustre de c&oacute;digo
+            aberto para processar conjuntos de dados em crescimento r&aacute;pido e de forma econ&ocirc;mica. Ele
+            &eacute; adequado para cargas de trabalho que v&atilde;o desde sequenciamento de genoma at&eacute;
+            transcoding de v&iacute;deo, aprendizado de m&aacute;quina e detec&ccedil;&atilde;o de fraudes.</p>
+
+          <hr />
+          <p><strong>Amazon FSX for Windows File Server</strong></p>
+
+          <p>Com o Amazon FSx for Windows File Server, suas aplica&ccedil;&otilde;es e usu&aacute;rios finais podem
+            acessar armazenamento de arquivos compartilhado confi&aacute;vel, de alto desempenho e seguro. Usando o
+            Amazon FSx, voc&ecirc; pode criar sistemas de arquivos altamente dispon&iacute;veis e dur&aacute;veis que
+            abrangem v&aacute;rias zonas de disponibilidade (AZs) e podem ser acessados por milhares de inst&acirc;ncias
+            de computa&ccedil;&atilde;o.</p>
+
+          <p>Al&eacute;m de fornecer um conjunto abrangente de recursos administrativos e de seguran&ccedil;a, ele
+            tamb&eacute;m se integra ao Microsoft Active Directory (AD). Para uma variedade de cargas de trabalho, o
+            Amazon FSx oferece altos n&iacute;veis de throughput e IOPS no sistema de arquivos, bem como lat&ecirc;ncias
+            consistentes de submilissegundos.</p>
+
+          <p>Baseado no Windows Server, o Amazon FSx inclui um conjunto rico de recursos administrativos, incluindo
+            restaura&ccedil;&atilde;o de arquivos para usu&aacute;rios finais, cotas de usu&aacute;rios e listas de
+            controle de acesso (ACLs). O Windows Server oferece suporte nativo ao protocolo SMB, permitindo que
+            aplicativos baseados no Windows acessem o armazenamento de arquivos compartilhado. As compartilhamentos de
+            arquivos SMB tamb&eacute;m podem ser acessados a partir de Linux e MacOS, permitindo que qualquer aplicativo
+            ou usu&aacute;rio acesse o armazenamento. O AWS Microsoft Managed AD e o Microsoft Active Directory local
+            podem ser integrados ao Amazon FSx para controlar o acesso do usu&aacute;rio.</p>
+
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

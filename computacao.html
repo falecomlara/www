@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">Computação</h2>
+
+<div>
+
+  <p>O Amazon EC2 &eacute; um servi&ccedil;o da web que permite executar &quot;inst&acirc;ncias&quot; virtuais de servidor na nuvem.</p>
+
+  <p>As inst&acirc;ncias do Amazon EC2 podem executar os sistemas operacionais Windows, Linux ou MacOS.</p>
+  
+  <p>A interface simples de servi&ccedil;o da web do EC2 permite que voc&ecirc; obtenha e configure capacidade com o m&iacute;nimo de atrito.</p>
+  
+  <p>O EC2 &eacute; projetado para tornar a computa&ccedil;&atilde;o em nuvem em escala web mais f&aacute;cil para os desenvolvedores.</p>
+  
+  <p>O Amazon EC2 altera a economia da computa&ccedil;&atilde;o, permitindo que voc&ecirc; pague apenas pela capacidade que usa.</p>
+  
+  <p>O Amazon EC2 fornece aos desenvolvedores as ferramentas para criar aplicativos resilientes a falhas e isol&aacute;-los de cen&aacute;rios comuns de falhas.</p>
+  
+  <p><strong>Benef&iacute;cios do EC2:</strong></p>
+  
+  <table align="center" border="1" style="width:100%">
+    <thead>
+      <tr>
+        <th>Caracter&iacute;sticas</th>
+        <th>Descri&ccedil;&atilde;o</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Computa&ccedil;&atilde;o El&aacute;stica em Escala Web</strong></td>
+        <td>Voc&ecirc; pode aumentar ou diminuir a capacidade em minutos, n&atilde;o horas, e provisionar de uma a milhares de inst&acirc;ncias simultaneamente.</td>
+      </tr>
+      <tr>
+        <td><strong>Totalmente Controlado</strong></td>
+        <td>Voc&ecirc; tem controle completo, incluindo acesso root a cada inst&acirc;ncia, e pode parar e iniciar inst&acirc;ncias sem perder dados, usando APIs de servi&ccedil;o da web.</td>
+      </tr>
+      <tr>
+        <td><strong>Servi&ccedil;os de Hospedagem em Nuvem Flex&iacute;veis</strong></td>
+        <td>Voc&ecirc; pode escolher entre v&aacute;rios tipos de inst&acirc;ncias, sistemas operacionais e pacotes de software, bem como inst&acirc;ncias com configura&ccedil;&otilde;es vari&aacute;veis de mem&oacute;ria, CPU e armazenamento.</td>
+      </tr>
+      <tr>
+        <td><strong>Integrado</strong></td>
+        <td>O EC2 est&aacute; integrado &agrave; maioria dos servi&ccedil;os AWS, como S3, RDS e VPC, para fornecer uma solu&ccedil;&atilde;o completa e segura.</td>
+      </tr>
+      <tr>
+        <td><strong>Confi&aacute;vel</strong></td>
+        <td>O EC2 oferece um ambiente altamente confi&aacute;vel, onde inst&acirc;ncias de substitui&ccedil;&atilde;o podem ser rapidamente comissionadas de maneira previs&iacute;vel, com SLAs de 99,99% para cada regi&atilde;o.</td>
+      </tr>
+      <tr>
+        <td><strong>Seguro</strong></td>
+        <td>O EC2 trabalha em conjunto com a VPC para fornecer uma localiza&ccedil;&atilde;o segura com um intervalo de endere&ccedil;os IP especificado e oferece Grupos de Seguran&ccedil;a, ACLs de Rede e recursos de VPN IPSec.</td>
+      </tr>
+      <tr>
+        <td><strong>Inexpensivo</strong></td>
+        <td>A Amazon repassa os benef&iacute;cios financeiros da escala cobrando taxas muito baixas e com base no consumo de capacidade.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  
+  <hr />
+  <p><strong>Amazon Machine Image (AMI):</strong> Uma AMI &eacute; um tipo especial de aparelho virtual usado para criar uma m&aacute;quina virtual dentro do Amazon Elastic Compute Cloud (&quot;EC2&quot;).</p>
+  
+  <p>Uma AMI inclui o seguinte:</p>
+  
+  <ul>
+    <li>Uma ou mais snapshots EBS, ou, para AMIs baseadas em inst&acirc;ncia de armazenamento, um modelo para o volume raiz da inst&acirc;ncia (por exemplo, um sistema operacional, um servidor de aplicativos e aplicativos).</li>
+    <li>Permiss&otilde;es de lan&ccedil;amento que controlam quais contas da AWS podem usar a AMI para iniciar inst&acirc;ncias.</li>
+    <li>Mapeamento de dispositivos de bloco que especifica os volumes a serem anexados &agrave; inst&acirc;ncia quando ela for iniciada.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Categorias de AMIs:</strong></p>
+  
+  <ul>
+    <li>AMIs da Comunidade - gr&aacute;tis para uso, geralmente voc&ecirc; apenas seleciona o sistema operacional desejado.</li>
+    <li>AMIs do AWS Marketplace - pagas, geralmente incluem software adicional licenciado.</li>
+    <li>Minhas AMIs - AMIs que voc&ecirc; cria.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Dados do Usu&aacute;rio e Metadados da Inst&acirc;ncia:</strong></p>
+  
+  <ul>
+    <li>Dados do usu&aacute;rio s&atilde;o dados fornecidos pelo usu&aacute;rio no lan&ccedil;amento da inst&acirc;ncia na forma de um script.</li>
+    <li>Metadados da inst&acirc;ncia s&atilde;o dados sobre sua inst&acirc;ncia que voc&ecirc; pode usar para configurar ou gerenciar a inst&acirc;ncia em execu&ccedil;&atilde;o.</li>
+    <li>Os dados do usu&aacute;rio est&atilde;o limitados a 16 KB.</li>
+    <li>Os dados do usu&aacute;rio e os metadados n&atilde;o s&atilde;o criptografados.</li>
+    <li>Os metadados da inst&acirc;ncia est&atilde;o dispon&iacute;veis em <a href="http://169.254.169.254/latest/meta-data" target="_new">http://169.254.169.254/latest/meta-data</a>.</li>
+    <li>A ferramenta de consulta de metadados da inst&acirc;ncia permite que voc&ecirc; consulte os metadados da inst&acirc;ncia sem precisar digitar o URI completo ou os nomes de categoria.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Pre&ccedil;os:</strong></p>
+  
+  <ul>
+    <li>On-demand:
+    <ul>
+      <li>Bom para usu&aacute;rios que desejam o baixo custo e a flexibilidade do EC2 sem nenhum pagamento antecipado ou compromisso de longo prazo.</li>
+      <li>Aplica&ccedil;&otilde;es com cargas de trabalho de curto prazo, irregulares ou imprevis&iacute;veis que n&atilde;o podem ser interrompidas.</li>
+      <li>Aplica&ccedil;&otilde;es sendo desenvolvidas ou testadas no EC2 pela primeira vez.</li>
+    </ul>
+    </li>
+    <li>Reservados:
+    <ul>
+      <li>Aplica&ccedil;&otilde;es com uso est&aacute;vel ou previs&iacute;vel.</li>
+      <li>Aplica&ccedil;&otilde;es que exigem capacidade reservada.</li>
+      <li>Usu&aacute;rios podem fazer pagamentos antecipados para reduzir ainda mais os custos totais de computa&ccedil;&atilde;o.</li>
+      <li>Inst&acirc;ncias Reservadas Padr&atilde;o (RIs) oferecem at&eacute; 75% de desconto no pre&ccedil;o sob demanda.</li>
+      <li>RIs Convert&iacute;veis oferecem at&eacute; 54% de desconto no pre&ccedil;o sob demanda - fornece a capacidade de alterar os atributos da RI se a troca resultar na cria&ccedil;&atilde;o de RIs de valor igual ou maior.</li>
+      <li>RIs Agendadas est&atilde;o dispon&iacute;veis para lan&ccedil;amento dentro da janela de tempo que voc&ecirc; reserva. Essa op&ccedil;&atilde;o permite que voc&ecirc; ajuste sua reserva de capacidade para um cronograma recorrente previs&iacute;vel que requer apenas uma fra&ccedil;&atilde;o de um dia, uma semana ou um m&ecirc;s.</li>
+    </ul>
+    </li>
+    <li>Spot:
+    <ul>
+      <li>Aplica&ccedil;&otilde;es que t&ecirc;m hor&aacute;rios de in&iacute;cio e t&eacute;rmino flex&iacute;veis.</li>
+      <li>Aplica&ccedil;&otilde;es que s&atilde;o vi&aacute;veis apenas a pre&ccedil;os muito baixos de computa&ccedil;&atilde;o.</li>
+      <li>Se a Amazon encerrar suas inst&acirc;ncias, voc&ecirc; n&atilde;o paga; se voc&ecirc; encerrar, paga pela hora.</li>
+    </ul>
+    </li>
+    <li>Hospedagem Dedicada:
+    <ul>
+      <li>Servidores f&iacute;sicos dedicados apenas para seu uso.</li>
+      <li>Voc&ecirc; tem controle sobre quais inst&acirc;ncias s&atilde;o implantadas nesse host.</li>
+      <li>Dispon&iacute;vel como Sob Demanda ou com Reserva de Host Dedicado.</li>
+      <li>&Uacute;til se voc&ecirc; tiver licen&ccedil;as de software vinculadas ao servidor que usam m&eacute;tricas como por n&uacute;cleo, por soquete ou por VM.</li>
+      <li>Cada host dedicado pode executar apenas um tamanho e tipo de inst&acirc;ncia EC2.</li>
+      <li>Bom para conformidade regulat&oacute;ria ou requisitos de licenciamento.</li>
+      <li>Desempenho previs&iacute;vel.</li>
+      <li>Isolamento completo.</li>
+      <li>Op&ccedil;&atilde;o mais cara.</li>
+      <li>A cobran&ccedil;a &eacute; por host.</li>
+    </ul>
+    </li>
+    <li>Inst&acirc;ncias Dedicadas:
+    <ul>
+      <li>Inst&acirc;ncias virtualizadas em hardware apenas para voc&ecirc;.</li>
+      <li>Tamb&eacute;m usa servidores EC2 fisicamente dedicados.</li>
+      <li>N&atilde;o fornece a visibilidade e os controles adicionais dos hosts dedicados (por exemplo, como as inst&acirc;ncias s&atilde;o colocadas em um servidor).</li>
+      <li>A cobran&ccedil;a &eacute; por inst&acirc;ncia.</li>
+      <li>Pode compartilhar hardware com outras inst&acirc;ncias n&atilde;o dedicadas na mesma conta.</li>
+      <li>Dispon&iacute;vel como On-Demand, Inst&acirc;ncias Reservadas e Inst&acirc;ncias Spot.</li>
+      <li>Custo adicional de $2 por hora por regi&atilde;o.</li>
+    </ul>
+    </li>
+    <li>Planos de Economia (Savings Plans):
+    <ul>
+      <li>Os Savings Plans s&atilde;o um modelo de pre&ccedil;os flex&iacute;vel que oferece economias de at&eacute; 72% no uso de computa&ccedil;&atilde;o da AWS.</li>
+      <li>Este modelo de pre&ccedil;os oferece pre&ccedil;os mais baixos nas inst&acirc;ncias Amazon EC2, independentemente da fam&iacute;lia da inst&acirc;ncia, tamanho, sistema operacional, ten&ecirc;ncia ou regi&atilde;o da AWS.</li>
+      <li>Tamb&eacute;m se aplica ao uso do AWS Fargate e AWS Lambda.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Tipos de Inst&acirc;ncia:</strong> O Amazon EC2 oferece uma ampla sele&ccedil;&atilde;o de tipos de inst&acirc;ncia otimizados para se adequar a diferentes casos de uso.</p>
+  
+  <p>Os tipos de inst&acirc;ncia compreendem diversas combina&ccedil;&otilde;es de CPU, mem&oacute;ria, armazenamento e capacidade de rede e oferecem a flexibilidade de escolher a mistura apropriada de recursos para suas aplica&ccedil;&otilde;es.</p>
+  
+  <p>Cada tipo de inst&acirc;ncia inclui um ou mais tamanhos de inst&acirc;ncia, permitindo dimensionar seus recursos de acordo com os requisitos de sua carga de trabalho-alvo.</p>
+  
+  <p><strong>Tabela de Tipos de Inst&acirc;ncia:</strong></p>
+  
+  <table align="center" border="1">
+    <thead>
+      <tr>
+        <th>Fam&iacute;lia</th>
+        <th>Sugest&atilde;o</th>
+        <th>Prop&oacute;sito/Design</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center">D</td>
+        <td style="text-align:center">DATA</td>
+        <td>Uso intensivo de dados (por exemplo, servidores de arquivos, DWs)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">R</td>
+        <td style="text-align:center">RAM</td>
+        <td>Otimizado para mem&oacute;ria</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">M</td>
+        <td style="text-align:center">MAIN</td>
+        <td>Uso geral (por exemplo, servidores de aplicativos)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">C</td>
+        <td style="text-align:center">COMPUTE</td>
+        <td>Otimizado para computa&ccedil;&atilde;o</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">G</td>
+        <td style="text-align:center">GRAPHICS</td>
+        <td>Cargas de trabalho intensivas em gr&aacute;ficos</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">I</td>
+        <td style="text-align:center">IOPS</td>
+        <td>Otimizado para E/S de armazenamento (por exemplo, NoSQL, DWs)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">F</td>
+        <td style="text-align:center">FAST</td>
+        <td>Acelera&ccedil;&atilde;o de hardware FPGA para aplicativos</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">T</td>
+        <td style="text-align:center">CHEAP</td>
+        <td>(pense em T2) Custo mais baixo (por exemplo, T2-micro)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">P</td>
+        <td style="text-align:center">GPU</td>
+        <td>Requisitos de GPU</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">X</td>
+        <td style="text-align:center">EXTREME RAM</td>
+        <td>Uso intensivo de mem&oacute;ria (por exemplo, SAP HANA, Apache Spark)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">U</td>
+        <td style="text-align:center">HIGH MEMORY</td>
+        <td>Alto uso de mem&oacute;ria e desempenho bare metal - usado para bancos de dados em mem&oacute;ria, incluindo SAP HANA</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">Z</td>
+        <td style="text-align:center">HIGH COMPUTE &amp; MEMORY</td>
+        <td>CPU r&aacute;pido, alta mem&oacute;ria e SSDs NVMe baseados - usado quando &eacute; necess&aacute;ria alta performance global</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">H</td>
+        <td style="text-align:center">HIGH DISK THROUGHPUT</td>
+        <td>At&eacute; 16 TB de armazenamento local baseado em HDD</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  
+  <p>&nbsp;</p>
+  
+  <hr />
+  <p><strong>Amazon Elastic Container Service (ECS):</strong> O Amazon Elastic Container Service (ECS) &eacute; outro produto na categoria AWS Compute. Ele fornece um servi&ccedil;o de gerenciamento de cont&ecirc;iner altamente escal&aacute;vel e de alto desempenho que suporta cont&ecirc;ineres Docker e permite executar facilmente aplicativos em um cluster gerenciado de inst&acirc;ncias Amazon EC2.</p>
+  
+  <p>O Amazon ECS elimina a necessidade de instalar, operar e dimensionar sua pr&oacute;pria infraestrutura de gerenciamento de cluster.</p>
+  
+  <p>Usando chamadas de API, voc&ecirc; pode iniciar e interromper aplicativos habilitados para cont&ecirc;ineres, consultar o estado completo dos clusters e acessar muitos recursos familiares, como grupos de seguran&ccedil;a, balanceamento de carga el&aacute;stico, volumes EBS e fun&ccedil;&otilde;es IAM.</p>
+  
+  <p>O Amazon ECS pode ser usado para agendar a coloca&ccedil;&atilde;o de cont&ecirc;ineres em clusters com base nas necessidades de recursos e nos requisitos de disponibilidade.</p>
+  
+  <p>Um tipo de lan&ccedil;amento do Amazon ECS determina o tipo de infraestrutura em que suas tarefas e servi&ccedil;os s&atilde;o hospedados.</p>
+  
+  <p>Existem dois tipos de lan&ccedil;amento, e a tabela abaixo descreve algumas das diferen&ccedil;as entre os dois tipos de lan&ccedil;amento:</p>
+  
+  <table align="center" border="1" style="width:100%">
+    <thead>
+      <tr>
+        <th>Amazon EC2</th>
+        <th>Amazon Fargate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Voc&ecirc; provisiona explicitamente inst&acirc;ncias EC2</td>
+        <td>O plano de controle solicita recursos e o Fargate provisiona automaticamente</td>
+      </tr>
+      <tr>
+        <td>Voc&ecirc; &eacute; respons&aacute;vel pela atualiza&ccedil;&atilde;o, patching, cuidado do pool EC2</td>
+        <td>O Fargate provisiona computa&ccedil;&atilde;o conforme necess&aacute;rio</td>
+      </tr>
+      <tr>
+        <td>Voc&ecirc; deve lidar com a otimiza&ccedil;&atilde;o do cluster</td>
+        <td>O Fargate lida com a otimiza&ccedil;&atilde;o do cluster</td>
+      </tr>
+      <tr>
+        <td>Mais controle granular sobre a infraestrutura</td>
+        <td>Controle limitado, pois a infraestrutura &eacute; automatizada</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>O Registro de Cont&ecirc;iner El&aacute;stico (ECR) &eacute; um servi&ccedil;o gerenciado da AWS Docker Registry para armazenar, gerenciar e implantar imagens Docker.</p>
+  
+  <p>N&atilde;o h&aacute; custo adicional para o Amazon ECS. Voc&ecirc; paga pelos recursos da AWS (por exemplo, inst&acirc;ncias EC2 ou volumes EBS) que cria para armazenar e executar sua aplica&ccedil;&atilde;o.</p>
+  
+  <p>O Amazon ECR &eacute; integrado ao Amazon EC2 Container Service (ECS).</p>
+  
+  <p>Com o Amazon ECR, n&atilde;o h&aacute; taxas antecipadas ou compromissos. Voc&ecirc; paga apenas pela quantidade de dados armazenados em seus reposit&oacute;rios e pela transfer&ecirc;ncia de dados para a Internet.</p>
+  
+  <hr />
+  <p><strong>AWS Lambda</strong></p>
+  
+  <p>AWS Lambda &eacute; uma tecnologia de computa&ccedil;&atilde;o sem servidor que permite executar c&oacute;digo sem provisionar ou gerenciar servidores.</p>
+  
+  <p>O AWS Lambda executa c&oacute;digo apenas quando necess&aacute;rio e dimensiona automaticamente.</p>
+  
+  <p>Voc&ecirc; paga apenas pelo tempo de computa&ccedil;&atilde;o que consome (n&atilde;o paga nada quando seu c&oacute;digo n&atilde;o est&aacute; em execu&ccedil;&atilde;o).</p>
+  
+  <p><strong>Benef&iacute;cios do AWS Lambda:</strong></p>
+  
+  <ul>
+    <li>Sem servidores para gerenciar.</li>
+    <li>Escala cont&iacute;nua.</li>
+    <li>Faturamento por milissegundos.</li>
+    <li>Integra-se com quase todos os outros servi&ccedil;os da AWS.</li>
+  </ul>
+  
+  <p><strong>Principais casos de uso para o AWS Lambda:</strong></p>
+  
+  <ul>
+    <li>Processamento de dados.</li>
+    <li>Processamento de arquivos em tempo real.</li>
+    <li>Processamento de fluxos em tempo real.</li>
+    <li>Constru&ccedil;&atilde;o de back-ends sem servidor para solicita&ccedil;&otilde;es web, m&oacute;veis, IoT e API de terceiros.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Amazon LightSail</strong></p>
+  
+  <p>O Amazon LightSail &eacute; um dos servi&ccedil;os mais recentes na su&iacute;te de produtos AWS Compute. &Eacute; ideal para usu&aacute;rios que n&atilde;o t&ecirc;m uma experi&ecirc;ncia t&eacute;cnica profunda na AWS, pois torna muito f&aacute;cil provisionar servi&ccedil;os de computa&ccedil;&atilde;o.</p>
+  
+  <p>O Amazon LightSail fornece aos desenvolvedores capacidade e recursos de computa&ccedil;&atilde;o, armazenamento e rede para implantar e gerenciar sites, aplicativos da web e bancos de dados na nuvem.</p>
+  
+  <p>O Amazon LightSail inclui tudo o que voc&ecirc; precisa para lan&ccedil;ar seu projeto rapidamente - uma m&aacute;quina virtual, armazenamento baseado em SSD, transfer&ecirc;ncia de dados, gerenciamento de DNS e um IP est&aacute;tico.</p>
+  
+  <p>O Amazon LightSail fornece servidores virtuais pr&eacute;-configurados (inst&acirc;ncias) que incluem tudo o que &eacute; necess&aacute;rio para implantar um aplicativo ou criar um banco de dados.</p>
+  
+  <p>A infraestrutura subjacente e o sistema operacional s&atilde;o gerenciados pelo Amazon LightSail.</p>
+  
+  <p>Melhor adequado para projetos que exigem algumas dezenas de inst&acirc;ncias ou menos.</p>
+  
+  <p>Fornece uma interface de gerenciamento simples.</p>
+  
+  <p>Bom para blogs, sites, aplicativos da web, com&eacute;rcio eletr&ocirc;nico, etc.</p>
+  
+  <p>Pode implantar balanceadores de carga e anexar armazenamento em bloco.</p>
+  
+  <p>API p&uacute;blica.</p>
+  
+  <p>Limitado a 20 inst&acirc;ncias do Amazon LightSail, 5 IPs est&aacute;ticos, 3 zonas DNS, 20 TB de armazenamento em bloco, 40 bancos de dados e 5 balanceadores de carga por conta.</p>
+  
+  <p>At&eacute; 20 certificados por ano civil.</p>
+  
+  <p>Pode se conectar entre si e a outros recursos da AWS atrav&eacute;s da Internet p&uacute;blica e de rede privada (VPC peering).</p>
+  
+  <p>Os modelos de aplicativos incluem WordPress, WordPress Multisite, Drupal, Joomla !, Magento, Redmine, LAMP, Nginx (LEMP), MEAN, Node.js e muito mais.</p>
+  
+  <p>Atualmente, o Amazon LightSail suporta 6 distribui&ccedil;&otilde;es Linux ou semelhantes ao Unix: Amazon Linux, CentOS, Debian, FreeBSD, OpenSUSE e Ubuntu, bem como 2 vers&otilde;es do Windows Server: 2012 R2 e 2016.</p>
+  
+  <hr />
+  <p><strong>Bancos de Dados do Amazon LightSail</strong></p>
+  
+  <p>Os bancos de dados do Amazon LightSail s&atilde;o inst&acirc;ncias dedicadas &agrave; execu&ccedil;&atilde;o de bancos de dados.</p>
+  
+  <p>Um banco de dados do Amazon LightSail pode conter v&aacute;rios bancos de dados criados pelo usu&aacute;rio, e voc&ecirc; pode acess&aacute;-lo usando as mesmas ferramentas e aplicativos que voc&ecirc; usa com um banco de dados independente.</p>
+  
+  <p>Os bancos de dados gerenciados do Amazon LightSail oferecem uma maneira f&aacute;cil e de baixa manuten&ccedil;&atilde;o de armazenar seus dados na nuvem.</p>
+  
+  <p>O Amazon LightSail gerencia uma variedade de atividades de manuten&ccedil;&atilde;o e seguran&ccedil;a para o seu banco de dados e sua infraestrutura subjacente.</p>
+  
+  <p>O Amazon LightSail faz automaticamente backup do seu banco de dados e permite a restaura&ccedil;&atilde;o em qualquer ponto nos &uacute;ltimos 7 dias usando a ferramenta de restaura&ccedil;&atilde;o de banco de dados.</p>
+  
+  <p>Os bancos de dados do Amazon LightSail suportam as vers&otilde;es principais mais recentes do MySQL. Atualmente, essas vers&otilde;es s&atilde;o 5.6, 5.7 e 8.0 para o MySQL.</p>
+  
+  <p>Os bancos de dados do Amazon LightSail est&atilde;o dispon&iacute;veis nos planos Standard e High Availability.</p>
+  
+  <p>Os planos de Alta Disponibilidade adicionam redund&acirc;ncia e durabilidade ao seu banco de dados, criando automaticamente um banco de dados de reserva em uma zona de disponibilidade separada.</p>
+  
+  <p>O Amazon LightSail &eacute; muito acess&iacute;vel.</p>
+  
+  <p>Os planos do Amazon LightSail s&atilde;o cobrados com base em uma taxa hor&aacute;ria sob demanda, ent&atilde;o voc&ecirc; paga apenas pelo que usa.</p>
+  
+  <p>Para cada plano do Amazon LightSail que voc&ecirc; usa, cobramos o pre&ccedil;o fixo por hora, at&eacute; o custo m&aacute;ximo do plano mensal.</p>
+  
+  <hr />
+  <p><strong>AWS Elastic Beanstalk</strong></p>
+  
+  <p>O AWS Elastic Beanstalk &eacute; a maneira mais r&aacute;pida e simples de colocar aplicativos da web em funcionamento na AWS.</p>
+  
+  <p>Os desenvolvedores simplesmente fazem o upload do c&oacute;digo de sua aplica&ccedil;&atilde;o, e o servi&ccedil;o lida automaticamente com todos os detalhes, como provisionamento de recursos, balanceamento de carga, dimensionamento autom&aacute;tico e monitoramento.</p>
+  
+  <p>O Elastic Beanstalk &eacute; ideal se voc&ecirc; tiver uma aplica&ccedil;&atilde;o web em PHP, Java, Python, Ruby, Node.js, .NET, Go ou Docker.</p>
+  
+  <p>O Elastic Beanstalk usa servi&ccedil;os principais da AWS, como Amazon EC2, Amazon Elastic Container Service (Amazon ECS), Auto Scaling e Elastic Load Balancing para oferecer suporte facilmente a aplicativos que precisam escalar para atender a milh&otilde;es de usu&aacute;rios.</p>
+  
+  <hr />
+  <p><strong>AWS Batch</strong></p>
+  
+  <p>O AWS Batch permite que desenvolvedores, cientistas e engenheiros executem facilmente centenas de milhares de trabalhos de computa&ccedil;&atilde;o em lote de maneira f&aacute;cil e eficiente na AWS.</p>
+  
+  <p>O AWS Batch provisiona dinamicamente a quantidade e o tipo ideais de recursos de computa&ccedil;&atilde;o (por exemplo, inst&acirc;ncias otimizadas para CPU ou mem&oacute;ria) com base no volume e nos requisitos espec&iacute;ficos de recursos dos trabalhos em lote enviados.</p>
+  
+  <p>Com o AWS Batch, voc&ecirc; simplesmente empacota o c&oacute;digo para seus trabalhos em lote, especifica suas depend&ecirc;ncias e envia seu trabalho em lote usando o Console de Gerenciamento da AWS, CLIs ou SDKs.</p>
+  
+  <p>O AWS Batch permite que voc&ecirc; especifique par&acirc;metros de execu&ccedil;&atilde;o e depend&ecirc;ncias de trabalhos e facilita a integra&ccedil;&atilde;o com uma ampla variedade de motores de fluxo de trabalho de computa&ccedil;&atilde;o em lote populares e linguagens (por exemplo, Pegasus WMS, Luigi e AWS Step Functions).</p>
+  
+  <p>O AWS Batch provisiona e dimensiona de maneira eficiente e din&acirc;mica inst&acirc;ncias Amazon EC2 e Spot Instances com base nos requisitos de seus trabalhos. O AWS Batch fornece filas de trabalho padr&atilde;o e defini&ccedil;&otilde;es de ambiente de computa&ccedil;&atilde;o que permitem que voc&ecirc; comece rapidamente.</p>
+  
+
+</div>
+
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

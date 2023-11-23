@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">GUIA DE ESTUDO CLOUD PRACTITIONER CLF-C02</h2>
+        <div class="uk-margin-medium-top uk-child-width-1-2@m uk-grid-match-" data-uk-grid>
+
+          <div class analise>
+            <div id="Análise" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="analise.html">
+                    <img data-src="imagens/servicos/analise.jpg" alt="Análise" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="analise.html">Análise</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class monitoria>
+            <div id="Monitoria" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="monitoria.html">
+                    <img data-src="imagens/servicos/monitoria.jpg" alt="Monitoria" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="monitoria.html">Monitoria</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class cdn>
+            <div id="CDN" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="cdn.html">
+                    <img data-src="imagens/servicos/rede.jpg" alt="CDN" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="cdn.html">CDN e DNS</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class conceito nuvem>
+            <div id="Conceito" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="conceito-nuvem.html">
+                    <img data-src="imagens/servicos/conceito.jpg" alt="Conceito da Nuvem" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="conceito-nuvem.html">Conceito da Nuvem</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class armazenamento>
+            <div id="Análise" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="armazenamento.html">
+                    <img data-src="imagens/servicos/armazenamento.jpg" alt="Armazenamento" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="armazenamento.html">Armazenamento</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class responsabilidade compartilhada>
+            <div id="Responsabilidade" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="responsabilidade-compartilhada.html">
+                    <img data-src="imagens/servicos/responsabilidade.jpg" alt="Responsabilidade Compartilhada" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="responsabilidade-compartilhada.html" >Responsabilidade
+                        Compartilhada</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class seguranca>
+            <div id="Segurança" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="seguranca.html">
+                    <img data-src="imagens/servicos/seguranca.jpg" alt="Segurança" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="seguranca.html">Segurança</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class rede>
+            <div id="Rede" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="rede.html">
+                    <img data-src="imagens/servicos/rede.jpg" alt="Rede" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="rede.html">Rede & Entrega de Conteúdo</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class IAM>
+            <div id="IAM" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="iam.html">
+                    <img data-src="imagens/servicos/iam.jpg" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="iam.html">IAM</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class infraestrutura>
+            <div id="Infraestrutura" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="infraestrutura.html">
+                    <img data-src="imagens/servicos/infraestrutura.jpg" alt="Infraestrutura" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="infraestrutura.html">Infraestrutura Global da AWS</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class banco de dados>
+            <div id="Banco de Dados" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="banco.html">
+                    <img data-src="imagens/servicos/database.jpg" alt="Banco de Dados" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="banco.html">Banco de Dados</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class computacao>
+            <div id="Computação" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="computacao.html">
+                    <img data-src="imagens/servicos/computacao.jpg" alt="Computação" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="computacao.html">Computação</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class servicos gerenciamento>
+            <div id="Gerenciamento" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="gerenciamento.html">
+                    <img data-src="imagens/servicos/servicos_adicionais.jpg" alt="Serviços de Gerenciamento da Nuvem AWS" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="gerenciamento.html">Serviços de Gerenciamento da Nuvem AWS</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class preco e faturamento>
+            <div id="Preços" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="financas.html">
+                    <img data-src="imagens/servicos/financas.jpg" alt="Preços" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="financas.html">Preço e Faturamento</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class elb>
+            <div id="ELB" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="elb.html">
+                    <img data-src="imagens/servicos/elb.jpg" alt="ELB" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="elb.html">Auto Scaling Group e Elastic Load Balancer</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class arquitetura>
+            <div id="Arquitetura" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="arquitetura.html">
+                    <img data-src="imagens/servicos/arquitetura.jpg" alt="Arquitetura" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="arquitetura.html">Arquitetura AWS</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class integracao aplicacao>
+            <div id="Aplicação" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="aplicacao.html">
+                    <img data-src="imagens/servicos/aplicacao.jpg" alt="Aplicação" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="aplicacao.html">Aplicação</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class ml>
+            <div id="ML" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="ml.html">
+                    <img data-src="imagens/servicos/ml.jpg" alt="ML" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="ml.html">Aprendizado de Máquina</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class dev>
+            <div id="DEV" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="developer.html">
+                    <img data-src="imagens/servicos/desenvolvimento.jpg" alt="Developer" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="developer.html">Desenvolvimento</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class servicos extras>
+            <div id="Serviço Extra" class="uk-card uk-card-small uk-card-default" style>
+              <div class="uk-grid-collapse" data-uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-1-4 uk-width-1-3@l">
+                  <a href="servicos-extra.html">
+                    <img data-src="imagens/servicos/servicos_extras.jpg" alt="Serviço Extra" data-uk-img>
+                  </a>
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-body uk-width-1-4 uk-width-1-3@l"
+                    style="display: flex; flex-direction: column; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                    <h3 class="uk-margin-remove"><a href="servicos-extra.html">Serviços Extras AWS</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

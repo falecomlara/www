@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">ARQUITETURA AWS</h2>
+
+<div>
+
+  <p>Esse pode ser um assunto dif&iacute;cil, especialmente se voc&ecirc; n&atilde;o tem uma forma&ccedil;&atilde;o t&eacute;cnica, mas &eacute; crucial estar familiarizado com os conceitos em um n&iacute;vel elevado, pois perguntas sobre esse tema surgem no exame.</p>
+
+  <p>Por isso &eacute; importante que voc&ecirc; inicie lendo sobre os&nbsp;<a href="https://aws.amazon.com/pt/architecture/well-architected/" target="_new">6 Pilares do AWS Well-Architected Framework</a></p>
+  
+  <hr />
+  <p><strong>Diferen&ccedil;as entre Computa&ccedil;&atilde;o em Nuvem e Ambiente Tradicional:</strong></p>
+  
+  <ol>
+    <li>
+    <p><strong>Ativos de TI tornam-se recursos program&aacute;veis:</strong></p>
+  
+    <ul>
+      <li>Na AWS, servidores, bancos de dados, armazenamento e componentes de aplicativos de n&iacute;vel superior podem ser instanciados em segundos.</li>
+      <li>Esses recursos podem ser tratados como tempor&aacute;rios e descart&aacute;veis, livres das restri&ccedil;&otilde;es de uma infraestrutura de TI fixa e finita.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Capacidade global, dispon&iacute;vel e ilimitada:</strong></p>
+  
+    <ul>
+      <li>Utilizando a infraestrutura global da AWS, &eacute; poss&iacute;vel implantar sua aplica&ccedil;&atilde;o na Regi&atilde;o AWS que melhor atenda &agrave;s suas necessidades.</li>
+      <li>Para aplica&ccedil;&otilde;es globais, a lat&ecirc;ncia para usu&aacute;rios finais ao redor do mundo pode ser reduzida usando a rede de entrega de conte&uacute;do Amazon CloudFront.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Servi&ccedil;os gerenciados em n&iacute;veis mais altos:</strong></p>
+  
+    <ul>
+      <li>Os clientes da AWS t&ecirc;m acesso a um amplo conjunto de servi&ccedil;os de computa&ccedil;&atilde;o, armazenamento, banco de dados, an&aacute;lise, aplicativos e implanta&ccedil;&atilde;o.</li>
+      <li>Esses servi&ccedil;os est&atilde;o instantaneamente dispon&iacute;veis para desenvolvedores, reduzindo a depend&ecirc;ncia de habilidades especializadas internas e permitindo que as organiza&ccedil;&otilde;es entreguem novas solu&ccedil;&otilde;es mais rapidamente.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Seguran&ccedil;a incorporada:</strong></p>
+  
+    <ul>
+      <li>A nuvem AWS oferece capacidades de governan&ccedil;a que possibilitam o monitoramento cont&iacute;nuo de mudan&ccedil;as de configura&ccedil;&atilde;o em seus recursos de TI.</li>
+      <li>Como os ativos da AWS s&atilde;o recursos program&aacute;veis, sua pol&iacute;tica de seguran&ccedil;a pode ser formalizada e incorporada ao design de sua infraestrutura.</li>
+    </ul>
+    </li>
+  </ol>
+  
+  <hr />
+  <p><strong>Princ&iacute;pios de Design: Escalabilidade</strong></p>
+  
+  <ul>
+    <li>
+    <p><strong>Escalabilidade:</strong></p>
+  
+    <ul>
+      <li>Sistemas que esperam crescer ao longo do tempo precisam ser constru&iacute;dos sobre uma arquitetura escal&aacute;vel.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Escalonamento Vertical:</strong></p>
+  
+    <ul>
+      <li>O escalonamento vertical ocorre por meio do aumento das especifica&ccedil;&otilde;es de um recurso individual (por exemplo, aprimorando um servidor com um disco r&iacute;gido maior ou uma CPU mais r&aacute;pida).</li>
+      <li>Na Amazon EC2, isso pode ser facilmente alcan&ccedil;ado interrompendo uma inst&acirc;ncia e redimensionando-a para um tipo de inst&acirc;ncia que tenha mais RAM, CPU, IO ou capacidades de rede.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Escalonamento Horizontal:</strong></p>
+  
+    <ul>
+      <li>O escalonamento horizontal ocorre por meio do aumento do n&uacute;mero de recursos (por exemplo, adicionando mais discos r&iacute;gidos a uma matriz de armazenamento ou adicionando mais servidores para dar suporte a uma aplica&ccedil;&atilde;o).</li>
+      <li>Isso &eacute; uma excelente maneira de construir aplica&ccedil;&otilde;es em escala na internet que aproveitam a elasticidade da computa&ccedil;&atilde;o em nuvem.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Diferen&ccedil;as entre Escalonamento Horizontal e Vertical:</strong></p>
+  
+  <table align="center" border="1" style="width:100%">
+    <thead>
+      <tr>
+        <th>Escalonamento Horizontal</th>
+        <th>Escalonamento Vertical</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adicionar mais inst&acirc;ncias &agrave; medida que a demanda aumenta</td>
+        <td>Adicionar mais CPU e/ou RAM &agrave;s inst&acirc;ncias existentes &agrave; medida que a demanda aumenta</td>
+      </tr>
+      <tr>
+        <td>N&atilde;o requer tempo de inatividade para aumentar ou diminuir</td>
+        <td>Requer uma reinicializa&ccedil;&atilde;o para aumentar ou diminuir</td>
+      </tr>
+      <tr>
+        <td>Autom&aacute;tico usando servi&ccedil;os como AWS Auto-Scaling</td>
+        <td>Requer script ou ferramentas de automa&ccedil;&atilde;o para automatizar</td>
+      </tr>
+      <tr>
+        <td>Escalabilidade ilimitada</td>
+        <td>Escalabilidade limitada pelo tamanho m&aacute;ximo da inst&acirc;ncia</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>&nbsp;</p>
+  
+  <hr />
+  <p><strong>Aplica&ccedil;&otilde;es Sem Estado:</strong></p>
+  
+  <p>Uma aplica&ccedil;&atilde;o sem estado n&atilde;o requer conhecimento de intera&ccedil;&otilde;es anteriores e n&atilde;o armazena informa&ccedil;&otilde;es de sess&atilde;o. Isso permite escalabilidade horizontal, j&aacute; que qualquer solicita&ccedil;&atilde;o pode ser atendida por qualquer dos recursos computacionais dispon&iacute;veis (por exemplo, inst&acirc;ncias EC2, fun&ccedil;&otilde;es AWS Lambda).</p>
+  
+  <p><strong>Componentes Sem Estado:</strong></p>
+  
+  <ul>
+    <li>
+    <p>A maioria das aplica&ccedil;&otilde;es precisa manter informa&ccedil;&otilde;es de estado.</p>
+    </li>
+    <li>
+    <p>Por exemplo, as aplica&ccedil;&otilde;es web precisam rastrear se um usu&aacute;rio est&aacute; logado, caso contr&aacute;rio, podem apresentar conte&uacute;do personalizado com base em a&ccedil;&otilde;es anteriores.</p>
+    </li>
+    <li>
+    <p>Aplica&ccedil;&otilde;es web podem usar cookies HTTP para armazenar informa&ccedil;&otilde;es sobre uma sess&atilde;o no navegador do cliente (por exemplo, itens no carrinho de compras).</p>
+    </li>
+    <li>
+    <p>Considere armazenar apenas um identificador de sess&atilde;o &uacute;nico em um cookie HTTP e armazenar informa&ccedil;&otilde;es de sess&atilde;o mais detalhadas no servidor.</p>
+    </li>
+    <li>
+    <p><strong>Componentes Sem Estado:</strong></p>
+  
+    <ul>
+      <li>DynamoDB &eacute; frequentemente utilizado para armazenar o estado da sess&atilde;o para manter uma arquitetura sem estado.</li>
+      <li>Para arquivos maiores, um sistema de armazenamento compartilhado como S3 ou EFS pode ser usado.</li>
+      <li>SWF pode ser usado para fluxos de trabalho com v&aacute;rias etapas.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <p><strong>Componentes Com Estado:</strong></p>
+  
+  <ul>
+    <li>Bancos de dados s&atilde;o com estado.</li>
+    <li>Muitas aplica&ccedil;&otilde;es legadas s&atilde;o com estado.</li>
+    <li>O balanceamento de carga com afinidade de sess&atilde;o pode ser usado para escalonamento horizontal de componentes com estado.</li>
+    <li>No entanto, a afinidade de sess&atilde;o n&atilde;o &eacute; garantida, e as sess&otilde;es existentes n&atilde;o se beneficiam dos n&oacute;s rec&eacute;m-lan&ccedil;ados.</li>
+  </ul>
+  
+  <p><strong>Processamento Distribu&iacute;do:</strong></p>
+  
+  <p>Casos de uso que envolvem o processamento de grandes volumes de dados (por exemplo, qualquer coisa que n&atilde;o possa ser tratada por um &uacute;nico recurso computacional de maneira oportuna) requerem uma abordagem de processamento distribu&iacute;do.</p>
+  
+  <p>Ao dividir uma tarefa e seus dados em muitos fragmentos pequenos de trabalho, &eacute; poss&iacute;vel executar cada um deles em qualquer conjunto maior de recursos computacionais dispon&iacute;veis.</p>
+  
+  <hr />
+  <p><strong>Recursos Descart&aacute;veis em Vez de Servidores Fixos</strong></p>
+  
+  <p>Pense em servidores e outros componentes como recursos tempor&aacute;rios.</p>
+  
+  <p>Inicie quantos precisar e use-os apenas pelo tempo necess&aacute;rio.</p>
+  
+  <p>Um problema com servidores fixos e de longa dura&ccedil;&atilde;o &eacute; o &quot;desvio de configura&ccedil;&atilde;o&quot; (onde mudan&ccedil;as e patches de software s&atilde;o aplicados ao longo do tempo).</p>
+  
+  <p>Esse problema pode ser resolvido com o padr&atilde;o de &quot;infraestrutura imut&aacute;vel&quot;, onde um servidor nunca &eacute; atualizado, mas sim substitu&iacute;do por um novo conforme necess&aacute;rio.</p>
+  
+  <hr />
+  <p><strong>Instanciando Recursos de Computa&ccedil;&atilde;o:</strong></p>
+  
+  <p>Voc&ecirc; n&atilde;o quer configurar manualmente novos recursos com sua configura&ccedil;&atilde;o e c&oacute;digo.</p>
+  
+  <p>Use processos automatizados e repet&iacute;veis que evitem longos prazos e n&atilde;o sejam propensos a erros humanos.</p>
+  
+  <ul>
+    <li>
+    <p><strong>Inicializa&ccedil;&atilde;o:</strong></p>
+  
+    <ul>
+      <li>Execute a&ccedil;&otilde;es automatizadas de inicializa&ccedil;&atilde;o para modificar configura&ccedil;&otilde;es padr&atilde;o.</li>
+      <li>Isso inclui scripts que instalam software ou copiam dados para trazer esse recurso para um estado espec&iacute;fico.</li>
+      <li>Voc&ecirc; pode parametrizar detalhes de configura&ccedil;&atilde;o que variam entre ambientes diferentes.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Imagens Douradas:</strong></p>
+  
+    <ul>
+      <li>Alguns tipos de recursos podem ser iniciados a partir de uma imagem dourada.</li>
+      <li>Exemplos incluem inst&acirc;ncias EC2, inst&acirc;ncias RDS e volumes EBS.</li>
+      <li>Uma imagem dourada &eacute; uma captura de um estado espec&iacute;fico para esse recurso.</li>
+      <li>Comparado &agrave; inicializa&ccedil;&atilde;o, as imagens douradas proporcionam tempos de inicializa&ccedil;&atilde;o mais r&aacute;pidos e eliminam depend&ecirc;ncias de servi&ccedil;os de configura&ccedil;&atilde;o ou reposit&oacute;rios de terceiros.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Infraestrutura como C&oacute;digo:</strong></p>
+  
+    <ul>
+      <li>Os ativos da AWS s&atilde;o program&aacute;veis, ent&atilde;o voc&ecirc; pode aplicar t&eacute;cnicas, pr&aacute;ticas e ferramentas do desenvolvimento de software para tornar toda a sua infraestrutura reutiliz&aacute;vel, mantida, extens&iacute;vel e test&aacute;vel.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Automa&ccedil;&atilde;o:</strong></p>
+  
+  <p>Em uma infraestrutura de TI tradicional, frequentemente &eacute; necess&aacute;rio reagir manualmente a uma variedade de eventos.</p>
+  
+  <p>Ao implantar na AWS, h&aacute; muitas oportunidades para automa&ccedil;&atilde;o.</p>
+  
+  <p>Isso melhora tanto a estabilidade do seu sistema quanto a efici&ecirc;ncia de sua organiza&ccedil;&atilde;o.</p>
+  
+  <p>Exemplos de automa&ccedil;&otilde;es usando servi&ccedil;os da AWS incluem:</p>
+  
+  <ul>
+    <li>
+    <p><strong>AWS Elastic Beanstalk:</strong></p>
+  
+    <ul>
+      <li>A maneira mais r&aacute;pida e simples de colocar uma aplica&ccedil;&atilde;o em execu&ccedil;&atilde;o na AWS.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Amazon EC2 Auto Recovery:</strong></p>
+  
+    <ul>
+      <li>Voc&ecirc; pode criar um alarme do Amazon CloudWatch que monitora uma inst&acirc;ncia Amazon EC2 e a recupera automaticamente se ela ficar comprometida.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Auto Scaling:</strong></p>
+  
+    <ul>
+      <li>Com o Auto Scaling, voc&ecirc; pode manter a disponibilidade da aplica&ccedil;&atilde;o e dimensionar automaticamente sua capacidade Amazon EC2 de acordo com as condi&ccedil;&otilde;es que voc&ecirc; define.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Amazon CloudWatch Alarms:</strong></p>
+  
+    <ul>
+      <li>Voc&ecirc; pode criar um alarme do CloudWatch que envia uma mensagem do Amazon Simple Notification Service (Amazon SNS) quando uma m&eacute;trica espec&iacute;fica ultrapassa um limite especificado por um n&uacute;mero espec&iacute;fico de per&iacute;odos.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Amazon CloudWatch Events:</strong></p>
+  
+    <ul>
+      <li>O servi&ccedil;o CloudWatch entrega um fluxo quase em tempo real de eventos do sistema que descrevem altera&ccedil;&otilde;es nos recursos da AWS.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Eventos do Ciclo de Vida do AWS OpsWorks:</strong></p>
+  
+    <ul>
+      <li>O AWS OpsWorks suporta a configura&ccedil;&atilde;o cont&iacute;nua por meio de eventos do ciclo de vida que atualizam automaticamente a configura&ccedil;&atilde;o de suas inst&acirc;ncias para se adaptar a altera&ccedil;&otilde;es no ambiente.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Eventos Agendados do AWS Lambda:</strong></p>
+  
+    <ul>
+      <li>Esses eventos permitem criar uma fun&ccedil;&atilde;o Lambda e direcionar o AWS Lambda para execut&aacute;-la em uma programa&ccedil;&atilde;o regular.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Loose Coupling (Desvincula&ccedil;&atilde;o):</strong></p>
+  
+  <p>&Agrave; medida que a complexidade da aplica&ccedil;&atilde;o aumenta, uma caracter&iacute;stica desej&aacute;vel de um sistema de TI &eacute; que ele possa ser dividido em componentes menores e desvinculados.</p>
+  
+  <p>Isso significa que os sistemas de TI devem ser projetados de maneira a reduzir interdepend&ecirc;ncias &mdash; uma altera&ccedil;&atilde;o ou falha em um componente n&atilde;o deve se propagar para outros componentes.</p>
+  
+  <p>Princ&iacute;pios de design incluem:</p>
+  
+  <ul>
+    <li>
+    <p><strong>Interfaces bem definidas:</strong></p>
+  
+    <ul>
+      <li>Reduzem as interdepend&ecirc;ncias em um sistema, permitindo a intera&ccedil;&atilde;o apenas por meio de interfaces espec&iacute;ficas, agn&oacute;sticas &agrave; tecnologia (por exemplo, APIs RESTful).</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Descoberta de Servi&ccedil;os:</strong></p>
+  
+    <ul>
+      <li>Recursos diversos devem ter uma maneira de se descobrir sem conhecimento pr&eacute;vio da topologia da rede.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Integra&ccedil;&atilde;o Ass&iacute;ncrona:</strong></p>
+  
+    <ul>
+      <li>Esta &eacute; outra forma de desvincula&ccedil;&atilde;o, onde uma intera&ccedil;&atilde;o n&atilde;o precisa de uma resposta imediata (pense em filas SQS ou Kinesis).</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Falha Graciosa:</strong></p>
+  
+    <ul>
+      <li>Construa aplica&ccedil;&otilde;es de forma que lidem com falhas de maneira graciosa (reduza o impacto da falha e implemente tentativas).</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Servi&ccedil;os, N&atilde;o Servidores:</strong></p>
+  
+  <p>Com a infraestrutura de TI tradicional, as organiza&ccedil;&otilde;es precisam construir e operar uma ampla variedade de componentes tecnol&oacute;gicos.</p>
+  
+  <p>A AWS oferece um conjunto amplo de servi&ccedil;os de computa&ccedil;&atilde;o, armazenamento, banco de dados, an&aacute;lise, aplicativos e implanta&ccedil;&atilde;o que ajudam as organiza&ccedil;&otilde;es a se movimentarem mais rapidamente e a reduzirem os custos de TI.</p>
+  
+  <ul>
+    <li>
+    <p><strong>Servi&ccedil;os Gerenciados:</strong></p>
+  
+    <ul>
+      <li>Na AWS, h&aacute; um conjunto de servi&ccedil;os que oferecem blocos de constru&ccedil;&atilde;o que os desenvolvedores podem consumir para alimentar suas aplica&ccedil;&otilde;es.</li>
+      <li>Esses servi&ccedil;os gerenciados incluem bancos de dados, aprendizado de m&aacute;quina, an&aacute;lise, filas, pesquisa, email, notifica&ccedil;&otilde;es e muito mais.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Arquiteturas sem Servidor:</strong></p>
+  
+    <ul>
+      <li>Outra abordagem que pode reduzir a complexidade operacional da execu&ccedil;&atilde;o de aplica&ccedil;&otilde;es &eacute; a das arquiteturas sem servidor.</li>
+      <li>&Eacute; poss&iacute;vel construir servi&ccedil;os tanto orientados a eventos quanto s&iacute;ncronos para mobile, web, an&aacute;lise e Internet das Coisas (IoT) sem gerenciar qualquer infraestrutura de servidor.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Bancos de Dados:</strong></p>
+  
+  <p>Com a infraestrutura de TI tradicional, as organiza&ccedil;&otilde;es muitas vezes eram limitadas pelas tecnologias de banco de dados e armazenamento que podiam usar.</p>
+  
+  <p>Com a AWS, essas restri&ccedil;&otilde;es s&atilde;o removidas por servi&ccedil;os de banco de dados gerenciados que oferecem desempenho empresarial a um custo de c&oacute;digo aberto.</p>
+  
+  <p><strong>Bancos de Dados Relacionais:</strong></p>
+  
+  <p>Bancos de dados relacionais (frequentemente chamados de RDBS ou bancos de dados SQL) normalizam dados em estruturas tabulares bem definidas conhecidas como tabelas, que consistem em linhas e colunas.</p>
+  
+  <p>Eles oferecem uma linguagem de consulta poderosa, capacidades de indexa&ccedil;&atilde;o flex&iacute;veis, controles de integridade robustos e a capacidade de combinar dados de v&aacute;rias tabelas de maneira r&aacute;pida e eficiente.</p>
+  
+  <p>Amazon RDS &eacute; um servi&ccedil;o de banco de dados relacional.</p>
+  
+  <ul>
+    <li>
+    <p><strong>Escalabilidade:</strong></p>
+  
+    <ul>
+      <li>Bancos de dados relacionais podem escalar verticalmente (por exemplo, atualizando para uma inst&acirc;ncia de banco de dados RDS maior).</li>
+      <li>Para casos de uso intensivo em leitura, voc&ecirc; pode escalar horizontalmente usando r&eacute;plicas de leitura.</li>
+      <li>Para escalar a capacidade de grava&ccedil;&atilde;o al&eacute;m de uma &uacute;nica inst&acirc;ncia, &eacute; necess&aacute;ria a parti&ccedil;&atilde;o ou sharding dos dados.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Alta Disponibilidade:</strong></p>
+  
+    <ul>
+      <li>Para bancos de dados de produ&ccedil;&atilde;o, a Amazon recomenda o uso do RDS Multi-AZ, que cria uma c&oacute;pia de reserva replicada de forma s&iacute;ncrona em outra Zona de Disponibilidade.</li>
+      <li>Com o Multi-AZ, o RDS pode falhar para a r&eacute;plica de reserva sem interven&ccedil;&atilde;o administrativa.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Anti-Padr&otilde;es:</strong></p>
+  
+    <ul>
+      <li>Se sua aplica&ccedil;&atilde;o indexa e consulta principalmente dados sem a necessidade de jun&ccedil;&otilde;es ou transa&ccedil;&otilde;es complexas, considere um banco de dados NoSQL.</li>
+      <li>Se voc&ecirc; tem grandes arquivos bin&aacute;rios (&aacute;udio, v&iacute;deo e imagem), ser&aacute; mais eficiente armazenar os arquivos reais no S3 e manter apenas os metadados dos arquivos em seu banco de dados.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <p><strong>Bancos de Dados NoSQL:</strong></p>
+  
+  <p>NoSQL &eacute; um termo usado para descrever bancos de dados que trocam algumas das capacidades de consulta e transa&ccedil;&atilde;o de bancos de dados relacionais por um modelo de dados mais flex&iacute;vel que se dimensiona horizontalmente.</p>
+  
+  <p>Bancos de dados NoSQL utilizam uma variedade de modelos de dados, incluindo grafos, pares de chave-valor e documentos JSON.</p>
+  
+  <p>DynamoDB &eacute; o servi&ccedil;o de banco de dados NoSQL da Amazon.</p>
+  
+  <ul>
+    <li>
+    <p><strong>Escalabilidade:</strong></p>
+  
+    <ul>
+      <li>Motores de banco de dados NoSQL geralmente realizam particionamento de dados e replica&ccedil;&atilde;o para escalar horizontalmente tanto a leitura quanto a grava&ccedil;&atilde;o.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Alta Disponibilidade:</strong></p>
+  
+    <ul>
+      <li>DynamoDB replica dados de forma s&iacute;ncrona em tr&ecirc;s instala&ccedil;&otilde;es em uma regi&atilde;o AWS para toler&acirc;ncia a falhas.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Anti-Padr&otilde;es:</strong></p>
+  
+    <ul>
+      <li>Se seu esquema n&atilde;o puder ser desnormalizado e sua aplica&ccedil;&atilde;o precisar de jun&ccedil;&otilde;es ou transa&ccedil;&otilde;es complexas, considere um banco de dados relacional.</li>
+      <li>Se voc&ecirc; tiver grandes arquivos bin&aacute;rios (&aacute;udio, v&iacute;deo e imagem), considere armazenar os arquivos no Amazon S3 e manter apenas os metadados no seu banco de dados.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Data Warehouse (Armaz&eacute;m de Dados)</strong></p>
+  
+  <p>Um armaz&eacute;m de dados &eacute; um tipo especializado de banco de dados relacional, otimizado para an&aacute;lise e gera&ccedil;&atilde;o de relat&oacute;rios de grandes volumes de dados.</p>
+  
+  <p>Pode ser utilizado para combinar dados transacionais de fontes diversas, tornando-os dispon&iacute;veis para an&aacute;lise e tomada de decis&otilde;es.</p>
+  
+  <p>O Amazon Redshift &eacute; um servi&ccedil;o gerenciado de armaz&eacute;m de dados projetado para operar a menos de um d&eacute;cimo do custo de solu&ccedil;&otilde;es tradicionais.</p>
+  
+  <p><strong>Escalabilidade:</strong></p>
+  
+  <ul>
+    <li>O Amazon Redshift alcan&ccedil;a armazenamento eficiente e desempenho &oacute;timo de consulta por meio de processamento paralelo massivo (MPP), armazenamento de dados em colunas e esquemas de codifica&ccedil;&atilde;o de compress&atilde;o de dados direcionados.</li>
+    <li>&Eacute; especialmente adequado para cargas de trabalho anal&iacute;ticas e de gera&ccedil;&atilde;o de relat&oacute;rios em conjuntos de dados muito grandes.</li>
+  </ul>
+  
+  <p><strong>Alta Disponibilidade:</strong></p>
+  
+  <ul>
+    <li>O Redshift possui v&aacute;rias caracter&iacute;sticas que aprimoram a confiabilidade do cluster do seu armaz&eacute;m de dados.</li>
+    <li>Clusters de v&aacute;rios n&oacute;s replicam dados para outros n&oacute;s dentro do cluster.</li>
+    <li>Os dados s&atilde;o continuamente copiados para o S3.</li>
+    <li>O RedShift monitora continuamente a sa&uacute;de do cluster, re-replica dados de unidades com falha e substitui n&oacute;s conforme necess&aacute;rio.</li>
+  </ul>
+  
+  <p><strong>Anti-Padr&otilde;es:</strong></p>
+  
+  <ul>
+    <li>Por ser um sistema de gerenciamento de banco de dados relacional (RDBMS) baseado em SQL, o Amazon Redshift &eacute; compat&iacute;vel com outras aplica&ccedil;&otilde;es RDBMS e ferramentas de intelig&ecirc;ncia de neg&oacute;cios.</li>
+    <li>Embora o Amazon Redshift forne&ccedil;a funcionalidades de um RDBMS t&iacute;pico, incluindo fun&ccedil;&otilde;es de processamento de transa&ccedil;&otilde;es online (OLTP), n&atilde;o &eacute; projetado para essas cargas de trabalho.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Pesquisa</strong></p>
+  
+  <p>Aplica&ccedil;&otilde;es que requerem funcionalidades de pesquisa sofisticadas normalmente ultrapassar&atilde;o as capacidades de bancos de dados relacionais ou NoSQL.</p>
+  
+  <p>Um servi&ccedil;o de pesquisa pode ser usado para indexar e pesquisar formatos estruturados e de texto livre, e pode oferecer funcionalidades n&atilde;o dispon&iacute;veis em outros bancos de dados, como classifica&ccedil;&atilde;o personaliz&aacute;vel de resultados, facetamento para filtragem, sin&ocirc;nimos, stemming, etc.</p>
+  
+  <p><strong>Escalabilidade:</strong></p>
+  
+  <ul>
+    <li>Tanto o Amazon CloudSearch quanto o Amazon ES utilizam particionamento de dados e replica&ccedil;&atilde;o para escalar horizontalmente.</li>
+  </ul>
+  
+  <p><strong>Alta Disponibilidade:</strong></p>
+  
+  <ul>
+    <li>Ambos os servi&ccedil;os fornecem recursos que armazenam dados de forma redundante em Zonas de Disponibilidade.</li>
+  </ul>
+  
+  <hr />
+  <p><strong>Remo&ccedil;&atilde;o de Pontos &Uacute;nicos de Falha</strong></p>
+  
+  <p>Um sistema &eacute; altamente dispon&iacute;vel quando pode resistir &agrave; falha de um ou v&aacute;rios componentes.</p>
+  
+  <p>Automatize a recupera&ccedil;&atilde;o e reduza a interrup&ccedil;&atilde;o em cada camada de sua arquitetura.</p>
+  
+  <p><strong>Introdu&ccedil;&atilde;o de Redund&acirc;ncia</strong></p>
+  
+  <p>Pontos &uacute;nicos de falha podem ser removidos introduzindo redund&acirc;ncia.</p>
+  
+  <p>Na redund&acirc;ncia de espera, quando um recurso falha, a funcionalidade &eacute; recuperada em um recurso secund&aacute;rio usando um processo chamado failover, que normalmente leva algum tempo para ser conclu&iacute;do.</p>
+  
+  <p>Na redund&acirc;ncia ativa, as solicita&ccedil;&otilde;es s&atilde;o distribu&iacute;das para v&aacute;rios recursos de computa&ccedil;&atilde;o redundantes e, quando um deles falha, os demais podem simplesmente absorver uma parcela maior da carga de trabalho.</p>
+  
+  <p><strong>Detectar Falhas</strong></p>
+  
+  <p>Construa o m&aacute;ximo de automa&ccedil;&atilde;o poss&iacute;vel tanto na detec&ccedil;&atilde;o quanto na rea&ccedil;&atilde;o a falhas.</p>
+  
+  <p>Servi&ccedil;os como ELB e Route53 mascaram falhas direcionando o tr&aacute;fego para endpoints saud&aacute;veis.</p>
+  
+  <p>O Auto Scaling pode ser configurado para substituir automaticamente n&oacute;s n&atilde;o saud&aacute;veis.</p>
+  
+  <p>Voc&ecirc; tamb&eacute;m pode substituir n&oacute;s n&atilde;o saud&aacute;veis usando o auto-recuperamento do EC2, OpsWorks e Elastic Beanstalk.</p>
+  
+  <p><strong>Armazenamento Dur&aacute;vel de Dados</strong></p>
+  
+  <p>Projete sua arquitetura para proteger tanto a disponibilidade quanto a integridade dos dados.</p>
+  
+  <p>A replica&ccedil;&atilde;o de dados &eacute; a t&eacute;cnica que introduz c&oacute;pias redundantes de dados.</p>
+  
+  <p>Isso pode ajudar a escalar horizontalmente a capacidade de leitura, mas tamb&eacute;m aumenta a durabilidade e a disponibilidade dos dados.</p>
+  
+  <p>A replica&ccedil;&atilde;o pode ocorrer em alguns modos diferentes:</p>
+  
+  <ul>
+    <li>
+    <p><strong>Replica&ccedil;&atilde;o S&iacute;ncrona:</strong></p>
+  
+    <ul>
+      <li>Transa&ccedil;&otilde;es s&atilde;o confirmadas apenas ap&oacute;s os dados serem armazenados de forma dur&aacute;vel na inst&acirc;ncia prim&aacute;ria e na inst&acirc;ncia de r&eacute;plica. Pode ser usada para proteger a integridade dos dados (baixo RPO) e aumentar a capacidade de leitura (com consist&ecirc;ncia forte).</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Replica&ccedil;&atilde;o Ass&iacute;ncrona:</strong></p>
+  
+    <ul>
+      <li>Mudan&ccedil;as na inst&acirc;ncia prim&aacute;ria n&atilde;o s&atilde;o refletidas imediatamente em suas r&eacute;plicas. Pode ser usada para escalar horizontalmente a capacidade de leitura do sistema (com atraso na replica&ccedil;&atilde;o) e aumentar a durabilidade dos dados (com perda de alguns dados).</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Replica&ccedil;&atilde;o baseada em Qu&oacute;rum:</strong></p>
+  
+    <ul>
+      <li>Combina replica&ccedil;&atilde;o s&iacute;ncrona e ass&iacute;ncrona e &eacute; adequada para sistemas de banco de dados distribu&iacute;dos em grande escala.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Resili&ecirc;ncia Automatizada em M&uacute;ltiplos Data Centers</strong></p>
+  
+  <p>Com infraestrutura tradicional, a falha entre data centers &eacute; realizada usando um plano de recupera&ccedil;&atilde;o de desastres.</p>
+  
+  <p>Grandes dist&acirc;ncias entre data centers tornam a replica&ccedil;&atilde;o s&iacute;ncrona impratic&aacute;vel devido &agrave; lat&ecirc;ncia.</p>
+  
+  <p>As falhas geralmente resultam em perda de dados e processos caros de recupera&ccedil;&atilde;o de dados.</p>
+  
+  <p>Na AWS, &eacute; poss&iacute;vel adotar uma prote&ccedil;&atilde;o mais simples e eficiente contra esse tipo de falha.</p>
+  
+  <p>Cada regi&atilde;o da AWS cont&eacute;m locais distintos chamados Zonas de Disponibilidade (AZs).</p>
+  
+  <p>Cada AZ &eacute; projetada para ser isolada de falhas em outras AZs.</p>
+  
+  <p>Uma AZ &eacute; um data center e, em alguns casos, uma AZ consiste em v&aacute;rios data centers.</p>
+  
+  <p>AZs dentro de uma regi&atilde;o fornecem conectividade de rede barata e de baixa lat&ecirc;ncia para outras zonas na mesma regi&atilde;o.</p>
+  
+  <p>Isso permite replicar dados entre data centers de forma s&iacute;ncrona para que a falha possa ser automatizada e transparente para seus usu&aacute;rios.</p>
+  
+  <p><strong>Isolamento de Falhas e Escalonamento Horizontal Tradicional</strong></p>
+  
+  <p>Embora o padr&atilde;o de redund&acirc;ncia ativa seja &oacute;timo para equilibrar o tr&aacute;fego e lidar com interrup&ccedil;&otilde;es de inst&acirc;ncias ou Zonas de Disponibilidade, n&atilde;o &eacute; suficiente se houver algo prejudicial nas pr&oacute;prias solicita&ccedil;&otilde;es.</p>
+  
+  <p>Se uma solicita&ccedil;&atilde;o espec&iacute;fica desencadear um bug que fa&ccedil;a o sistema falhar, o chamador pode desencadear uma falha em cascata ao tentar repetidamente a mesma solicita&ccedil;&atilde;o em todas as inst&acirc;ncias.</p>
+  
+  <p>Uma melhoria de isolamento de falhas que voc&ecirc; pode fazer no escalonamento horizontal tradicional &eacute; chamada de sharding.</p>
+  
+  <p>Como a t&eacute;cnica tradicionalmente usada em sistemas de armazenamento de dados, em vez de espalhar o tr&aacute;fego de todos os clientes por todos os n&oacute;s, voc&ecirc; pode agrupar as inst&acirc;ncias em shards.</p>
+  
+  <p>Dessa forma, voc&ecirc; pode reduzir o impacto nos clientes em propor&ccedil;&atilde;o direta ao n&uacute;mero de shards que possui.</p>
+  
+  <p><strong>Otimiza&ccedil;&atilde;o de Custos</strong></p>
+  
+  <p>A simples mudan&ccedil;a de arquiteturas existentes para a nuvem permite que organiza&ccedil;&otilde;es reduzam despesas de capital e alcancem economias devido &agrave; escala oferecida pela AWS.</p>
+  
+  <p>Ao iterar e aproveitar mais recursos da AWS, h&aacute; oportunidades adicionais para criar arquiteturas na nuvem otimizadas para custos.</p>
+  
+  <p><strong>Dimensionamento Adequado:</strong></p>
+  
+  <ul>
+    <li>Em alguns casos, escolha o tipo mais barato que atenda aos requisitos de carga de trabalho.</li>
+    <li>Em outros casos, usar menos inst&acirc;ncias de um tipo maior pode resultar em menor custo total ou melhor desempenho.</li>
+    <li>Realize testes comparativos e selecione o tipo de inst&acirc;ncia certo, dependendo de como sua carga de trabalho utiliza CPU, RAM, rede, tamanho de armazenamento e E/S.</li>
+    <li>Reduza custos escolhendo a solu&ccedil;&atilde;o de armazenamento certa para suas necessidades, por exemplo:
+    <ul>
+      <li>S3 oferece diversas classes de armazenamento, incluindo Padr&atilde;o, Redu&ccedil;&atilde;o de Redund&acirc;ncia e Acesso Infrequente Padr&atilde;o.</li>
+      <li>EC2, RDS e ES suportam diferentes tipos de volume EBS (magn&eacute;tico, SSD de prop&oacute;sito geral, SSD com IOPS provisionado) que voc&ecirc; deve avaliar.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <p><strong>Elasticidade:</strong></p>
+  
+  <ul>
+    <li>Planeje implementar Auto Scaling para o maior n&uacute;mero poss&iacute;vel de cargas de trabalho do EC2, escalando horizontalmente quando necess&aacute;rio e diminuindo automaticamente para reduzir custos.</li>
+    <li>Automatize o desligamento de cargas de trabalho n&atilde;o produtivas quando n&atilde;o estiverem em uso.</li>
+    <li>Onde poss&iacute;vel, substitua cargas de trabalho do EC2 por servi&ccedil;os gerenciados da AWS que n&atilde;o exigem decis&otilde;es de capacidade, por exemplo:
+    <ul>
+      <li>ELB.</li>
+      <li>CloudFront.</li>
+      <li>SQS.</li>
+      <li>Kinesis Firehose.</li>
+      <li>Lambda.</li>
+      <li>SES.</li>
+      <li>CloudSearch.</li>
+      <li>Ou use servi&ccedil;os nos quais voc&ecirc; pode modificar a capacidade conforme necess&aacute;rio, por exemplo:</li>
+      <li>DynamoDB.</li>
+      <li>RDS.</li>
+      <li>Elasticsearch Service.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Aproveite a Variedade de Op&ccedil;&otilde;es de Compra:</strong></p>
+  
+  <ul>
+    <li>A precifica&ccedil;&atilde;o de inst&acirc;ncias On-Demand do EC2 oferece m&aacute;xima flexibilidade sem compromissos de longo prazo.</li>
+    <li>Existem mais duas maneiras de pagar por inst&acirc;ncias Amazon EC2 que podem ajudar a reduzir os gastos: Inst&acirc;ncias Reservadas e Inst&acirc;ncias Spot.</li>
+  </ul>
+  
+  <p><strong>Capacidade Reservada:</strong></p>
+  
+  <ul>
+    <li>
+    <p>As Inst&acirc;ncias Reservadas do EC2 permitem que voc&ecirc; reserve capacidade de computa&ccedil;&atilde;o da Amazon EC2 em troca de uma taxa hor&aacute;ria significativamente descontada em compara&ccedil;&atilde;o com a precifica&ccedil;&atilde;o On-Demand.</p>
+    </li>
+    <li>
+    <p>Isso &eacute; ideal para aplica&ccedil;&otilde;es com requisitos previs&iacute;veis m&iacute;nimos de capacidade.</p>
+    </li>
+  </ul>
+  
+  <p><strong>Inst&acirc;ncias Spot:</strong></p>
+  
+  <ul>
+    <li>
+    <p>Para cargas de trabalho menos est&aacute;veis, voc&ecirc; pode considerar o uso de Inst&acirc;ncias Spot.</p>
+    </li>
+    <li>
+    <p>As Inst&acirc;ncias Spot permitem que voc&ecirc; fa&ccedil;a lances por capacidade de computa&ccedil;&atilde;o EC2 ociosa.</p>
+    </li>
+    <li>
+    <p>Como as Inst&acirc;ncias Spot geralmente est&atilde;o dispon&iacute;veis com desconto em compara&ccedil;&atilde;o com a precifica&ccedil;&atilde;o On-Demand, voc&ecirc; pode reduzir significativamente o custo de execu&ccedil;&atilde;o de suas aplica&ccedil;&otilde;es.</p>
+    </li>
+    <li>
+    <p>As Inst&acirc;ncias Spot s&atilde;o ideais para cargas de trabalho com hor&aacute;rios flex&iacute;veis de in&iacute;cio e t&eacute;rmino.</p>
+    </li>
+    <li>
+    <p>Se o pre&ccedil;o do mercado Spot aumentar acima do seu lance, sua inst&acirc;ncia ser&aacute; encerrada automaticamente, e voc&ecirc; n&atilde;o ser&aacute; cobrado pela hora parcial em que sua inst&acirc;ncia foi executada.</p>
+    </li>
+    <li>
+    <p>Como resultado, as Inst&acirc;ncias Spot s&atilde;o &oacute;timas para cargas de trabalho que toleram interrup&ccedil;&otilde;es.</p>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Caching:</strong></p>
+  
+  <p>O caching &eacute; uma t&eacute;cnica que armazena dados previamente calculados para uso futuro, melhorando o desempenho da aplica&ccedil;&atilde;o e aumentando a efici&ecirc;ncia de custos.</p>
+  
+  <ul>
+    <li>
+    <p><strong>Caching de Dados de Aplicativos:</strong></p>
+  
+    <ul>
+      <li>As aplica&ccedil;&otilde;es podem ser projetadas para armazenar e recuperar informa&ccedil;&otilde;es de caches gerenciados em mem&oacute;ria, como resultados de consultas de banco de dados intensivas em I/O ou resultados de processamento intensivo computacional.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Caching de Borda:</strong></p>
+  
+    <ul>
+      <li>
+      <p>C&oacute;pias de conte&uacute;do est&aacute;tico e din&acirc;mico podem ser armazenadas no Amazon CloudFront, um servi&ccedil;o de entrega de conte&uacute;do (CDN) composto por v&aacute;rias localiza&ccedil;&otilde;es de borda ao redor do mundo.</p>
+      </li>
+      <li>
+      <p>O caching de borda permite que o conte&uacute;do seja servido por uma infraestrutura mais pr&oacute;xima dos espectadores, reduzindo a lat&ecirc;ncia e proporcionando taxas de transfer&ecirc;ncia de dados sustentadas e altas necess&aacute;rias para entregar objetos grandes e populares aos usu&aacute;rios finais em grande escala.</p>
+      </li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <p><strong>Seguran&ccedil;a:</strong></p>
+  
+  <p>A maioria das ferramentas e t&eacute;cnicas de seguran&ccedil;a que voc&ecirc; j&aacute; pode estar familiarizado em uma infraestrutura de TI tradicional pode ser usada na nuvem.</p>
+  
+  <p>Ao mesmo tempo, a AWS permite que voc&ecirc; melhore sua seguran&ccedil;a de v&aacute;rias maneiras.</p>
+  
+  <ul>
+    <li>A AWS &eacute; uma plataforma que permite formalizar o design de controles de seguran&ccedil;a na pr&oacute;pria plataforma.</li>
+  </ul>
+  
+  <p><strong>Utilize Recursos AWS para Defesa em Profundidade</strong></p>
+  
+  <p>A seguran&ccedil;a em n&iacute;vel de rede inclui a constru&ccedil;&atilde;o de uma topologia de VPC que isola partes da infraestrutura usando sub-redes, grupos de seguran&ccedil;a e controles de roteamento.</p>
+  
+  <p>Servi&ccedil;os como o AWS WAF, um firewall de aplica&ccedil;&atilde;o web, podem ajudar a proteger aplica&ccedil;&otilde;es web contra inje&ccedil;&atilde;o de SQL e outras vulnerabilidades no c&oacute;digo da aplica&ccedil;&atilde;o.</p>
+  
+  <p>Para controle de acesso, voc&ecirc; pode usar o IAM para definir um conjunto granular de pol&iacute;ticas e atribu&iacute;-las a usu&aacute;rios, grupos e recursos AWS.</p>
+  
+  <p>Finalmente, a plataforma AWS oferece uma variedade de op&ccedil;&otilde;es para proteger dados, estejam eles em tr&acirc;nsito ou em repouso, com criptografia.</p>
+  
+  <hr />
+  <p><strong>Delegue Responsabilidade de Seguran&ccedil;a para a AWS</strong></p>
+  
+  <p>A AWS opera sob um modelo de responsabilidade de seguran&ccedil;a compartilhada, em que a AWS &eacute; respons&aacute;vel pela seguran&ccedil;a da infraestrutura de nuvem subjacente, e voc&ecirc; &eacute; respons&aacute;vel por garantir a seguran&ccedil;a das cargas de trabalho que implanta na AWS.</p>
+  
+  <p><strong>Reduza o Acesso Privil&eacute;giado</strong></p>
+  
+  <p>Ao tratar servidores como recursos program&aacute;veis, voc&ecirc; pode capitalizar isso para obter benef&iacute;cios na &aacute;rea de seguran&ccedil;a.</p>
+  
+  <p>Elimine a necessidade de acesso ao sistema operacional convidado em ambientes de produ&ccedil;&atilde;o.</p>
+  
+  <p>Se uma inst&acirc;ncia apresentar um problema, voc&ecirc; pode encerr&aacute;-la e substitu&iacute;-la automaticamente ou manualmente.</p>
+  
+  <p>Em um ambiente tradicional, as contas de servi&ccedil;o frequentemente receberiam credenciais de longo prazo armazenadas em um arquivo de configura&ccedil;&atilde;o.</p>
+  
+  <p>Na AWS, voc&ecirc; pode usar fun&ccedil;&otilde;es IAM para conceder permiss&otilde;es a aplicativos em execu&ccedil;&atilde;o em inst&acirc;ncias do Amazon EC2 usando credenciais de curto prazo.</p>
+  
+  <hr />
+  <p><strong>Seguran&ccedil;a como C&oacute;digo</strong></p>
+  
+  <p>Estruturas de seguran&ccedil;a tradicionais, regulamenta&ccedil;&otilde;es e pol&iacute;ticas organizacionais definem requisitos de seguran&ccedil;a relacionados a coisas como regras de firewall, controles de acesso &agrave; rede, sub-redes internas/externas e fortalecimento do sistema operacional.</p>
+  
+  <p>Voc&ecirc; pode implementar esses requisitos em um ambiente AWS, mas agora pode captur&aacute;-los em um script que define um &quot;Ambiente Dourado&quot;.</p>
+  
+  <p>Isso significa que voc&ecirc; pode criar um script do AWS CloudFormation que captura sua pol&iacute;tica de seguran&ccedil;a e a implanta de maneira confi&aacute;vel.</p>
+  
+  <p>As melhores pr&aacute;ticas de seguran&ccedil;a agora podem ser reutilizadas entre v&aacute;rios projetos e fazer parte do seu pipeline de integra&ccedil;&atilde;o cont&iacute;nua.</p>
+  
+  <p>Voc&ecirc; pode realizar testes de seguran&ccedil;a como parte do seu ciclo de lan&ccedil;amento e descobrir automaticamente lacunas e desvios de sua pol&iacute;tica de seguran&ccedil;a.</p>
+  
+  <hr />
+  <p><strong>Auditoria em Tempo Real</strong></p>
+  
+  <p>Testar e auditar seu ambiente &eacute; fundamental para avan&ccedil;ar rapidamente mantendo-se seguro.</p>
+  
+  <p>Abordagens tradicionais que envolvem verifica&ccedil;&otilde;es peri&oacute;dicas n&atilde;o s&atilde;o suficientes, especialmente em ambientes &aacute;geis onde a mudan&ccedil;a &eacute; constante.</p>
+  
+  <p>Na AWS, &eacute; poss&iacute;vel implementar monitoramento cont&iacute;nuo e automa&ccedil;&atilde;o de controles para minimizar a exposi&ccedil;&atilde;o a riscos de seguran&ccedil;a.</p>
+  
+  <p>Servi&ccedil;os como AWS Config, Amazon Inspector e AWS Trusted Advisor monitoram continuamente a conformidade ou vulnerabilidades.</p>
+  
+  <p>Com as regras do AWS Config, voc&ecirc; tamb&eacute;m saber&aacute; se algum componente estava fora de conformidade, mesmo que por um breve per&iacute;odo.</p>
+  
+  <p>Voc&ecirc; pode implementar logs extensivos para suas aplica&ccedil;&otilde;es (usando Amazon CloudWatch Logs) e para as chamadas reais da API da AWS, habilitando o AWS CloudTrail.</p>
+  
+  <p>Os logs podem ser armazenados de maneira imut&aacute;vel e processados automaticamente para notificar ou at&eacute; mesmo agir em seu nome, protegendo sua organiza&ccedil;&atilde;o contra a n&atilde;o conformidade.</p>
+  
+  <p>Voc&ecirc; pode usar o AWS Lambda, o Amazon EMR, o Amazon Elasticsearch Service ou ferramentas de terceiros do AWS Marketplace para escanear logs e detectar coisas como permiss&otilde;es n&atilde;o utilizadas, uso excessivo de contas privilegiadas, uso de chaves, logins an&ocirc;malos, viola&ccedil;&otilde;es de pol&iacute;tica e abuso do sistema.</p>
+  
+
+</div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

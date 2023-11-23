@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">APRENDIZADO DE MÁQUINA</h2>
+
+<div>
+  <h3><strong>Amazon Rekognition</strong></h3>
+
+  <ul>
+    <li>Adicione an&aacute;lise de imagem e v&iacute;deo &agrave;s suas aplica&ccedil;&otilde;es.</li>
+    <li>Identifique objetos, pessoas, texto, cen&aacute;rios e atividades em imagens e v&iacute;deos.</li>
+    <li>Processa v&iacute;deos armazenados em um bucket Amazon S3.</li>
+    <li>Publique o status de conclus&atilde;o em um t&oacute;pico Amazon SNS.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Transcribe</strong></h3>
+  
+  <ul>
+    <li>Adicione capacidades de transcri&ccedil;&atilde;o de fala a aplica&ccedil;&otilde;es.</li>
+    <li>A fala gravada pode ser convertida em texto antes de ser utilizada em aplica&ccedil;&otilde;es.</li>
+    <li>Utiliza um processo de aprendizado profundo chamado Reconhecimento Autom&aacute;tico de Fala (ASR) para converter fala em texto de maneira r&aacute;pida e precisa.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Translate</strong></h3>
+  
+  <ul>
+    <li>Servi&ccedil;o de tradu&ccedil;&atilde;o neural que oferece tradu&ccedil;&atilde;o r&aacute;pida, de alta qualidade e acess&iacute;vel.</li>
+    <li>Utiliza modelos de aprendizado profundo para proporcionar tradu&ccedil;&otilde;es mais precisas e naturais.</li>
+    <li>Localize conte&uacute;do, como sites e aplica&ccedil;&otilde;es, para seus diversos usu&aacute;rios.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Textract</strong></h3>
+  
+  <ul>
+    <li>Extraia automaticamente texto impresso, caligrafia e dados de qualquer documento.</li>
+    <li>Recursos:
+    <ul>
+      <li>Reconhecimento &Oacute;ptico de Caracteres (OCR).</li>
+      <li>Identifica&ccedil;&atilde;o de relacionamentos, estrutura e texto.</li>
+      <li>Usa IA para extrair texto e dados estruturados.</li>
+      <li>Reconhece caligrafia, assim como texto impresso.</li>
+      <li>Pode extrair de documentos como PDFs, imagens, formul&aacute;rios e tabelas.</li>
+      <li>Compreende contexto, por exemplo, sabe que dados extrair de um recibo ou fatura.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon SageMaker</strong></h3>
+  
+  <ul>
+    <li>Auxilia cientistas de dados e desenvolvedores a preparar, construir, treinar e implantar modelos de aprendizado de m&aacute;quina (ML) de alta qualidade.</li>
+    <li>Atividades de desenvolvimento de ML incluem:
+    <ul>
+      <li>Prepara&ccedil;&atilde;o de dados.</li>
+      <li>Engenharia de recursos.</li>
+      <li>Detec&ccedil;&atilde;o de vi&eacute;s estat&iacute;stico.</li>
+      <li>Auto-ML.</li>
+      <li>Treinamento e ajuste.</li>
+      <li>Hospedagem.</li>
+      <li>Monitoramento.</li>
+      <li>Fluxos de trabalho.</li>
+    </ul>
+    </li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Comprehend</strong></h3>
+  
+  <ul>
+    <li>Servi&ccedil;o de processamento de linguagem natural (NLP).</li>
+    <li>Usa aprendizado de m&aacute;quina para extrair informa&ccedil;&otilde;es de dados n&atilde;o estruturados.</li>
+    <li>Pode identificar elementos cr&iacute;ticos nos dados, como refer&ecirc;ncias a idiomas, pessoas e lugares, e os arquivos de texto podem ser categorizados por t&oacute;picos relevantes.</li>
+    <li>Em tempo real, pode detectar automaticamente e com precis&atilde;o o sentimento do cliente em seu conte&uacute;do.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Lex</strong></h3>
+  
+  <ul>
+    <li>IA de conversa&ccedil;&atilde;o para Chatbots.</li>
+    <li>Construa interfaces de conversa&ccedil;&atilde;o em qualquer aplica&ccedil;&atilde;o usando voz e texto.</li>
+    <li>Crie bots para aumentar a produtividade do centro de contato, automatizar tarefas simples e impulsionar efici&ecirc;ncias operacionais em toda a empresa.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Polly</strong></h3>
+  
+  <ul>
+    <li>Transforma texto em uma fala realista.</li>
+    <li>Crie aplica&ccedil;&otilde;es que falam e desenvolva categorias totalmente novas de produtos com capacidade de fala.</li>
+    <li>Servi&ccedil;o de Texto para Fala (TTS) que utiliza tecnologias avan&ccedil;adas de aprendizado profundo para sintetizar fala humana natural.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon Forecast</strong></h3>
+  
+  <ul>
+    <li>Servi&ccedil;o de previs&atilde;o de s&eacute;ries temporais.</li>
+    <li>Usa ML e &eacute; projetado para an&aacute;lise de m&eacute;tricas de neg&oacute;cios.</li>
+  </ul>
+  
+  <hr />
+  <h3><strong>Amazon DevOps Guru</strong></h3>
+  
+  <ul>
+    <li>Servi&ccedil;o de opera&ccedil;&otilde;es na nuvem para melhorar o desempenho operacional e a disponibilidade de aplicativos.</li>
+    <li>Detecta comportamentos que se desviam dos padr&otilde;es normais de opera&ccedil;&atilde;o.</li>
+  </ul>
+  
+  <h4><strong>Benef&iacute;cios:</strong></h4>
+  
+  <ul>
+    <li>Detecta automaticamente problemas operacionais.</li>
+    <li>Resolve problemas com insights impulsionados por ML.</li>
+    <li>Escala elasticamente a an&aacute;lise operacional.</li>
+    <li>Usa ML para reduzir o ru&iacute;do de alarmes.</li>
+  </ul>
+  
+
+</div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

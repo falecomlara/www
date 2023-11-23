@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">AWS Identity and Access Management (IAM)</h2>
+
+        <div>
+
+          <p>O <strong>AWS Identity and Access Management (IAM)</strong> &eacute; um servi&ccedil;o da web que ajuda
+            voc&ecirc; a controlar com seguran&ccedil;a o acesso aos recursos da AWS.</p>
+
+          <p>Voc&ecirc; usa o IAM para controlar quem est&aacute; autenticado (logado) e autorizado (tem
+            permiss&otilde;es) para usar recursos. Pense no IAM como o centro de controle para todos os recursos da AWS.
+          </p>
+
+          <p>O IAM facilita a oferta de acesso seguro a recursos da AWS para v&aacute;rios usu&aacute;rios.</p>
+
+          <p>Ao criar uma conta AWS, voc&ecirc; come&ccedil;a com uma identidade de login &uacute;nica que tem acesso
+            completo a todos os servi&ccedil;os e recursos da AWS na conta. Essa identidade &eacute; chamada de
+            usu&aacute;rio raiz da conta AWS e &eacute; acessada fazendo login com o endere&ccedil;o de e-mail e senha
+            usados para criar a conta.</p>
+
+          <p>O IAM pode ser usado para gerenciar:</p>
+
+          <ul>
+            <li>Usu&aacute;rios.</li>
+            <li>Grupos.</li>
+            <li>Pol&iacute;ticas de acesso.</li>
+            <li>Fun&ccedil;&otilde;es.</li>
+            <li>Credenciais de usu&aacute;rio.</li>
+            <li>Pol&iacute;ticas de senha do usu&aacute;rio.</li>
+            <li>Autentica&ccedil;&atilde;o de v&aacute;rios fatores (MFA).</li>
+            <li>Chaves de API para acesso program&aacute;tico (CLI).</li>
+          </ul>
+
+          <p>O IAM fornece os seguintes recursos:</p>
+
+          <ul>
+            <li>Acesso compartilhado &agrave; sua conta AWS.</li>
+            <li>Permiss&otilde;es granulares.</li>
+            <li>Acesso seguro a recursos da AWS para aplicativos que s&atilde;o executados no Amazon EC2.</li>
+            <li>Autentica&ccedil;&atilde;o de v&aacute;rios fatores.</li>
+            <li>Federa&ccedil;&atilde;o de identidade.</li>
+            <li>Informa&ccedil;&otilde;es de identidade para garantia.</li>
+            <li>Conformidade com PCI DSS.</li>
+            <li>Integrado com muitos servi&ccedil;os da AWS.</li>
+            <li>Consist&ecirc;ncia eventual.</li>
+            <li>Gratuito para usar.</li>
+          </ul>
+
+          <p>Voc&ecirc; pode trabalhar com o <strong>AWS Identity and Access Management</strong> das seguintes maneiras:
+          </p>
+
+          <ul>
+            <li>Console de gerenciamento da AWS.</li>
+            <li>Ferramentas de Linha de Comando da AWS.</li>
+            <li>SDKs da AWS.</li>
+            <li>API HTTPS do IAM.</li>
+          </ul>
+
+          <p>Por padr&atilde;o, novos usu&aacute;rios s&atilde;o criados SEM acesso a nenhum servi&ccedil;o AWS - eles
+            s&oacute; podem fazer login no console da AWS.</p>
+
+          <p>As permiss&otilde;es devem ser concedidas explicitamente para permitir que um usu&aacute;rio acesse um
+            servi&ccedil;o AWS.</p>
+
+          <p>Os usu&aacute;rios IAM s&atilde;o indiv&iacute;duos que receberam acesso a uma conta AWS.</p>
+
+          <p>Cada usu&aacute;rio IAM possui tr&ecirc;s componentes principais:</p>
+
+          <ul>
+            <li>Um nome de usu&aacute;rio.</li>
+            <li>Uma senha.</li>
+            <li>Permiss&otilde;es para acessar v&aacute;rios recursos.</li>
+          </ul>
+
+          <p>&Eacute; poss&iacute;vel aplicar permiss&otilde;es granulares com o IAM.</p>
+
+          <p>Voc&ecirc; pode atribuir aos usu&aacute;rios credenciais de seguran&ccedil;a individuais, como chaves de
+            acesso, senhas e dispositivos de autentica&ccedil;&atilde;o de v&aacute;rios fatores.</p>
+
+          <p>O IAM n&atilde;o &eacute; usado para autentica&ccedil;&atilde;o em n&iacute;vel de aplicativo.</p>
+
+          <p>A Federa&ccedil;&atilde;o de Identidade (incluindo AD, Facebook etc.) pode ser configurada para permitir
+            acesso seguro a recursos em uma conta AWS sem criar uma conta de usu&aacute;rio IAM.</p>
+
+          <p>A autentica&ccedil;&atilde;o de v&aacute;rios fatores (MFA) pode ser habilitada/imposta para a conta AWS e
+            para usu&aacute;rios individuais na conta.</p>
+
+          <p>O MFA usa um dispositivo de autentica&ccedil;&atilde;o que gera continuamente c&oacute;digos de
+            autentica&ccedil;&atilde;o &uacute;nicos, de seis d&iacute;gitos.</p>
+
+          <p>&Eacute; poss&iacute;vel autenticar usando um dispositivo MFA das seguintes duas maneiras:</p>
+
+          <ul>
+            <li>Por meio do Console de Gerenciamento da AWS - o usu&aacute;rio &eacute; solicitado a fornecer um nome de
+              usu&aacute;rio, senha e c&oacute;digo de autentica&ccedil;&atilde;o.</li>
+            <li>Usando a API da AWS - restri&ccedil;&otilde;es s&atilde;o adicionadas &agrave;s pol&iacute;ticas do IAM
+              e os desenvolvedores podem solicitar credenciais de seguran&ccedil;a tempor&aacute;rias e passar
+              par&acirc;metros MFA em suas solicita&ccedil;&otilde;es de API da AWS usando o STS.</li>
+          </ul>
+
+          <p>&Eacute; uma pr&aacute;tica recomendada sempre configurar a autentica&ccedil;&atilde;o de v&aacute;rios
+            fatores na conta raiz.</p>
+
+          <p>O IAM &eacute; universal (global) e n&atilde;o se aplica a regi&otilde;es.</p>
+
+          <p>O IAM replica dados em v&aacute;rios centros de dados ao redor do mundo.</p>
+
+          <p>A &quot;conta raiz&quot; &eacute; a conta criada ao configurar a conta AWS. Tem acesso administrativo
+            completo e &eacute; a &uacute;nica conta que tem esse acesso por padr&atilde;o.</p>
+
+          <p>&Eacute; uma pr&aacute;tica recomendada evitar o uso da conta raiz para qualquer coisa que n&atilde;o seja
+            faturamento.</p>
+
+          <p>O acesso do usu&aacute;rio comum permite todas as permiss&otilde;es, exceto a administra&ccedil;&atilde;o
+            de grupos e usu&aacute;rios no IAM.</p>
+
+          <p>As credenciais de seguran&ccedil;a tempor&aacute;rias consistem no ID da chave de acesso da AWS, na chave
+            de acesso secreta e no token de seguran&ccedil;a.</p>
+
+          <p>O IAM pode atribuir credenciais de seguran&ccedil;a tempor&aacute;rias para fornecer aos usu&aacute;rios
+            acesso tempor&aacute;rio a servi&ccedil;os/recursos.</p>
+
+          <p>Para fazer login, &eacute; necess&aacute;rio fornecer o ID da conta ou alias da conta, al&eacute;m de um
+            nome de usu&aacute;rio e senha.</p>
+
+          <p>A URL de login inclui o ID da conta ou alias da conta, por exemplo:</p>
+
+          <p><a href="https://my_aws_account_id.signin.aws.amazon.com/console/"
+              target="_new">https://My_AWS_Account_ID.signin.aws.amazon.com/console/</a></p>
+
+          <p>Alternativamente, &eacute; poss&iacute;vel fazer login na seguinte URL e inserir manualmente o ID da conta
+            ou alias:</p>
+
+          <p><a href="https://console.aws.amazon.com/" target="_new">https://console.aws.amazon.com/</a></p>
+
+          <p>O IAM se integra a muitos servi&ccedil;os diferentes da AWS.</p>
+
+          <hr />
+          <p><strong>M&eacute;todos de Autentica&ccedil;&atilde;o:</strong></p>
+
+          <ul>
+            <li>
+              <p><strong>Senha do console:</strong></p>
+
+              <ul>
+                <li>Uma senha que o usu&aacute;rio pode inserir para fazer login em sess&otilde;es interativas, como o
+                  Console de Gerenciamento da AWS.</li>
+                <li>&Eacute; poss&iacute;vel permitir que os usu&aacute;rios alterem suas pr&oacute;prias senhas.</li>
+                <li>&Eacute; poss&iacute;vel permitir que usu&aacute;rios selecionados do IAM alterem suas senhas
+                  desativando a op&ccedil;&atilde;o para todos os usu&aacute;rios e usando uma pol&iacute;tica do IAM
+                  para conceder permiss&otilde;es aos usu&aacute;rios selecionados.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Chaves de acesso:</strong></p>
+
+              <ul>
+                <li>Uma combina&ccedil;&atilde;o de um ID de chave de acesso e uma chave de acesso secreta.</li>
+                <li>&Eacute; poss&iacute;vel atribuir duas chaves de acesso ativas a um usu&aacute;rio por vez.</li>
+                <li>Estas podem ser usadas para fazer chamadas program&aacute;ticas para a AWS ao usar a API em
+                  c&oacute;digo de programa ou em um prompt de comando ao usar a CLI da AWS ou as ferramentas do
+                  PowerShell da AWS.</li>
+                <li>&Eacute; poss&iacute;vel criar, modificar, visualizar ou girar chaves de acesso.</li>
+                <li>Quando criadas, o IAM retorna o ID da chave de acesso e a chave de acesso secreta.</li>
+                <li>A chave de acesso secreta &eacute; retornada apenas no momento da cria&ccedil;&atilde;o e, se
+                  perdida, uma nova chave deve ser criada.</li>
+                <li>Certifique-se de armazenar as chaves de acesso e chaves de acesso secretas de forma segura.</li>
+                <li>Os usu&aacute;rios podem receber permiss&atilde;o para alterar suas pr&oacute;prias chaves
+                  atrav&eacute;s de uma pol&iacute;tica do IAM (n&atilde;o pelo console).</li>
+                <li>&Eacute; poss&iacute;vel desativar a chave de acesso de um usu&aacute;rio, o que a impede de ser
+                  usada para chamadas de API.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Certificados de servidor:</strong></p>
+
+              <ul>
+                <li>Certificados SSL/TLS que podem ser usados para autentica&ccedil;&atilde;o com alguns servi&ccedil;os
+                  da AWS.</li>
+                <li>A AWS recomenda o uso do AWS Certificate Manager (ACM) para provisionar, gerenciar e implantar
+                  certificados de servidor.</li>
+                <li>Use o IAM apenas quando for necess&aacute;rio oferecer suporte a conex&otilde;es HTTPS em uma
+                  regi&atilde;o que n&atilde;o seja suportada pelo ACM.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>Usu&aacute;rios IAM:</strong></p>
+
+          <p>Um usu&aacute;rio do IAM &eacute; uma entidade que representa uma pessoa ou servi&ccedil;o.</p>
+
+          <p>Pode ser atribu&iacute;do:</p>
+
+          <ul>
+            <li>Um ID de chave de acesso e chave de acesso secreta para acesso program&aacute;tico &agrave; API da AWS,
+              CLI, SDK e outras ferramentas de desenvolvimento.</li>
+            <li>Uma senha para acesso ao console de gerenciamento. Por padr&atilde;o, os usu&aacute;rios n&atilde;o
+              podem acessar nada em sua conta.</li>
+          </ul>
+
+          <p>As credenciais do usu&aacute;rio raiz da conta s&atilde;o o endere&ccedil;o de e-mail usado para criar a
+            conta e uma senha.</p>
+
+          <p>A conta raiz tem permiss&otilde;es administrativas completas, e essas n&atilde;o podem ser restritas.</p>
+
+          <p>Melhores pr&aacute;ticas para contas raiz:</p>
+
+          <ul>
+            <li>N&atilde;o use as credenciais de usu&aacute;rio raiz.</li>
+            <li>N&atilde;o compartilhe as credenciais de usu&aacute;rio raiz.</li>
+            <li>Crie um usu&aacute;rio do IAM e atribua permiss&otilde;es administrativas conforme necess&aacute;rio.
+            </li>
+            <li>Ative a MFA.</li>
+          </ul>
+
+          <p>Os usu&aacute;rios do IAM podem ser criados para representar aplicativos, conhecidos como &quot;contas de
+            servi&ccedil;o&quot;.</p>
+
+          <p>&Eacute; poss&iacute;vel ter at&eacute; 5000 usu&aacute;rios por conta AWS.</p>
+
+          <p>Cada conta de usu&aacute;rio tem um nome amig&aacute;vel e um ARN que identifica exclusivamente o
+            usu&aacute;rio em toda a AWS.</p>
+
+          <p>Um ID exclusivo tamb&eacute;m &eacute; criado, que &eacute; retornado apenas ao criar o usu&aacute;rio
+            usando a API, Ferramentas do PowerShell para Windows ou a AWS CLI.</p>
+
+          <p>&Eacute; recomend&aacute;vel criar contas do IAM individuais para usu&aacute;rios (melhor pr&aacute;tica
+            para n&atilde;o compartilhar contas).</p>
+
+          <p>O ID da chave de acesso e a chave de acesso secreta n&atilde;o s&atilde;o iguais a uma senha e n&atilde;o
+            podem ser usados para fazer login no console da AWS.</p>
+
+          <p>O ID da chave de acesso e a chave de acesso secreta s&oacute; podem ser usados uma vez e devem ser
+            regenerados se forem perdidos.</p>
+
+          <p>Uma pol&iacute;tica de senha pode ser definida para aplicar o comprimento da senha, complexidade, etc.
+            (aplica-se a todos os usu&aacute;rios).</p>
+
+          <p>&Eacute; poss&iacute;vel permitir ou n&atilde;o a capacidade de alterar senhas usando uma pol&iacute;tica
+            do IAM.</p>
+
+          <p>As chaves de acesso e senhas devem ser alteradas regularmente.</p>
+
+          <hr />
+          <p><strong>Grupos:</strong></p>
+
+          <p>Os grupos s&atilde;o cole&ccedil;&otilde;es de usu&aacute;rios e t&ecirc;m pol&iacute;ticas anexadas a
+            eles.</p>
+
+          <p>Um grupo n&atilde;o &eacute; uma identidade e n&atilde;o pode ser identificado como um principal em uma
+            pol&iacute;tica do IAM.</p>
+
+          <p>Use grupos para atribuir permiss&otilde;es a usu&aacute;rios.</p>
+
+          <p>Use o princ&iacute;pio do menor privil&eacute;gio ao atribuir permiss&otilde;es.</p>
+
+          <p>N&atilde;o &eacute; poss&iacute;vel aninhar grupos (grupos dentro de grupos).</p>
+
+          <hr />
+          <p><strong>Fun&ccedil;&otilde;es:</strong></p>
+
+          <p>As fun&ccedil;&otilde;es s&atilde;o criadas e depois &quot;assumidas&quot; por entidades confi&aacute;veis
+            e definem um conjunto de permiss&otilde;es para fazer solicita&ccedil;&otilde;es de servi&ccedil;o da AWS.
+          </p>
+
+          <p>Com fun&ccedil;&otilde;es do IAM, &eacute; poss&iacute;vel delegar permiss&otilde;es a recursos para
+            usu&aacute;rios e servi&ccedil;os sem usar credenciais permanentes (por exemplo, nome de usu&aacute;rio e
+            senha).</p>
+
+          <p>Usu&aacute;rios do IAM ou servi&ccedil;os da AWS podem assumir uma fun&ccedil;&atilde;o para obter
+            credenciais de seguran&ccedil;a tempor&aacute;rias que podem ser usadas para fazer chamadas de API da AWS.
+          </p>
+
+          <p>&Eacute; poss&iacute;vel delegar usando fun&ccedil;&otilde;es.</p>
+
+          <p>N&atilde;o h&aacute; credenciais associadas a uma fun&ccedil;&atilde;o (senha ou chaves de acesso).</p>
+
+          <p>Usu&aacute;rios do IAM podem assumir temporariamente uma fun&ccedil;&atilde;o para assumir
+            permiss&otilde;es para uma tarefa espec&iacute;fica.</p>
+
+          <p>Uma fun&ccedil;&atilde;o pode ser atribu&iacute;da a um usu&aacute;rio federado que faz login usando um
+            provedor de identidade externo.</p>
+
+          <p>As credenciais tempor&aacute;rias s&atilde;o usadas principalmente com fun&ccedil;&otilde;es do IAM e
+            expiram automaticamente.</p>
+
+          <p>As fun&ccedil;&otilde;es podem ser assumidas temporariamente por meio do console ou programaticamente com a
+            AWS CLI, Ferramentas do PowerShell para Windows ou a API.</p>
+
+          <hr />
+          <p><strong>Fun&ccedil;&otilde;es do IAM com inst&acirc;ncias EC2:</strong></p>
+
+          <p>As fun&ccedil;&otilde;es do IAM podem ser usadas para conceder permiss&otilde;es a aplicativos em
+            execu&ccedil;&atilde;o em inst&acirc;ncias EC2 para solicita&ccedil;&otilde;es de API da AWS usando perfis
+            de inst&acirc;ncia.</p>
+
+          <p>Apenas uma fun&ccedil;&atilde;o pode ser atribu&iacute;da a uma inst&acirc;ncia EC2 por vez.</p>
+
+          <p>Uma fun&ccedil;&atilde;o pode ser atribu&iacute;da no momento da cria&ccedil;&atilde;o da inst&acirc;ncia
+            EC2 ou a qualquer momento posteriormente.</p>
+
+          <p>Ao usar a AWS CLI ou a API, os perfis de inst&acirc;ncia devem ser criados manualmente (&eacute;
+            autom&aacute;tico e transparente pelo console).</p>
+
+          <p>Os aplicativos recuperam credenciais tempor&aacute;rias da metadados da inst&acirc;ncia.</p>
+
+          <hr />
+          <p><strong>Delega&ccedil;&atilde;o de Fun&ccedil;&otilde;es:</strong></p>
+
+          <p>Crie uma fun&ccedil;&atilde;o do IAM com duas pol&iacute;ticas:</p>
+
+          <ul>
+            <li>Pol&iacute;tica de permiss&otilde;es - concede ao usu&aacute;rio da fun&ccedil;&atilde;o as
+              permiss&otilde;es necess&aacute;rias em um recurso.</li>
+            <li>Pol&iacute;tica de confian&ccedil;a - especifica as contas confi&aacute;veis que t&ecirc;m
+              permiss&atilde;o para assumir a fun&ccedil;&atilde;o. Wildcards (*) n&atilde;o podem ser especificados
+              como principal. Uma pol&iacute;tica de permiss&otilde;es tamb&eacute;m deve ser anexada ao usu&aacute;rio
+              na conta confi&aacute;vel.</li>
+          </ul>
+
+          <hr />
+          <p><strong>Pol&iacute;ticas:</strong></p>
+
+          <p>As <strong>pol&iacute;ticas</strong> s&atilde;o documentos que definem permiss&otilde;es e podem ser
+            aplicadas a usu&aacute;rios, grupos e fun&ccedil;&otilde;es.</p>
+
+          <p>Documentos de pol&iacute;tica s&atilde;o escritos em JSON (par chave-valor que consiste em um atributo e um
+            valor).</p>
+
+          <p>Todas as permiss&otilde;es s&atilde;o implicitamente negadas por padr&atilde;o.</p>
+
+          <p>A pol&iacute;tica mais restritiva &eacute; aplicada.</p>
+
+          <p>O simulador de pol&iacute;tica do IAM &eacute; uma ferramenta para ajudar voc&ecirc; a entender, testar e
+            validar os efeitos das pol&iacute;ticas de controle de acesso.</p>
+
+          <p>O elemento Condi&ccedil;&atilde;o pode ser usado para aplicar l&oacute;gica condicional adicional.</p>
+
+          <hr />
+          <p><strong>Compara&ccedil;&atilde;o entre Fun&ccedil;&atilde;o IAM, Pol&iacute;tica e Grupo da AWS:</strong>
+          </p>
+
+          <p>No IAM da AWS, fun&ccedil;&otilde;es, pol&iacute;ticas e grupos s&atilde;o todos usados para gerenciar o
+            acesso aos recursos da AWS.</p>
+
+          <p>Uma <strong>fun&ccedil;&atilde;o</strong> define um conjunto de permiss&otilde;es e pol&iacute;ticas de
+            acesso que determinam quais a&ccedil;&otilde;es um usu&aacute;rio ou servi&ccedil;o da AWS pode realizar. As
+            fun&ccedil;&otilde;es s&atilde;o &uacute;teis quando voc&ecirc; deseja conceder acesso (tempor&aacute;rio) a
+            recursos da AWS a uma entidade de terceiros, como um servi&ccedil;o da AWS ou um usu&aacute;rio fora da sua
+            conta da AWS.</p>
+
+          <p>Uma <strong>pol&iacute;tica</strong>, por outro lado, &eacute; um documento que define um conjunto de
+            permiss&otilde;es e especifica a quais recursos da AWS essas permiss&otilde;es concedem acesso. As
+            pol&iacute;ticas podem ser anexadas a fun&ccedil;&otilde;es, grupos ou usu&aacute;rios individuais para
+            definir seu n&iacute;vel de acesso aos recursos da AWS. As pol&iacute;ticas s&atilde;o &uacute;teis quando
+            voc&ecirc; deseja definir e impor permiss&otilde;es espec&iacute;ficas para um recurso ou conjunto de
+            recursos espec&iacute;ficos.</p>
+
+          <p>Um <strong>grupo</strong> &eacute; uma cole&ccedil;&atilde;o de usu&aacute;rios que compartilham
+            permiss&otilde;es comuns. Os grupos facilitam a gest&atilde;o de permiss&otilde;es para v&aacute;rios
+            usu&aacute;rios de uma vez, pois as pol&iacute;ticas podem ser anexadas a um grupo e aplicadas a todos os
+            usu&aacute;rios dentro desse grupo. Ao atribuir permiss&otilde;es a um grupo, &eacute; poss&iacute;vel
+            conceder ou revogar o acesso para v&aacute;rios usu&aacute;rios com uma &uacute;nica a&ccedil;&atilde;o.</p>
+
+          <p>De maneira geral, as fun&ccedil;&otilde;es s&atilde;o usadas para conceder acesso a recursos ou
+            servi&ccedil;os espec&iacute;ficos, as pol&iacute;ticas s&atilde;o usadas para definir as permiss&otilde;es
+            para esses recursos ou servi&ccedil;os, e os grupos s&atilde;o usados para organizar e gerenciar
+            v&aacute;rios usu&aacute;rios com permiss&otilde;es semelhantes. Como um todo, fun&ccedil;&otilde;es,
+            pol&iacute;ticas e grupos s&atilde;o componentes cr&iacute;ticos do IAM da AWS, cada um desempenhando um
+            papel &uacute;nico no gerenciamento do acesso do usu&aacute;rio aos recursos da AWS.</p>
+
+          <hr />
+          <p><strong>Servi&ccedil;o de Token de Seguran&ccedil;a da AWS (AWS STS):</strong></p>
+
+          <p>O <strong>AWS STS</strong> &eacute; um servi&ccedil;o da web que permite solicitar credenciais
+            tempor&aacute;rias de privil&eacute;gios limitados para usu&aacute;rios do IAM ou para usu&aacute;rios
+            autenticados (usu&aacute;rios federados).</p>
+
+          <p>Credenciais de seguran&ccedil;a tempor&aacute;rias funcionam quase da mesma forma que credenciais de chave
+            de acesso de longo prazo que os usu&aacute;rios do IAM podem usar, com as seguintes diferen&ccedil;as:</p>
+
+          <ul>
+            <li>
+              <p>Credenciais de seguran&ccedil;a tempor&aacute;rias s&atilde;o de curto prazo.</p>
+            </li>
+            <li>
+              <p>Elas podem ser configuradas para durar de alguns minutos a v&aacute;rias horas.</p>
+            </li>
+            <li>
+              <p>Ap&oacute;s o vencimento, a AWS n&atilde;o as reconhece mais ou permite qualquer tipo de acesso a
+                solicita&ccedil;&otilde;es de API feitas com elas.</p>
+            </li>
+            <li>
+              <p>Credenciais de seguran&ccedil;a tempor&aacute;rias n&atilde;o s&atilde;o armazenadas com o
+                usu&aacute;rio, mas s&atilde;o geradas dinamicamente e fornecidas ao usu&aacute;rio quando solicitadas.
+              </p>
+            </li>
+            <li>
+              <p>Quando (ou mesmo antes) as credenciais de seguran&ccedil;a tempor&aacute;rias expiram, o usu&aacute;rio
+                pode solicitar novas credenciais, se ainda tiver permiss&atilde;o para fazer isso. As vantagens do STS
+                s&atilde;o:</p>
+            </li>
+            <li>
+              <p>Voc&ecirc; n&atilde;o precisa distribuir ou incorporar credenciais de seguran&ccedil;a da AWS de longo
+                prazo com um aplicativo.</p>
+            </li>
+            <li>
+              <p>&Eacute; poss&iacute;vel fornecer acesso aos seus recursos da AWS a usu&aacute;rios sem ter que definir
+                uma identidade da AWS para eles (as credenciais de seguran&ccedil;a tempor&aacute;rias s&atilde;o a base
+                para Fun&ccedil;&otilde;es do IAM e Federa&ccedil;&atilde;o de Identidade).</p>
+            </li>
+            <li>
+              <p>As credenciais de seguran&ccedil;a tempor&aacute;rias t&ecirc;m uma vida &uacute;til limitada,
+                portanto, n&atilde;o &eacute; necess&aacute;rio gir&aacute;-las ou revog&aacute;-las explicitamente
+                quando n&atilde;o s&atilde;o mais necess&aacute;rias.</p>
+            </li>
+            <li>
+              <p>Ap&oacute;s o vencimento das credenciais de seguran&ccedil;a tempor&aacute;rias, elas n&atilde;o podem
+                ser reutilizadas (&eacute; poss&iacute;vel especificar por quanto tempo as credenciais s&atilde;o
+                v&aacute;lidas, at&eacute; um limite m&aacute;ximo). Usu&aacute;rios podem vir de tr&ecirc;s fontes.</p>
+            </li>
+            <li>
+              <p>Federa&ccedil;&atilde;o (tipicamente AD):</p>
+
+              <ul>
+                <li>Usa SAML 2.0.</li>
+                <li>Concede acesso tempor&aacute;rio com base nas credenciais do usu&aacute;rio no AD.</li>
+                <li>N&atilde;o precisa ser um usu&aacute;rio no IAM.</li>
+                <li>O logon &uacute;nico permite que os usu&aacute;rios fa&ccedil;am login no console da AWS sem
+                  atribuir credenciais do IAM.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Federa&ccedil;&atilde;o com aplicativos m&oacute;veis:</p>
+
+              <ul>
+                <li>Usa Facebook/Amazon/Google ou outros provedores OpenID para fazer login.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Acesso entre contas:</p>
+
+              <ul>
+                <li>Permite que usu&aacute;rios de uma conta da AWS acessem recursos em outra.</li>
+                <li>Para fazer uma solicita&ccedil;&atilde;o em uma conta diferente, o recurso nessa conta deve ter uma
+                  pol&iacute;tica baseada em recursos anexada com as permiss&otilde;es necess&aacute;rias.</li>
+                <li>Ou &eacute; necess&aacute;rio assumir uma fun&ccedil;&atilde;o (pol&iacute;tica baseada em
+                  identidade) dentro dessa conta com as permiss&otilde;es necess&aacute;rias.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>Melhores Pr&aacute;ticas do IAM:</strong></p>
+
+          <ul>
+            <li>Guarde as chaves de acesso do usu&aacute;rio raiz da AWS com seguran&ccedil;a.</li>
+            <li>Crie usu&aacute;rios do IAM individuais.</li>
+            <li>Use pol&iacute;ticas definidas pela AWS para atribuir permiss&otilde;es sempre que poss&iacute;vel.</li>
+            <li>Use grupos para atribuir permiss&otilde;es aos usu&aacute;rios do IAM.</li>
+            <li>Conceda o m&iacute;nimo de privil&eacute;gios necess&aacute;rio.</li>
+            <li>Use n&iacute;veis de acesso para revisar as permiss&otilde;es do IAM.</li>
+            <li>Configure uma pol&iacute;tica de senha forte para usu&aacute;rios.</li>
+            <li>Ative a MFA.</li>
+            <li>Use fun&ccedil;&otilde;es para aplicativos que s&atilde;o executados em inst&acirc;ncias do AWS EC2.
+            </li>
+            <li>Delegue usando fun&ccedil;&otilde;es em vez de compartilhar credenciais.</li>
+            <li>Gire credenciais regularmente.</li>
+            <li>Remova credenciais desnecess&aacute;rias.</li>
+            <li>Use condi&ccedil;&otilde;es de pol&iacute;tica para seguran&ccedil;a extra.</li>
+            <li>Monitore a atividade em sua conta da AWS.</li>
+          </ul>
+
+          <hr />
+          <p><strong>Intera&ccedil;&atilde;o com o IAM em trabalhos na nuvem:</strong></p>
+
+          <p>Muitas fun&ccedil;&otilde;es diferentes na ind&uacute;stria de tecnologia interagir&atilde;o diretamente ou
+            indiretamente com o IAM da AWS. Se sua organiza&ccedil;&atilde;o usa a AWS, voc&ecirc; receber&aacute;
+            fun&ccedil;&otilde;es diferentes para acessar os servi&ccedil;os necess&aacute;rios para ter sucesso em seu
+            trabalho.</p>
+
+          <ul>
+            <li><strong>Administradores</strong> com acesso total ser&atilde;o os respons&aacute;veis por definir
+              usu&aacute;rios, grupos e fun&ccedil;&otilde;es. Eles usar&atilde;o o IAM com frequ&ecirc;ncia para
+              gerenciar o acesso de toda a organiza&ccedil;&atilde;o.</li>
+            <li><strong>Desenvolvedores</strong> far&atilde;o chamadas para os servi&ccedil;os da AWS para executar seus
+              programas. Eles utilizar&atilde;o um conjunto de chaves de acesso e chaves secretas em seu desenvolvimento
+              de aplicativos.</li>
+            <li><strong>Administradores de Banco de Dados</strong> ter&atilde;o um conjunto de permiss&otilde;es que
+              lhes permite manipular diferentes bancos de dados da AWS. Eles precisam das permiss&otilde;es apropriadas
+              para permitir esse acesso.</li>
+            <li><strong>Administradores de Sistemas</strong> manter&atilde;o a infraestrutura na AWS. Eles
+              precisar&atilde;o das permiss&otilde;es apropriadas para criar novos recursos.</li>
+            <li>Qualquer papel que voc&ecirc; assuma em uma corpora&ccedil;&atilde;o que usa a AWS, voc&ecirc; se
+              deparar&aacute; com o IAM. &Eacute; a espinha dorsal da AWS.</li>
+          </ul>
+
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

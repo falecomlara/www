@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">APLICAÇÃO</h2>
+
+        <div>
+
+          <p>Os servi&ccedil;os de integra&ccedil;&atilde;o de aplica&ccedil;&otilde;es da AWS formam uma fam&iacute;lia
+            de servi&ccedil;os que possibilitam a comunica&ccedil;&atilde;o desacoplada entre aplica&ccedil;&otilde;es.
+          </p>
+
+          <p>Esses servi&ccedil;os oferecem desacoplamento para microsservi&ccedil;os, sistemas distribu&iacute;dos e
+            aplica&ccedil;&otilde;es serverless.</p>
+
+          <p>Os servi&ccedil;os de integra&ccedil;&atilde;o de aplica&ccedil;&otilde;es AWS permitem que voc&ecirc;
+            conecte aplica&ccedil;&otilde;es sem a necessidade de escrever c&oacute;digo personalizado para viabilizar a
+            interoperabilidade.</p>
+
+          <p>Aplica&ccedil;&otilde;es desacopladas podem interoperar, sendo resilientes a falhas ou sobrecarga de
+            qualquer componente individual.</p>
+
+          <p>Os seguintes servi&ccedil;os est&atilde;o envolvidos na integra&ccedil;&atilde;o de
+            aplica&ccedil;&otilde;es:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th>Servi&ccedil;o</th>
+                <th>O que faz</th>
+                <th>Exemplos de Casos de Uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon SQS</td>
+                <td>Fila de mensagens; padr&otilde;es de armazenamento e encaminhamento</td>
+                <td>Constru&ccedil;&atilde;o de aplica&ccedil;&otilde;es distribu&iacute;das/desacopladas</td>
+              </tr>
+              <tr>
+                <td>Amazon SNS</td>
+                <td>Configura&ccedil;&atilde;o, opera&ccedil;&atilde;o e envio de notifica&ccedil;&otilde;es pela nuvem
+                </td>
+                <td>Enviar notifica&ccedil;&atilde;o por e-mail quando um alarme do CloudWatch &eacute; acionado</td>
+              </tr>
+              <tr>
+                <td>Step Functions</td>
+                <td>Coordena&ccedil;&atilde;o pronta de componentes de servi&ccedil;o AWS com fluxo de trabalho visual
+                </td>
+                <td>Fluxo de trabalho de processamento de pedidos</td>
+              </tr>
+              <tr>
+                <td>Simple Workflow Service (SWF)</td>
+                <td>Suporte a processos externos ou l&oacute;gica de execu&ccedil;&atilde;o especializada</td>
+                <td>Fluxos de trabalho habilitados para humanos, como um sistema de atendimento de pedidos ou
+                  solicita&ccedil;&otilde;es procedimentais</td>
+              </tr>
+              <tr>
+                <td>Amazon MQ</td>
+                <td>Servi&ccedil;o de corretor de mensagens para Apache Active MQ e RabbitMQ</td>
+                <td>Necessidade de uma fila de mensagens que suporte APIs e protocolos padr&atilde;o da
+                  ind&uacute;stria; migrar filas para a AWS</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Amazon Simple Notification Service (SNS)</strong></p>
+
+          <p>O Amazon Simple Notification Service (Amazon SNS) &eacute; um servi&ccedil;o da web que facilita a
+            configura&ccedil;&atilde;o, opera&ccedil;&atilde;o e envio de notifica&ccedil;&otilde;es pela nuvem.</p>
+
+          <p>O Amazon SNS &eacute; usado para a constru&ccedil;&atilde;o e integra&ccedil;&atilde;o de
+            aplica&ccedil;&otilde;es distribu&iacute;das e desacopladas.</p>
+
+          <p>O SNS fornece entrega instant&acirc;nea baseada em push (sem polling).</p>
+
+          <p>Conceitos do SNS:</p>
+
+          <ul>
+            <li>
+              <p><strong>T&oacute;picos:</strong> Como voc&ecirc; rotula e agrupa diferentes pontos de extremidade aos
+                quais envia mensagens.</p>
+            </li>
+            <li>
+              <p><strong>Assinaturas:</strong> Os pontos de extremidade a que um t&oacute;pico envia mensagens.</p>
+            </li>
+            <li>
+              <p><strong>Publicadores:</strong> A pessoa/alarme/evento que fornece ao SNS a mensagem que precisa ser
+                enviada.</p>
+            </li>
+          </ul>
+
+          <p>Uso do SNS:</p>
+
+          <ul>
+            <li>
+              <p>Enviar notifica&ccedil;&otilde;es automatizadas ou manuais.</p>
+            </li>
+            <li>
+              <p>Enviar notifica&ccedil;&otilde;es por e-mail, celular (SMS), SQS e pontos de extremidade HTTP.</p>
+            </li>
+            <li>
+              <p>Integra&ccedil;&atilde;o estreita com outros servi&ccedil;os AWS, como CloudWatch, para que alarmes,
+                eventos e a&ccedil;&otilde;es em sua conta AWS possam acionar notifica&ccedil;&otilde;es.</p>
+            </li>
+            <li>
+              <p>Usa APIs simples e integra&ccedil;&atilde;o f&aacute;cil com aplica&ccedil;&otilde;es.</p>
+            </li>
+          </ul>
+
+          <p>A entrega flex&iacute;vel de mensagens &eacute; fornecida por meio de v&aacute;rios protocolos de
+            transporte.</p>
+
+          <p>Oferecido sob um modelo de pagamento acess&iacute;vel, sem custos iniciais.</p>
+
+          <p>O Console de Gerenciamento da AWS baseado na web oferece a simplicidade de uma interface de apontar e
+            clicar.</p>
+
+          <p>O tipo de dado &eacute; JSON.</p>
+
+          <p>O SNS atende a uma ampla variedade de necessidades, incluindo notifica&ccedil;&atilde;o de eventos,
+            monitoramento de aplica&ccedil;&otilde;es, sistemas de fluxo de trabalho, atualiza&ccedil;&otilde;es de
+            informa&ccedil;&otilde;es sens&iacute;veis ao tempo, aplica&ccedil;&otilde;es m&oacute;veis e qualquer outra
+            aplica&ccedil;&atilde;o que gere ou consuma notifica&ccedil;&otilde;es.</p>
+
+          <p><strong>Assinantes do SNS:</strong></p>
+
+          <ul>
+            <li>
+              <p>HTTP.</p>
+            </li>
+            <li>
+              <p>HTTPS.</p>
+            </li>
+            <li>
+              <p>E-mail.</p>
+            </li>
+            <li>
+              <p>E-mail-JSON.</p>
+            </li>
+            <li>
+              <p>SQS.</p>
+            </li>
+            <li>
+              <p>Aplicativo.</p>
+            </li>
+            <li>
+              <p>Lambda.</p>
+            </li>
+          </ul>
+
+          <p>O SNS oferece suporte a notifica&ccedil;&otilde;es por meio de v&aacute;rios protocolos de transporte:</p>
+
+          <ul>
+            <li>
+              <p>HTTP/HTTPS &ndash; os assinantes especificam uma URL como parte do registro de assinatura.</p>
+            </li>
+            <li>
+              <p>E-mail/E-mail-JSON &ndash; mensagens s&atilde;o enviadas para endere&ccedil;os registrados como e-mail
+                (baseado em texto ou objeto JSON).</p>
+            </li>
+            <li>
+              <p>SQS &ndash; os usu&aacute;rios podem especificar uma fila padr&atilde;o do SQS como o ponto de
+                extremidade.</p>
+            </li>
+            <li>
+              <p>SMS &ndash; mensagens s&atilde;o enviadas para n&uacute;meros de telefone registrados como mensagens de
+                texto SMS.</p>
+            </li>
+          </ul>
+
+          <p>Os nomes dos t&oacute;picos s&atilde;o limitados a 256 caracteres.</p>
+
+          <p>O SNS oferece auditoria CloudTrail para chamadas autenticadas.</p>
+
+          <p>O SNS fornece armazenamento dur&aacute;vel de todas as mensagens que recebe (em v&aacute;rias Zonas de
+            Disponibilidade).</p>
+
+          <hr />
+          <p><strong>Desacoplamento para Elasticidade: Servi&ccedil;os AWS de Integra&ccedil;&atilde;o de
+              Aplica&ccedil;&otilde;es</strong></p>
+
+          <p>O desacoplamento, ou acoplamento frouxo, &eacute; uma pr&aacute;tica que possibilita a elasticidade para
+            sua aplica&ccedil;&atilde;o.</p>
+
+          <p>O <strong>Amazon SQS</strong> &eacute; baseado em pull, n&atilde;o em push (como o Amazon SNS).</p>
+
+          <hr />
+          <p><strong>Amazon Simple Workflow Service (Amazon SWF)</strong></p>
+
+          <p>O Amazon Simple Workflow Service (SWF) &eacute; um servi&ccedil;o da web que facilita a
+            coordena&ccedil;&atilde;o do trabalho entre componentes de aplicativos distribu&iacute;dos.</p>
+
+          <p>O SWF &eacute; utilizado para processar trabalhos em segundo plano que t&ecirc;m etapas paralelas ou
+            sequenciais.</p>
+
+          <p>Voc&ecirc; pode pensar no SWF como um rastreador de estado totalmente gerenciado e coordenador de tarefas.
+          </p>
+
+          <p>Use o SWF se as etapas do seu aplicativo levarem mais de 500 milissegundos para serem conclu&iacute;das, se
+            precisar rastrear o estado do processamento ou se precisar recuperar ou tentar novamente se uma tarefa
+            falhar.</p>
+
+          <p>Com o SWF, &eacute; poss&iacute;vel criar sistemas ass&iacute;ncronos distribu&iacute;dos como fluxos de
+            trabalho.</p>
+
+          <p>Ele rastreia o estado do seu fluxo de trabalho, que voc&ecirc; interage e atualiza por meio da API.</p>
+
+          <p>Melhor adequado para fluxos de trabalho habilitados para humanos, como um sistema de atendimento de pedidos
+            ou solicita&ccedil;&otilde;es procedimentais.</p>
+
+          <p>A AWS recomenda que, para novas aplica&ccedil;&otilde;es, os clientes considerem o uso do <strong>AWS Step
+              Functions</strong> em vez do SWF.</p>
+
+          <hr />
+          <p><strong>Amazon MQ</strong></p>
+
+          <p>A Amazon MQ &eacute; um servi&ccedil;o de corretor de mensagens gerenciado para o ActiveMQ.</p>
+
+          <p>A Amazon MQ oferece suporte a APIs e protocolos padr&atilde;o da ind&uacute;stria, permitindo a
+            migra&ccedil;&atilde;o de mensagens e aplica&ccedil;&otilde;es sem a necessidade de reescrever
+            c&oacute;digo.</p>
+
+          <p>A Amazon MQ fornece capacidade de mensagens eficiente e flex&iacute;vel.</p>
+
+          <p>A Amazon MQ gerencia a administra&ccedil;&atilde;o e a manuten&ccedil;&atilde;o de corretores ActiveMQ e
+            provisiona automaticamente a infraestrutura para alta disponibilidade.</p>
+
+          <hr />
+          <p><strong>AWS Step Functions</strong></p>
+
+          <p>As AWS Step Functions podem ser usadas para coordenar os componentes de aplicativos distribu&iacute;dos
+            como uma s&eacute;rie de etapas em um fluxo de trabalho visual.</p>
+
+          <p>Voc&ecirc; pode criar e executar rapidamente m&aacute;quinas de estado para executar as etapas do seu
+            aplicativo de maneira confi&aacute;vel e escal&aacute;vel.</p>
+
+          <p>Como funciona:</p>
+
+          <ol>
+            <li>
+              <p>Defina as etapas do seu fluxo de trabalho na Linguagem de Estados da Amazon baseada em JSON. O console
+                visualiza automaticamente cada etapa na ordem de execu&ccedil;&atilde;o.</p>
+            </li>
+            <li>
+              <p>Inicie uma execu&ccedil;&atilde;o para visualizar e verificar se as etapas do seu aplicativo
+                est&atilde;o operando conforme o esperado. O console destaca o status em tempo real de cada etapa e
+                fornece um hist&oacute;rico detalhado de cada execu&ccedil;&atilde;o.</p>
+            </li>
+          </ol>
+
+          <p>As AWS Step Functions operam e dimensionam as etapas do seu aplicativo e a computa&ccedil;&atilde;o
+            subjacente para garantir que sua aplica&ccedil;&atilde;o seja executada de maneira confi&aacute;vel sob
+            demanda crescente.</p>
+
+          <p>&Eacute; uma plataforma de fluxo de trabalho e orquestra&ccedil;&atilde;o gerenciada.</p>
+
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

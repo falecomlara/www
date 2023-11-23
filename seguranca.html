@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">SEGURANÇA</h2>
+
+        <div>
+          <p>A <strong>Nuvem AWS</strong> possibilita um modelo de <a
+              href="responsabilidade-compartilhada.html">responsabilidade compartilhada</a>.</p>
+
+          <p>A AWS gerencia a seguran&ccedil;a <strong>DA</strong> nuvem; voc&ecirc; &eacute; respons&aacute;vel pela
+            seguran&ccedil;a <strong>NA</strong> nuvem.</p>
+
+          <p>Voc&ecirc; mant&eacute;m o controle da seguran&ccedil;a que escolhe implementar para proteger seu
+            pr&oacute;prio conte&uacute;do, plataforma, aplicativos, sistemas e redes, da mesma forma que faria em um
+            centro de dados local.</p>
+
+          <p><strong>Benef&iacute;cios da Seguran&ccedil;a AWS</strong></p>
+
+          <ul>
+            <li>Mantenha seus dados seguros - a infraestrutura da AWS coloca <strong>fortes salvaguardas</strong> para
+              ajudar.</li>
+            <li>Proteja sua privacidade - Todos os dados s&atilde;o armazenados em data centers AWS altamente seguros.
+            </li>
+            <li>Atenda aos Requisitos de Conformidade - A AWS gerencia dezenas de programas de conformidade em sua
+              infraestrutura. Isso significa que segmentos de sua conformidade j&aacute; foram conclu&iacute;dos.</li>
+            <li>Economize Dinheiro - Reduza os custos usando os data centers da AWS. Mantenha o mais alto padr&atilde;o
+              de seguran&ccedil;a sem precisar gerenciar sua pr&oacute;pria instala&ccedil;&atilde;o.</li>
+            <li>Escale Rapidamente - a seguran&ccedil;a se ajusta ao uso da sua <strong>Nuvem AWS</strong>. N&atilde;o
+              importa o tamanho do seu neg&oacute;cio, a infraestrutura da AWS &eacute; projetada para manter seus dados
+              seguros.</li>
+          </ul>
+
+          <p><strong>Conformidade</strong></p>
+
+          <ul>
+            <li>A <strong>Conformidade com a Nuvem AWS</strong> permite que voc&ecirc; compreenda os controles robustos
+              implementados pela AWS para manter a seguran&ccedil;a e prote&ccedil;&atilde;o de dados na nuvem.</li>
+            <li>Conforme os sistemas s&atilde;o constru&iacute;dos sobre a infraestrutura da Nuvem AWS, as
+              responsabilidades de conformidade ser&atilde;o compartilhadas.</li>
+            <li>Os programas de conformidade incluem:
+              <ul>
+                <li>Certifica&ccedil;&otilde;es / atesta&ccedil;&otilde;es.</li>
+                <li>Leis, regulamenta&ccedil;&otilde;es e privacidade.</li>
+                <li>Alinhamentos / estruturas.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS Artifact</strong></p>
+
+          <ul>
+            <li>O <strong>AWS Artifact</strong> &eacute; sua principal fonte de informa&ccedil;&otilde;es relacionadas
+              &agrave; conformidade relevantes para voc&ecirc;.</li>
+            <li>Ele fornece acesso sob demanda aos relat&oacute;rios de seguran&ccedil;a e conformidade da AWS e a
+              acordos online selecionados.</li>
+            <li>Os relat&oacute;rios dispon&iacute;veis no AWS Artifact incluem nossos relat&oacute;rios de
+              <strong>Controle de Organiza&ccedil;&atilde;o de Servi&ccedil;os (SOC)</strong>, relat&oacute;rios de
+              <strong>Ind&uacute;stria de Cart&otilde;es de Pagamento (PCI)</strong> e certifica&ccedil;&otilde;es de
+              &oacute;rg&atilde;os de acredita&ccedil;&atilde;o em v&aacute;rias geografias e verticais de conformidade,
+              que validam a implementa&ccedil;&atilde;o e efic&aacute;cia operacional dos controles de seguran&ccedil;a
+              da AWS.</li>
+            <li>Os acordos dispon&iacute;veis no AWS Artifact incluem o Adendo de Associado Comercial (BAA) e o Acordo
+              de N&atilde;o Divulga&ccedil;&atilde;o (NDA).</li>
+          </ul>
+
+          <hr />
+          <p><strong>Amazon GuardDuty</strong></p>
+
+          <ul>
+            <li>O <strong>Amazon GuardDuty</strong> oferece detec&ccedil;&atilde;o de amea&ccedil;as e monitoramento
+              cont&iacute;nuo de seguran&ccedil;a para comportamentos maliciosos ou n&atilde;o autorizados, ajudando a
+              proteger suas contas e cargas de trabalho da AWS.</li>
+            <li>Servi&ccedil;o de detec&ccedil;&atilde;o de amea&ccedil;as inteligente.</li>
+            <li>Detecta comprometimento de conta, comprometimento de inst&acirc;ncia, reconhecimento malicioso e
+              comprometimento de bucket.</li>
+            <li>Monitoramento cont&iacute;nuo de eventos em:
+              <ul>
+                <li>Eventos de Gerenciamento do <strong>AWS CloudTrail</strong>.</li>
+                <li>Eventos de Dados S3 do <strong>AWS CloudTrail</strong>.</li>
+                <li>Logs de Fluxo da <strong>Amazon VPC</strong>.</li>
+                <li>Logs DNS.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS WAF &amp; AWS Shield</strong></p>
+
+          <ul>
+            <li><strong>WAF</strong>:
+
+              <ul>
+                <li>O <strong>AWS WAF</strong> &eacute; um firewall de aplicativos da web.</li>
+                <li>Protege contra exploits comuns que poderiam comprometer a disponibilidade do aplicativo, comprometer
+                  a seguran&ccedil;a ou consumir recursos excessivos.</li>
+                <li>O WAF permite que voc&ecirc; crie regras para filtrar o tr&aacute;fego da web com base em
+                  condi&ccedil;&otilde;es que incluem endere&ccedil;os IP, cabe&ccedil;alhos e corpo HTTP ou URIs
+                  personalizados.</li>
+                <li>O WAF facilita a cria&ccedil;&atilde;o de regras que bloqueiam exploits comuns da web, como
+                  inje&ccedil;&atilde;o de SQL e script entre sites. As regras s&atilde;o conhecidas como ACLs da Web.
+                </li>
+              </ul>
+            </li>
+            <li><strong>Shield</strong>:
+              <ul>
+                <li>O <strong>AWS Shield</strong> &eacute; um servi&ccedil;o gerenciado de prote&ccedil;&atilde;o contra
+                  nega&ccedil;&atilde;o de servi&ccedil;o distribu&iacute;do (DDoS).</li>
+                <li>Salvaguarda aplicativos da web em execu&ccedil;&atilde;o na AWS com detec&ccedil;&atilde;o sempre
+                  ativa e mitiga&ccedil;&atilde;o autom&aacute;tica em linha.</li>
+                <li>Ajuda a minimizar a indisponibilidade e lat&ecirc;ncia do aplicativo.</li>
+                <li>Dois n&iacute;veis - Padr&atilde;o e Avan&ccedil;ado.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>Servi&ccedil;o de Gerenciamento de Chaves AWS (AWS KMS)</strong></p>
+
+          <ul>
+            <li>O <strong>Servi&ccedil;o de Gerenciamento de Chaves AWS</strong> oferece controle centralizado sobre as
+              chaves de criptografia usadas para proteger seus dados.</li>
+            <li>Voc&ecirc; pode criar, importar, rotacionar, desativar, excluir, definir pol&iacute;ticas de uso e
+              auditar o uso de chaves de criptografia usadas para criptografar seus dados.</li>
+            <li>O <strong>AWS KMS</strong> est&aacute; integrado &agrave; maioria dos outros servi&ccedil;os da AWS,
+              facilitando a criptografia dos dados armazenados nesses servi&ccedil;os com chaves de criptografia que
+              voc&ecirc; controla.</li>
+            <li>O <strong>AWS KMS</strong> est&aacute; integrado ao <strong>AWS CloudTrail</strong>, que fornece a
+              capacidade de auditar quem usou quais chaves, em quais recursos e quando.</li>
+            <li>O <strong>AWS KMS</strong> permite que os desenvolvedores criptografem facilmente dados, seja por meio
+              de criptografia em um clique no Console de Gerenciamento da AWS ou usando o <strong>AWS SDK</strong> para
+              adicionar facilmente a criptografia no c&oacute;digo de sua aplica&ccedil;&atilde;o.</li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS CloudHSM</strong></p>
+
+          <ul>
+            <li>O <strong>AWS CloudHSM</strong> &eacute; um m&oacute;dulo de seguran&ccedil;a de hardware (HSM) baseado
+              em nuvem que permite gerar e usar facilmente suas pr&oacute;prias chaves de criptografia na Nuvem AWS.
+            </li>
+            <li>Com o <strong>CloudHSM</strong>, voc&ecirc; pode gerenciar suas pr&oacute;prias chaves de criptografia
+              usando HSMs validados pelo FIPS 140-2 N&iacute;vel 3.</li>
+            <li>O <strong>CloudHSM</strong> oferece a flexibilidade de integrar-se &agrave;s suas
+              aplica&ccedil;&otilde;es usando APIs padr&atilde;o do setor, como PKCS#11, Extens&otilde;es de
+              Criptografia Java (JCE) e bibliotecas Microsoft CryptoNG (CNG).</li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS Certificate Manager (Gerenciador de Certificados AWS)</strong></p>
+
+          <ul>
+            <li>O <strong>Gerenciador de Certificados AWS</strong> &eacute; um servi&ccedil;o que permite provisionar,
+              gerenciar e implantar facilmente certificados <strong>Secure Sockets Layer/Transport Layer Security
+                (SSL/TLS)</strong> p&uacute;blicos e privados para uso com servi&ccedil;os da AWS e recursos conectados
+              internamente.</li>
+            <li>Os certificados SSL/TLS s&atilde;o usados para garantir as comunica&ccedil;&otilde;es de rede e
+              estabelecer a identidade de sites na Internet, bem como de recursos em redes privadas.</li>
+            <li>O <strong>AWS Certificate Manager</strong> elimina o processo manual demorado de compra, upload e
+              renova&ccedil;&atilde;o de certificados <strong>SSL/TLS</strong>.</li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS Inspector e AWS Trusted Advisor</strong></p>
+
+          <ul>
+            <li><strong>Inspector da AWS</strong>:
+
+              <ul>
+                <li>O <strong>Inspector</strong> &eacute; um servi&ccedil;o automatizado de avalia&ccedil;&atilde;o de
+                  seguran&ccedil;a que ajuda a melhorar a seguran&ccedil;a e conformidade de aplicativos implantados na
+                  AWS.</li>
+                <li>O Inspector avalia automaticamente aplicativos em busca de vulnerabilidades ou desvios das melhores
+                  pr&aacute;ticas.</li>
+                <li>Usa um agente instalado em inst&acirc;ncias <strong>EC2</strong>.</li>
+                <li>As inst&acirc;ncias devem ser marcadas.</li>
+              </ul>
+            </li>
+            <li><strong>AWS Trusted Advisor</strong>:
+              <ul>
+                <li>O <strong>AWS Trusted Advisor</strong> &eacute; um recurso online que ajuda a reduzir custos,
+                  aumentar o desempenho e melhorar a seguran&ccedil;a otimizando seu ambiente AWS.</li>
+                <li>O AWS Trusted Advisor fornece orienta&ccedil;&atilde;o em tempo real para ajudar na provisionamento
+                  de recursos seguindo as melhores pr&aacute;ticas.</li>
+                <li>O Trusted Advisor aconselha sobre Otimiza&ccedil;&atilde;o de Custos, Desempenho, Seguran&ccedil;a e
+                  Toler&acirc;ncia a Falhas.</li>
+                <li>O Trusted Advisor examina sua infraestrutura AWS e a compara com as melhores pr&aacute;ticas da AWS
+                  em cinco categorias:
+                  <ol>
+                    <li>Otimiza&ccedil;&atilde;o de Custos.</li>
+                    <li>Desempenho.</li>
+                    <li>Seguran&ccedil;a.</li>
+                    <li>Toler&acirc;ncia a Falhas.</li>
+                    <li>Limites de Servi&ccedil;o.</li>
+                  </ol>
+                </li>
+                <li>O Trusted Advisor vem em duas vers&otilde;es.
+                  <ul>
+                    <li>Verifica&ccedil;&otilde;es e Recomenda&ccedil;&otilde;es Principais (gratuitas):
+                      <ul>
+                        <li>Acesso &agrave;s 7 verifica&ccedil;&otilde;es principais para ajudar a aumentar a
+                          seguran&ccedil;a e o desempenho.</li>
+                        <li>As verifica&ccedil;&otilde;es incluem permiss&otilde;es de bucket <strong>S3</strong>,
+                          Grupos de Seguran&ccedil;a, uso do <strong>IAM</strong>, MFA na conta raiz, snapshots
+                          p&uacute;blicos do <strong>EBS</strong>, snapshots p&uacute;blicos do <strong>RDS</strong>.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Benef&iacute;cios completos do Trusted Advisor (planos de suporte empresarial e empresarial):
+                      <ul>
+                        <li>Conjunto completo de verifica&ccedil;&otilde;es para otimizar toda a sua infraestrutura AWS.
+                        </li>
+                        <li>Aconselha sobre seguran&ccedil;a, desempenho, custo, toler&acirc;ncia a falhas e limites de
+                          servi&ccedil;o.</li>
+                        <li>Benef&iacute;cios adicionais incluem notifica&ccedil;&otilde;es de atualiza&ccedil;&atilde;o
+                          semanais, alertas, a&ccedil;&otilde;es automatizadas com o <strong>CloudWatch</strong> e
+                          acesso program&aacute;tico usando a <strong>API de Suporte AWS</strong>.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr />
+          <p><strong>Teste de Penetra&ccedil;&atilde;o</strong></p>
+
+          <ul>
+            <li>O teste de penetra&ccedil;&atilde;o &eacute; a pr&aacute;tica de testar a seguran&ccedil;a de sua
+              pr&oacute;pria aplica&ccedil;&atilde;o em busca de vulnerabilidades simulando um ataque.</li>
+            <li>A <strong>AWS permite testes de penetra&ccedil;&atilde;o</strong>. Existe um conjunto limitado de
+              recursos nos quais os testes de penetra&ccedil;&atilde;o podem ser realizados.</li>
+            <li>Voc&ecirc; n&atilde;o precisa de permiss&atilde;o para realizar testes de penetra&ccedil;&atilde;o nos
+              seguintes servi&ccedil;os:
+              <ul>
+                <li>Inst&acirc;ncias <strong>Amazon EC2</strong>, <strong>NAT Gateways</strong> e <strong>Elastic Load
+                    Balancers</strong>.</li>
+                <li><strong>Amazon RDS</strong>.</li>
+                <li><strong>Amazon CloudFront</strong>.</li>
+                <li><strong>Amazon Aurora</strong>.</li>
+                <li>Port&otilde;es de API da <strong>Amazon</strong>.</li>
+                <li>Fun&ccedil;&otilde;es <strong>AWS Lambda</strong> e fun&ccedil;&otilde;es <strong>Lambda
+                    Edge</strong>.</li>
+                <li>Recursos <strong>Amazon LightSail</strong>.</li>
+                <li>Ambientes <strong>Amazon Elastic Beanstalk</strong>.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Em caso de conta comprometida:</strong></p>
+
+          <ol>
+            <li>Altere a senha da sua conta raiz da AWS.</li>
+            <li>Altere todas as senhas dos usu&aacute;rios do IAM.</li>
+            <li>Exclua ou rotacione todas as chaves de acesso program&aacute;tico (API).</li>
+            <li>Exclua quaisquer recursos em sua conta que voc&ecirc; n&atilde;o tenha criado.</li>
+            <li>Responda a quaisquer notifica&ccedil;&otilde;es recebidas da AWS por meio do Centro de Suporte da AWS
+              e/ou entre em contato com o Suporte da AWS para abrir um chamado de suporte.</li>
+          </ol>
+
+          <hr />
+          <p><strong>Logon &Uacute;nico da AWS (AWS SSO)</strong></p>
+
+          <ul>
+            <li>O <strong>Logon &Uacute;nico da AWS (AWS SSO)</strong> &eacute; um servi&ccedil;o de logon &uacute;nico
+              (SSO) baseado em nuvem que facilita o gerenciamento centralizado do acesso SSO a todas as suas contas AWS
+              e aplicativos de nuvem.</li>
+            <li>Ele ajuda a gerenciar o acesso SSO e as permiss&otilde;es do usu&aacute;rio em todas as suas contas AWS
+              em <strong>Organiza&ccedil;&otilde;es da AWS</strong>.</li>
+            <li>O <strong>AWS SSO</strong> tamb&eacute;m ajuda a gerenciar o acesso e as permiss&otilde;es a aplicativos
+              de software como servi&ccedil;o (SaaS) comumente usados, aplicativos integrados ao <strong>AWS
+                SSO</strong>, bem como aplicativos personalizados que suportam a <strong>Linguagem de
+                Marca&ccedil;&atilde;o de Assertividade de Seguran&ccedil;a (SAML) 2.0</strong>.</li>
+            <li>O <strong>AWS SSO</strong> inclui um portal do usu&aacute;rio onde seus usu&aacute;rios finais podem
+              encontrar e acessar todas as suas contas AWS atribu&iacute;das, aplicativos de nuvem e aplicativos
+              personalizados em um s&oacute; lugar.</li>
+          </ul>
+
+          <hr />
+          <p><strong>Amazon Cognito</strong></p>
+
+          <p>O <strong>Amazon Cognito</strong> permite que voc&ecirc; adicione facilmente registro de usu&aacute;rios,
+            login e controle de acesso aos seus aplicativos web e m&oacute;veis.</p>
+
+          <p>O <strong>Amazon Cognito</strong> escala para milh&otilde;es de usu&aacute;rios e oferece suporte ao login
+            por meio de provedores de identidade social, como Apple, Facebook, Google e Amazon, al&eacute;m de
+            provedores de identidade corporativos via SAML 2.0 e OpenID Connect.</p>
+
+          <p>Os dois principais componentes do <strong>AWS Cognito</strong> s&atilde;o os <em>user pools</em> e
+            <em>identity pools</em>:</p>
+
+          <ul>
+            <li><em>User pools</em> s&atilde;o diret&oacute;rios de usu&aacute;rios que fornecem op&ccedil;&otilde;es de
+              registro e login para os usu&aacute;rios do seu aplicativo.</li>
+            <li><em>Identity pools</em> permitem que voc&ecirc; conceda aos seus usu&aacute;rios acesso a outros
+              servi&ccedil;os da AWS.</li>
+            <li>Voc&ecirc; pode usar <em>identity pools</em> e <em>user pools</em> separadamente ou juntos.</li>
+          </ul>
+
+          <hr />
+          <p><strong>AWS Directory Services</strong></p>
+
+          <p>A AWS oferece v&aacute;rios tipos de diret&oacute;rios.</p>
+
+          <p>Os tr&ecirc;s tipos a seguir s&atilde;o os que aparecem atualmente no exame e ser&atilde;o abordados nesta
+            p&aacute;gina:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th>Op&ccedil;&atilde;o de Servi&ccedil;o de Diret&oacute;rio</th>
+                <th>Descri&ccedil;&atilde;o</th>
+                <th>Caso de Uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center">AWS Directory Service for Microsoft Active Directory</td>
+                <td>AD Microsoft completo gerenciado pela AWS, executando o Windows Server 2012 R2</td>
+                <td>Empresas que desejam um AD Microsoft hospedado ou que precisam de LDAP para aplicativos Linux</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">AD Connector</td>
+                <td>Permite que usu&aacute;rios locais fa&ccedil;am login nos servi&ccedil;os da AWS com suas
+                  credenciais AD existentes. Tamb&eacute;m permite que inst&acirc;ncias EC2 se juntem ao dom&iacute;nio
+                  AD.</td>
+                <td>Login &uacute;nico para funcion&aacute;rios locais e para adicionar inst&acirc;ncias EC2 ao
+                  dom&iacute;nio</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">Simple AD</td>
+                <td>Implementa&ccedil;&atilde;o AD de baixa escala e custo baseada no Samba</td>
+                <td>Diret&oacute;rio de usu&aacute;rios simples ou necessidade de compatibilidade com LDAP</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Como alternativa ao servi&ccedil;o de diret&oacute;rio da AWS, voc&ecirc; pode criar seus pr&oacute;prios
+            controladores de dom&iacute;nio AD da Microsoft na nuvem da AWS (no EC2).</p>
+
+          <hr />
+          <p><strong>AWS Systems Manager Parameter Store</strong></p>
+
+          <p>Fornece armazenamento seguro e hier&aacute;rquico para gerenciamento de dados de configura&ccedil;&atilde;o
+            e gerenciamento de segredos.</p>
+
+          <p>&Eacute; altamente escal&aacute;vel, dispon&iacute;vel e dur&aacute;vel.</p>
+
+          <p>Voc&ecirc; pode armazenar dados como senhas, strings de banco de dados e c&oacute;digos de licen&ccedil;a
+            como valores de par&acirc;metro.</p>
+
+          <p>Voc&ecirc; pode armazenar valores como texto simples (dados n&atilde;o criptografados) ou texto cifrado
+            (dados criptografados).</p>
+
+          <p>Voc&ecirc; pode ent&atilde;o fazer refer&ecirc;ncia a valores usando o nome exclusivo que voc&ecirc;
+            especificou ao criar o par&acirc;metro.</p>
+
+          <hr />
+          <p><strong>AWS Secrets Manager</strong></p>
+
+          <p>Permite a rota&ccedil;&atilde;o nativa e autom&aacute;tica de chaves.</p>
+
+          <p>Permiss&otilde;es refinadas.</p>
+
+          <p>Auditoria central para rota&ccedil;&atilde;o de segredos.</p>
+
+          <hr />
+          <p><strong>AWS Artifact</strong></p>
+
+          <p>O <strong>AWS Artifact</strong> &eacute; seu recurso central para informa&ccedil;&otilde;es relacionadas
+            &agrave; conformidade que s&atilde;o relevantes para voc&ecirc;.</p>
+
+          <p>Ele fornece acesso sob demanda a relat&oacute;rios de seguran&ccedil;a e conformidade da AWS e a alguns
+            acordos online selecionados.</p>
+
+          <p>Os relat&oacute;rios dispon&iacute;veis no <strong>AWS Artifact</strong> incluem nossos relat&oacute;rios
+            de <strong>Controle de Organiza&ccedil;&atilde;o de Servi&ccedil;os (SOC)</strong>, relat&oacute;rios da
+            <strong>Ind&uacute;stria de Cart&otilde;es de Pagamento (PCI)</strong> e certifica&ccedil;&otilde;es de
+            &oacute;rg&atilde;os de acredita&ccedil;&atilde;o em v&aacute;rias geografias e verticais de conformidade
+            que validam a implementa&ccedil;&atilde;o e efic&aacute;cia operacional dos controles de seguran&ccedil;a da
+            AWS.</p>
+
+          <p>Os acordos dispon&iacute;veis no <strong>AWS Artifact</strong> incluem o <em>Adendo de Associado Comercial
+              (BAA)</em> e o <em>Acordo de N&atilde;o Divulga&ccedil;&atilde;o (NDA)</em>.</p>
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

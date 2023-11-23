@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">ANÁLISE</h2>
+
+        <div>
+          <p>H&aacute; v&aacute;rios servi&ccedil;os de an&aacute;lise da AWS e estes incluem:</p>
+
+<ul>
+	<li><strong>Amazon Athena</strong></li>
+	<li><strong>Amazon EMR</strong></li>
+	<li><strong>Amazon CloudSearch</strong></li>
+	<li><strong>Amazon Opensearch Service</strong></li>
+	<li><strong>Amazon Kinesis</strong></li>
+	<li><strong>Amazon QuickSight</strong></li>
+	<li><strong>Amazon Data Pipeline</strong></li>
+	<li><strong>AWS Glue</strong></li>
+	<li><strong>AWS Lake Formation</strong></li>
+	<li><strong>Amazon MSK</strong></li>
+</ul>
+
+<p>Neste artigo, iremos focar em&nbsp;<strong>Athena</strong>,&nbsp;<strong>EMR</strong>,&nbsp;<strong>Glue</strong>&nbsp;e&nbsp;<strong>Kinesis</strong>, pois esses s&atilde;o os servi&ccedil;os prov&aacute;veis de serem abordados no exame AWS Certified Cloud Practitioner.</p>
+
+<h3><strong>Amazon Elastic Map Reduce</strong></h3>
+
+<p>O Amazon EMR &eacute; um servi&ccedil;o web que permite que empresas, pesquisadores, analistas de dados e desenvolvedores processem facilmente e de forma econ&ocirc;mica, grandes volumes de dados.</p>
+
+<p>O EMR utiliza um framework Hadoop hospedado em inst&acirc;ncias Amazon EC2 e Amazon S3.</p>
+
+<p>Framework Hadoop gerenciado para processamento de grandes volumes de dados.</p>
+
+<p>Tamb&eacute;m suporta Apache Spark, HBase, Presto e Flink.</p>
+
+<p>Geralmente utilizado para an&aacute;lise de logs, an&aacute;lise financeira ou atividades de extra&ccedil;&atilde;o, tradu&ccedil;&atilde;o e carga (ETL).</p>
+
+<p>Um&nbsp;<strong><em>step</em></strong>&nbsp;&eacute; uma tarefa program&aacute;tica para realizar algum processo nos dados (por exemplo, contar palavras).</p>
+
+<p>Um&nbsp;<em><strong>cluster</strong></em>&nbsp;&eacute; uma cole&ccedil;&atilde;o de inst&acirc;ncias EC2 provisionadas pelo EMR para executar seus&nbsp;<strong><em>step</em></strong>.</p>
+
+<p>O EMR utiliza o Apache Hadoop como seu motor de processamento distribu&iacute;do de dados, que &eacute; um framework de software Java de c&oacute;digo aberto que suporta aplicativos distribu&iacute;dos intensivos em dados em grandes clusters de hardware comum.</p>
+
+<p>O EMR &eacute; um bom lugar para implantar o Apache Spark, um processamento distribu&iacute;do de c&oacute;digo aberto usado para cargas de trabalho de big data que utiliza armazenamento em cache na mem&oacute;ria e execu&ccedil;&atilde;o otimizada de consultas.</p>
+
+<p>Voc&ecirc; tamb&eacute;m pode iniciar clusters Presto. O Presto &eacute; um motor de consulta SQL distribu&iacute;do de c&oacute;digo aberto projetado para consultas anal&iacute;ticas r&aacute;pidas em conjuntos de dados grandes.</p>
+
+<p>O EMR lan&ccedil;a todos os n&oacute;s para um determinado cluster na mesma Zona de Disponibilidade Amazon EC2.</p>
+
+<p>Voc&ecirc; pode acessar o Amazon EMR usando o Console de Gerenciamento da AWS, Ferramentas de Linha de Comando, SDKs ou a API EMR.</p>
+
+<p>Com o EMR, voc&ecirc; tem acesso ao sistema operacional subjacente (pode fazer SSH).</p>
+
+<h3><strong>Amazon Athena</strong></h3>
+
+<p>Amazon Athena &eacute; um servi&ccedil;o de consulta interativa que facilita a an&aacute;lise de dados no Amazon S3 usando SQL padr&atilde;o.</p>
+
+<p>Athena &eacute; serverless, ent&atilde;o n&atilde;o h&aacute; infraestrutura para gerenciar, e voc&ecirc; paga apenas pelas consultas que executa.</p>
+
+<p>Athena &eacute; f&aacute;cil de usar - basta apontar para seus dados no Amazon S3, definir o esquema e come&ccedil;ar a consultar usando SQL padr&atilde;o.</p>
+
+<p>A Amazon Athena utiliza o Presto com suporte total a SQL padr&atilde;o e funciona com uma variedade de formatos de dados padr&atilde;o, incluindo CSV, JSON, ORC, Apache Parquet e Avro.</p>
+
+<p>Embora a Amazon Athena seja ideal para consultas r&aacute;pidas e ad-hoc e integre-se ao Amazon QuickSight para visualiza&ccedil;&atilde;o f&aacute;cil, ela tamb&eacute;m pode lidar com an&aacute;lises complexas, incluindo grandes jun&ccedil;&otilde;es, fun&ccedil;&otilde;es de janela e arrays.</p>
+
+<p>Amazon Athena usa um Cat&aacute;logo de Dados gerenciado para armazenar informa&ccedil;&otilde;es e esquemas sobre os bancos de dados e tabelas que voc&ecirc; cria para seus dados armazenados no Amazon S3.</p>
+
+<h3><strong>AWS Glue</strong></h3>
+
+<p>AWS Glue &eacute; um servi&ccedil;o totalmente gerenciado, pay-as-you-go, de extra&ccedil;&atilde;o, transforma&ccedil;&atilde;o e carga (ETL) que automatiza as etapas demoradas de prepara&ccedil;&atilde;o de dados para an&aacute;lises.</p>
+
+<p>O AWS Glue descobre e perfila automaticamente dados por meio do Cat&aacute;logo de Dados Glue, recomenda e gera c&oacute;digo ETL para transformar seus dados de origem em esquemas de destino.</p>
+
+<p>O AWS Glue executa os trabalhos ETL em um ambiente Apache Spark totalmente gerenciado para carregar seus dados em seu destino.</p>
+
+<p>O AWS Glue tamb&eacute;m permite configurar, orquestrar e monitorar fluxos de dados complexos.</p>
+
+<p>Voc&ecirc; pode criar e executar um trabalho ETL com alguns cliques no Console de Gerenciamento da AWS.</p>
+
+<p>Use o AWS Glue para descobrir propriedades de dados, transform&aacute;-los e prepar&aacute;-los para an&aacute;lises.</p>
+
+<p>O Glue pode descobrir automaticamente dados estruturados e semi-estruturados armazenados em data lakes no Amazon S3, data warehouses no Amazon Redshift e v&aacute;rios bancos de dados em execu&ccedil;&atilde;o na AWS.</p>
+
+<p>Ele fornece uma vis&atilde;o unificada dos dados por meio do Cat&aacute;logo de Dados Glue, que est&aacute; dispon&iacute;vel para ETL, consulta e relat&oacute;rio usando servi&ccedil;os como Amazon Athena, Amazon EMR e Amazon Redshift Spectrum.</p>
+
+<p>O Glue gera automaticamente c&oacute;digo Scala ou Python para trabalhos ETL que voc&ecirc; pode personalizar ainda mais usando ferramentas com as quais voc&ecirc; j&aacute; est&aacute; familiarizado.</p>
+
+<p>O AWS Glue &eacute; serverless, portanto, n&atilde;o h&aacute; recursos de computa&ccedil;&atilde;o para configurar e gerenciar.</p>
+
+<h3><strong>Casos de Uso de An&aacute;lise de Dados e Consulta</strong></h3>
+
+<p>Servi&ccedil;os de consulta como Amazon Athena, data warehouses como Amazon Redshift e estruturas sofisticadas de processamento de dados como Amazon EMR, abordam diferentes necessidades e casos de uso.</p>
+
+<p>O Amazon Redshift fornece o desempenho de consulta mais r&aacute;pido para cargas de trabalho de relat&oacute;rios empresariais e intelig&ecirc;ncia de neg&oacute;cios, especialmente aquelas que envolvem SQL extremamente complexo com v&aacute;rias jun&ccedil;&otilde;es e subconsultas.</p>
+
+<p>O Amazon EMR torna simples e econ&ocirc;mico executar frameworks de processamento altamente distribu&iacute;dos, como Hadoop, Spark e Presto, em compara&ccedil;&atilde;o com implementa&ccedil;&otilde;es no local. O Amazon EMR &eacute; flex&iacute;vel - voc&ecirc; pode executar aplicativos e c&oacute;digo personalizados e definir par&acirc;metros espec&iacute;ficos de computa&ccedil;&atilde;o, mem&oacute;ria, armazenamento e aplica&ccedil;&atilde;o para otimizar seus requisitos anal&iacute;ticos.</p>
+
+<p>Amazon Athena fornece a maneira mais f&aacute;cil de executar consultas ad-hoc para dados no S3 sem a necessidade de configurar ou gerenciar servidores.</p>
+
+<p>A tabela abaixo mostra o caso de uso principal e as situa&ccedil;&otilde;es para o uso de alguns servi&ccedil;os de consulta e an&aacute;lise da AWS:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td><strong>Servi&ccedil;o AWS</strong></td>
+			<td><strong>Caso de Uso</strong></td>
+			<td><strong>Quando usar</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Amazon Athena</strong></td>
+			<td>Consulta</td>
+			<td>Executar consultas interativas diretamente em dados no Amazon S3 sem se preocupar com a formata&ccedil;&atilde;o dos dados ou gerenciamento de infraestrutura. Pode ser usado com outros servi&ccedil;os como o Amazon RedShift</td>
+		</tr>
+		<tr>
+			<td><strong>Amazon RedShift</strong></td>
+			<td>Data Warehouse</td>
+			<td>Extrair dados de v&aacute;rias fontes, format&aacute;-los e organiz&aacute;-los, armazen&aacute;-los e oferecer suporte a consultas complexas e r&aacute;pidas que geram relat&oacute;rios comerciais.</td>
+		</tr>
+		<tr>
+			<td><strong>Amazon EMR</strong></td>
+			<td>Processamento de Dados</td>
+			<td>Frameworks de processamento altamente distribu&iacute;dos, como Hadoop, Spark e Presto. Executa uma ampla variedade de tarefas de processamento de dados de escala para aplicativos como aprendizado de m&aacute;quina, an&aacute;lise de gr&aacute;ficos, transforma&ccedil;&atilde;o de dados, dados em tempo real.</td>
+		</tr>
+		<tr>
+			<td><strong>AWS Glue</strong></td>
+			<td>Servi&ccedil;o ETL</td>
+			<td>Transforma e move dados para v&aacute;rios destinos. Usado para preparar e carregar dados para an&aacute;lises. A fonte de dados pode ser S3, RedShift ou outro banco de dados. O Cat&aacute;logo de Dados Glue pode ser consultado por Athena, EMR e RedShift Spectrum.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3><strong>Amazon Kinesis</strong></h3>
+
+<p>Amazon Kinesis facilita a coleta, processamento e an&aacute;lise de dados em tempo real e em fluxo, permitindo obter insights oportunos e reagir rapidamente a novas informa&ccedil;&otilde;es.</p>
+
+<p>Cole&ccedil;&atilde;o de servi&ccedil;os para processar fluxos de diversos tipos de dados.</p>
+
+<p>Os dados s&atilde;o processados em &quot;shards&quot; (parti&ccedil;&otilde;es).</p>
+
+<p>Existem quatro tipos de servi&ccedil;os Kinesis, detalhados a seguir.</p>
+
+<h3><strong>Kinesis Video Streams</strong></h3>
+
+<p>Kinesis Video Streams facilita o streaming seguro de v&iacute;deo de dispositivos conectados para a AWS para an&aacute;lises, aprendizado de m&aacute;quina (ML) e outros processamentos.</p>
+
+<p>Armazena, criptografa e indexa de forma dur&aacute;vel fluxos de dados de v&iacute;deo, permitindo acesso aos dados por meio de APIs f&aacute;ceis de usar.</p>
+
+<p>Os produtores fornecem fluxos de dados.</p>
+
+<p>Os dados s&atilde;o armazenados por padr&atilde;o por 24 horas, at&eacute; 7 dias.</p>
+
+<p>Os consumidores recebem e processam dados.</p>
+
+<p>Pode ter v&aacute;rias parti&ccedil;&otilde;es em um fluxo.</p>
+
+<p>Oferece suporte &agrave; criptografia em repouso com criptografia do lado do servidor (KMS) com uma chave mestra do cliente.</p>
+
+<h3><strong>Kinesis Data Streams</strong></h3>
+
+<p>Kinesis Data Streams permite construir aplicativos personalizados que processam ou analisam dados em tempo real para necessidades especializadas.</p>
+
+<p>Possibilita o processamento em tempo real de grandes volumes de dados (big data) em fluxo.</p>
+
+<p>Serve para mover rapidamente dados dos produtores de dados e, em seguida, processar continuamente esses dados.</p>
+
+<p>Armazena dados para processamento posterior por aplicativos (diferen&ccedil;a chave em rela&ccedil;&atilde;o ao Firehose, que entrega dados diretamente para os servi&ccedil;os AWS).</p>
+
+<p>Casos de uso comuns incluem:</p>
+
+<p>Capta&ccedil;&atilde;o acelerada de logs e feeds de dados.<br />
+M&eacute;tricas e relat&oacute;rios em tempo real.<br />
+An&aacute;lise de dados em tempo real.<br />
+Processamento de fluxo complexo.</p>
+
+<h3><strong>Kinesis Data Firehose</strong></h3>
+
+<p>Kinesis Data Firehose &eacute; a maneira mais f&aacute;cil de carregar dados em fluxo em armazenamentos de dados e ferramentas de an&aacute;lise.</p>
+
+<p>Captura, transforma e carrega dados em fluxo.</p>
+
+<p>Possibilita an&aacute;lises quase em tempo real com ferramentas e pain&eacute;is de intelig&ecirc;ncia de neg&oacute;cios existentes.</p>
+
+<p>Kinesis Data Streams pode ser usado como a fonte para o Kinesis Data Firehose.</p>
+
+<p>Voc&ecirc; pode configurar o Kinesis Data Firehose para transformar seus dados antes de entreg&aacute;-los.</p>
+
+<p>Com o Kinesis Data Firehose, voc&ecirc; n&atilde;o precisa escrever um aplicativo ou gerenciar recursos.</p>
+
+<p>O Firehose pode agrupar, compactar e criptografar dados antes de carreg&aacute;-los.</p>
+
+<p>O Firehose replica dados de forma s&iacute;ncrona em tr&ecirc;s Zonas de Disponibilidade &agrave; medida que s&atilde;o transportados para os destinos.</p>
+
+<p>Cada fluxo de entrega armazena registros de dados por at&eacute; 24 horas.</p>
+
+<h3><strong>Kinesis Data Analytics</strong></h3>
+
+<p>Amazon Kinesis Data Analytics &eacute; a maneira mais f&aacute;cil de processar e analisar dados em tempo real e em fluxo.</p>
+
+<p>Pode usar consultas SQL padr&atilde;o para processar fluxos de dados Kinesis.</p>
+
+<p>Oferece an&aacute;lise em tempo real.</p>
+
+<p>Casos de uso:</p>
+
+<p>Gerar an&aacute;lises de s&eacute;ries temporais.<br />
+Alimentar pain&eacute;is em tempo real.<br />
+Criar alertas e notifica&ccedil;&otilde;es em tempo real.<br />
+Criar e executar rapidamente c&oacute;digo SQL poderoso contra fontes de streaming.</p>
+
+<p>Pode receber dados de Kinesis Streams e Kinesis Firehose.</p>
+
+<p>Sa&iacute;da para S3, RedShift, Elasticsearch e Kinesis Data Streams.</p>
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

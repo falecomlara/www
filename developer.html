@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">DESENVOLVIMENTO</h2>
+
+        <div>
+
+          <h3><strong>AWS CodeStar</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;O AWS CodeStar permite desenvolver, criar e implantar
+              rapidamente aplicativos na AWS. Ele oferece uma interface unificada para gerenciar atividades de
+              desenvolvimento de software em um s&oacute; lugar.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Configura&ccedil;&atilde;o r&aacute;pida da cadeia de ferramentas de entrega cont&iacute;nua.</li>
+                <li>Facilita a colabora&ccedil;&atilde;o segura da equipe, gerenciando acessos e adicionando
+                  propriet&aacute;rios, contribuidores e visualizadores aos projetos.</li>
+                <li>Suporte a uma variedade de linguagens de programa&ccedil;&atilde;o e modelos de projeto para
+                  desenvolver em Amazon EC2, AWS Lambda e AWS Elastic Beanstalk.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/codestar/features/" target="_new">AWS CodeStar
+              Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS CodeCommit</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS CodeCommit &eacute; um servi&ccedil;o de controle de
+              origem totalmente gerenciado que hospeda reposit&oacute;rios seguros baseados em Git.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Facilita a colabora&ccedil;&atilde;o em c&oacute;digo em um ecossistema seguro e altamente
+                  escal&aacute;vel.</li>
+                <li>Elimina a necessidade de operar seu pr&oacute;prio sistema de controle de origem.</li>
+                <li>Funciona perfeitamente com ferramentas Git existentes.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/codecommit/features/" target="_new">AWS
+              CodeCommit Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS CodeBuild</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS CodeBuild &eacute; um servi&ccedil;o de
+              integra&ccedil;&atilde;o cont&iacute;nua totalmente gerenciado que compila c&oacute;digo-fonte, executa
+              testes e produz pacotes de software prontos para implanta&ccedil;&atilde;o.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Elimina a necessidade de provisionar, gerenciar e escalar seus pr&oacute;prios servidores de
+                  compila&ccedil;&atilde;o.</li>
+                <li>Escala continuamente e processa v&aacute;rias compila&ccedil;&otilde;es simultaneamente.</li>
+                <li>Permite come&ccedil;ar rapidamente com ambientes de compila&ccedil;&atilde;o pr&eacute;-empacotados
+                  ou criar ambientes personalizados.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/codebuild/features/" target="_new">AWS
+              CodeBuild Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS CodeDeploy</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS CodeDeploy &eacute; um servi&ccedil;o de
+              implanta&ccedil;&atilde;o totalmente gerenciado que automatiza implanta&ccedil;&otilde;es de software em
+              uma variedade de servi&ccedil;os de computa&ccedil;&atilde;o, como Amazon EC2, AWS Lambda e servidores
+              locais.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Facilita a r&aacute;pida libera&ccedil;&atilde;o de novos recursos.</li>
+                <li>Evita tempo de inatividade durante a implanta&ccedil;&atilde;o de aplicativos.</li>
+                <li>Automatiza implanta&ccedil;&otilde;es de software, eliminando opera&ccedil;&otilde;es manuais
+                  propensas a erros.</li>
+                <li>Escala para atender &agrave;s necessidades de implanta&ccedil;&atilde;o, desde uma &uacute;nica
+                  fun&ccedil;&atilde;o Lambda at&eacute; milhares de inst&acirc;ncias EC2.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/codedeploy/features/" target="_new">AWS
+              CodeDeploy Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS CodePipeline</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS CodePipeline &eacute; um servi&ccedil;o de entrega
+              cont&iacute;nua totalmente gerenciado que ajuda a automatizar os pipelines de lan&ccedil;amento para
+              atualiza&ccedil;&otilde;es r&aacute;pidas e confi&aacute;veis de aplicativos e infraestrutura.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Automatiza as fases de constru&ccedil;&atilde;o, teste e implanta&ccedil;&atilde;o sempre que
+                  h&aacute; uma altera&ccedil;&atilde;o de c&oacute;digo.</li>
+                <li>Facilita a entrega r&aacute;pida e confi&aacute;vel de recursos e atualiza&ccedil;&otilde;es.</li>
+                <li>Integra facilmente com servi&ccedil;os de terceiros, como o GitHub, ou com plugins personalizados.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/codepipeline/features/" target="_new">AWS
+              CodePipeline Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS X-Ray</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS X-Ray ajuda os desenvolvedores a analisar e depurar
+              aplicativos distribu&iacute;dos em produ&ccedil;&atilde;o, como aqueles constru&iacute;dos usando uma
+              arquitetura de microsservi&ccedil;os.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Permite entender o desempenho do aplicativo e seus servi&ccedil;os subjacentes.</li>
+                <li>Identifica e soluciona a causa raiz de problemas de desempenho e erros.</li>
+                <li>Oferece uma visualiza&ccedil;&atilde;o de ponta a ponta de solicita&ccedil;&otilde;es enquanto
+                  viajam pelo aplicativo.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/xray/features/" target="_new">AWS X-Ray
+              Caracter&iacute;sticas</a></p>
+
+          <hr />
+          <h3><strong>AWS Service Catalog</strong></h3>
+
+          <p><strong>Vis&atilde;o geral:</strong></p>
+
+          <ul>
+            <li><strong>Descri&ccedil;&atilde;o:</strong>&nbsp;AWS Service Catalog permite que as
+              organiza&ccedil;&otilde;es criem e gerenciem cat&aacute;logos de servi&ccedil;os aprovados para ajudar os
+              desenvolvedores a implantar servi&ccedil;os de forma r&aacute;pida e compat&iacute;vel com
+              pol&iacute;ticas.</li>
+            <li><strong>Caracter&iacute;sticas:</strong>
+              <ul>
+                <li>Oferece cat&aacute;logos personalizados para servi&ccedil;os aprovados.</li>
+                <li>Facilita a implanta&ccedil;&atilde;o r&aacute;pida e segura de servi&ccedil;os.</li>
+                <li>Mant&eacute;m o controle sobre recursos implantados e sua conformidade.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Link:</strong>&nbsp;<a href="https://aws.amazon.com/servicecatalog/features/" target="_new">AWS
+              Service Catalog Caracter&iacute;sticas</a></p>
+
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

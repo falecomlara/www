@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">CDN e DNS</h2>
+
+<div>
+
+  <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os para armazenar em cache conte&uacute;do ao redor do mundo e fornecer servi&ccedil;os inteligentes de Sistema de Nomes de Dom&iacute;nio (DNS) para suas aplica&ccedil;&otilde;es.</p>
+
+  <p><strong>Amazon Route 53</strong></p>
+  
+  <p>O Amazon Route 53 &eacute; o Servi&ccedil;o de Nomes de Dom&iacute;nio (DNS) da AWS.</p>
+  
+  <p>O Route 53 desempenha tr&ecirc;s fun&ccedil;&otilde;es principais:</p>
+  
+  <p>1. Registro de dom&iacute;nio - o Route 53 permite que voc&ecirc; registre nomes de dom&iacute;nio.<br />
+  2. Servi&ccedil;o de Sistema de Nomes de Dom&iacute;nio (DNS) - o Route 53 traduz nomes em endere&ccedil;os IP usando uma rede global de servidores DNS autoritativos.<br />
+  3. Verifica&ccedil;&atilde;o de integridade - o Route 53 envia solicita&ccedil;&otilde;es automatizadas para sua aplica&ccedil;&atilde;o para verificar se ela &eacute; alcan&ccedil;&aacute;vel, est&aacute; dispon&iacute;vel e funcional.</p>
+  
+  <p>Voc&ecirc; pode usar qualquer combina&ccedil;&atilde;o dessas fun&ccedil;&otilde;es.</p>
+  
+  <p>Benef&iacute;cios do Route 53:</p>
+  
+  <p>- Registro de dom&iacute;nio.<br />
+  - Servi&ccedil;o DNS.<br />
+  - Fluxo de Tr&aacute;fego (envie usu&aacute;rios para o melhor ponto de extremidade).<br />
+  - Verifica&ccedil;&atilde;o de integridade.<br />
+  - Failover DNS (altera automaticamente o ponto de extremidade do dom&iacute;nio se o sistema falhar).<br />
+  - Integra&ccedil;&atilde;o com ELB, S3 e CloudFront como pontos de extremidade.</p>
+  
+  <p>As pol&iacute;ticas de roteamento determinam como o DNS do Route 53 responde &agrave;s consultas.</p>
+  
+  <p>A tabela abaixo destaca a principal fun&ccedil;&atilde;o de cada tipo de pol&iacute;tica de roteamento:</p>
+  
+  <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:100%">
+    <tbody>
+      <tr>
+        <td style="text-align:center; width:210px"><strong>Pol&iacute;tica</strong></td>
+        <td style="text-align:center; width:959px"><strong>O que faz</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Simples</td>
+        <td style="width:959px">Resposta DNS simples fornecendo o endere&ccedil;o IP associado a um nome</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Failover</td>
+        <td style="width:959px">Se o prim&aacute;rio estiver inativo (com base em verifica&ccedil;&otilde;es de integridade), roteia para o destino secund&aacute;rio</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Geolocaliza&ccedil;&atilde;o</td>
+        <td style="width:959px">Usa a localiza&ccedil;&atilde;o geogr&aacute;fica em que voc&ecirc; est&aacute; (por exemplo, Europa) para rote&aacute;-lo para a regi&atilde;o mais pr&oacute;xima</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Geoproximidade</td>
+        <td style="width:959px">Roteia para a regi&atilde;o mais pr&oacute;xima em uma &aacute;rea geogr&aacute;fica</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Lat&ecirc;ncia</td>
+        <td style="width:959px">Direciona com base na rota de menor lat&ecirc;ncia para os recursos</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Resposta Multivalor</td>
+        <td style="width:959px">Retorna v&aacute;rios endere&ccedil;os IP e funciona como um balanceador de carga b&aacute;sico</td>
+      </tr>
+      <tr>
+        <td style="text-align:center; width:210px">Ponderada</td>
+        <td style="width:959px">Usa os pesos relativos atribu&iacute;dos aos recursos para determinar para qual rotear</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>&nbsp;</p>
+  
+  <p><strong>Amazon CloudFront</strong></p>
+  
+  <p>O Amazon CloudFront &eacute; uma rede de entrega de conte&uacute;do (CDN) que permite armazenar (fazer cache) do seu conte&uacute;do em &quot;locais de borda&quot; ao redor do mundo.</p>
+  
+  <p>Isso permite que os clientes acessem o conte&uacute;do mais rapidamente e fornece seguran&ccedil;a contra ataques DDoS.</p>
+  
+  <p>O CloudFront pode ser usado para dados, v&iacute;deos, aplicativos e APIs.</p>
+  
+  <p>Benef&iacute;cios do CloudFront:</p>
+  
+  <p>- Armazena em cache o conte&uacute;do no Local de Borda para distribui&ccedil;&atilde;o r&aacute;pida aos clientes.<br />
+  - Prote&ccedil;&atilde;o integrada contra ataques Distribu&iacute;dos de Nega&ccedil;&atilde;o de Servi&ccedil;o (DDoS).<br />
+  - Integra-se a muitos servi&ccedil;os AWS (S3, EC2, ELB, Route 53, Lambda).</p>
+  
+  <p>Origens e Distribui&ccedil;&otilde;es:</p>
+  
+  <p>- Uma origem &eacute; a fonte dos arquivos que a CDN distribuir&aacute;.<br />
+  - As origens podem ser um bucket S3, uma inst&acirc;ncia EC2, um Balanceador de Carga El&aacute;stico ou o Route 53 - tamb&eacute;m podem ser externas (n&atilde;o AWS).<br />
+  - Para distribuir conte&uacute;do com o CloudFront, &eacute; necess&aacute;rio criar uma distribui&ccedil;&atilde;o.</p>
+  
+  <p>O CloudFront utiliza Locais de Borda e Caches Regionais:</p>
+  
+  <p>- Um local de borda &eacute; o local onde o conte&uacute;do &eacute; armazenado em cache (separado das regi&otilde;es/AZs da AWS).<br />
+  - As solicita&ccedil;&otilde;es s&atilde;o automaticamente roteadas para o local de borda mais pr&oacute;ximo.<br />
+  - Os Caches Regionais est&atilde;o localizados entre servidores web de origem e locais de borda globais, com um cache maior.<br />
+  - Os Caches Regionais visam aproximar o conte&uacute;do dos usu&aacute;rios.</p>
+  
+
+</div>
+
+<div style="text-align: center;">
+  <div>
+    <button onclick="goBack()">Voltar</button>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

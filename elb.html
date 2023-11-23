@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">AWS Auto Scaling e Elastic Load Balance</h2>
+
+<div>
+
+  <p>O AWS Auto Scaling e o AWS Elastic Load Balancing s&atilde;o recursos da AWS que podem ser usados separadamente ou em conjunto para elasticidade e alta disponibilidade.</p>
+
+  <hr />
+  <p><strong>Amazon EC2 Auto Scaling</strong></p>
+  
+  <p>O Amazon EC2 Auto Scaling automatiza o processo de lan&ccedil;amento (escalonamento para fora) e t&eacute;rmino (escalonamento para dentro) de inst&acirc;ncias Amazon EC2 com base na demanda de tr&aacute;fego para sua aplica&ccedil;&atilde;o.</p>
+  
+  <p>O Auto Scaling ajuda a garantir que voc&ecirc; tenha o n&uacute;mero correto de inst&acirc;ncias EC2 dispon&iacute;veis para lidar com a carga da aplica&ccedil;&atilde;o.</p>
+  
+  <p>O Amazon EC2 Auto Scaling fornece elasticidade e escalabilidade.</p>
+  
+  <p>Voc&ecirc; cria cole&ccedil;&otilde;es de inst&acirc;ncias EC2, chamadas de grupo Auto Scaling (ASG).</p>
+  
+  <p>Voc&ecirc; pode especificar o n&uacute;mero m&iacute;nimo de inst&acirc;ncias em cada ASG, e o AWS Auto Scaling garantir&aacute; que o grupo nunca fique abaixo desse tamanho.</p>
+  
+  <p>Voc&ecirc; tamb&eacute;m pode especificar o n&uacute;mero m&aacute;ximo de inst&acirc;ncias em cada ASG, e o grupo nunca ultrapassar&aacute; esse tamanho.</p>
+  
+  <p>Uma capacidade desejada pode ser configurada, e o AWS Auto Scaling garantir&aacute; que o grupo tenha esse n&uacute;mero de inst&acirc;ncias.</p>
+  
+  <p>Voc&ecirc; tamb&eacute;m pode especificar pol&iacute;ticas de dimensionamento que controlam quando o Auto Scaling inicia ou termina inst&acirc;ncias.</p>
+  
+  <p>As pol&iacute;ticas de dimensionamento determinam quando, se e como o ASG escala e diminui (escalonamento din&acirc;mico/on-demand, escalonamento c&iacute;clico/agendado).</p>
+  
+  <p>Os Planos de Dimensionamento definem os gatilhos e quando as inst&acirc;ncias devem ser provisionadas/desprovisionadas.</p>
+  
+  <p>Uma configura&ccedil;&atilde;o de lan&ccedil;amento &eacute; o modelo usado para criar novas inst&acirc;ncias EC2 e inclui par&acirc;metros como fam&iacute;lia de inst&acirc;ncias, tipo de inst&acirc;ncia, AMI, par de chaves e grupos de seguran&ccedil;a.</p>
+  
+  <hr />
+  <p><strong>Amazon Elastic Load Balancing (ELB)</strong></p>
+  
+  <p>ELB distribui automaticamente o tr&aacute;fego de aplicativos recebido entre v&aacute;rios destinos, como inst&acirc;ncias Amazon EC2, cont&ecirc;ineres e endere&ccedil;os IP.</p>
+  
+  <p>ELB pode lidar com a carga vari&aacute;vel do tr&aacute;fego da sua aplica&ccedil;&atilde;o em uma &uacute;nica Zona de Disponibilidade ou em v&aacute;rias Zonas de Disponibilidade.</p>
+  
+  <p>ELB possui alta disponibilidade, dimensionamento autom&aacute;tico e seguran&ccedil;a robusta necess&aacute;ria para tornar suas aplica&ccedil;&otilde;es tolerantes a falhas.</p>
+  
+  <p>Existem tr&ecirc;s tipos de Balanceador de Carga El&aacute;stico (ELB) na AWS:</p>
+  
+  <ol>
+    <li><strong>Application Load Balancer (ALB):</strong> Balanceador de carga na camada 7 que roteia conex&otilde;es com base no conte&uacute;do da solicita&ccedil;&atilde;o.</li>
+    <li><strong>Network Load Balancer (NLB):</strong> Balanceador de carga na camada 4 que roteia conex&otilde;es com base em dados de protocolo IP.</li>
+    <li><strong>Gateway Load Balancer (GLB):</strong> Distribui conex&otilde;es para dispositivos virtuais e dimensiona-os para cima ou para baixo.
+    <ol>
+      <li>A &uacute;nica caracter&iacute;sticas que voc&ecirc; precisa lembrar desse balanceador de carga &eacute; que ele atua com o protocolo Geneve,&nbsp;na porta 6081.</li>
+    </ol>
+    </li>
+  </ol>
+  
+  <hr />
+  <p><strong>Application Load Balancer (ALB)</strong></p>
+  
+  <p>O ALB &eacute; mais adequado para o balanceamento de tr&aacute;fego HTTP e HTTPS, oferecendo roteamento avan&ccedil;ado de solicita&ccedil;&otilde;es voltado para a entrega de arquiteturas de aplicativos modernos, incluindo microsservi&ccedil;os e cont&ecirc;ineres.</p>
+  
+  <p>Operando no n&iacute;vel de solicita&ccedil;&atilde;o individual (Camada 7), o Application Load Balancer roteia o tr&aacute;fego para destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) com base no conte&uacute;do da solicita&ccedil;&atilde;o.</p>
+  
+  <hr />
+  <p><strong>Network Load Balancer (NLB)</strong></p>
+  
+  <p>O NLB &eacute; mais <strong>adequado</strong> para o balanceamento de tr&aacute;fego TCP, <strong>onde &eacute; necess&aacute;rio um desempenho extremo</strong>.</p>
+  
+  <p>Operando no n&iacute;vel de conex&atilde;o (Camada 4), o Network Load Balancer roteia o tr&aacute;fego para destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) e &eacute; capaz de lidar com milh&otilde;es de solicita&ccedil;&otilde;es por segundo, mantendo lat&ecirc;ncias ultra baixas.</p>
+  
+  <p>O Network Load Balancer tamb&eacute;m &eacute; otimizado para lidar com padr&otilde;es de tr&aacute;fego repentinos e vol&aacute;teis.</p>
+  
+
+</div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

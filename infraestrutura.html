@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">Infraestrutura Global da AWS</h2>
+
+        <div>
+          <p>Este artigo aborda a Infraestrutura Global da AWS, que &eacute; uma &aacute;rea tecnol&oacute;gica chave
+            abordada no blueprint do exame Cloud Practitioner. A infraestrutura da AWS &eacute; constru&iacute;da em
+            torno de Regi&otilde;es e Zonas de Disponibilidade (AZs).</p>
+
+          <p>Uma&nbsp;<strong>Regi&atilde;o da AWS</strong>&nbsp;&eacute; uma localiza&ccedil;&atilde;o f&iacute;sica no
+            mundo onde a AWS possui v&aacute;rias AZs.</p>
+
+          <p>AZs consistem em um ou mais data centers discretos, cada um com energia redundante, rede e conectividade,
+            alojados em instala&ccedil;&otilde;es separadas.</p>
+
+          <p>Cada regi&atilde;o &eacute; completamente independente. Cada Zona de Disponibilidade &eacute; isolada, mas
+            as Zonas de Disponibilidade em uma regi&atilde;o est&atilde;o conectadas por links de baixa lat&ecirc;ncia.
+          </p>
+
+          <hr />
+          <h3><strong>Regi&otilde;es</strong></h3>
+
+          <ul>
+            <li>Uma regi&atilde;o &eacute; uma &aacute;rea geogr&aacute;fica.</li>
+            <li>Cada regi&atilde;o consiste em 3 ou mais zonas de disponibilidade.</li>
+            <li>Cada Regi&atilde;o da Amazon &eacute; projetada para ser completamente isolada das outras Regi&otilde;es
+              da Amazon.</li>
+            <li>Cada Regi&atilde;o da AWS possui v&aacute;rias Zonas de Disponibilidade e data centers.</li>
+            <li>Voc&ecirc; pode replicar dados dentro de uma regi&atilde;o e entre regi&otilde;es usando conex&otilde;es
+              privadas ou p&uacute;blicas na Internet.</li>
+            <li>Voc&ecirc; mant&eacute;m controle completo e propriedade sobre a regi&atilde;o na qual seus dados
+              est&atilde;o fisicamente localizados, facilitando o atendimento aos requisitos regionais de conformidade e
+              resid&ecirc;ncia de dados.</li>
+            <li>Observe que h&aacute; uma taxa para transfer&ecirc;ncia de dados entre regi&otilde;es.</li>
+            <li>Ao iniciar uma inst&acirc;ncia EC2, voc&ecirc; deve selecionar uma AMI na mesma regi&atilde;o. Se a AMI
+              estiver em outra regi&atilde;o, voc&ecirc; pode copiar a AMI para a regi&atilde;o que est&aacute; usando.
+            </li>
+          </ul>
+
+          <hr />
+          <h3><strong>Regi&otilde;es e Pontos de Extremidade:</strong></h3>
+
+          <ul>
+            <li>Ao trabalhar com uma inst&acirc;ncia usando a interface de linha de comando ou a&ccedil;&otilde;es da
+              API, voc&ecirc; deve especificar o ponto de extremidade regional.</li>
+            <li>Para reduzir a lat&ecirc;ncia de dados em suas aplica&ccedil;&otilde;es, a maioria dos Servi&ccedil;os
+              da Web da Amazon oferece um ponto de extremidade regional para fazer suas solicita&ccedil;&otilde;es.</li>
+            <li>Um ponto de extremidade &eacute; uma URL que &eacute; o ponto de entrada para um servi&ccedil;o da web.
+            </li>
+            <li>Por exemplo,&nbsp;<a href="https://dynamodb.us-west-2.amazonaws.com/"
+                target="_new">https://dynamodb.us-west-2.amazonaws.com</a>&nbsp;&eacute; um ponto de entrada para o
+              servi&ccedil;o Amazon DynamoDB.</li>
+          </ul>
+
+          <hr />
+          <h3><strong>Zonas de Disponibilidade</strong></h3>
+
+          <ul>
+            <li>Zonas de Disponibilidade s&atilde;o fisicamente separadas e isoladas entre si.</li>
+            <li>As Zonas de Disponibilidade abrangem um ou mais data centers e t&ecirc;m conex&otilde;es de rede
+              diretas, de baixa lat&ecirc;ncia, alta largura de banda e redundantes entre si.</li>
+            <li>Cada Zona de Disponibilidade &eacute; projetada como uma zona de falha independente.</li>
+            <li>Ao lan&ccedil;ar uma inst&acirc;ncia, voc&ecirc; pode selecionar uma Zona de Disponibilidade ou permitir
+              que a AWS escolha uma para voc&ecirc;.</li>
+            <li>Se distribuir suas inst&acirc;ncias EC2 em v&aacute;rias Zonas de Disponibilidade e uma inst&acirc;ncia
+              falhar, voc&ecirc; pode projetar sua aplica&ccedil;&atilde;o para que uma inst&acirc;ncia em outra Zona de
+              Disponibilidade possa lidar com as solicita&ccedil;&otilde;es.</li>
+            <li>Voc&ecirc; tamb&eacute;m pode usar endere&ccedil;os IP el&aacute;sticos para mascarar a falha de uma
+              inst&acirc;ncia em uma Zona de Disponibilidade, remapeando rapidamente o endere&ccedil;o para uma
+              inst&acirc;ncia em outra Zona de Disponibilidade.</li>
+            <li>Uma Zona de Disponibilidade &eacute; representada por um c&oacute;digo de regi&atilde;o seguido por um
+              identificador de letra; por exemplo, us-east-1a.</li>
+            <li>Para garantir que os recursos sejam distribu&iacute;dos entre as Zonas de Disponibilidade de uma
+              regi&atilde;o, a AWS mapeia independentemente as Zonas de Disponibilidade para nomes de cada conta da AWS.
+            </li>
+            <li>Por exemplo, a Zona de Disponibilidade us-east-1a para sua conta da AWS pode n&atilde;o ser a mesma
+              localiza&ccedil;&atilde;o que us-east-1a para outra conta da AWS.</li>
+            <li>Para coordenar as Zonas de Disponibilidade entre contas, &eacute; necess&aacute;rio usar o ID da Zona de
+              Disponibilidade, que &eacute; um identificador &uacute;nico e consistente para uma Zona de
+              Disponibilidade.</li>
+            <li>As Zonas de Disponibilidade s&atilde;o fisicamente separadas dentro de uma regi&atilde;o metropolitana
+              t&iacute;pica e est&atilde;o em &aacute;reas de risco de inunda&ccedil;&atilde;o mais baixo.</li>
+            <li>As Zonas de Disponibilidade usam instala&ccedil;&otilde;es discretas de UPS e gera&ccedil;&atilde;o de
+              backup no local e s&atilde;o alimentadas por meio de redes diferentes de instala&ccedil;&otilde;es
+              independentes.</li>
+            <li>Todas as Zonas de Disponibilidade est&atilde;o conectadas de forma redundante a v&aacute;rios provedores
+              de tr&acirc;nsito de n&iacute;vel 1.</li>
+          </ul>
+
+          <hr />
+          <h3><strong>Zonas Locais</strong></h3>
+
+          <ul>
+            <li>As&nbsp;<strong>Zonas Locais da AWS</strong>&nbsp;colocam computa&ccedil;&atilde;o, armazenamento, banco
+              de dados e outros servi&ccedil;os selecionados da AWS mais pr&oacute;ximos dos usu&aacute;rios finais.
+            </li>
+            <li>Com as Zonas Locais da AWS, voc&ecirc; pode executar facilmente aplicativos altamente exigentes que
+              exigem lat&ecirc;ncias de um &uacute;nico d&iacute;gito de milissegundos para seus usu&aacute;rios finais.
+            </li>
+            <li>Cada localiza&ccedil;&atilde;o das Zonas Locais da AWS &eacute; uma extens&atilde;o de uma Regi&atilde;o
+              da AWS, onde voc&ecirc; pode executar aplicativos sens&iacute;veis &agrave; lat&ecirc;ncia usando
+              servi&ccedil;os da AWS, como Amazon Elastic Compute Cloud, Amazon Virtual Private Cloud, Amazon Elastic
+              Block Store, Amazon File Storage e Amazon Elastic Load Balancing em proximidade geogr&aacute;fica aos
+              usu&aacute;rios finais.</li>
+            <li>As Zonas Locais da AWS fornecem uma conex&atilde;o segura de alta largura de banda entre cargas de
+              trabalho locais e aquelas em execu&ccedil;&atilde;o na Regi&atilde;o da AWS, permitindo que voc&ecirc; se
+              conecte perfeitamente &agrave; gama completa de servi&ccedil;os na regi&atilde;o por meio das mesmas APIs
+              e conjuntos de ferramentas.</li>
+          </ul>
+
+          <hr />
+          <h3><strong>AWS Wavelength</strong></h3>
+
+          <ul>
+            <li>A AWS Wavelength permite que os desenvolvedores criem aplicativos que oferecem lat&ecirc;ncias de um
+              &uacute;nico d&iacute;gito de milissegundos para dispositivos m&oacute;veis e usu&aacute;rios finais.</li>
+            <li>Os desenvolvedores da AWS podem implantar seus aplicativos em Zonas Wavelength,
+              implanta&ccedil;&otilde;es de infraestrutura da AWS que incorporam servi&ccedil;os de
+              computa&ccedil;&atilde;o e armazenamento da AWS nos data centers dos provedores de
+              telecomunica&ccedil;&otilde;es na borda das redes 5G e acessam perfeitamente a amplitude de
+              servi&ccedil;os da AWS na regi&atilde;o.</li>
+            <li>A AWS Wavelength leva os servi&ccedil;os da AWS at&eacute; a borda da rede 5G, minimizando a
+              lat&ecirc;ncia para se conectar a um aplicativo a partir de um dispositivo m&oacute;vel.</li>
+          </ul>
+
+          <hr />
+          <h3><strong>AWS Outposts</strong></h3>
+
+          <ul>
+            <li>O&nbsp;<strong>AWS Outposts</strong>&nbsp;traz servi&ccedil;os nativos da AWS, infraestrutura e modelos
+              operacionais para virtualmente qualquer data center, espa&ccedil;o de co-loca&ccedil;&atilde;o ou
+              instala&ccedil;&atilde;o no local.</li>
+            <li>Voc&ecirc; pode usar as mesmas APIs, ferramentas e infraestrutura da AWS em ambientes locais e na nuvem
+              AWS para oferecer uma experi&ecirc;ncia h&iacute;brida verdadeiramente consistente.</li>
+            <li>O AWS Outposts &eacute; projetado para ambientes conectados e pode ser usado para dar suporte a cargas
+              de trabalho que precisam permanecer no local devido a baixa lat&ecirc;ncia ou necessidades de
+              processamento local de dados.</li>
+          </ul>
+
+          <hr />
+          <h3><strong>Locais de Borda e Caches de Borda Regionais</strong></h3>
+
+          <ul>
+            <li>Locais de Borda s&atilde;o pontos finais de Rede de Distribui&ccedil;&atilde;o de Conte&uacute;do (CDN)
+              para o CloudFront.</li>
+            <li>Existem muitos mais locais de borda do que regi&otilde;es.</li>
+            <li>Atualmente, existem mais de 200 locais de borda.</li>
+            <li>Os Caches de Borda Regionais ficam entre os servidores de origem do CloudFront e os Locais de Borda.
+            </li>
+            <li>Um Cache de Borda Regional tem uma largura de cache maior do que cada um dos Locais de Borda
+              individuais.</li>
+          </ul>
+        </div>
+
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

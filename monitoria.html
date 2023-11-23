@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="index, follow" name="robots">
+  <meta content="Portuguese" name="language">
+  <meta content="Eduardo Lara" name="author">
+
+
+  <title>Você Certificado AWS: Da Nuvem à Certificação</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { if (!Cookies.get("cookie_consent")) { var e = document.createElement("div"); e.className = "cookie-consent-banner", e.innerHTML = '<p>Este site utiliza cookies do Google, para garantir a melhor experiência possível. Saiba o motivo do uso na <a href="https://policies.google.com/privacy#infocollect" target="_blank">Política de Privacidade</a>.</p><button class="cookie-consent-button">Ok, entendi</button>', document.body.appendChild(e), e.querySelector(".cookie-consent-button").addEventListener("click", function () { Cookies.set("cookie_consent", "true", { expires: 365 }), e.remove() }) } })</script>
+  <script src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
+
+  <style type="text/css">
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 5px;
+      text-align: center;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+
+    .cookie-consent-button {
+      background-color: orange;
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header" class="uk-position-relative uk-background-top-center uk-background-cover uk-background-norepeat"
+    style="background-color:#000;background-image:url(imagens/fundo.jpg)">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+      <div id="topo" class="uk-container">
+        <div data-uk-navbar>
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/"><img class="uk-logo-inverse"
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"> <img
+                src="imagens/vocecertificadoaws_logo.png" alt="Cursos Você Certificado AWS"></a>
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-visible@m"></ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="index.html#cursos">CURSOS AWS</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+              <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+              <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+              <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation"
+              data-uk-navbar-toggle-icon data-uk-toggle></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uk-position-relative uk-container uk-container-xsmall">
+      <div class="uk-section uk-section-medium uk-width-1-1 uk-light" data-uk-parallax="y: 100;"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <h1 class="uk-heading-medium" style>VOCÊ CERTIFICADO AWS</h1>
+            <div class="uk-text-lead" style>Do básico ao avançado, para você passar na prova de certificação!</div>
+            <div class="uk-margin-medium-top"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #other">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+          <li><a href="index.html#cursos">CURSOS AWS</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+          <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+          <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="guias" class="uk-cover-container uk-section-muted" style>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container uk-position-relative">
+        <h2 class="uk-h1 uk-text-center">MONITORIA</h2>
+
+  <div>
+
+    <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os que fornecem registro, monitoramento e auditoria para suas aplica&ccedil;&otilde;es em execu&ccedil;&atilde;o na AWS.</p>
+
+    <p><strong>Amazon CloudWatch</strong></p>
+    
+    <p>O Amazon CloudWatch &eacute; um servi&ccedil;o de monitoramento para recursos em nuvem da AWS e as aplica&ccedil;&otilde;es que voc&ecirc; executa na AWS.</p>
+    
+    <p>O CloudWatch &eacute; para monitoramento de desempenho (o CloudTrail &eacute; para auditoria).</p>
+    
+    <p>Usado para coletar e rastrear m&eacute;tricas, coletar e monitorar arquivos de log e definir alarmes.</p>
+    
+    <p>Reage automaticamente a mudan&ccedil;as em seus recursos AWS.</p>
+    
+    <p>Monitore recursos como:</p>
+    
+    <ul>
+      <li>Inst&acirc;ncias EC2.</li>
+      <li>Tabelas DynamoDB.</li>
+      <li>Inst&acirc;ncias de banco de dados RDS.</li>
+      <li>M&eacute;tricas personalizadas geradas por aplica&ccedil;&otilde;es e servi&ccedil;os.</li>
+      <li>Quaisquer arquivos de log gerados por suas aplica&ccedil;&otilde;es.</li>
+    </ul>
+    
+    <p>Obtenha visibilidade em todo o sistema na utiliza&ccedil;&atilde;o de recursos.</p>
+    
+    <p>O monitoramento do CloudWatch inclui o desempenho da aplica&ccedil;&atilde;o.</p>
+    
+    <p>Monitore a sa&uacute;de operacional.</p>
+    
+    <p>O CloudWatch &eacute; acessado por meio da API, interface de linha de comando, SDKs da AWS e do Console de Gerenciamento da AWS.</p>
+    
+    <p>O CloudWatch integra-se ao IAM.</p>
+    
+    <p>O Amazon CloudWatch Logs permite que voc&ecirc; monitore e solucione problemas em seus sistemas e aplica&ccedil;&otilde;es usando seus arquivos de log existentes de sistema, aplica&ccedil;&atilde;o e personalizados.</p>
+    
+    <p>Os logs do CloudWatch podem ser usados para monitoramento em tempo real de aplica&ccedil;&otilde;es e sistemas, bem como para reten&ccedil;&atilde;o de logs de longo prazo.</p>
+    
+    <p>O CloudWatch Logs mant&eacute;m os logs indefinidamente por padr&atilde;o.</p>
+    
+    <p>Os logs do CloudTrail podem ser enviados para o CloudWatch Logs para monitoramento em tempo real.</p>
+    
+    <p>Os filtros de m&eacute;tricas do CloudWatch Logs podem avaliar logs do CloudTrail em termos, frases ou valores espec&iacute;ficos.</p>
+    
+    <p>O CloudWatch ret&eacute;m dados de m&eacute;tricas da seguinte forma:</p>
+    
+    <ul>
+      <li>Pontos de dados com um per&iacute;odo inferior a 60 segundos ficam dispon&iacute;veis por 3 horas. Esses pontos de dados s&atilde;o m&eacute;tricas personalizadas de alta resolu&ccedil;&atilde;o.</li>
+      <li>Pontos de dados com um per&iacute;odo de 60 segundos (1 minuto) ficam dispon&iacute;veis por 15 dias.</li>
+      <li>Pontos de dados com um per&iacute;odo de 300 segundos (5 minutos) ficam dispon&iacute;veis por 63 dias.</li>
+      <li>Pontos de dados com um per&iacute;odo de 3600 segundos (1 hora) ficam dispon&iacute;veis por 455 dias (15 meses).</li>
+    </ul>
+    
+    <p>Os pain&eacute;is permitem criar, personalizar, interagir e salvar gr&aacute;ficos de recursos AWS e m&eacute;tricas personalizadas.</p>
+    
+    <p>Alarmes podem ser usados para monitorar qualquer m&eacute;trica do Amazon CloudWatch em sua conta.</p>
+    
+    <p>Eventos s&atilde;o uma sequ&ecirc;ncia de eventos do sistema descrevendo mudan&ccedil;as em seus recursos AWS.</p>
+    
+    <p>Os logs ajudam a agregar, monitorar e armazenar logs.</p>
+    
+    <p>Monitoramento b&aacute;sico = 5 minutos (gr&aacute;tis para inst&acirc;ncias EC2, volumes EBS, ELBs e bancos de dados RDS).</p>
+    
+    <p>Monitoramento detalhado = 1 minuto (tarifado).</p>
+    
+    <p>As m&eacute;tricas s&atilde;o fornecidas automaticamente para v&aacute;rios produtos e servi&ccedil;os da AWS.</p>
+    
+    <p>N&atilde;o h&aacute; uma m&eacute;trica padr&atilde;o para uso de mem&oacute;ria em inst&acirc;ncias EC2.</p>
+    
+    <p>Uma m&eacute;trica personalizada &eacute; qualquer m&eacute;trica fornecida ao Amazon CloudWatch (por exemplo, tempo para carregar uma p&aacute;gina da web ou desempenho da aplica&ccedil;&atilde;o).</p>
+    
+    <p>Op&ccedil;&otilde;es para armazenamento de logs:</p>
+    
+    <ul>
+      <li>CloudWatch Logs.</li>
+      <li>Sistema de log centralizado (por exemplo, Splunk).</li>
+      <li>Script personalizado e armazenamento no S3.</li>
+    </ul>
+    
+    <p>N&atilde;o armazene logs em discos n&atilde;o persistentes:</p>
+    
+    <ul>
+      <li>A pr&aacute;tica recomendada &eacute; armazenar logs no CloudWatch Logs ou S3.</li>
+    </ul>
+    
+    <p>A assinatura de logs do CloudWatch pode ser usada em v&aacute;rias contas AWS (usando acesso entre contas).</p>
+    
+    <p>O Amazon CloudWatch usa o Amazon SNS para enviar e-mails.</p>
+    
+    <p><strong>AWS CloudTrail</strong></p>
+    
+    <p>O AWS CloudTrail &eacute; um servi&ccedil;o web que registra atividades feitas em sua conta e entrega arquivos de log para um bucket Amazon S3.</p>
+    
+    <p>O CloudTrail &eacute; para auditoria (o CloudWatch &eacute; para monitoramento de desempenho).</p>
+    
+    <p>O CloudTrail trata-se de registrar e salvar um hist&oacute;rico de chamadas de API para sua conta AWS.</p>
+    
+    <p>Fornece visibilidade nas atividades do usu&aacute;rio registrando a&ccedil;&otilde;es realizadas em sua conta.</p>
+    
+    <p>O hist&oacute;rico de API possibilita an&aacute;lises de seguran&ccedil;a, rastreamento de altera&ccedil;&otilde;es de recursos e auditoria de conformidade.</p>
+    
+    <p>Registra chamadas de API feitas por meio de:</p>
+    
+    <ul>
+      <li>Console de Gerenciamento da AWS.</li>
+      <li>SDKs da AWS.</li>
+      <li>Ferramentas de linha de comando.</li>
+      <li>Servi&ccedil;os AWS de n&iacute;vel superior (como CloudFormation).</li>
+    </ul>
+    
+    <p>O CloudTrail &eacute; habilitado por padr&atilde;o.</p>
+    
+    <p>O CloudTrail &eacute; por conta da AWS.</p>
+    
+    <p>Voc&ecirc; pode consolidar logs de v&aacute;rias contas usando um bucket S3:</p>
+    
+    <ol>
+      <li>Ative o CloudTrail na conta pagadora.</li>
+      <li>Crie uma pol&iacute;tica de bucket que permita acesso entre contas.</li>
+      <li>Ative o CloudTrail nas outras contas e use o bucket na conta pagadora.</li>
+    </ol>
+    
+    <p>Voc&ecirc; pode integrar o CloudTrail ao CloudWatch Logs para entregar eventos de dados capturados pelo CloudTrail para um fluxo de log do CloudWatch Logs.</p>
+    
+    <p>A funcionalidade de valida&ccedil;&atilde;o de integridade do arquivo de log do CloudTrail permite determinar se um arquivo de log do CloudTrail foi alterado, exclu&iacute;do ou modificado desde que o CloudTrail o entregou ao bucket Amazon S3 especificado.</p>
+    
+
+  </div>
+
+  <div style="text-align: center;">
+    <div>
+      <button onclick="goBack()">Voltar</button>
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="uk-section uk-section-secondary uk-text-center">
+    <div class="uk-container uk-container-small uk-text-muted uk-link-muted">
+      <div class="uk-margin-medium">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div><a href="https://www.instagram.com/vocecertificadoaws" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="uk-margin-medium uk-text-small copyright">® 2019-2023 Você Certificado: Da Nuvem à
+        Certificação<br>
+        ELara Você Certificado Ltda - CNPJ: 46.047.918/0001-97</div>
+    </div>
+  </footer>
+  <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-primary" data-uk-scrollspy-nav="closest: li; scroll: true">
+        <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="imagens/vocecertificadoaws_logo.png"
+              alt="Cursos AWS"></a></li>
+        <li><a href="index.html#cursos">CURSOS AWS</a></li>
+        <li><a href="index.html#novidades">NOVIDADES</a></li>
+        <li><a href="guias.html#guias">GUIAS DE ESTUDO</a></li>
+        <li><a href="index.html#depoimentos">DEPOIMENTOS</a></li>
+        <li><a href="index.html#instrutor">INSTRUTOR</a></li>
+        <li><a href="index.html#faq">PERGUNTAS FREQUENTES</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          <div class="uk-first-column">
+            <a href="https://www.instagram.com/VoceCertificadoAWS" data-uk-icon="icon: instagram"
+              class="uk-icon-link uk-icon" aria-label="Instagram" rel="noopener" target="_blank"></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/VoceCertificadoAWS/" data-uk-icon="icon: facebook"
+              class="uk-icon-link uk-icon" aria-label="Facebook" rel="noopener" target="_blank"></a>
+          </div>
+          <div><a href="https://www.youtube.com/@VoceCertificadoAWS" data-uk-icon="icon: youtube"
+              class="uk-icon-link uk-icon" aria-label="Youtube" rel="noopener" target="_blank"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/edulara/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon"
+              aria-label="LinkedIn" rel="noopener" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
