@@ -41,6 +41,12 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -109,145 +115,176 @@
       <div class="uk-container uk-position-relative">
         <h2 class="uk-h1 uk-text-center">MONITORIA</h2>
 
-  <div>
+        <div>
+          <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os que fornecem registro, monitoramento e
+            auditoria para suas aplica&ccedil;&otilde;es em execu&ccedil;&atilde;o na AWS.</p>
 
-    <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os que fornecem registro, monitoramento e auditoria para suas aplica&ccedil;&otilde;es em execu&ccedil;&atilde;o na AWS.</p>
+          <h2><strong>Amazon CloudWatch</strong></h2>
 
-    <p><strong>Amazon CloudWatch</strong></p>
-    
-    <p>O Amazon CloudWatch &eacute; um servi&ccedil;o de monitoramento para recursos em nuvem da AWS e as aplica&ccedil;&otilde;es que voc&ecirc; executa na AWS.</p>
-    
-    <p>O CloudWatch &eacute; para monitoramento de desempenho (o CloudTrail &eacute; para auditoria).</p>
-    
-    <p>Usado para coletar e rastrear m&eacute;tricas, coletar e monitorar arquivos de log e definir alarmes.</p>
-    
-    <p>Reage automaticamente a mudan&ccedil;as em seus recursos AWS.</p>
-    
-    <p>Monitore recursos como:</p>
-    
-    <ul>
-      <li>Inst&acirc;ncias EC2.</li>
-      <li>Tabelas DynamoDB.</li>
-      <li>Inst&acirc;ncias de banco de dados RDS.</li>
-      <li>M&eacute;tricas personalizadas geradas por aplica&ccedil;&otilde;es e servi&ccedil;os.</li>
-      <li>Quaisquer arquivos de log gerados por suas aplica&ccedil;&otilde;es.</li>
-    </ul>
-    
-    <p>Obtenha visibilidade em todo o sistema na utiliza&ccedil;&atilde;o de recursos.</p>
-    
-    <p>O monitoramento do CloudWatch inclui o desempenho da aplica&ccedil;&atilde;o.</p>
-    
-    <p>Monitore a sa&uacute;de operacional.</p>
-    
-    <p>O CloudWatch &eacute; acessado por meio da API, interface de linha de comando, SDKs da AWS e do Console de Gerenciamento da AWS.</p>
-    
-    <p>O CloudWatch integra-se ao IAM.</p>
-    
-    <p>O Amazon CloudWatch Logs permite que voc&ecirc; monitore e solucione problemas em seus sistemas e aplica&ccedil;&otilde;es usando seus arquivos de log existentes de sistema, aplica&ccedil;&atilde;o e personalizados.</p>
-    
-    <p>Os logs do CloudWatch podem ser usados para monitoramento em tempo real de aplica&ccedil;&otilde;es e sistemas, bem como para reten&ccedil;&atilde;o de logs de longo prazo.</p>
-    
-    <p>O CloudWatch Logs mant&eacute;m os logs indefinidamente por padr&atilde;o.</p>
-    
-    <p>Os logs do CloudTrail podem ser enviados para o CloudWatch Logs para monitoramento em tempo real.</p>
-    
-    <p>Os filtros de m&eacute;tricas do CloudWatch Logs podem avaliar logs do CloudTrail em termos, frases ou valores espec&iacute;ficos.</p>
-    
-    <p>O CloudWatch ret&eacute;m dados de m&eacute;tricas da seguinte forma:</p>
-    
-    <ul>
-      <li>Pontos de dados com um per&iacute;odo inferior a 60 segundos ficam dispon&iacute;veis por 3 horas. Esses pontos de dados s&atilde;o m&eacute;tricas personalizadas de alta resolu&ccedil;&atilde;o.</li>
-      <li>Pontos de dados com um per&iacute;odo de 60 segundos (1 minuto) ficam dispon&iacute;veis por 15 dias.</li>
-      <li>Pontos de dados com um per&iacute;odo de 300 segundos (5 minutos) ficam dispon&iacute;veis por 63 dias.</li>
-      <li>Pontos de dados com um per&iacute;odo de 3600 segundos (1 hora) ficam dispon&iacute;veis por 455 dias (15 meses).</li>
-    </ul>
-    
-    <p>Os pain&eacute;is permitem criar, personalizar, interagir e salvar gr&aacute;ficos de recursos AWS e m&eacute;tricas personalizadas.</p>
-    
-    <p>Alarmes podem ser usados para monitorar qualquer m&eacute;trica do Amazon CloudWatch em sua conta.</p>
-    
-    <p>Eventos s&atilde;o uma sequ&ecirc;ncia de eventos do sistema descrevendo mudan&ccedil;as em seus recursos AWS.</p>
-    
-    <p>Os logs ajudam a agregar, monitorar e armazenar logs.</p>
-    
-    <p>Monitoramento b&aacute;sico = 5 minutos (gr&aacute;tis para inst&acirc;ncias EC2, volumes EBS, ELBs e bancos de dados RDS).</p>
-    
-    <p>Monitoramento detalhado = 1 minuto (tarifado).</p>
-    
-    <p>As m&eacute;tricas s&atilde;o fornecidas automaticamente para v&aacute;rios produtos e servi&ccedil;os da AWS.</p>
-    
-    <p>N&atilde;o h&aacute; uma m&eacute;trica padr&atilde;o para uso de mem&oacute;ria em inst&acirc;ncias EC2.</p>
-    
-    <p>Uma m&eacute;trica personalizada &eacute; qualquer m&eacute;trica fornecida ao Amazon CloudWatch (por exemplo, tempo para carregar uma p&aacute;gina da web ou desempenho da aplica&ccedil;&atilde;o).</p>
-    
-    <p>Op&ccedil;&otilde;es para armazenamento de logs:</p>
-    
-    <ul>
-      <li>CloudWatch Logs.</li>
-      <li>Sistema de log centralizado (por exemplo, Splunk).</li>
-      <li>Script personalizado e armazenamento no S3.</li>
-    </ul>
-    
-    <p>N&atilde;o armazene logs em discos n&atilde;o persistentes:</p>
-    
-    <ul>
-      <li>A pr&aacute;tica recomendada &eacute; armazenar logs no CloudWatch Logs ou S3.</li>
-    </ul>
-    
-    <p>A assinatura de logs do CloudWatch pode ser usada em v&aacute;rias contas AWS (usando acesso entre contas).</p>
-    
-    <p>O Amazon CloudWatch usa o Amazon SNS para enviar e-mails.</p>
-    
-    <p><strong>AWS CloudTrail</strong></p>
-    
-    <p>O AWS CloudTrail &eacute; um servi&ccedil;o web que registra atividades feitas em sua conta e entrega arquivos de log para um bucket Amazon S3.</p>
-    
-    <p>O CloudTrail &eacute; para auditoria (o CloudWatch &eacute; para monitoramento de desempenho).</p>
-    
-    <p>O CloudTrail trata-se de registrar e salvar um hist&oacute;rico de chamadas de API para sua conta AWS.</p>
-    
-    <p>Fornece visibilidade nas atividades do usu&aacute;rio registrando a&ccedil;&otilde;es realizadas em sua conta.</p>
-    
-    <p>O hist&oacute;rico de API possibilita an&aacute;lises de seguran&ccedil;a, rastreamento de altera&ccedil;&otilde;es de recursos e auditoria de conformidade.</p>
-    
-    <p>Registra chamadas de API feitas por meio de:</p>
-    
-    <ul>
-      <li>Console de Gerenciamento da AWS.</li>
-      <li>SDKs da AWS.</li>
-      <li>Ferramentas de linha de comando.</li>
-      <li>Servi&ccedil;os AWS de n&iacute;vel superior (como CloudFormation).</li>
-    </ul>
-    
-    <p>O CloudTrail &eacute; habilitado por padr&atilde;o.</p>
-    
-    <p>O CloudTrail &eacute; por conta da AWS.</p>
-    
-    <p>Voc&ecirc; pode consolidar logs de v&aacute;rias contas usando um bucket S3:</p>
-    
-    <ol>
-      <li>Ative o CloudTrail na conta pagadora.</li>
-      <li>Crie uma pol&iacute;tica de bucket que permita acesso entre contas.</li>
-      <li>Ative o CloudTrail nas outras contas e use o bucket na conta pagadora.</li>
-    </ol>
-    
-    <p>Voc&ecirc; pode integrar o CloudTrail ao CloudWatch Logs para entregar eventos de dados capturados pelo CloudTrail para um fluxo de log do CloudWatch Logs.</p>
-    
-    <p>A funcionalidade de valida&ccedil;&atilde;o de integridade do arquivo de log do CloudTrail permite determinar se um arquivo de log do CloudTrail foi alterado, exclu&iacute;do ou modificado desde que o CloudTrail o entregou ao bucket Amazon S3 especificado.</p>
-    
+          <p>O Amazon CloudWatch &eacute; um servi&ccedil;o de monitoramento para recursos em nuvem da AWS e as
+            aplica&ccedil;&otilde;es que voc&ecirc; executa na AWS.</p>
 
-  </div>
+          <p>O <strong>CloudWatch &eacute; para monitoramento de desempenho</strong> (o CloudTrail &eacute; para
+            auditoria).</p>
 
-  <div style="text-align: center;">
-    <div>
-      <button onclick="goBack()">Voltar</button>
-      <script>
-        function goBack() {
-          window.history.back();
-        }
-      </script>
-    </div>
-  </div>
+          <img src="imagens/aws-cloudwatch.jpg" alt="AWS CloudWatch" width="50%" class="centralizado" border="1">
+
+          <p>Usado para coletar e rastrear m&eacute;tricas, coletar e monitorar arquivos de log e definir alarmes.</p>
+          
+          <p>Reage automaticamente a mudan&ccedil;as em seus recursos AWS.</p>
+
+          <p><strong>Monitore recursos como:</strong></p>
+
+          <ul>
+            <li>Inst&acirc;ncias EC2.</li>
+            <li>Tabelas DynamoDB.</li>
+            <li>Inst&acirc;ncias de banco de dados RDS.</li>
+            <li>M&eacute;tricas personalizadas geradas por aplica&ccedil;&otilde;es e servi&ccedil;os.</li>
+            <li>Quaisquer arquivos de log gerados por suas aplica&ccedil;&otilde;es.</li>
+          </ul>
+
+          <p>Obtenha visibilidade em todo o sistema na utiliza&ccedil;&atilde;o de recursos.</p>
+
+          <p>O monitoramento do CloudWatch inclui o desempenho da aplica&ccedil;&atilde;o.</p>
+
+          <p>Monitore a sa&uacute;de operacional.</p>
+
+          <p>O CloudWatch &eacute; acessado por meio da API, interface de linha de comando, SDKs da AWS e do Console de
+            Gerenciamento da AWS.</p>
+
+          <p>O CloudWatch integra-se ao IAM.</p>
+
+          <p>O Amazon CloudWatch Logs permite que voc&ecirc; monitore e solucione problemas em seus sistemas e
+            aplica&ccedil;&otilde;es usando seus arquivos de log existentes de sistema, aplica&ccedil;&atilde;o e
+            personalizados.</p>
+
+          <p>Os logs do CloudWatch podem ser usados para monitoramento em tempo real de aplica&ccedil;&otilde;es e
+            sistemas, bem como para reten&ccedil;&atilde;o de logs de longo prazo.</p>
+
+          <p>O CloudWatch Logs mant&eacute;m os logs indefinidamente por padr&atilde;o.</p>
+
+          <p>Os logs do CloudTrail podem ser enviados para o CloudWatch Logs para monitoramento em tempo real.</p>
+
+          <p>Os filtros de m&eacute;tricas do CloudWatch Logs podem avaliar logs do CloudTrail em termos, frases ou
+            valores espec&iacute;ficos.</p>
+
+          <h3>O CloudWatch ret&eacute;m dados de m&eacute;tricas da seguinte forma:</h3>
+
+          <ul>
+            <li>Pontos de dados com um per&iacute;odo inferior a 60 segundos ficam dispon&iacute;veis por 3 horas. Esses
+              pontos de dados s&atilde;o m&eacute;tricas personalizadas de alta resolu&ccedil;&atilde;o.</li>
+            <li>Pontos de dados com um per&iacute;odo de 60 segundos (1 minuto) ficam dispon&iacute;veis por 15 dias.
+            </li>
+            <li>Pontos de dados com um per&iacute;odo de 300 segundos (5 minutos) ficam dispon&iacute;veis por 63 dias.
+            </li>
+            <li>Pontos de dados com um per&iacute;odo de 3600 segundos (1 hora) ficam dispon&iacute;veis por 455 dias
+              (15 meses).</li>
+          </ul>
+
+          <p>Os pain&eacute;is permitem criar, personalizar, interagir e salvar gr&aacute;ficos de recursos AWS e
+            m&eacute;tricas personalizadas.</p>
+
+          <p>Alarmes podem ser usados para monitorar qualquer m&eacute;trica do Amazon CloudWatch em sua conta.</p>
+
+          <p>Eventos s&atilde;o uma sequ&ecirc;ncia de eventos do sistema descrevendo mudan&ccedil;as em seus recursos
+            AWS.</p>
+
+          <h3>Os logs ajudam a agregar, monitorar e armazenar logs.</h3>
+
+          <ul>
+            <li>Monitoramento <strong>b&aacute;sico</strong> = 5 minutos (gr&aacute;tis para inst&acirc;ncias EC2,
+              volumes EBS, ELBs e bancos de dados RDS).</li>
+            <li>Monitoramento <strong>detalhado</strong> = 1 minuto (tarifado).</li>
+          </ul>
+
+          <p>As m&eacute;tricas s&atilde;o fornecidas automaticamente para v&aacute;rios produtos e servi&ccedil;os da
+            AWS.</p>
+
+          <p>N&atilde;o h&aacute; uma m&eacute;trica padr&atilde;o para uso de mem&oacute;ria em inst&acirc;ncias EC2.
+          </p>
+
+          <p>Uma m&eacute;trica personalizada &eacute; qualquer m&eacute;trica fornecida ao Amazon CloudWatch (por
+            exemplo, tempo para carregar uma p&aacute;gina da web ou desempenho da aplica&ccedil;&atilde;o).</p>
+
+          <h3>Op&ccedil;&otilde;es para armazenamento de logs:</h3>
+
+          <ul>
+            <li>CloudWatch Logs.</li>
+            <li>Sistema de log centralizado (por exemplo, Splunk).</li>
+            <li>Script personalizado e armazenamento no S3.</li>
+          </ul>
+
+          <h3>N&atilde;o armazene logs em discos n&atilde;o persistentes:</h3>
+
+          <ul>
+            <li>A pr&aacute;tica recomendada &eacute; armazenar logs no CloudWatch Logs ou S3.</li>
+          </ul>
+
+          <p>A assinatura de logs do CloudWatch pode ser usada em v&aacute;rias contas AWS (usando acesso entre contas).
+          </p>
+
+          <p>O Amazon CloudWatch usa o Amazon SNS para enviar e-mails.</p>
+
+          <h2><strong>AWS CloudTrail</strong></h2>
+
+          <p>O AWS CloudTrail &eacute; um servi&ccedil;o web que registra atividades feitas em sua conta e entrega
+            arquivos de log para um bucket Amazon S3.</p>
+
+          <p>O <strong>CloudTrail &eacute; para auditoria </strong>(o CloudWatch &eacute; para monitoramento de
+            desempenho).</p>
+
+          <p>O CloudTrail trata-se de registrar e salvar um hist&oacute;rico de chamadas de API para sua conta AWS.</p>
+
+          <p>Fornece visibilidade nas atividades do usu&aacute;rio registrando a&ccedil;&otilde;es realizadas em sua
+            conta.</p>
+
+          <p>O hist&oacute;rico de API possibilita an&aacute;lises de seguran&ccedil;a, rastreamento de
+            altera&ccedil;&otilde;es de recursos e auditoria de conformidade.</p>
+
+          <h3>Registra chamadas de API feitas por meio de:</h3>
+
+          <ul>
+            <li>Console de Gerenciamento da AWS.</li>
+            <li>SDKs da AWS.</li>
+            <li>Ferramentas de linha de comando.</li>
+            <li>Servi&ccedil;os AWS de n&iacute;vel superior (como CloudFormation).</li>
+          </ul>
+
+          <img src="imagens/aws-cloudtrail.jpg" alt="AWS CloudTrail" width="75%" class="centralizado" border="1">
+
+          <p>O CloudTrail<strong> &eacute; habilitado por padr&atilde;o </strong>e mant&eacute;m os registros por 90
+            dias. Se precisar manter por mais tempo, crie um bucket S3 e associe os logs do CloudTrail para serem salvos
+            no bucket criado.</p>
+
+          <p>O CloudTrail &eacute; por conta da AWS.</p>
+
+          <h3>Voc&ecirc; pode consolidar logs de v&aacute;rias contas usando um bucket S3:</h3>
+
+          <ol>
+            <li>Ative o CloudTrail na conta pagadora.</li>
+            <li>Crie uma pol&iacute;tica de bucket que permita acesso entre contas.</li>
+            <li>Ative o CloudTrail nas outras contas e use o bucket na conta pagadora.</li>
+          </ol>
+
+          <p>Voc&ecirc; pode integrar o CloudTrail ao CloudWatch Logs para entregar eventos de dados capturados pelo
+            CloudTrail para um fluxo de log do CloudWatch Logs.</p>
+
+          <p>A funcionalidade de valida&ccedil;&atilde;o de integridade do arquivo de log do CloudTrail permite
+            determinar se um arquivo de log do CloudTrail foi alterado, exclu&iacute;do ou modificado desde que o
+            CloudTrail o entregou ao bucket Amazon S3 especificado.</p>
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
 
       </div>
     </div>
