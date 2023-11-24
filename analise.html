@@ -112,210 +112,281 @@
         <div>
           <p>H&aacute; v&aacute;rios servi&ccedil;os de an&aacute;lise da AWS e estes incluem:</p>
 
-<ul>
-	<li><strong>Amazon Athena</strong></li>
-	<li><strong>Amazon EMR</strong></li>
-	<li><strong>Amazon CloudSearch</strong></li>
-	<li><strong>Amazon Opensearch Service</strong></li>
-	<li><strong>Amazon Kinesis</strong></li>
-	<li><strong>Amazon QuickSight</strong></li>
-	<li><strong>Amazon Data Pipeline</strong></li>
-	<li><strong>AWS Glue</strong></li>
-	<li><strong>AWS Lake Formation</strong></li>
-	<li><strong>Amazon MSK</strong></li>
-</ul>
+          <ul>
+            <li><strong>Amazon Athena</strong></li>
+            <li><strong>Amazon EMR</strong></li>
+            <li><strong>Amazon CloudSearch</strong></li>
+            <li><strong>Amazon Opensearch Service</strong></li>
+            <li><strong>Amazon Kinesis</strong></li>
+            <li><strong>Amazon QuickSight</strong></li>
+            <li><strong>Amazon Data Pipeline</strong></li>
+            <li><strong>AWS Glue</strong></li>
+            <li><strong>AWS Lake Formation</strong></li>
+            <li><strong>Amazon MSK</strong></li>
+          </ul>
 
-<p>Neste artigo, iremos focar em&nbsp;<strong>Athena</strong>,&nbsp;<strong>EMR</strong>,&nbsp;<strong>Glue</strong>&nbsp;e&nbsp;<strong>Kinesis</strong>, pois esses s&atilde;o os servi&ccedil;os prov&aacute;veis de serem abordados no exame AWS Certified Cloud Practitioner.</p>
+          <p>Neste artigo, iremos focar
+            em&nbsp;<strong>Athena</strong>,&nbsp;<strong>EMR</strong>,&nbsp;<strong>Glue</strong>&nbsp;e&nbsp;<strong>Kinesis</strong>,
+            pois esses s&atilde;o os servi&ccedil;os prov&aacute;veis de serem abordados no exame AWS Certified Cloud
+            Practitioner.</p>
 
-<h3><strong>Amazon Elastic Map Reduce</strong></h3>
+          <h3><strong>Amazon Elastic Map Reduce</strong></h3>
 
-<p>O Amazon EMR &eacute; um servi&ccedil;o web que permite que empresas, pesquisadores, analistas de dados e desenvolvedores processem facilmente e de forma econ&ocirc;mica, grandes volumes de dados.</p>
+          <p>O Amazon EMR &eacute; um servi&ccedil;o web que permite que empresas, pesquisadores, analistas de dados e
+            desenvolvedores processem facilmente e de forma econ&ocirc;mica, grandes volumes de dados.</p>
 
-<p>O EMR utiliza um framework Hadoop hospedado em inst&acirc;ncias Amazon EC2 e Amazon S3.</p>
+          <p>O EMR utiliza um framework Hadoop hospedado em inst&acirc;ncias Amazon EC2 e Amazon S3.</p>
 
-<p>Framework Hadoop gerenciado para processamento de grandes volumes de dados.</p>
+          <p>Framework Hadoop gerenciado para processamento de grandes volumes de dados.</p>
 
-<p>Tamb&eacute;m suporta Apache Spark, HBase, Presto e Flink.</p>
+          <p>Tamb&eacute;m suporta Apache Spark, HBase, Presto e Flink.</p>
 
-<p>Geralmente utilizado para an&aacute;lise de logs, an&aacute;lise financeira ou atividades de extra&ccedil;&atilde;o, tradu&ccedil;&atilde;o e carga (ETL).</p>
+          <p>Geralmente utilizado para an&aacute;lise de logs, an&aacute;lise financeira ou atividades de
+            extra&ccedil;&atilde;o, tradu&ccedil;&atilde;o e carga (ETL).</p>
 
-<p>Um&nbsp;<strong><em>step</em></strong>&nbsp;&eacute; uma tarefa program&aacute;tica para realizar algum processo nos dados (por exemplo, contar palavras).</p>
+          <p>Um&nbsp;<strong><em>step</em></strong>&nbsp;&eacute; uma tarefa program&aacute;tica para realizar algum
+            processo nos dados (por exemplo, contar palavras).</p>
 
-<p>Um&nbsp;<em><strong>cluster</strong></em>&nbsp;&eacute; uma cole&ccedil;&atilde;o de inst&acirc;ncias EC2 provisionadas pelo EMR para executar seus&nbsp;<strong><em>step</em></strong>.</p>
+          <p>Um&nbsp;<em><strong>cluster</strong></em>&nbsp;&eacute; uma cole&ccedil;&atilde;o de inst&acirc;ncias EC2
+            provisionadas pelo EMR para executar seus&nbsp;<strong><em>step</em></strong>.</p>
 
-<p>O EMR utiliza o Apache Hadoop como seu motor de processamento distribu&iacute;do de dados, que &eacute; um framework de software Java de c&oacute;digo aberto que suporta aplicativos distribu&iacute;dos intensivos em dados em grandes clusters de hardware comum.</p>
+          <p>O EMR utiliza o Apache Hadoop como seu motor de processamento distribu&iacute;do de dados, que &eacute; um
+            framework de software Java de c&oacute;digo aberto que suporta aplicativos distribu&iacute;dos intensivos em
+            dados em grandes clusters de hardware comum.</p>
 
-<p>O EMR &eacute; um bom lugar para implantar o Apache Spark, um processamento distribu&iacute;do de c&oacute;digo aberto usado para cargas de trabalho de big data que utiliza armazenamento em cache na mem&oacute;ria e execu&ccedil;&atilde;o otimizada de consultas.</p>
+          <p>O EMR &eacute; um bom lugar para implantar o Apache Spark, um processamento distribu&iacute;do de
+            c&oacute;digo aberto usado para cargas de trabalho de big data que utiliza armazenamento em cache na
+            mem&oacute;ria e execu&ccedil;&atilde;o otimizada de consultas.</p>
 
-<p>Voc&ecirc; tamb&eacute;m pode iniciar clusters Presto. O Presto &eacute; um motor de consulta SQL distribu&iacute;do de c&oacute;digo aberto projetado para consultas anal&iacute;ticas r&aacute;pidas em conjuntos de dados grandes.</p>
+          <p>Voc&ecirc; tamb&eacute;m pode iniciar clusters Presto. O Presto &eacute; um motor de consulta SQL
+            distribu&iacute;do de c&oacute;digo aberto projetado para consultas anal&iacute;ticas r&aacute;pidas em
+            conjuntos de dados grandes.</p>
 
-<p>O EMR lan&ccedil;a todos os n&oacute;s para um determinado cluster na mesma Zona de Disponibilidade Amazon EC2.</p>
+          <p>O EMR lan&ccedil;a todos os n&oacute;s para um determinado cluster na mesma Zona de Disponibilidade Amazon
+            EC2.</p>
 
-<p>Voc&ecirc; pode acessar o Amazon EMR usando o Console de Gerenciamento da AWS, Ferramentas de Linha de Comando, SDKs ou a API EMR.</p>
+          <p>Voc&ecirc; pode acessar o Amazon EMR usando o Console de Gerenciamento da AWS, Ferramentas de Linha de
+            Comando, SDKs ou a API EMR.</p>
 
-<p>Com o EMR, voc&ecirc; tem acesso ao sistema operacional subjacente (pode fazer SSH).</p>
+          <p>Com o EMR, voc&ecirc; tem acesso ao sistema operacional subjacente (pode fazer SSH).</p>
 
-<h3><strong>Amazon Athena</strong></h3>
+          <h3><strong>Amazon Athena</strong></h3>
 
-<p>Amazon Athena &eacute; um servi&ccedil;o de consulta interativa que facilita a an&aacute;lise de dados no Amazon S3 usando SQL padr&atilde;o.</p>
+          <p>Amazon Athena &eacute; um servi&ccedil;o de consulta interativa que facilita a an&aacute;lise de dados no
+            Amazon S3 usando SQL padr&atilde;o.</p>
 
-<p>Athena &eacute; serverless, ent&atilde;o n&atilde;o h&aacute; infraestrutura para gerenciar, e voc&ecirc; paga apenas pelas consultas que executa.</p>
+          <p>Athena &eacute; serverless, ent&atilde;o n&atilde;o h&aacute; infraestrutura para gerenciar, e voc&ecirc;
+            paga apenas pelas consultas que executa.</p>
+
+          <p>Athena &eacute; f&aacute;cil de usar - basta apontar para seus dados no Amazon S3, definir o esquema e
+            come&ccedil;ar a consultar usando SQL padr&atilde;o.</p>
+
+          <p>A Amazon Athena utiliza o Presto com suporte total a SQL padr&atilde;o e funciona com uma variedade de
+            formatos de dados padr&atilde;o, incluindo CSV, JSON, ORC, Apache Parquet e Avro.</p>
+
+          <p>Embora a Amazon Athena seja ideal para consultas r&aacute;pidas e ad-hoc e integre-se ao Amazon QuickSight
+            para visualiza&ccedil;&atilde;o f&aacute;cil, ela tamb&eacute;m pode lidar com an&aacute;lises complexas,
+            incluindo grandes jun&ccedil;&otilde;es, fun&ccedil;&otilde;es de janela e arrays.</p>
+
+          <p>Amazon Athena usa um Cat&aacute;logo de Dados gerenciado para armazenar informa&ccedil;&otilde;es e
+            esquemas sobre os bancos de dados e tabelas que voc&ecirc; cria para seus dados armazenados no Amazon S3.
+          </p>
+
+          <h3><strong>AWS Glue</strong></h3>
+
+          <p>AWS Glue &eacute; um servi&ccedil;o totalmente gerenciado, pay-as-you-go, de extra&ccedil;&atilde;o,
+            transforma&ccedil;&atilde;o e carga (<strong>ETL</strong>) que automatiza as etapas demoradas de
+            prepara&ccedil;&atilde;o de dados para an&aacute;lises.</p>
+
+          <p><strong>ETL</strong> significa: Extract, Transform, Load, que em portugu&ecirc;s &eacute;: Extrair,
+            Transformar, Carregar.</p>
 
-<p>Athena &eacute; f&aacute;cil de usar - basta apontar para seus dados no Amazon S3, definir o esquema e come&ccedil;ar a consultar usando SQL padr&atilde;o.</p>
+          <p>O AWS Glue descobre e perfila automaticamente dados por meio do Cat&aacute;logo de Dados Glue, recomenda e
+            gera c&oacute;digo ETL para transformar seus dados de origem em esquemas de destino.</p>
 
-<p>A Amazon Athena utiliza o Presto com suporte total a SQL padr&atilde;o e funciona com uma variedade de formatos de dados padr&atilde;o, incluindo CSV, JSON, ORC, Apache Parquet e Avro.</p>
+          <p>O AWS Glue executa os trabalhos ETL em um ambiente Apache Spark totalmente gerenciado para carregar seus
+            dados em seu destino.</p>
 
-<p>Embora a Amazon Athena seja ideal para consultas r&aacute;pidas e ad-hoc e integre-se ao Amazon QuickSight para visualiza&ccedil;&atilde;o f&aacute;cil, ela tamb&eacute;m pode lidar com an&aacute;lises complexas, incluindo grandes jun&ccedil;&otilde;es, fun&ccedil;&otilde;es de janela e arrays.</p>
+          <p>O AWS Glue tamb&eacute;m permite configurar, orquestrar e monitorar fluxos de dados complexos.</p>
 
-<p>Amazon Athena usa um Cat&aacute;logo de Dados gerenciado para armazenar informa&ccedil;&otilde;es e esquemas sobre os bancos de dados e tabelas que voc&ecirc; cria para seus dados armazenados no Amazon S3.</p>
+          <p>Voc&ecirc; pode criar e executar um trabalho ETL com alguns cliques no Console de Gerenciamento da AWS.</p>
 
-<h3><strong>AWS Glue</strong></h3>
+          <p>Use o AWS Glue para descobrir propriedades de dados, transform&aacute;-los e prepar&aacute;-los para
+            an&aacute;lises.</p>
+
+          <p>O Glue pode descobrir automaticamente dados estruturados e semi-estruturados armazenados em data lakes no
+            Amazon S3, data warehouses no Amazon Redshift e v&aacute;rios bancos de dados em execu&ccedil;&atilde;o na
+            AWS.</p>
+
+          <p>Ele fornece uma vis&atilde;o unificada dos dados por meio do Cat&aacute;logo de Dados Glue, que est&aacute;
+            dispon&iacute;vel para ETL, consulta e relat&oacute;rio usando servi&ccedil;os como Amazon Athena, Amazon
+            EMR e Amazon Redshift Spectrum.</p>
+
+          <p>O Glue gera automaticamente c&oacute;digo Scala ou Python para trabalhos ETL que voc&ecirc; pode
+            personalizar ainda mais usando ferramentas com as quais voc&ecirc; j&aacute; est&aacute; familiarizado.</p>
+
+          <p>O AWS Glue &eacute; serverless, portanto, n&atilde;o h&aacute; recursos de computa&ccedil;&atilde;o para
+            configurar e gerenciar.</p>
+
+          <h3><strong>Casos de Uso de An&aacute;lise de Dados e Consulta</strong></h3>
+
+          <p>Servi&ccedil;os de consulta como Amazon Athena, data warehouses como Amazon Redshift e estruturas
+            sofisticadas de processamento de dados como Amazon EMR, abordam diferentes necessidades e casos de uso.</p>
 
-<p>AWS Glue &eacute; um servi&ccedil;o totalmente gerenciado, pay-as-you-go, de extra&ccedil;&atilde;o, transforma&ccedil;&atilde;o e carga (ETL) que automatiza as etapas demoradas de prepara&ccedil;&atilde;o de dados para an&aacute;lises.</p>
+          <p>O Amazon Redshift fornece o desempenho de consulta mais r&aacute;pido para cargas de trabalho de
+            relat&oacute;rios empresariais e intelig&ecirc;ncia de neg&oacute;cios, especialmente aquelas que envolvem
+            SQL extremamente complexo com v&aacute;rias jun&ccedil;&otilde;es e subconsultas.</p>
 
-<p>O AWS Glue descobre e perfila automaticamente dados por meio do Cat&aacute;logo de Dados Glue, recomenda e gera c&oacute;digo ETL para transformar seus dados de origem em esquemas de destino.</p>
+          <p>O Amazon EMR torna simples e econ&ocirc;mico executar frameworks de processamento altamente
+            distribu&iacute;dos, como Hadoop, Spark e Presto, em compara&ccedil;&atilde;o com
+            implementa&ccedil;&otilde;es no local. O Amazon EMR &eacute; flex&iacute;vel - voc&ecirc; pode executar
+            aplicativos e c&oacute;digo personalizados e definir par&acirc;metros espec&iacute;ficos de
+            computa&ccedil;&atilde;o, mem&oacute;ria, armazenamento e aplica&ccedil;&atilde;o para otimizar seus
+            requisitos anal&iacute;ticos.</p>
 
-<p>O AWS Glue executa os trabalhos ETL em um ambiente Apache Spark totalmente gerenciado para carregar seus dados em seu destino.</p>
+          <p>Amazon Athena fornece a maneira mais f&aacute;cil de executar consultas ad-hoc para dados no S3 sem a
+            necessidade de configurar ou gerenciar servidores.</p>
 
-<p>O AWS Glue tamb&eacute;m permite configurar, orquestrar e monitorar fluxos de dados complexos.</p>
+          <p>A tabela abaixo mostra o caso de uso principal e as situa&ccedil;&otilde;es para o uso de alguns
+            servi&ccedil;os de consulta e an&aacute;lise da AWS:</p>
 
-<p>Voc&ecirc; pode criar e executar um trabalho ETL com alguns cliques no Console de Gerenciamento da AWS.</p>
+          <table align="center" border="1" cellpadding="1" cellspacing="1">
+            <tbody>
+              <tr>
+                <td><strong>Servi&ccedil;o AWS</strong></td>
+                <td><strong>Caso de Uso</strong></td>
+                <td><strong>Quando usar</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align:center">Amazon Athena</td>
+                <td style="text-align:center">Consulta</td>
+                <td>Executar consultas interativas diretamente em dados no Amazon S3 sem se preocupar com a
+                  formata&ccedil;&atilde;o dos dados ou gerenciamento de infraestrutura. Pode ser usado com outros
+                  servi&ccedil;os como o Amazon RedShift</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">Amazon RedShift</td>
+                <td style="text-align:center">Data Warehouse</td>
+                <td>Extrair dados de v&aacute;rias fontes, format&aacute;-los e organiz&aacute;-los, armazen&aacute;-los
+                  e oferecer suporte a consultas complexas e r&aacute;pidas que geram relat&oacute;rios comerciais.</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">Amazon EMR</td>
+                <td style="text-align:center">Processamento de Dados</td>
+                <td>Frameworks de processamento altamente distribu&iacute;dos, como Hadoop, Spark e Presto. Executa uma
+                  ampla variedade de tarefas de processamento de dados de escala para aplicativos como aprendizado de
+                  m&aacute;quina, an&aacute;lise de gr&aacute;ficos, transforma&ccedil;&atilde;o de dados, dados em
+                  tempo real.</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">AWS Glue</td>
+                <td style="text-align:center">Servi&ccedil;o ETL</td>
+                <td>Transforma e move dados para v&aacute;rios destinos. Usado para preparar e carregar dados para
+                  an&aacute;lises. A fonte de dados pode ser S3, RedShift ou outro banco de dados. O Cat&aacute;logo de
+                  Dados Glue pode ser consultado por Athena, EMR e RedShift Spectrum.</td>
+              </tr>
+            </tbody>
+          </table>
 
-<p>Use o AWS Glue para descobrir propriedades de dados, transform&aacute;-los e prepar&aacute;-los para an&aacute;lises.</p>
+          <h3><strong>Amazon Kinesis</strong></h3>
 
-<p>O Glue pode descobrir automaticamente dados estruturados e semi-estruturados armazenados em data lakes no Amazon S3, data warehouses no Amazon Redshift e v&aacute;rios bancos de dados em execu&ccedil;&atilde;o na AWS.</p>
+          <p>Amazon Kinesis facilita a coleta, processamento e an&aacute;lise de dados em tempo real e em fluxo,
+            permitindo obter insights oportunos e reagir rapidamente a novas informa&ccedil;&otilde;es.</p>
 
-<p>Ele fornece uma vis&atilde;o unificada dos dados por meio do Cat&aacute;logo de Dados Glue, que est&aacute; dispon&iacute;vel para ETL, consulta e relat&oacute;rio usando servi&ccedil;os como Amazon Athena, Amazon EMR e Amazon Redshift Spectrum.</p>
+          <p>Cole&ccedil;&atilde;o de servi&ccedil;os para processar fluxos de diversos tipos de dados.</p>
 
-<p>O Glue gera automaticamente c&oacute;digo Scala ou Python para trabalhos ETL que voc&ecirc; pode personalizar ainda mais usando ferramentas com as quais voc&ecirc; j&aacute; est&aacute; familiarizado.</p>
+          <p>Os dados s&atilde;o processados em &quot;shards&quot; (parti&ccedil;&otilde;es).</p>
 
-<p>O AWS Glue &eacute; serverless, portanto, n&atilde;o h&aacute; recursos de computa&ccedil;&atilde;o para configurar e gerenciar.</p>
+          <p>Existem quatro tipos de servi&ccedil;os Kinesis, detalhados a seguir.</p>
 
-<h3><strong>Casos de Uso de An&aacute;lise de Dados e Consulta</strong></h3>
+          <h3><strong>Kinesis Video Streams</strong></h3>
 
-<p>Servi&ccedil;os de consulta como Amazon Athena, data warehouses como Amazon Redshift e estruturas sofisticadas de processamento de dados como Amazon EMR, abordam diferentes necessidades e casos de uso.</p>
+          <p>Kinesis Video Streams facilita o streaming seguro de v&iacute;deo de dispositivos conectados para a AWS
+            para an&aacute;lises, aprendizado de m&aacute;quina (ML) e outros processamentos.</p>
 
-<p>O Amazon Redshift fornece o desempenho de consulta mais r&aacute;pido para cargas de trabalho de relat&oacute;rios empresariais e intelig&ecirc;ncia de neg&oacute;cios, especialmente aquelas que envolvem SQL extremamente complexo com v&aacute;rias jun&ccedil;&otilde;es e subconsultas.</p>
+          <p>Armazena, criptografa e indexa de forma dur&aacute;vel fluxos de dados de v&iacute;deo, permitindo acesso
+            aos dados por meio de APIs f&aacute;ceis de usar.</p>
 
-<p>O Amazon EMR torna simples e econ&ocirc;mico executar frameworks de processamento altamente distribu&iacute;dos, como Hadoop, Spark e Presto, em compara&ccedil;&atilde;o com implementa&ccedil;&otilde;es no local. O Amazon EMR &eacute; flex&iacute;vel - voc&ecirc; pode executar aplicativos e c&oacute;digo personalizados e definir par&acirc;metros espec&iacute;ficos de computa&ccedil;&atilde;o, mem&oacute;ria, armazenamento e aplica&ccedil;&atilde;o para otimizar seus requisitos anal&iacute;ticos.</p>
+          <p>Os produtores fornecem fluxos de dados.</p>
 
-<p>Amazon Athena fornece a maneira mais f&aacute;cil de executar consultas ad-hoc para dados no S3 sem a necessidade de configurar ou gerenciar servidores.</p>
+          <p>Os dados s&atilde;o armazenados por padr&atilde;o por 24 horas, at&eacute; 7 dias.</p>
 
-<p>A tabela abaixo mostra o caso de uso principal e as situa&ccedil;&otilde;es para o uso de alguns servi&ccedil;os de consulta e an&aacute;lise da AWS:</p>
+          <p>Os consumidores recebem e processam dados.</p>
 
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-	<tbody>
-		<tr>
-			<td><strong>Servi&ccedil;o AWS</strong></td>
-			<td><strong>Caso de Uso</strong></td>
-			<td><strong>Quando usar</strong></td>
-		</tr>
-		<tr>
-			<td><strong>Amazon Athena</strong></td>
-			<td>Consulta</td>
-			<td>Executar consultas interativas diretamente em dados no Amazon S3 sem se preocupar com a formata&ccedil;&atilde;o dos dados ou gerenciamento de infraestrutura. Pode ser usado com outros servi&ccedil;os como o Amazon RedShift</td>
-		</tr>
-		<tr>
-			<td><strong>Amazon RedShift</strong></td>
-			<td>Data Warehouse</td>
-			<td>Extrair dados de v&aacute;rias fontes, format&aacute;-los e organiz&aacute;-los, armazen&aacute;-los e oferecer suporte a consultas complexas e r&aacute;pidas que geram relat&oacute;rios comerciais.</td>
-		</tr>
-		<tr>
-			<td><strong>Amazon EMR</strong></td>
-			<td>Processamento de Dados</td>
-			<td>Frameworks de processamento altamente distribu&iacute;dos, como Hadoop, Spark e Presto. Executa uma ampla variedade de tarefas de processamento de dados de escala para aplicativos como aprendizado de m&aacute;quina, an&aacute;lise de gr&aacute;ficos, transforma&ccedil;&atilde;o de dados, dados em tempo real.</td>
-		</tr>
-		<tr>
-			<td><strong>AWS Glue</strong></td>
-			<td>Servi&ccedil;o ETL</td>
-			<td>Transforma e move dados para v&aacute;rios destinos. Usado para preparar e carregar dados para an&aacute;lises. A fonte de dados pode ser S3, RedShift ou outro banco de dados. O Cat&aacute;logo de Dados Glue pode ser consultado por Athena, EMR e RedShift Spectrum.</td>
-		</tr>
-	</tbody>
-</table>
+          <p>Pode ter v&aacute;rias parti&ccedil;&otilde;es em um fluxo.</p>
 
-<h3><strong>Amazon Kinesis</strong></h3>
+          <p>Oferece suporte &agrave; criptografia em repouso com criptografia do lado do servidor (KMS) com uma chave
+            mestra do cliente.</p>
 
-<p>Amazon Kinesis facilita a coleta, processamento e an&aacute;lise de dados em tempo real e em fluxo, permitindo obter insights oportunos e reagir rapidamente a novas informa&ccedil;&otilde;es.</p>
+          <h3><strong>Kinesis Data Streams</strong></h3>
 
-<p>Cole&ccedil;&atilde;o de servi&ccedil;os para processar fluxos de diversos tipos de dados.</p>
+          <p>Kinesis Data Streams permite construir aplicativos personalizados que processam ou analisam dados em tempo
+            real para necessidades especializadas.</p>
 
-<p>Os dados s&atilde;o processados em &quot;shards&quot; (parti&ccedil;&otilde;es).</p>
+          <p>Possibilita o processamento em tempo real de grandes volumes de dados (big data) em fluxo.</p>
 
-<p>Existem quatro tipos de servi&ccedil;os Kinesis, detalhados a seguir.</p>
+          <p>Serve para mover rapidamente dados dos produtores de dados e, em seguida, processar continuamente esses
+            dados.</p>
 
-<h3><strong>Kinesis Video Streams</strong></h3>
+          <p>Armazena dados para processamento posterior por aplicativos (diferen&ccedil;a chave em
+            rela&ccedil;&atilde;o ao Firehose, que entrega dados diretamente para os servi&ccedil;os AWS).</p>
 
-<p>Kinesis Video Streams facilita o streaming seguro de v&iacute;deo de dispositivos conectados para a AWS para an&aacute;lises, aprendizado de m&aacute;quina (ML) e outros processamentos.</p>
+          <p><strong>Casos de uso comuns incluem:</strong></p>
 
-<p>Armazena, criptografa e indexa de forma dur&aacute;vel fluxos de dados de v&iacute;deo, permitindo acesso aos dados por meio de APIs f&aacute;ceis de usar.</p>
+          <ul>
+            <li>Capta&ccedil;&atilde;o acelerada de logs e feeds de dados.</li>
+            <li>M&eacute;tricas e relat&oacute;rios em tempo real.</li>
+            <li>An&aacute;lise de dados em tempo real.</li>
+            <li>Processamento de fluxo complexo.</li>
+          </ul>
 
-<p>Os produtores fornecem fluxos de dados.</p>
+          <h3><strong>Kinesis Data Firehose</strong></h3>
 
-<p>Os dados s&atilde;o armazenados por padr&atilde;o por 24 horas, at&eacute; 7 dias.</p>
+          <p>Kinesis Data Firehose &eacute; a maneira mais f&aacute;cil de carregar dados em fluxo em armazenamentos de
+            dados e ferramentas de an&aacute;lise.</p>
 
-<p>Os consumidores recebem e processam dados.</p>
+          <p>Captura, transforma e carrega dados em fluxo.</p>
 
-<p>Pode ter v&aacute;rias parti&ccedil;&otilde;es em um fluxo.</p>
+          <p>Possibilita an&aacute;lises quase em tempo real com ferramentas e pain&eacute;is de intelig&ecirc;ncia de
+            neg&oacute;cios existentes.</p>
 
-<p>Oferece suporte &agrave; criptografia em repouso com criptografia do lado do servidor (KMS) com uma chave mestra do cliente.</p>
+          <p>Kinesis Data Streams pode ser usado como a fonte para o Kinesis Data Firehose.</p>
 
-<h3><strong>Kinesis Data Streams</strong></h3>
+          <p>Voc&ecirc; pode configurar o Kinesis Data Firehose para transformar seus dados antes de entreg&aacute;-los.
+          </p>
 
-<p>Kinesis Data Streams permite construir aplicativos personalizados que processam ou analisam dados em tempo real para necessidades especializadas.</p>
+          <p>Com o Kinesis Data Firehose, voc&ecirc; n&atilde;o precisa escrever um aplicativo ou gerenciar recursos.
+          </p>
 
-<p>Possibilita o processamento em tempo real de grandes volumes de dados (big data) em fluxo.</p>
+          <p>O Firehose pode agrupar, compactar e criptografar dados antes de carreg&aacute;-los.</p>
 
-<p>Serve para mover rapidamente dados dos produtores de dados e, em seguida, processar continuamente esses dados.</p>
+          <p>O Firehose replica dados de forma s&iacute;ncrona em tr&ecirc;s Zonas de Disponibilidade &agrave; medida
+            que s&atilde;o transportados para os destinos.</p>
 
-<p>Armazena dados para processamento posterior por aplicativos (diferen&ccedil;a chave em rela&ccedil;&atilde;o ao Firehose, que entrega dados diretamente para os servi&ccedil;os AWS).</p>
+          <p>Cada fluxo de entrega armazena registros de dados por at&eacute; 24 horas.</p>
 
-<p>Casos de uso comuns incluem:</p>
+          <h3><strong>Kinesis Data Analytics</strong></h3>
 
-<p>Capta&ccedil;&atilde;o acelerada de logs e feeds de dados.<br />
-M&eacute;tricas e relat&oacute;rios em tempo real.<br />
-An&aacute;lise de dados em tempo real.<br />
-Processamento de fluxo complexo.</p>
+          <p>Amazon Kinesis Data Analytics &eacute; a maneira mais f&aacute;cil de processar e analisar dados em tempo
+            real e em fluxo.</p>
 
-<h3><strong>Kinesis Data Firehose</strong></h3>
+          <p>Pode usar consultas SQL padr&atilde;o para processar fluxos de dados Kinesis.</p>
 
-<p>Kinesis Data Firehose &eacute; a maneira mais f&aacute;cil de carregar dados em fluxo em armazenamentos de dados e ferramentas de an&aacute;lise.</p>
+          <p>Oferece an&aacute;lise em tempo real.</p>
 
-<p>Captura, transforma e carrega dados em fluxo.</p>
+          <p><strong>Casos de uso comuns incluem:</strong></p>
 
-<p>Possibilita an&aacute;lises quase em tempo real com ferramentas e pain&eacute;is de intelig&ecirc;ncia de neg&oacute;cios existentes.</p>
-
-<p>Kinesis Data Streams pode ser usado como a fonte para o Kinesis Data Firehose.</p>
-
-<p>Voc&ecirc; pode configurar o Kinesis Data Firehose para transformar seus dados antes de entreg&aacute;-los.</p>
-
-<p>Com o Kinesis Data Firehose, voc&ecirc; n&atilde;o precisa escrever um aplicativo ou gerenciar recursos.</p>
-
-<p>O Firehose pode agrupar, compactar e criptografar dados antes de carreg&aacute;-los.</p>
-
-<p>O Firehose replica dados de forma s&iacute;ncrona em tr&ecirc;s Zonas de Disponibilidade &agrave; medida que s&atilde;o transportados para os destinos.</p>
-
-<p>Cada fluxo de entrega armazena registros de dados por at&eacute; 24 horas.</p>
-
-<h3><strong>Kinesis Data Analytics</strong></h3>
-
-<p>Amazon Kinesis Data Analytics &eacute; a maneira mais f&aacute;cil de processar e analisar dados em tempo real e em fluxo.</p>
-
-<p>Pode usar consultas SQL padr&atilde;o para processar fluxos de dados Kinesis.</p>
-
-<p>Oferece an&aacute;lise em tempo real.</p>
-
-<p>Casos de uso:</p>
-
-<p>Gerar an&aacute;lises de s&eacute;ries temporais.<br />
-Alimentar pain&eacute;is em tempo real.<br />
-Criar alertas e notifica&ccedil;&otilde;es em tempo real.<br />
-Criar e executar rapidamente c&oacute;digo SQL poderoso contra fontes de streaming.</p>
-
-<p>Pode receber dados de Kinesis Streams e Kinesis Firehose.</p>
-
-<p>Sa&iacute;da para S3, RedShift, Elasticsearch e Kinesis Data Streams.</p>
+          <ul>
+            <li>Gerar an&aacute;lises de s&eacute;ries temporais.</li>
+            <li>Alimentar pain&eacute;is em tempo real.</li>
+            <li>Criar alertas e notifica&ccedil;&otilde;es em tempo real.</li>
+            <li>Criar e executar rapidamente c&oacute;digo SQL poderoso contra fontes de streaming.</li>
+            <li>Pode receber dados de Kinesis Streams e Kinesis Firehose.</li>
+            <li>Sa&iacute;da para S3, RedShift, Elasticsearch e Kinesis Data Streams.</li>
+          </ul>
 
         </div>
+
 
         <div style="text-align: center;">
           <div>

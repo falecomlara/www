@@ -110,7 +110,6 @@
         <h2 class="uk-h1 uk-text-center">ARMAZENAMENTO</h2>
 
         <div>
-
           <p>Dentro da AWS Cloud, existem v&aacute;rias op&ccedil;&otilde;es de servi&ccedil;os para diferentes tipos de
             arquiteturas. No que diz respeito aos diferentes tipos de servi&ccedil;os de armazenamento da AWS, este guia
             fornecer&aacute; uma vis&atilde;o abrangente sobre como decidir qual das op&ccedil;&otilde;es de
@@ -121,7 +120,7 @@
             servi&ccedil;os de armazenamento da AWS, este guia tornar&aacute; essa tarefa gerenci&aacute;vel, fornecendo
             uma compara&ccedil;&atilde;o sucinta de cada servi&ccedil;o de armazenamento da AWS.</p>
 
-          <p><strong>Amazon Simple Storage Service (S3)</strong></p>
+          <h2><strong>Amazon Simple Storage Service (S3)</strong></h2>
 
           <p>O Amazon S3 &eacute; um armazenamento de objetos projetado para armazenar e recuperar qualquer quantidade
             de dados de qualquer lugar - sites e aplicativos m&oacute;veis, aplicativos corporativos e dados de sensores
@@ -138,7 +137,7 @@
           <p>O S3 oferece flexibilidade aos clientes na forma como gerenciam dados para otimiza&ccedil;&atilde;o de
             custos, controle de acesso e conformidade.</p>
 
-          <p>Casos de uso t&iacute;picos incluem:</p>
+          <h3><strong>Casos de uso t&iacute;picos incluem:</strong></h3>
 
           <ul>
             <li>Backup e Armazenamento - Fornecer servi&ccedil;os de backup e armazenamento de dados para terceiros.
@@ -170,7 +169,7 @@
           <p>O S3 &eacute; um namespace universal, ent&atilde;o os nomes de buckets devem ser exclusivos globalmente.
           </p>
 
-          <p>Existem sete classes de armazenamento do S3.</p>
+          <h3><strong>Existem sete classes de armazenamento do S3.</strong></h3>
 
           <ol>
             <li>S3 Padr&atilde;o (dur&aacute;vel, imediatamente dispon&iacute;vel, acessado com frequ&ecirc;ncia).</li>
@@ -200,31 +199,31 @@
           <p>A tabela a seguir fornece uma descri&ccedil;&atilde;o de armazenamentos de dados persistentes,
             transit&oacute;rios e ef&ecirc;meros e qual servi&ccedil;o da AWS usar:</p>
 
-          <table align="center" border="1" style="width:100%">
+          <table align="center" border="1">
             <thead>
               <tr>
-                <th style="width:120px">Tipo de Armazenamento</th>
-                <th style="width:683px">Descri&ccedil;&atilde;o</th>
-                <th style="width:358px">Exemplos</th>
+                <th>Tipo de Armazenamento</th>
+                <th>Descri&ccedil;&atilde;o</th>
+                <th>Exemplos</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="width:120px">Persistente</td>
-                <td style="width:683px">Dados s&atilde;o dur&aacute;veis e permanecem ap&oacute;s
-                  reinicializa&ccedil;&otilde;es, rein&iacute;cios ou ciclos de energia</td>
-                <td style="width:358px">S3, Glacier, EBS, EFS</td>
+                <td>Persistente</td>
+                <td>Dados s&atilde;o dur&aacute;veis e permanecem ap&oacute;s reinicializa&ccedil;&otilde;es,
+                  rein&iacute;cios ou ciclos de energia</td>
+                <td>S3, Glacier, EBS, EFS</td>
               </tr>
               <tr>
-                <td style="width:120px">Transit&oacute;rio</td>
-                <td style="width:683px">Dados s&atilde;o apenas armazenados temporariamente e passados para outro
-                  processo ou armazenamento persistente</td>
-                <td style="width:358px">SQS, SNS</td>
+                <td>Transit&oacute;rio</td>
+                <td>Dados s&atilde;o apenas armazenados temporariamente e passados para outro processo ou armazenamento
+                  persistente</td>
+                <td>SQS, SNS</td>
               </tr>
               <tr>
-                <td style="width:120px">Ef&ecirc;mero</td>
-                <td style="width:683px">Dados s&atilde;o perdidos quando o sistema &eacute; desligado</td>
-                <td style="width:358px">Armazenamento de Inst&acirc;ncia EC2, Memcached</td>
+                <td>Ef&ecirc;mero</td>
+                <td>Dados s&atilde;o perdidos quando o sistema &eacute; desligado</td>
+                <td>Armazenamento de Inst&acirc;ncia EC2, Memcached</td>
               </tr>
             </tbody>
           </table>
@@ -265,17 +264,19 @@
             </li>
           </ol>
 
-          <p><strong>Gerenciamento de ciclo de vida</strong> - define regras para transferir objetos entre classes de
-            armazenamento em intervalos de tempo definidos.</p>
+          <h3><strong>Gerenciamento de ciclo de vida:</strong></h3>
 
-          <p><strong>Versionamento</strong> - mant&eacute;m automaticamente v&aacute;rias vers&otilde;es de um objeto
-            (quando ativado).</p>
+          <p>Define regras para transferir objetos entre classes de armazenamento em intervalos de tempo definidos.</p>
+
+          <h3><strong>Versionamento</strong>:</h3>
+
+          <p>Mant&eacute;m automaticamente v&aacute;rias vers&otilde;es de um objeto (quando ativado).</p>
 
           <p>A criptografia pode ser habilitada para o bucket.</p>
 
           <p>Os dados s&atilde;o protegidos usando ACLs e pol&iacute;ticas de bucket.</p>
 
-          <p>Cobran&ccedil;as:</p>
+          <h3><strong>Cobran&ccedil;as</strong>:</h3>
 
           <ol>
             <li>Armazenamento.</li>
@@ -295,46 +296,47 @@
 
           <p>Recursos adicionais oferecidos pelo Amazon S3 incluem:</p>
 
-          <table align="center" border="1" style="width:100%">
+          <table align="center" border="1" style="width:75%">
             <thead>
               <tr>
-                <th>Capacidade Adicional do S3</th>
-                <th>Como Funciona</th>
+                <th style="width:216px">Capacidade Adicional do S3</th>
+                <th style="width:711px">Como Funciona</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Acelera&ccedil;&atilde;o de Transfer&ecirc;ncia</td>
-                <td>Acelera uploads de dados usando o CloudFront em sentido inverso.</td>
+                <td style="text-align:center; width:216px">Acelera&ccedil;&atilde;o de Transfer&ecirc;ncia</td>
+                <td style="width:711px">Acelera uploads de dados usando o CloudFront em sentido inverso.</td>
               </tr>
               <tr>
-                <td>Solicitante Paga</td>
-                <td>O solicitante, em vez do propriet&aacute;rio do bucket, paga por solicita&ccedil;&otilde;es e
-                  transfer&ecirc;ncia de dados.</td>
+                <td style="text-align:center; width:216px">Solicitante Paga</td>
+                <td style="width:711px">O solicitante, em vez do propriet&aacute;rio do bucket, paga por
+                  solicita&ccedil;&otilde;es e transfer&ecirc;ncia de dados.</td>
               </tr>
               <tr>
-                <td>Tags</td>
-                <td>Atribui tags a objetos para uso em custos, faturamento, seguran&ccedil;a etc.</td>
+                <td style="text-align:center; width:216px">Tags</td>
+                <td style="width:711px">Atribui tags a objetos para uso em custos, faturamento, seguran&ccedil;a etc.
+                </td>
               </tr>
               <tr>
-                <td>Eventos</td>
-                <td>Dispara notifica&ccedil;&otilde;es para SNS, SQS ou Lambda quando ocorrem eventos espec&iacute;ficos
-                  em seu bucket.</td>
+                <td style="text-align:center; width:216px">Eventos</td>
+                <td style="width:711px">Dispara notifica&ccedil;&otilde;es para SNS, SQS ou Lambda quando ocorrem
+                  eventos espec&iacute;ficos em seu bucket.</td>
               </tr>
               <tr>
-                <td>Hospedagem Est&aacute;tica na Web</td>
-                <td>Hospedagem de site est&aacute;tico simples e massivamente escal&aacute;vel.</td>
+                <td style="text-align:center; width:216px">Hospedagem Est&aacute;tica na Web</td>
+                <td style="width:711px">Hospedagem de site est&aacute;tico simples e massivamente escal&aacute;vel.</td>
               </tr>
               <tr>
-                <td>BitTorrent</td>
-                <td>Usa o protocolo BitTorrent para recuperar qualquer objeto dispon&iacute;vel publicamente, gerando
-                  automaticamente um arquivo .torrent.</td>
+                <td style="text-align:center; width:216px">BitTorrent</td>
+                <td style="width:711px">Usa o protocolo BitTorrent para recuperar qualquer objeto dispon&iacute;vel
+                  publicamente, gerando automaticamente um arquivo .torrent.</td>
               </tr>
             </tbody>
           </table>
 
           <hr />
-          <p><strong>AWS Snowball</strong></p>
+          <h2><strong>AWS Snowball</strong></h2>
 
           <p>Com o AWS Snowball, voc&ecirc; pode transferir centenas de terabytes ou petabytes de dados entre seus data
             centers locais e o Amazon Simple Storage Service (Amazon S3).</p>
@@ -349,7 +351,7 @@
 
           <p>A tabela abaixo descreve as ofertas do AWS Snow em um n&iacute;vel elevado:</p>
 
-          <table align="center" border="1" style="width:100%">
+          <table align="center" border="1">
             <thead>
               <tr>
                 <th>Servi&ccedil;o</th>
@@ -358,16 +360,16 @@
             </thead>
             <tbody>
               <tr>
-                <td>AWS Snowball</td>
+                <td style="text-align:center">AWS Snowball</td>
                 <td>Transfer&ecirc;ncia massiva de dados, armazenamento de borda e computa&ccedil;&atilde;o de borda
                 </td>
               </tr>
               <tr>
-                <td>AWS Snowmobile</td>
+                <td style="text-align:center">AWS Snowmobile</td>
                 <td>Um caminh&atilde;o de transporte, para armazenamento&nbsp; de at&eacute; 100PB</td>
               </tr>
               <tr>
-                <td>AWS Snowcone</td>
+                <td style="text-align:center">AWS Snowcone</td>
                 <td>O menor dispositivo da linha, mais adequado para ambientes in&oacute;spitos, miss&otilde;es e locais
                   onde a Internet &eacute; limitada ou n&atilde;o existe</td>
               </tr>
@@ -383,7 +385,7 @@
             lotes.</p>
 
           <hr />
-          <p><strong>Amazon Elastic Block Store (EBS)</strong></p>
+          <h2><strong>Amazon Elastic Block Store (EBS)</strong></h2>
 
           <p>O Amazon Elastic Block Store (Amazon EBS) fornece volumes de armazenamento de bloco persistentes para uso
             com inst&acirc;ncias Amazon EC2 na AWS Cloud.</p>
@@ -399,7 +401,7 @@
 
           <p>Os seguintes volumes EBS aparecem com mais frequ&ecirc;ncia nos exames da AWS:</p>
 
-          <table align="center" border="1" style="width:100%">
+          <table align="center" border="1">
             <thead>
               <tr>
                 <th>Tipo de Volume</th>
@@ -411,7 +413,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>Descri&ccedil;&atilde;o Curta</td>
+                <td style="text-align:center">Descri&ccedil;&atilde;o Curta</td>
                 <td>Volume SSD de mais alto desempenho projetado para cargas de trabalho transacionais sens&iacute;veis
                   &agrave; lat&ecirc;ncia</td>
                 <td>Volume SSD de prop&oacute;sito geral que equilibra desempenho de pre&ccedil;o para uma ampla
@@ -422,7 +424,7 @@
                   frequ&ecirc;ncia</td>
               </tr>
               <tr>
-                <td>Casos de Uso</td>
+                <td style="text-align:center">Casos de Uso</td>
                 <td>Bancos de dados NoSQL e relacionais intensivos em I/O</td>
                 <td>Volumes de inicializa&ccedil;&atilde;o, aplicativos interativos de baixa lat&ecirc;ncia,
                   desenvolvimento e teste</td>
@@ -430,35 +432,35 @@
                 <td>Dados mais frios que requerem menos varreduras por dia</td>
               </tr>
               <tr>
-                <td>Tamanho do Volume</td>
+                <td style="text-align:center">Tamanho do Volume</td>
                 <td>4 GiB &ndash; 16 TiB</td>
                 <td>1 GiB &ndash; 16 TiB</td>
                 <td>125 GB &ndash; 16 TiB</td>
                 <td>125 GB &ndash; 16 TiB</td>
               </tr>
               <tr>
-                <td>M&aacute;x. IOPS / Volume</td>
+                <td style="text-align:center">M&aacute;x. IOPS / Volume</td>
                 <td>64.000</td>
                 <td>16.000</td>
                 <td>500</td>
                 <td>250</td>
               </tr>
               <tr>
-                <td>M&aacute;x. Throughput / Volume</td>
+                <td style="text-align:center">M&aacute;x. Throughput / Volume</td>
                 <td>1.000 MiB/s</td>
                 <td>250 MiB/s (gp2), 1000 MiB/s (gp3)</td>
                 <td>500 MiB/s</td>
                 <td>250 MiB/s</td>
               </tr>
               <tr>
-                <td>Pode ser volume de inicializa&ccedil;&atilde;o?</td>
+                <td style="text-align:center">Pode ser volume de inicializa&ccedil;&atilde;o?</td>
                 <td>Sim</td>
                 <td>Sim</td>
                 <td>N&atilde;o</td>
                 <td>N&atilde;o</td>
               </tr>
               <tr>
-                <td>EBS Multi-attach</td>
+                <td style="text-align:center">EBS Multi-attach</td>
                 <td>Suportado</td>
                 <td>N&atilde;o Suportado</td>
                 <td>N&atilde;o Suportado</td>
@@ -489,7 +491,7 @@
 
           <p>O comportamento pode ser alterado alterando o atributo &quot;DeleteOnTermination&quot;.</p>
 
-          <p><strong>Snapshots do EBS:</strong></p>
+          <h3><strong>Snapshots do EBS:</strong></h3>
 
           <ul>
             <li>Capturam um estado pontual de uma inst&acirc;ncia.</li>
@@ -506,7 +508,7 @@
               espec&iacute;ficos da regi&atilde;o.</li>
           </ul>
 
-          <p><strong>Volumes da Store de Inst&acirc;ncias:</strong></p>
+          <h3><strong>Volumes da Store de Inst&acirc;ncias:</strong></h3>
 
           <ul>
             <li>Os volumes da store de inst&acirc;ncias s&atilde;o discos locais de alta performance fisicamente
@@ -522,7 +524,7 @@
           </ul>
 
           <hr />
-          <p><strong>Amazon Elastic File System (EFS):</strong></p>
+          <h2><strong>Amazon Elastic File System (EFS):</strong></h2>
 
           <p>O EFS &eacute; um servi&ccedil;o totalmente gerenciado que facilita a configura&ccedil;&atilde;o e o
             dimensionamento do armazenamento de arquivos na Amazon Cloud.</p>
@@ -577,7 +579,7 @@
             per&iacute;odos de tempo.</p>
 
           <hr />
-          <p><strong>AWS Storage Gateway:</strong></p>
+          <h2><strong>AWS Storage Gateway:</strong></h2>
 
           <p>O AWS Storage Gateway &eacute; um servi&ccedil;o de armazenamento em nuvem h&iacute;brida que oferece
             acesso local a praticamente armazenamento em nuvem ilimitado.</p>
@@ -598,7 +600,7 @@
           </ul>
 
           <hr />
-          <p><strong>AWS Backup:</strong></p>
+          <h2><strong>AWS Backup:</strong></h2>
 
           <p>O servi&ccedil;o AWS Backup oferece um console de backup centralizado, APIs e interface de linha de comando
             para gerenciar backups em servi&ccedil;os da AWS, incluindo:</p>
@@ -622,7 +624,7 @@
             backup, tornando mais f&aacute;cil auditar seus backups.</p>
 
           <hr />
-          <p><strong>Amazon FSX para Lustre:</strong></p>
+          <h2><strong>Amazon FSX para Lustre:</strong></h2>
 
           <p>Para cargas de trabalho de computa&ccedil;&atilde;o, o Amazon FSx para Lustre fornece armazenamento
             escal&aacute;vel, de alto desempenho e de custo efetivo. Baseado no Lustre, o sistema de arquivos de alto
@@ -637,7 +639,7 @@
             transcoding de v&iacute;deo, aprendizado de m&aacute;quina e detec&ccedil;&atilde;o de fraudes.</p>
 
           <hr />
-          <p><strong>Amazon FSX for Windows File Server</strong></p>
+          <h2><strong>Amazon FSX for Windows File Server</strong></h2>
 
           <p>Com o Amazon FSx for Windows File Server, suas aplica&ccedil;&otilde;es e usu&aacute;rios finais podem
             acessar armazenamento de arquivos compartilhado confi&aacute;vel, de alto desempenho e seguro. Usando o
