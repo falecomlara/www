@@ -41,6 +41,12 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -109,114 +115,209 @@
       <div class="uk-container uk-position-relative">
         <h2 class="uk-h1 uk-text-center">CDN e DNS</h2>
 
-<div>
+        <div>
+          <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os para armazenar em cache conte&uacute;do ao
+            redor do mundo e fornecer servi&ccedil;os inteligentes de Sistema de Nomes de Dom&iacute;nio (DNS) para suas
+            aplica&ccedil;&otilde;es.</p>
 
-  <p>Esta categoria de servi&ccedil;os AWS inclui servi&ccedil;os para armazenar em cache conte&uacute;do ao redor do mundo e fornecer servi&ccedil;os inteligentes de Sistema de Nomes de Dom&iacute;nio (DNS) para suas aplica&ccedil;&otilde;es.</p>
+          <h2><strong>Amazon Route 53</strong></h2>
 
-  <p><strong>Amazon Route 53</strong></p>
-  
-  <p>O Amazon Route 53 &eacute; o Servi&ccedil;o de Nomes de Dom&iacute;nio (DNS) da AWS.</p>
-  
-  <p>O Route 53 desempenha tr&ecirc;s fun&ccedil;&otilde;es principais:</p>
-  
-  <p>1. Registro de dom&iacute;nio - o Route 53 permite que voc&ecirc; registre nomes de dom&iacute;nio.<br />
-  2. Servi&ccedil;o de Sistema de Nomes de Dom&iacute;nio (DNS) - o Route 53 traduz nomes em endere&ccedil;os IP usando uma rede global de servidores DNS autoritativos.<br />
-  3. Verifica&ccedil;&atilde;o de integridade - o Route 53 envia solicita&ccedil;&otilde;es automatizadas para sua aplica&ccedil;&atilde;o para verificar se ela &eacute; alcan&ccedil;&aacute;vel, est&aacute; dispon&iacute;vel e funcional.</p>
-  
-  <p>Voc&ecirc; pode usar qualquer combina&ccedil;&atilde;o dessas fun&ccedil;&otilde;es.</p>
-  
-  <p>Benef&iacute;cios do Route 53:</p>
-  
-  <p>- Registro de dom&iacute;nio.<br />
-  - Servi&ccedil;o DNS.<br />
-  - Fluxo de Tr&aacute;fego (envie usu&aacute;rios para o melhor ponto de extremidade).<br />
-  - Verifica&ccedil;&atilde;o de integridade.<br />
-  - Failover DNS (altera automaticamente o ponto de extremidade do dom&iacute;nio se o sistema falhar).<br />
-  - Integra&ccedil;&atilde;o com ELB, S3 e CloudFront como pontos de extremidade.</p>
-  
-  <p>As pol&iacute;ticas de roteamento determinam como o DNS do Route 53 responde &agrave;s consultas.</p>
-  
-  <p>A tabela abaixo destaca a principal fun&ccedil;&atilde;o de cada tipo de pol&iacute;tica de roteamento:</p>
-  
-  <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:100%">
-    <tbody>
-      <tr>
-        <td style="text-align:center; width:210px"><strong>Pol&iacute;tica</strong></td>
-        <td style="text-align:center; width:959px"><strong>O que faz</strong></td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Simples</td>
-        <td style="width:959px">Resposta DNS simples fornecendo o endere&ccedil;o IP associado a um nome</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Failover</td>
-        <td style="width:959px">Se o prim&aacute;rio estiver inativo (com base em verifica&ccedil;&otilde;es de integridade), roteia para o destino secund&aacute;rio</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Geolocaliza&ccedil;&atilde;o</td>
-        <td style="width:959px">Usa a localiza&ccedil;&atilde;o geogr&aacute;fica em que voc&ecirc; est&aacute; (por exemplo, Europa) para rote&aacute;-lo para a regi&atilde;o mais pr&oacute;xima</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Geoproximidade</td>
-        <td style="width:959px">Roteia para a regi&atilde;o mais pr&oacute;xima em uma &aacute;rea geogr&aacute;fica</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Lat&ecirc;ncia</td>
-        <td style="width:959px">Direciona com base na rota de menor lat&ecirc;ncia para os recursos</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Resposta Multivalor</td>
-        <td style="width:959px">Retorna v&aacute;rios endere&ccedil;os IP e funciona como um balanceador de carga b&aacute;sico</td>
-      </tr>
-      <tr>
-        <td style="text-align:center; width:210px">Ponderada</td>
-        <td style="width:959px">Usa os pesos relativos atribu&iacute;dos aos recursos para determinar para qual rotear</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <p>&nbsp;</p>
-  
-  <p><strong>Amazon CloudFront</strong></p>
-  
-  <p>O Amazon CloudFront &eacute; uma rede de entrega de conte&uacute;do (CDN) que permite armazenar (fazer cache) do seu conte&uacute;do em &quot;locais de borda&quot; ao redor do mundo.</p>
-  
-  <p>Isso permite que os clientes acessem o conte&uacute;do mais rapidamente e fornece seguran&ccedil;a contra ataques DDoS.</p>
-  
-  <p>O CloudFront pode ser usado para dados, v&iacute;deos, aplicativos e APIs.</p>
-  
-  <p>Benef&iacute;cios do CloudFront:</p>
-  
-  <p>- Armazena em cache o conte&uacute;do no Local de Borda para distribui&ccedil;&atilde;o r&aacute;pida aos clientes.<br />
-  - Prote&ccedil;&atilde;o integrada contra ataques Distribu&iacute;dos de Nega&ccedil;&atilde;o de Servi&ccedil;o (DDoS).<br />
-  - Integra-se a muitos servi&ccedil;os AWS (S3, EC2, ELB, Route 53, Lambda).</p>
-  
-  <p>Origens e Distribui&ccedil;&otilde;es:</p>
-  
-  <p>- Uma origem &eacute; a fonte dos arquivos que a CDN distribuir&aacute;.<br />
-  - As origens podem ser um bucket S3, uma inst&acirc;ncia EC2, um Balanceador de Carga El&aacute;stico ou o Route 53 - tamb&eacute;m podem ser externas (n&atilde;o AWS).<br />
-  - Para distribuir conte&uacute;do com o CloudFront, &eacute; necess&aacute;rio criar uma distribui&ccedil;&atilde;o.</p>
-  
-  <p>O CloudFront utiliza Locais de Borda e Caches Regionais:</p>
-  
-  <p>- Um local de borda &eacute; o local onde o conte&uacute;do &eacute; armazenado em cache (separado das regi&otilde;es/AZs da AWS).<br />
-  - As solicita&ccedil;&otilde;es s&atilde;o automaticamente roteadas para o local de borda mais pr&oacute;ximo.<br />
-  - Os Caches Regionais est&atilde;o localizados entre servidores web de origem e locais de borda globais, com um cache maior.<br />
-  - Os Caches Regionais visam aproximar o conte&uacute;do dos usu&aacute;rios.</p>
-  
+          <p>O Amazon Route 53 &eacute; o sistema de nome de dom&iacute;nio (DNS) da AWS.</p>
 
-</div>
+          <h3>O Route 53 desempenha tr&ecirc;s fun&ccedil;&otilde;es principais:</h3>
 
-<div style="text-align: center;">
-  <div>
-    <button onclick="goBack()">Voltar</button>
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
-  </div>
-</div>
+          <ol>
+            <li>
+              <p>Registro de dom&iacute;nio</p>
+
+              <ul>
+                <li>
+                  <p>Permite que voc&ecirc; registre nomes de dom&iacute;nio.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Servi&ccedil;o de Sistema de Nomes de Dom&iacute;nio (DNS)</p>
+
+              <ul>
+                <li>
+                  <p>Traduz nomes em endere&ccedil;os IP usando uma rede global de servidores DNS autoritativos.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Verifica&ccedil;&atilde;o de integridade</p>
+
+              <ul>
+                <li>
+                  <p>Envia solicita&ccedil;&otilde;es automatizadas para sua aplica&ccedil;&atilde;o para verificar se
+                    ela &eacute; alcan&ccedil;&aacute;vel, est&aacute; dispon&iacute;vel e funcional.</p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <p>Voc&ecirc; pode usar qualquer combina&ccedil;&atilde;o dessas fun&ccedil;&otilde;es.</p>
+
+          <img src="imagens/amazon-route53.jpg" alt="Amazon Route 53" width="70%" class="centralizado" border="1">
+
+          <h3>Benef&iacute;cios do Route 53:</h3>
+
+          <ul>
+            <li>
+              <p>Registro de dom&iacute;nio.</p>
+            </li>
+            <li>
+              <p>Servi&ccedil;o DNS.</p>
+            </li>
+            <li>
+              <p>Fluxo de Tr&aacute;fego (envie usu&aacute;rios para o melhor ponto de extremidade).</p>
+            </li>
+            <li>
+              <p>Verifica&ccedil;&atilde;o de integridade.</p>
+            </li>
+            <li>
+              <p>Failover DNS (altera automaticamente o ponto de extremidade do dom&iacute;nio se o sistema falhar).</p>
+            </li>
+            <li>
+              <p>Integra&ccedil;&atilde;o com ELB, S3 e CloudFront como pontos de extremidade.</p>
+            </li>
+          </ul>
+
+          <p>As pol&iacute;ticas de roteamento determinam como o DNS do Route 53 responde &agrave;s consultas.</p>
+
+          <p>A tabela abaixo destaca a principal fun&ccedil;&atilde;o de cada tipo de <strong>pol&iacute;tica de
+              roteamento</strong>:</p>
+
+          <table align="center" border="1" cellpadding="2" cellspacing="2" style="width:80%">
+            <tbody>
+              <tr>
+                <td style="text-align:center; width:152px"><strong>Pol&iacute;tica de Roteamento</strong></td>
+                <td style="text-align:center; width:651px"><strong>O que faz</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Simples</td>
+                <td style="width:651px">Resposta DNS simples fornecendo o endere&ccedil;o IP associado a um nome</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Failover</td>
+                <td style="width:651px">Se o prim&aacute;rio estiver inativo (com base em verifica&ccedil;&otilde;es de
+                  integridade), roteia para o destino secund&aacute;rio</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Geolocaliza&ccedil;&atilde;o</td>
+                <td style="width:651px">Usa a localiza&ccedil;&atilde;o geogr&aacute;fica em que voc&ecirc; est&aacute;
+                  (por exemplo, Europa) para rote&aacute;-lo para a regi&atilde;o mais pr&oacute;xima</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Geoproximidade</td>
+                <td style="width:651px">Roteia para a regi&atilde;o mais pr&oacute;xima em uma &aacute;rea
+                  geogr&aacute;fica</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Lat&ecirc;ncia</td>
+                <td style="width:651px">Direciona com base na rota de menor lat&ecirc;ncia para os recursos</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">IP</td>
+                <td style="width:651px">Use quando quiser rotear o tr&aacute;fego com base no local dos usu&aacute;rios
+                  e tiver os endere&ccedil;os IP de origem do tr&aacute;fego</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Resposta Multivalor</td>
+                <td style="width:651px">Retorna v&aacute;rios endere&ccedil;os IP e funciona como um balanceador de
+                  carga b&aacute;sico</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; width:152px">Ponderada</td>
+                <td style="width:651px">Usa os pesos relativos atribu&iacute;dos aos recursos para determinar para qual
+                  rotear</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <h2><strong>Amazon CloudFront</strong></h2>
+
+          <p>O Amazon CloudFront &eacute; uma rede de entrega de conte&uacute;do (CDN) que permite armazenar (fazer
+            cache) do seu conte&uacute;do em &quot;locais de borda&quot; ao redor do mundo.</p>
+
+          <p>Isso permite que os clientes acessem o conte&uacute;do mais rapidamente e fornece seguran&ccedil;a contra
+            ataques DDoS.</p>
+
+          <p>O CloudFront pode ser usado para dados, v&iacute;deos, aplicativos e APIs.</p>
+
+          <h3>Benef&iacute;cios do CloudFront:</h3>
+
+          <ul>
+            <li>
+              <p>Armazena em cache o conte&uacute;do no Local de Borda para distribui&ccedil;&atilde;o r&aacute;pida aos
+                clientes.</p>
+            </li>
+            <li>
+              <p>Prote&ccedil;&atilde;o integrada contra ataques Distribu&iacute;dos de Nega&ccedil;&atilde;o de
+                Servi&ccedil;o (DDoS).</p>
+            </li>
+            <li>
+              <p>Integra-se a muitos servi&ccedil;os AWS (S3, EC2, ELB, Route 53, Lambda).</p>
+            </li>
+          </ul>
+
+          <img src="imagens/amazon-cloudfront-s3.jpg" alt="Amazon CloudFront com Origem S3" width="70%"
+            class="centralizado" border="1">
+
+          <h3>Origens e Distribui&ccedil;&otilde;es:</h3>
+
+          <ul>
+            <li>
+              <p>Uma origem &eacute; a fonte dos arquivos que a CDN distribuir&aacute;.</p>
+            </li>
+            <li>
+              <p>As origens podem ser um bucket S3, uma inst&acirc;ncia EC2, um Balanceador de Carga El&aacute;stico ou
+                o Route 53 - tamb&eacute;m podem ser externas (n&atilde;o AWS).</p>
+            </li>
+            <li>
+              <p>Para distribuir conte&uacute;do com o CloudFront, &eacute; necess&aacute;rio criar uma
+                distribui&ccedil;&atilde;o.</p>
+            </li>
+          </ul>
+
+          <img src="imagens/amazon-cloudfront-cache.jpg" alt="Amazon CloudFront usando Cache" width="70%"
+            class="centralizado" border="1">
+
+          <h3>O CloudFront utiliza Locais de Borda e Caches Regionais:</h3>
+
+          <ul>
+            <li>
+              <p>Um local de borda &eacute; o local onde o conte&uacute;do &eacute; armazenado em cache (separado das
+                regi&otilde;es/AZs da AWS).</p>
+            </li>
+            <li>
+              <p>As solicita&ccedil;&otilde;es s&atilde;o automaticamente roteadas para o local de borda mais
+                pr&oacute;ximo.</p>
+            </li>
+            <li>
+              <p>Os Caches Regionais est&atilde;o localizados entre servidores web de origem e locais de borda globais,
+                com um cache maior.</p>
+            </li>
+            <li>
+              <p>Os Caches Regionais visam aproximar o conte&uacute;do dos usu&aacute;rios.</p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div style="text-align: center;">
+          <div>
+            <button onclick="goBack()">Voltar</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+        </div>
 
       </div>
     </div>
