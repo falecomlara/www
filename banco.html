@@ -109,296 +109,290 @@
       <div class="uk-container uk-position-relative">
         <h2 class="uk-h1 uk-text-center">Banco de Dados</h2>
 
-<div>
+        <div>
 
-  <p>Este artigo abrange os Bancos de Dados AWS para o exame AWS Cloud Practitioner. Essa &eacute; uma das &aacute;reas tecnol&oacute;gicas chave no blueprint do exame.</p>
+          <p>Este artigo abrange os Bancos de Dados AWS para o exame AWS Cloud Practitioner. Essa &eacute; uma das
+            &aacute;reas tecnol&oacute;gicas chave no blueprint do exame.</p>
 
-  <p>Vamos iniciar os Tipos de Banco de Dados da AWS:</p>
-  
-  <p><img src="imagens/tipos-de-banco-de-dados-aws.jpg" alt="Tipos de Banco de Dados da AWS" border="1"></p>
-  
-  <hr />
-  <p><strong>Amazon Relational Database Service (RDS)</strong></p>
-  
-  <p>O Amazon Relational Database Service (Amazon RDS) &eacute; um servi&ccedil;o gerenciado que facilita a configura&ccedil;&atilde;o, opera&ccedil;&atilde;o e escalabilidade de um banco de dados relacional na nuvem.</p>
-  
-  <ul>
-    <li>Bancos de dados relacionais s&atilde;o conhecidos como bancos de dados Structured Query Language (SQL).</li>
-    <li>Bancos de dados n&atilde;o relacionais s&atilde;o conhecidos como bancos de dados NoSQL.</li>
-    <li>RDS &eacute; um tipo de banco de dados Online Transaction Processing (OLTP).</li>
-  </ul>
-  
-  <p><strong>Recursos e Benef&iacute;cios do RDS:</strong></p>
-  
-  <ul>
-    <li>Tipo de banco de dados SQL.</li>
-    <li>Pode ser usado para realizar consultas e jun&ccedil;&otilde;es complexas.</li>
-    <li>F&aacute;cil de configurar, altamente dispon&iacute;vel, tolerante a falhas e escal&aacute;vel.</li>
-    <li>Usado quando os dados s&atilde;o claramente definidos.</li>
-    <li>Casos de uso comuns incluem lojas online e sistemas banc&aacute;rios.</li>
-  </ul>
-  
-  <p><strong>Motores de Banco de Dados Suportados pelo Amazon RDS:</strong></p>
-  
-  <ul>
-    <li>SQL Server.</li>
-    <li>Oracle.</li>
-    <li>MySQL Server.</li>
-    <li>PostgreSQL.</li>
-    <li>Aurora.</li>
-    <li>MariaDB.</li>
-    <li>Aurora &eacute; um banco de dados propriet&aacute;rio da Amazon.</li>
-  </ul>
-  
-  <p>O RDS &eacute; um servi&ccedil;o totalmente gerenciado e voc&ecirc; n&atilde;o tem acesso &agrave; inst&acirc;ncia EC2 subjacente (sem acesso root).</p>
-  
-  <p><strong>O Servi&ccedil;o RDS Inclui:</strong></p>
-  
-  <ul>
-    <li>Seguran&ccedil;a e atualiza&ccedil;&atilde;o das inst&acirc;ncias de banco de dados.</li>
-    <li>Backup autom&aacute;tico para as inst&acirc;ncias de banco de dados.</li>
-    <li>Atualiza&ccedil;&otilde;es de software para o mecanismo de banco de dados.</li>
-    <li>Escalonamento f&aacute;cil para armazenamento e computa&ccedil;&atilde;o.</li>
-    <li>Op&ccedil;&atilde;o Multi-AZ com replica&ccedil;&atilde;o s&iacute;ncrona.</li>
-    <li>Failover autom&aacute;tico para op&ccedil;&atilde;o Multi-AZ.</li>
-    <li>Op&ccedil;&atilde;o de r&eacute;plicas de leitura para cargas de trabalho de leitura intensiva.</li>
-  </ul>
-  
-  <p><strong>Criptografia:</strong></p>
-  
-  <ul>
-    <li>Voc&ecirc; pode criptografar suas inst&acirc;ncias e snapshots do Amazon RDS em repouso, ativando a op&ccedil;&atilde;o de criptografia para a inst&acirc;ncia do Amazon RDS.</li>
-    <li>A criptografia em repouso &eacute; suportada para todos os tipos de banco de dados e usa o AWS KMS.</li>
-    <li>Voc&ecirc; n&atilde;o pode criptografar um banco de dados existente; voc&ecirc; precisa criar um snapshot, copi&aacute;-lo, criptografar a c&oacute;pia e, em seguida, criar um banco de dados criptografado a partir do snapshot.</li>
-  </ul>
-  
-  <p><strong>Grupos de Subnet do Banco de Dados:</strong></p>
-  
-  <ul>
-    <li>Um grupo de subnets do banco de dados &eacute; uma cole&ccedil;&atilde;o de subnets (tipicamente privadas) que voc&ecirc; cria em uma VPC e designa para suas inst&acirc;ncias de banco de dados.</li>
-    <li>Cada grupo de subnets do banco de dados deve ter subnets em pelo menos duas Zonas de Disponibilidade em cada regi&atilde;o.</li>
-    <li>&Eacute; recomend&aacute;vel configurar um grupo de subnets com subnets em cada AZ (mesmo para inst&acirc;ncias independentes).</li>
-  </ul>
-  
-  <p><strong>Cobran&ccedil;a AWS por:</strong></p>
-  
-  <ul>
-    <li>Horas de inst&acirc;ncia do banco de dados (horas parciais s&atilde;o cobradas como horas completas).</li>
-    <li>GB/m&ecirc;s de armazenamento.</li>
-    <li>Requisi&ccedil;&otilde;es de E/S/m&ecirc;s - para armazenamento magn&eacute;tico.</li>
-    <li>IOPS provisionados/m&ecirc;s - para SSDs IOPS provisionados do RDS.</li>
-    <li>Transfer&ecirc;ncia de dados de sa&iacute;da.</li>
-    <li>Armazenamento de backup (backups do banco de dados e snapshots manuais).</li>
-  </ul>
-  
-  <p><strong>Escalabilidade:</strong></p>
-  
-  <ul>
-    <li>Voc&ecirc; s&oacute; pode escalar o RDS para cima (computa&ccedil;&atilde;o e armazenamento).</li>
-    <li>Voc&ecirc; n&atilde;o pode diminuir o armazenamento alocado para uma inst&acirc;ncia do RDS.</li>
-    <li>Voc&ecirc; pode escalar o armazenamento e alterar o tipo de armazenamento para todos os motores de banco de dados, exceto o MS SQL.</li>
-  </ul>
-  
-  <p><strong>Multi-AZ para Recupera&ccedil;&atilde;o de Desastres:</strong></p>
-  
-  <ul>
-    <li>Multi-AZ RDS cria uma r&eacute;plica em outra AZ e replica sincronicamente para ela (apenas DR).</li>
-    <li>H&aacute; uma op&ccedil;&atilde;o para escolher Multi-AZ durante o assistente de lan&ccedil;amento.</li>
-    <li>A AWS recomenda o uso de armazenamento de IOPS provisionados para inst&acirc;ncias de banco de dados RDS Multi-AZ.</li>
-    <li>Cada AZ &eacute; executada em sua pr&oacute;pria infraestrutura fisicamente distinta e independente, projetada para ser altamente confi&aacute;vel.</li>
-    <li>Voc&ecirc; n&atilde;o pode escolher qual AZ na regi&atilde;o ser&aacute; escolhida para criar a inst&acirc;ncia de banco de dados de espera.</li>
-  </ul>
-  
-  <p><strong>R&eacute;plicas de Leitura - Melhor Desempenho para Leituras:</strong></p>
-  
-  <ul>
-    <li>As r&eacute;plicas de leitura s&atilde;o usadas para bancos de dados com muitas leituras e a replica&ccedil;&atilde;o &eacute; ass&iacute;ncrona.</li>
-    <li>R&eacute;plicas de leitura s&atilde;o para compartilhamento de carga de trabalho e al&iacute;vio de carga.</li>
-    <li>R&eacute;plicas de leitura fornecem DR somente leitura.</li>
-    <li>As r&eacute;plicas de leitura s&atilde;o criadas a partir de um snapshot da inst&acirc;ncia mestre.</li>
-    <li>Deve ter backups autom&aacute;ticos ativados no prim&aacute;rio (per&iacute;odo de reten&ccedil;&atilde;o &gt; 0).</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon DynamoDB</strong></p>
-  
-  <p>Amazon DynamoDB &eacute; um servi&ccedil;o de banco de dados NoSQL totalmente gerenciado que oferece desempenho r&aacute;pido e previs&iacute;vel com escalabilidade cont&iacute;nua.</p>
-  
-  <p><strong>Recursos e Benef&iacute;cios do DynamoDB:</strong></p>
-  
-  <ul>
-    <li>Tipo de banco de dados NoSQL (n&atilde;o relacional).</li>
-    <li>R&aacute;pido, altamente dispon&iacute;vel e totalmente gerenciado.</li>
-    <li>Usado quando os dados s&atilde;o fluidos e podem mudar.</li>
-    <li>Casos de uso comuns incluem redes sociais e an&aacute;lise da web.</li>
-    <li>Escalabilidade f&aacute;cil, sem interrup&ccedil;&otilde;es.</li>
-  </ul>
-  
-  <p><strong>Caracter&iacute;sticas do DynamoDB:</strong></p>
-  
-  <ul>
-    <li>
-    <p>Baseado em SSD e usa indexa&ccedil;&atilde;o limitada em atributos para desempenho.</p>
-    </li>
-    <li>
-    <p>Usa HTTP sobre SSL (HTTPS) como transporte e JSON como formato de serializa&ccedil;&atilde;o de mensagem.</p>
-    </li>
-    <li>
-    <p>Armazena tr&ecirc;s r&eacute;plicas geograficamente distribu&iacute;das de cada tabela para alta disponibilidade e durabilidade de dados.</p>
-    </li>
-    <li>
-    <p>Replica&ccedil;&atilde;o s&iacute;ncrona em tr&ecirc;s instala&ccedil;&otilde;es (AZs) em uma regi&atilde;o.</p>
-    </li>
-    <li>
-    <p>Replica&ccedil;&atilde;o entre regi&otilde;es para replicar em v&aacute;rias regi&otilde;es:</p>
-  
-    <ul>
-      <li>Amazon DynamoDB Global Tables fornece uma solu&ccedil;&atilde;o totalmente gerenciada para implantar um banco de dados multi-regi&atilde;o e multi-mestre.</li>
-      <li>Ao criar uma tabela global, voc&ecirc; especifica as regi&otilde;es da AWS onde deseja que a tabela esteja dispon&iacute;vel.</li>
-      <li>O DynamoDB realiza todas as tarefas necess&aacute;rias para criar tabelas id&ecirc;nticas nessas regi&otilde;es e propagar altera&ccedil;&otilde;es cont&iacute;nuas de dados para todas elas.</li>
-      <li>Fornece baixa lat&ecirc;ncia de leitura e grava&ccedil;&atilde;o.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <p><strong>Outras Caracter&iacute;sticas do DynamoDB:</strong></p>
-  
-  <ul>
-    <li>
-    <p>Escala armazenamento e throughput para cima ou para baixo conforme necess&aacute;rio sem altera&ccedil;&otilde;es de c&oacute;digo ou tempo de inatividade.</p>
-    </li>
-    <li>
-    <p>Sem esquema.</p>
-    </li>
-    <li>
-    <p>Pode ser usado para armazenar o estado da sess&atilde;o.</p>
-    </li>
-    <li>
-    <p>Fornece dois modelos de leitura:</p>
-  
-    <ul>
-      <li>
-      <p>Leituras eventualmente consistentes (padr&atilde;o):</p>
-  
-      <ul>
-        <li>A op&ccedil;&atilde;o de consist&ecirc;ncia eventual maximiza seu throughput de leitura (melhor desempenho de leitura).</li>
-        <li>Uma leitura eventualmente consistente pode n&atilde;o refletir os resultados de uma grava&ccedil;&atilde;o conclu&iacute;da recentemente.</li>
-        <li>Consist&ecirc;ncia em todas as c&oacute;pias alcan&ccedil;ada dentro de 1 segundo.</li>
-      </ul>
-      </li>
-      <li>
-      <p>Leituras fortemente consistentes:</p>
-  
-      <ul>
-        <li>Uma leitura fortemente consistente retorna um resultado que reflete todas as grava&ccedil;&otilde;es que receberam uma resposta bem-sucedida antes da leitura (consist&ecirc;ncia mais r&aacute;pida).</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon DynamoDB Accelerator (DAX):</strong></p>
-  
-  <ul>
-    <li>Totalmente gerenciado, altamente dispon&iacute;vel, cache em mem&oacute;ria para o DynamoDB que oferece at&eacute; 10x de melhoria de desempenho - de milissegundos para microssegundos - mesmo em milh&otilde;es de solicita&ccedil;&otilde;es por segundo.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon RedShift</strong></p>
-  
-  <p>Amazon Redshift &eacute; um data warehouse r&aacute;pido e totalmente gerenciado que simplifica e torna econ&ocirc;mica a an&aacute;lise de todos os seus dados usando SQL padr&atilde;o e ferramentas de Business Intelligence (BI) existentes.</p>
-  
-  <ul>
-    <li>Data warehouse SQL usado para aplica&ccedil;&otilde;es de an&aacute;lise.</li>
-    <li>Banco de dados relacional usado para casos de uso de Processamento Anal&iacute;tico Online (OLAP).</li>
-    <li>Ideal para executar consultas anal&iacute;ticas complexas em petabytes de dados estruturados, usando otimiza&ccedil;&atilde;o avan&ccedil;ada de consultas, armazenamento colunar em discos locais de alta performance e execu&ccedil;&atilde;o de consultas em paralelo maci&ccedil;o.</li>
-    <li>Ideal para processar grandes quantidades de dados para intelig&ecirc;ncia de neg&oacute;cios.</li>
-    <li>10x mais r&aacute;pido do que um banco de dados SQL tradicional.</li>
-    <li>Usa armazenamento de dados colunar.</li>
-    <li>Fornece compress&atilde;o avan&ccedil;ada para melhor desempenho e economia de espa&ccedil;o.</li>
-    <li>Mant&eacute;m sempre tr&ecirc;s c&oacute;pias dos seus dados (original, r&eacute;plica nos n&oacute;s de computa&ccedil;&atilde;o, c&oacute;pia de backup no S3).</li>
-    <li>Oferece backups cont&iacute;nuos/incrementais.</li>
-    <li>Tolerante a falhas em caso de falhas de disco, n&oacute;s, rede ou desastres em n&iacute;vel de AZ/regi&atilde;o.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon ElastiCache</strong></p>
-  
-  <p>ElastiCache &eacute; um servi&ccedil;o web que facilita a implanta&ccedil;&atilde;o e execu&ccedil;&atilde;o de n&oacute;s de servidor compat&iacute;veis com os protocolos Memcached ou Redis na nuvem.</p>
-  
-  <ul>
-    <li>Cache em mem&oacute;ria que melhora significativamente a lat&ecirc;ncia e o throughput para muitas cargas de trabalho de aplicativos voltadas para leitura ou cargas de trabalho intensivas de computa&ccedil;&atilde;o.</li>
-    <li>Melhor para cen&aacute;rios em que a carga do banco de dados &eacute; baseada em transa&ccedil;&otilde;es de Processamento Anal&iacute;tico Online (OLAP).</li>
-  </ul>
-  
-  <p><strong>Cen&aacute;rios T&iacute;picos de Uso para ElastiCache:</strong></p>
-  
-  <table align="center" border="1" style="width:100%">
-    <thead>
-      <tr>
-        <th>Caso de Uso</th>
-        <th>Benef&iacute;cio</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Armazenamento de Sess&atilde;o Web</td>
-        <td>Em casos com servidores web equilibrados, armazene informa&ccedil;&otilde;es de sess&atilde;o na Redis, para que, se um servidor for perdido, as informa&ccedil;&otilde;es da sess&atilde;o n&atilde;o sejam perdidas e outro servidor web possa recuper&aacute;-las.</td>
-      </tr>
-      <tr>
-        <td>Cache de Banco de Dados</td>
-        <td>Use o Memcached na frente do AWS RDS para armazenar consultas populares para aliviar o trabalho do RDS e retornar resultados mais rapidamente aos usu&aacute;rios.</td>
-      </tr>
-      <tr>
-        <td>Quadros de Classifica&ccedil;&atilde;o</td>
-        <td>Use o Redis para fornecer um quadro de classifica&ccedil;&atilde;o ao vivo para milh&otilde;es de usu&aacute;rios do seu aplicativo m&oacute;vel.</td>
-      </tr>
-      <tr>
-        <td>Dashboards de Dados em Tempo Real</td>
-        <td>Forne&ccedil;a um local para dados de sensores em tempo real no ch&atilde;o de f&aacute;brica, fornecendo displays de painel ao vivo em tempo real.</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <ul>
-    <li>
-    <p>Os n&oacute;s EC2 ElastiCache n&atilde;o podem ser acessados pela Internet, nem podem ser acessados por inst&acirc;ncias EC2 em outras VPCs.</p>
-    </li>
-    <li>
-    <p>Pode ser em inst&acirc;ncias sob demanda ou reservadas (mas n&atilde;o em inst&acirc;ncias Spot).</p>
-    </li>
-    <li>
-    <p>Pode ser usado para armazenar o estado da sess&atilde;o.</p>
-    </li>
-    <li>
-    <p>Dois tipos de motores ElastiCache:</p>
-  
-    <ul>
-      <li>
-      <p>Memcached: modelo mais simples, pode executar grandes n&oacute;s com v&aacute;rios n&uacute;cleos/tarefas, pode ser dimensionado para cima e para baixo, pode armazenar objetos como bancos de dados.</p>
-      </li>
-      <li>
-      <p>Redis: modelo mais complexo, suporta criptografia, replica&ccedil;&atilde;o mestre/escravo, cross-AZ (alta disponibilidade), failover autom&aacute;tico e backup/restaura&ccedil;&atilde;o.</p>
-      </li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon EMR</strong></p>
-  
-  <p>Amazon EMR &eacute; um servi&ccedil;o web que permite que empresas, pesquisadores, analistas de dados e desenvolvedores processem vastas quantidades de dados de maneira f&aacute;cil e econ&ocirc;mica.</p>
-  
-  <ul>
-    <li>Utiliza um framework Hadoop hospedado em Amazon EC2 e Amazon S3.</li>
-    <li>Framework Hadoop gerenciado para processar grandes quantidades de dados.</li>
-    <li>Suporta Apache Spark, HBase, Presto e Flink.</li>
-    <li>Mais comumente usado para an&aacute;lise de logs, an&aacute;lise financeira ou atividades de extra&ccedil;&atilde;o, tradu&ccedil;&atilde;o e carregamento (ETL).</li>
-  </ul>
-  
+          <p>Vamos iniciar os Tipos de Banco de Dados da AWS:</p>
 
-</div>
+          <p><img src="imagens/tipos-de-banco-de-dados-aws.jpg" alt="Tipos de Banco de Dados da AWS" border="1"></p>
+
+      
+          <h2>Amazon Relational Database Service (RDS)</h2>
+
+<p>O Amazon Relational Database Service (Amazon RDS) &eacute; um servi&ccedil;o gerenciado que facilita a configura&ccedil;&atilde;o, opera&ccedil;&atilde;o e escalabilidade de um banco de dados relacional na nuvem.</p>
+
+<ul>
+	<li>Bancos de dados relacionais s&atilde;o conhecidos como bancos de dados Structured Query Language (SQL).</li>
+	<li>Bancos de dados n&atilde;o relacionais s&atilde;o conhecidos como bancos de dados NoSQL.</li>
+	<li>RDS &eacute; um tipo de banco de dados Online Transaction Processing (OLTP).</li>
+</ul>
+
+<p><strong>Recursos e Benef&iacute;cios do RDS:</strong></p>
+
+<ul>
+	<li>Tipo de banco de dados SQL.</li>
+	<li>Pode ser usado para realizar consultas e jun&ccedil;&otilde;es complexas.</li>
+	<li>F&aacute;cil de configurar, altamente dispon&iacute;vel, tolerante a falhas e escal&aacute;vel.</li>
+	<li>Usado quando os dados s&atilde;o claramente definidos.</li>
+	<li>Casos de uso comuns incluem lojas online e sistemas banc&aacute;rios.</li>
+</ul>
+
+<p><strong>Motores de Banco de Dados Suportados pelo Amazon RDS:</strong></p>
+
+<ul>
+	<li>SQL Server.</li>
+	<li>Oracle.</li>
+	<li>MySQL Server.</li>
+	<li>PostgreSQL.</li>
+	<li>Aurora.</li>
+	<li>MariaDB.</li>
+	<li>Aurora &eacute; um banco de dados propriet&aacute;rio da Amazon.</li>
+</ul>
+
+<p>O RDS &eacute; um servi&ccedil;o totalmente gerenciado e voc&ecirc; n&atilde;o tem acesso &agrave; inst&acirc;ncia EC2 subjacente (sem acesso root).</p>
+
+<p><strong>O Servi&ccedil;o RDS Inclui:</strong></p>
+
+<ul>
+	<li>Seguran&ccedil;a e atualiza&ccedil;&atilde;o das inst&acirc;ncias de banco de dados.</li>
+	<li>Backup autom&aacute;tico para as inst&acirc;ncias de banco de dados.</li>
+	<li>Atualiza&ccedil;&otilde;es de software para o mecanismo de banco de dados.</li>
+	<li>Escalonamento f&aacute;cil para armazenamento e computa&ccedil;&atilde;o.</li>
+	<li>Op&ccedil;&atilde;o Multi-AZ com replica&ccedil;&atilde;o s&iacute;ncrona.</li>
+	<li>Failover autom&aacute;tico para op&ccedil;&atilde;o Multi-AZ.</li>
+	<li>Op&ccedil;&atilde;o de r&eacute;plicas de leitura para cargas de trabalho de leitura intensiva.</li>
+</ul>
+
+<p><strong>Criptografia:</strong></p>
+
+<ul>
+	<li>Voc&ecirc; pode criptografar suas inst&acirc;ncias e snapshots do Amazon RDS em repouso, ativando a op&ccedil;&atilde;o de criptografia para a inst&acirc;ncia do Amazon RDS.</li>
+	<li>A criptografia em repouso &eacute; suportada para todos os tipos de banco de dados e usa o AWS KMS.</li>
+	<li>Voc&ecirc; n&atilde;o pode criptografar um banco de dados existente; voc&ecirc; precisa criar um snapshot, copi&aacute;-lo, criptografar a c&oacute;pia e, em seguida, criar um banco de dados criptografado a partir do snapshot.</li>
+</ul>
+
+<p><strong>Grupos de Subnet do Banco de Dados:</strong></p>
+
+<ul>
+	<li>Um grupo de subnets do banco de dados &eacute; uma cole&ccedil;&atilde;o de subnets (tipicamente privadas) que voc&ecirc; cria em uma VPC e designa para suas inst&acirc;ncias de banco de dados.</li>
+	<li>Cada grupo de subnets do banco de dados deve ter subnets em pelo menos duas Zonas de Disponibilidade em cada regi&atilde;o.</li>
+	<li>&Eacute; recomend&aacute;vel configurar um grupo de subnets com subnets em cada AZ (mesmo para inst&acirc;ncias independentes).</li>
+</ul>
+
+<p><strong>Cobran&ccedil;a AWS por:</strong></p>
+
+<ul>
+	<li>Horas de inst&acirc;ncia do banco de dados (horas parciais s&atilde;o cobradas como horas completas).</li>
+	<li>GB/m&ecirc;s de armazenamento.</li>
+	<li>Requisi&ccedil;&otilde;es de E/S/m&ecirc;s - para armazenamento magn&eacute;tico.</li>
+	<li>IOPS provisionados/m&ecirc;s - para SSDs IOPS provisionados do RDS.</li>
+	<li>Transfer&ecirc;ncia de dados de sa&iacute;da.</li>
+	<li>Armazenamento de backup (backups do banco de dados e snapshots manuais).</li>
+</ul>
+
+<p><strong>Escalabilidade:</strong></p>
+
+<ul>
+	<li>Voc&ecirc; s&oacute; pode escalar o RDS para cima (computa&ccedil;&atilde;o e armazenamento).</li>
+	<li>Voc&ecirc; n&atilde;o pode diminuir o armazenamento alocado para uma inst&acirc;ncia do RDS.</li>
+	<li>Voc&ecirc; pode escalar o armazenamento e alterar o tipo de armazenamento para todos os motores de banco de dados, exceto o MS SQL.</li>
+</ul>
+
+<p><strong>Multi-AZ para Recupera&ccedil;&atilde;o de Desastres:</strong></p>
+
+<ul>
+	<li>Multi-AZ RDS cria uma r&eacute;plica em outra AZ e replica sincronicamente para ela (apenas DR).</li>
+	<li>H&aacute; uma op&ccedil;&atilde;o para escolher Multi-AZ durante o assistente de lan&ccedil;amento.</li>
+	<li>A AWS recomenda o uso de armazenamento de IOPS provisionados para inst&acirc;ncias de banco de dados RDS Multi-AZ.</li>
+	<li>Cada AZ &eacute; executada em sua pr&oacute;pria infraestrutura fisicamente distinta e independente, projetada para ser altamente confi&aacute;vel.</li>
+	<li>Voc&ecirc; n&atilde;o pode escolher qual AZ na regi&atilde;o ser&aacute; escolhida para criar a inst&acirc;ncia de banco de dados de espera.</li>
+</ul>
+
+<p><strong>R&eacute;plicas de Leitura - Melhor Desempenho para Leituras:</strong></p>
+
+<ul>
+	<li>As r&eacute;plicas de leitura s&atilde;o usadas para bancos de dados com muitas leituras e a replica&ccedil;&atilde;o &eacute; ass&iacute;ncrona.</li>
+	<li>R&eacute;plicas de leitura s&atilde;o para compartilhamento de carga de trabalho e al&iacute;vio de carga.</li>
+	<li>R&eacute;plicas de leitura fornecem DR somente leitura.</li>
+	<li>As r&eacute;plicas de leitura s&atilde;o criadas a partir de um snapshot da inst&acirc;ncia mestre.</li>
+	<li>Deve ter backups autom&aacute;ticos ativados no prim&aacute;rio (per&iacute;odo de reten&ccedil;&atilde;o &gt; 0).</li>
+</ul>
+
+<h2>Amazon DynamoDB</h2>
+
+<p>Amazon DynamoDB &eacute; um servi&ccedil;o de banco de dados NoSQL totalmente gerenciado que oferece desempenho r&aacute;pido e previs&iacute;vel com escalabilidade cont&iacute;nua.</p>
+
+<p><strong>Recursos e Benef&iacute;cios do DynamoDB:</strong></p>
+
+<ul>
+	<li>Tipo de banco de dados NoSQL (n&atilde;o relacional).</li>
+	<li>R&aacute;pido, altamente dispon&iacute;vel e totalmente gerenciado.</li>
+	<li>Usado quando os dados s&atilde;o fluidos e podem mudar.</li>
+	<li>Casos de uso comuns incluem redes sociais e an&aacute;lise da web.</li>
+	<li>Escalabilidade f&aacute;cil, sem interrup&ccedil;&otilde;es.</li>
+</ul>
+
+<p><strong>Caracter&iacute;sticas do DynamoDB:</strong></p>
+
+<ul>
+	<li>
+	<p>Baseado em SSD e usa indexa&ccedil;&atilde;o limitada em atributos para desempenho.</p>
+	</li>
+	<li>
+	<p>Usa HTTP sobre SSL (HTTPS) como transporte e JSON como formato de serializa&ccedil;&atilde;o de mensagem.</p>
+	</li>
+	<li>
+	<p>Armazena tr&ecirc;s r&eacute;plicas geograficamente distribu&iacute;das de cada tabela para alta disponibilidade e durabilidade de dados.</p>
+	</li>
+	<li>
+	<p>Replica&ccedil;&atilde;o s&iacute;ncrona em tr&ecirc;s instala&ccedil;&otilde;es (AZs) em uma regi&atilde;o.</p>
+	</li>
+	<li>
+	<p>Replica&ccedil;&atilde;o entre regi&otilde;es para replicar em v&aacute;rias regi&otilde;es:</p>
+
+	<ul>
+		<li>Amazon DynamoDB Global Tables fornece uma solu&ccedil;&atilde;o totalmente gerenciada para implantar um banco de dados multi-regi&atilde;o e multi-mestre.</li>
+		<li>Ao criar uma tabela global, voc&ecirc; especifica as regi&otilde;es da AWS onde deseja que a tabela esteja dispon&iacute;vel.</li>
+		<li>O DynamoDB realiza todas as tarefas necess&aacute;rias para criar tabelas id&ecirc;nticas nessas regi&otilde;es e propagar altera&ccedil;&otilde;es cont&iacute;nuas de dados para todas elas.</li>
+		<li>Fornece baixa lat&ecirc;ncia de leitura e grava&ccedil;&atilde;o.</li>
+	</ul>
+	</li>
+</ul>
+
+<p><strong>Outras Caracter&iacute;sticas do DynamoDB:</strong></p>
+
+<ul>
+	<li>
+	<p>Escala armazenamento e throughput para cima ou para baixo conforme necess&aacute;rio sem altera&ccedil;&otilde;es de c&oacute;digo ou tempo de inatividade.</p>
+	</li>
+	<li>
+	<p>Sem esquema.</p>
+	</li>
+	<li>
+	<p>Pode ser usado para armazenar o estado da sess&atilde;o.</p>
+	</li>
+	<li>
+	<p>Fornece dois modelos de leitura:</p>
+
+	<ul>
+		<li>
+		<p>Leituras eventualmente consistentes (padr&atilde;o):</p>
+
+		<ul>
+			<li>A op&ccedil;&atilde;o de consist&ecirc;ncia eventual maximiza seu throughput de leitura (melhor desempenho de leitura).</li>
+			<li>Uma leitura eventualmente consistente pode n&atilde;o refletir os resultados de uma grava&ccedil;&atilde;o conclu&iacute;da recentemente.</li>
+			<li>Consist&ecirc;ncia em todas as c&oacute;pias alcan&ccedil;ada dentro de 1 segundo.</li>
+		</ul>
+		</li>
+		<li>
+		<p>Leituras fortemente consistentes:</p>
+
+		<ul>
+			<li>Uma leitura fortemente consistente retorna um resultado que reflete todas as grava&ccedil;&otilde;es que receberam uma resposta bem-sucedida antes da leitura (consist&ecirc;ncia mais r&aacute;pida).</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Amazon DynamoDB Accelerator (DAX):</h2>
+
+<p>Totalmente gerenciado, altamente dispon&iacute;vel, cache em mem&oacute;ria para o DynamoDB que oferece at&eacute; 10x de melhoria de desempenho - de milissegundos para microssegundos - mesmo em milh&otilde;es de solicita&ccedil;&otilde;es por segundo.</p>
+
+<h2>Amazon RedShift</h2>
+
+<p>Amazon Redshift &eacute; um data warehouse r&aacute;pido e totalmente gerenciado que simplifica e torna econ&ocirc;mica a an&aacute;lise de todos os seus dados usando SQL padr&atilde;o e ferramentas de Business Intelligence (BI) existentes.</p>
+
+<ul>
+	<li>Data warehouse SQL usado para aplica&ccedil;&otilde;es de an&aacute;lise.</li>
+	<li>Banco de dados relacional usado para casos de uso de Processamento Anal&iacute;tico Online (OLAP).</li>
+	<li>Ideal para executar consultas anal&iacute;ticas complexas em petabytes de dados estruturados, usando otimiza&ccedil;&atilde;o avan&ccedil;ada de consultas, armazenamento colunar em discos locais de alta performance e execu&ccedil;&atilde;o de consultas em paralelo maci&ccedil;o.</li>
+	<li>Ideal para processar grandes quantidades de dados para intelig&ecirc;ncia de neg&oacute;cios.</li>
+	<li>10x mais r&aacute;pido do que um banco de dados SQL tradicional.</li>
+	<li>Usa armazenamento de dados colunar.</li>
+	<li>Fornece compress&atilde;o avan&ccedil;ada para melhor desempenho e economia de espa&ccedil;o.</li>
+	<li>Mant&eacute;m sempre tr&ecirc;s c&oacute;pias dos seus dados (original, r&eacute;plica nos n&oacute;s de computa&ccedil;&atilde;o, c&oacute;pia de backup no S3).</li>
+	<li>Oferece backups cont&iacute;nuos/incrementais.</li>
+	<li>Tolerante a falhas em caso de falhas de disco, n&oacute;s, rede ou desastres em n&iacute;vel de AZ/regi&atilde;o.</li>
+</ul>
+
+<h2>Amazon ElastiCache</h2>
+
+<p>ElastiCache &eacute; um servi&ccedil;o web que facilita a implanta&ccedil;&atilde;o e execu&ccedil;&atilde;o de n&oacute;s de servidor compat&iacute;veis com os protocolos Memcached ou Redis na nuvem.</p>
+
+<ul>
+	<li>Cache em mem&oacute;ria que melhora significativamente a lat&ecirc;ncia e o throughput para muitas cargas de trabalho de aplicativos voltadas para leitura ou cargas de trabalho intensivas de computa&ccedil;&atilde;o.</li>
+	<li>Melhor para cen&aacute;rios em que a carga do banco de dados &eacute; baseada em transa&ccedil;&otilde;es de Processamento Anal&iacute;tico Online (OLAP).</li>
+</ul>
+
+<p><strong>Cen&aacute;rios T&iacute;picos de Uso para ElastiCache:</strong></p>
+
+<table align="center" border="1">
+	<thead>
+		<tr>
+			<th>Caso de Uso</th>
+			<th>Benef&iacute;cio</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Armazenamento de Sess&atilde;o Web</td>
+			<td>Em casos com servidores web equilibrados, armazene informa&ccedil;&otilde;es de sess&atilde;o na Redis, para que, se um servidor for perdido, as informa&ccedil;&otilde;es da sess&atilde;o n&atilde;o sejam perdidas e outro servidor web possa recuper&aacute;-las.</td>
+		</tr>
+		<tr>
+			<td>Cache de Banco de Dados</td>
+			<td>Use o Memcached na frente do AWS RDS para armazenar consultas populares para aliviar o trabalho do RDS e retornar resultados mais rapidamente aos usu&aacute;rios.</td>
+		</tr>
+		<tr>
+			<td>Quadros de Classifica&ccedil;&atilde;o</td>
+			<td>Use o Redis para fornecer um quadro de classifica&ccedil;&atilde;o ao vivo para milh&otilde;es de usu&aacute;rios do seu aplicativo m&oacute;vel.</td>
+		</tr>
+		<tr>
+			<td>Dashboards de Dados em Tempo Real</td>
+			<td>Forne&ccedil;a um local para dados de sensores em tempo real no ch&atilde;o de f&aacute;brica, fornecendo displays de painel ao vivo em tempo real.</td>
+		</tr>
+	</tbody>
+</table>
+
+<ul>
+	<li>
+	<p>Os n&oacute;s EC2 ElastiCache n&atilde;o podem ser acessados pela Internet, nem podem ser acessados por inst&acirc;ncias EC2 em outras VPCs.</p>
+	</li>
+	<li>
+	<p>Pode ser em inst&acirc;ncias sob demanda ou reservadas (mas n&atilde;o em inst&acirc;ncias Spot).</p>
+	</li>
+	<li>
+	<p>Pode ser usado para armazenar o estado da sess&atilde;o.</p>
+	</li>
+	<li>
+	<p>Dois tipos de motores ElastiCache:</p>
+
+	<ul>
+		<li>
+		<p>Memcached: modelo mais simples, pode executar grandes n&oacute;s com v&aacute;rios n&uacute;cleos/tarefas, pode ser dimensionado para cima e para baixo, pode armazenar objetos como bancos de dados.</p>
+		</li>
+		<li>
+		<p>Redis: modelo mais complexo, suporta criptografia, replica&ccedil;&atilde;o mestre/escravo, cross-AZ (alta disponibilidade), failover autom&aacute;tico e backup/restaura&ccedil;&atilde;o.</p>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Amazon EMR</h2>
+
+<p>Amazon EMR &eacute; um servi&ccedil;o web que permite que empresas, pesquisadores, analistas de dados e desenvolvedores processem vastas quantidades de dados de maneira f&aacute;cil e econ&ocirc;mica.</p>
+
+<ul>
+	<li>Utiliza um framework Hadoop hospedado em Amazon EC2 e Amazon S3.</li>
+	<li>Framework Hadoop gerenciado para processar grandes quantidades de dados.</li>
+	<li>Suporta Apache Spark, HBase, Presto e Flink.</li>
+	<li>Mais comumente usado para an&aacute;lise de logs, an&aacute;lise financeira ou atividades de extra&ccedil;&atilde;o, tradu&ccedil;&atilde;o e carregamento (ETL).</li>
+</ul>
+
+
+        </div>
 
 
         <div style="text-align: center;">
