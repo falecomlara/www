@@ -41,6 +41,12 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -124,8 +130,9 @@
             as Zonas de Disponibilidade em uma regi&atilde;o est&atilde;o conectadas por links de baixa lat&ecirc;ncia.
           </p>
 
-          <hr />
-          <h3><strong>Regi&otilde;es</strong></h3>
+          <h3>Regi&otilde;es</h3>
+
+          <img src="imagens/aws-regioes.jpg" alt="Regiões da AWS" width="70%" class="centralizado" border="1">
 
           <ul>
             <li>Uma regi&atilde;o &eacute; uma &aacute;rea geogr&aacute;fica.</li>
@@ -144,8 +151,7 @@
             </li>
           </ul>
 
-          <hr />
-          <h3><strong>Regi&otilde;es e Pontos de Extremidade:</strong></h3>
+          <h3>Regi&otilde;es e Pontos de Extremidade:</h3>
 
           <ul>
             <li>Ao trabalhar com uma inst&acirc;ncia usando a interface de linha de comando ou a&ccedil;&otilde;es da
@@ -159,11 +165,14 @@
               servi&ccedil;o Amazon DynamoDB.</li>
           </ul>
 
-          <hr />
-          <h3><strong>Zonas de Disponibilidade</strong></h3>
+          <h3>Zonas de Disponibilidade</h3>
+
+          <img src="imagens/aws-zonas-disponibilidade.jpg" alt="Zonas de Disponibilidade AWS" width="60%"
+            class="centralizado" border="1">
+
+          <p>Zonas de Disponibilidade s&atilde;o fisicamente separadas e isoladas entre si.</p>
 
           <ul>
-            <li>Zonas de Disponibilidade s&atilde;o fisicamente separadas e isoladas entre si.</li>
             <li>As Zonas de Disponibilidade abrangem um ou mais data centers e t&ecirc;m conex&otilde;es de rede
               diretas, de baixa lat&ecirc;ncia, alta largura de banda e redundantes entre si.</li>
             <li>Cada Zona de Disponibilidade &eacute; projetada como uma zona de falha independente.</li>
@@ -194,8 +203,26 @@
               de tr&acirc;nsito de n&iacute;vel 1.</li>
           </ul>
 
-          <hr />
-          <h3><strong>Zonas Locais</strong></h3>
+          <h3>Zonas Locais</h3>
+
+          <p>Vamos entender Zonas Locais, atrav&eacute;s deste exemplo no Rio de Janeiro, com o prefixo us-east-1:</p>
+
+          <img src="imagens/aws-zona-local.jpeg" alt="AWS Zona Local no Rio de Janeiro" width="50%" class="centralizado"
+            border="1">
+
+          <p>Este <strong>n&atilde;o &eacute; uma nova Regi&atilde;o na Am&eacute;rica do Sul.</strong> Se fosse o caso,
+            ter&iacute;amos o prefixo sa-east-2, e n&atilde;o ter&iacute;amos o nome &quot;<strong>rio</strong>&quot;.
+          </p>
+
+          <p>A &quot;us-east-1-rio-1a&quot; &eacute; uma Zona Local da regi&atilde;o de Virg&iacute;nia, que permitir
+            ter uma subnet no datacenter do Rio de Janeiro, funcionando em uma VPC da Virg&iacute;nia (us-east-1).</p>
+
+          <p>A experi&ecirc;ncia de subir um Amazon EC2 no Rio de Janeiro, em uma VPC da Virg&iacute;nia, seria similar
+            &agrave; de subir o Amazon EC2 em uma AZ espec&iacute;fica da Virg&iacute;nia. A grande vantagem &eacute; de
+            conseguir oferecer baixa lat&ecirc;ncia no Brasil, sem precisar mover toda a sua aplica&ccedil;&atilde;o
+            para sa-east-1 &nbsp;(Regi&atilde;o South America em S&atilde;o Paulo), nem fazer VPC peering.</p>
+
+          <p>Outros detalhes sobre as Zonas Locais:</p>
 
           <ul>
             <li>As&nbsp;<strong>Zonas Locais da AWS</strong>&nbsp;colocam computa&ccedil;&atilde;o, armazenamento, banco
@@ -215,8 +242,20 @@
               e conjuntos de ferramentas.</li>
           </ul>
 
-          <hr />
-          <h3><strong>AWS Wavelength</strong></h3>
+          <h3>Locais de Borda e Caches de Borda Regionais</h3>
+
+          <ul>
+            <li>Locais de Borda s&atilde;o pontos finais de Rede de Distribui&ccedil;&atilde;o de Conte&uacute;do (CDN)
+              para o CloudFront.</li>
+            <li>Existem muitos mais locais de borda do que regi&otilde;es.</li>
+            <li>Atualmente, existem mais de 200 locais de borda.</li>
+            <li>Os Caches de Borda Regionais ficam entre os servidores de origem do CloudFront e os Locais de Borda.
+            </li>
+            <li>Um Cache de Borda Regional tem uma largura de cache maior do que cada um dos Locais de Borda
+              individuais.</li>
+          </ul>
+
+          <h2>AWS Wavelength</h2>
 
           <ul>
             <li>A AWS Wavelength permite que os desenvolvedores criem aplicativos que oferecem lat&ecirc;ncias de um
@@ -230,8 +269,7 @@
               lat&ecirc;ncia para se conectar a um aplicativo a partir de um dispositivo m&oacute;vel.</li>
           </ul>
 
-          <hr />
-          <h3><strong>AWS Outposts</strong></h3>
+          <h2>AWS Outposts</h2>
 
           <ul>
             <li>O&nbsp;<strong>AWS Outposts</strong>&nbsp;traz servi&ccedil;os nativos da AWS, infraestrutura e modelos
@@ -244,19 +282,8 @@
               processamento local de dados.</li>
           </ul>
 
-          <hr />
-          <h3><strong>Locais de Borda e Caches de Borda Regionais</strong></h3>
+          
 
-          <ul>
-            <li>Locais de Borda s&atilde;o pontos finais de Rede de Distribui&ccedil;&atilde;o de Conte&uacute;do (CDN)
-              para o CloudFront.</li>
-            <li>Existem muitos mais locais de borda do que regi&otilde;es.</li>
-            <li>Atualmente, existem mais de 200 locais de borda.</li>
-            <li>Os Caches de Borda Regionais ficam entre os servidores de origem do CloudFront e os Locais de Borda.
-            </li>
-            <li>Um Cache de Borda Regional tem uma largura de cache maior do que cada um dos Locais de Borda
-              individuais.</li>
-          </ul>
         </div>
 
 
@@ -270,7 +297,7 @@
             </script>
           </div>
         </div>
-        
+
 
       </div>
     </div>
