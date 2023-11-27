@@ -41,6 +41,12 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -125,7 +131,7 @@
             usu&aacute;rio raiz da conta AWS e &eacute; acessada fazendo login com o endere&ccedil;o de e-mail e senha
             usados para criar a conta.</p>
 
-          <p>O IAM pode ser usado para gerenciar:</p>
+          <h3>O IAM pode ser usado para gerenciar:</h3>
 
           <ul>
             <li>Usu&aacute;rios.</li>
@@ -138,7 +144,7 @@
             <li>Chaves de API para acesso program&aacute;tico (CLI).</li>
           </ul>
 
-          <p>O IAM fornece os seguintes recursos:</p>
+          <h3>O IAM fornece os seguintes recursos:</h3>
 
           <ul>
             <li>Acesso compartilhado &agrave; sua conta AWS.</li>
@@ -153,8 +159,8 @@
             <li>Gratuito para usar.</li>
           </ul>
 
-          <p>Voc&ecirc; pode trabalhar com o <strong>AWS Identity and Access Management</strong> das seguintes maneiras:
-          </p>
+          <h3>Voc&ecirc; pode trabalhar com o <strong>AWS Identity and Access Management</strong> das seguintes
+            maneiras:</h3>
 
           <ul>
             <li>Console de gerenciamento da AWS.</li>
@@ -171,7 +177,7 @@
 
           <p>Os usu&aacute;rios IAM s&atilde;o indiv&iacute;duos que receberam acesso a uma conta AWS.</p>
 
-          <p>Cada usu&aacute;rio IAM possui tr&ecirc;s componentes principais:</p>
+          <h3>Cada usu&aacute;rio IAM possui tr&ecirc;s componentes principais:</h3>
 
           <ul>
             <li>Um nome de usu&aacute;rio.</li>
@@ -195,7 +201,7 @@
           <p>O MFA usa um dispositivo de autentica&ccedil;&atilde;o que gera continuamente c&oacute;digos de
             autentica&ccedil;&atilde;o &uacute;nicos, de seis d&iacute;gitos.</p>
 
-          <p>&Eacute; poss&iacute;vel autenticar usando um dispositivo MFA das seguintes duas maneiras:</p>
+          <h3>&Eacute; poss&iacute;vel autenticar usando um dispositivo MFA das seguintes duas maneiras:</h3>
 
           <ul>
             <li>Por meio do Console de Gerenciamento da AWS - o usu&aacute;rio &eacute; solicitado a fornecer um nome de
@@ -242,8 +248,7 @@
 
           <p>O IAM se integra a muitos servi&ccedil;os diferentes da AWS.</p>
 
-          <hr />
-          <p><strong>M&eacute;todos de Autentica&ccedil;&atilde;o:</strong></p>
+          <h3>M&eacute;todos de Autentica&ccedil;&atilde;o:</h3>
 
           <ul>
             <li>
@@ -292,8 +297,7 @@
             </li>
           </ul>
 
-          <hr />
-          <p><strong>Usu&aacute;rios IAM:</strong></p>
+          <h3>Usu&aacute;rios IAM:</h3>
 
           <p>Um usu&aacute;rio do IAM &eacute; uma entidade que representa uma pessoa ou servi&ccedil;o.</p>
 
@@ -349,8 +353,7 @@
 
           <p>As chaves de acesso e senhas devem ser alteradas regularmente.</p>
 
-          <hr />
-          <p><strong>Grupos:</strong></p>
+          <h3>Grupos:</h3>
 
           <p>Os grupos s&atilde;o cole&ccedil;&otilde;es de usu&aacute;rios e t&ecirc;m pol&iacute;ticas anexadas a
             eles.</p>
@@ -362,14 +365,14 @@
 
           <p>Use o princ&iacute;pio do menor privil&eacute;gio ao atribuir permiss&otilde;es.</p>
 
-          <p>N&atilde;o &eacute; poss&iacute;vel aninhar grupos (grupos dentro de grupos).</p>
+          <p><strong>Dica de exame: </strong>N&atilde;o &eacute; poss&iacute;vel aninhar grupos (ter grupos dentro de
+            grupos).</p>
 
-          <hr />
-          <p><strong>Fun&ccedil;&otilde;es:</strong></p>
+          <h3>Fun&ccedil;&otilde;es:</h3>
 
-          <p>As fun&ccedil;&otilde;es s&atilde;o criadas e depois &quot;assumidas&quot; por entidades confi&aacute;veis
-            e definem um conjunto de permiss&otilde;es para fazer solicita&ccedil;&otilde;es de servi&ccedil;o da AWS.
-          </p>
+          <p>As fun&ccedil;&otilde;es do IAM s&atilde;o usadas para conceder acesso tempor&aacute;rio a v&aacute;rias
+            identidades. Essas identidades podem ser pessoas externas &agrave; AWS acessando seus servi&ccedil;os,
+            usu&aacute;rios do IAM ou aplica&ccedil;&otilde;es.</p>
 
           <p>Com fun&ccedil;&otilde;es do IAM, &eacute; poss&iacute;vel delegar permiss&otilde;es a recursos para
             usu&aacute;rios e servi&ccedil;os sem usar credenciais permanentes (por exemplo, nome de usu&aacute;rio e
@@ -395,8 +398,48 @@
           <p>As fun&ccedil;&otilde;es podem ser assumidas temporariamente por meio do console ou programaticamente com a
             AWS CLI, Ferramentas do PowerShell para Windows ou a API.</p>
 
-          <hr />
-          <p><strong>Fun&ccedil;&otilde;es do IAM com inst&acirc;ncias EC2:</strong></p>
+          <p>No diagrama abaixo, a inst&acirc;ncia do EC2 recebe permiss&atilde;o, atrav&eacute;s de uma
+            fun&ccedil;&atilde;o, que concede acesso tempor&aacute;rio para ler e gravar objetos de um bucket do S3.</p>
+
+            <img src="imagens/aws-iam-funcao.png" alt="Amazon IAM - Função" width="70%" class="centralizado" border="1">
+
+          <ol>
+            <li>Crie uma fun&ccedil;&atilde;o do IAM para sua inst&acirc;ncia do EC2</li>
+            <li>Anexe uma pol&iacute;tica do IAM &agrave; fun&ccedil;&atilde;o que concede acesso total ao bucket de S3
+            </li>
+            <li>Deixe a inst&acirc;ncia de EC2 assumir a fun&ccedil;&atilde;o</li>
+          </ol>
+
+          <p>A pol&iacute;tica de IAM para o acesso total ao S3 mencionado na etapa 2 &eacute;:</p>
+
+          <pre>
+<code class="language-json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}</code></pre>
+
+          <p>Observe que, na pol&iacute;tica acima, n&atilde;o &eacute; especificado nenhum ARN. Ela apenas
+            cont&eacute;m &quot;*&quot; para o recurso. Isso representa todos os buckets de S3. Se, por&eacute;m,
+            voc&ecirc; quiser especificar um &uacute;nico bucket, precisar&aacute; fornecer o ARN do bucket (<a
+              href="https://www.freecodecamp.org/portuguese/news/aws-identity-and-access-management-iam-explicado-com-uma-analogia/"
+              target="_blank">fonte</a>).</p>
+
+          <h3>Nomes de recurso da Amazon (ARNs)</h3>
+
+          <p>Os nomes de recurso da Amazon (ARNs) identificam apenas recursos da AWS. A AWS exige um ARN quando
+            voc&ecirc; precisa especificar um recurso sem ambiguidade em toda a AWS, como em pol&iacute;ticas do IAM,
+            Amazon Relational Database Service (Amazon RDS), etiquetas e chamadas de API.</p>
+
+          <h2>Fun&ccedil;&otilde;es do IAM com inst&acirc;ncias EC2:</h2>
 
           <p>As fun&ccedil;&otilde;es do IAM podem ser usadas para conceder permiss&otilde;es a aplicativos em
             execu&ccedil;&atilde;o em inst&acirc;ncias EC2 para solicita&ccedil;&otilde;es de API da AWS usando perfis
@@ -412,8 +455,7 @@
 
           <p>Os aplicativos recuperam credenciais tempor&aacute;rias da metadados da inst&acirc;ncia.</p>
 
-          <hr />
-          <p><strong>Delega&ccedil;&atilde;o de Fun&ccedil;&otilde;es:</strong></p>
+          <h3>Delega&ccedil;&atilde;o de Fun&ccedil;&otilde;es:</h3>
 
           <p>Crie uma fun&ccedil;&atilde;o do IAM com duas pol&iacute;ticas:</p>
 
@@ -426,8 +468,7 @@
               na conta confi&aacute;vel.</li>
           </ul>
 
-          <hr />
-          <p><strong>Pol&iacute;ticas:</strong></p>
+          <h3>Pol&iacute;ticas:</h3>
 
           <p>As <strong>pol&iacute;ticas</strong> s&atilde;o documentos que definem permiss&otilde;es e podem ser
             aplicadas a usu&aacute;rios, grupos e fun&ccedil;&otilde;es.</p>
@@ -444,9 +485,7 @@
 
           <p>O elemento Condi&ccedil;&atilde;o pode ser usado para aplicar l&oacute;gica condicional adicional.</p>
 
-          <hr />
-          <p><strong>Compara&ccedil;&atilde;o entre Fun&ccedil;&atilde;o IAM, Pol&iacute;tica e Grupo da AWS:</strong>
-          </p>
+          <h2>Compara&ccedil;&atilde;o entre Fun&ccedil;&atilde;o IAM, Pol&iacute;tica e Grupo da AWS:</h2>
 
           <p>No IAM da AWS, fun&ccedil;&otilde;es, pol&iacute;ticas e grupos s&atilde;o todos usados para gerenciar o
             acesso aos recursos da AWS.</p>
@@ -477,8 +516,7 @@
             pol&iacute;ticas e grupos s&atilde;o componentes cr&iacute;ticos do IAM da AWS, cada um desempenhando um
             papel &uacute;nico no gerenciamento do acesso do usu&aacute;rio aos recursos da AWS.</p>
 
-          <hr />
-          <p><strong>Servi&ccedil;o de Token de Seguran&ccedil;a da AWS (AWS STS):</strong></p>
+          <h2>Servi&ccedil;o de Token de Seguran&ccedil;a da AWS (AWS STS):</h2>
 
           <p>O <strong>AWS STS</strong> &eacute; um servi&ccedil;o da web que permite solicitar credenciais
             tempor&aacute;rias de privil&eacute;gios limitados para usu&aacute;rios do IAM ou para usu&aacute;rios
@@ -558,8 +596,7 @@
             </li>
           </ul>
 
-          <hr />
-          <p><strong>Melhores Pr&aacute;ticas do IAM:</strong></p>
+          <h2>Melhores Pr&aacute;ticas do IAM:</h2>
 
           <ul>
             <li>Guarde as chaves de acesso do usu&aacute;rio raiz da AWS com seguran&ccedil;a.</li>
@@ -579,8 +616,7 @@
             <li>Monitore a atividade em sua conta da AWS.</li>
           </ul>
 
-          <hr />
-          <p><strong>Intera&ccedil;&atilde;o com o IAM em trabalhos na nuvem:</strong></p>
+          <h2>Intera&ccedil;&atilde;o com o IAM em trabalhos na nuvem:</h2>
 
           <p>Muitas fun&ccedil;&otilde;es diferentes na ind&uacute;stria de tecnologia interagir&atilde;o diretamente ou
             indiretamente com o IAM da AWS. Se sua organiza&ccedil;&atilde;o usa a AWS, voc&ecirc; receber&aacute;
@@ -602,6 +638,8 @@
             <li>Qualquer papel que voc&ecirc; assuma em uma corpora&ccedil;&atilde;o que usa a AWS, voc&ecirc; se
               deparar&aacute; com o IAM. &Eacute; a espinha dorsal da AWS.</li>
           </ul>
+
+
 
 
         </div>
