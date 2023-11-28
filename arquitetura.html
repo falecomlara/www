@@ -118,12 +118,12 @@
               href="https://aws.amazon.com/pt/architecture/well-architected/" target="_new">6 Pilares do AWS
               Well-Architected Framework</a></p>
 
-          <hr />
-          <h2><strong>Diferen&ccedil;as entre Computa&ccedil;&atilde;o em Nuvem e Ambiente Tradicional:</strong></h2>
+          
+          <h2>Diferen&ccedil;as entre Computa&ccedil;&atilde;o em Nuvem e Ambiente Tradicional:</h2>
 
           <ol>
             <li>
-              <h3><strong>Ativos de TI tornam-se recursos program&aacute;veis:</strong></h3>
+              <h3>Ativos de TI tornam-se recursos program&aacute;veis:</h3>
 
               <ul>
                 <li>Na AWS, servidores, bancos de dados, armazenamento e componentes de aplicativos de n&iacute;vel
@@ -133,7 +133,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Capacidade global, dispon&iacute;vel e ilimitada:</strong></h3>
+              <h3>Capacidade global, dispon&iacute;vel e ilimitada:</h3>
 
               <ul>
                 <li>Utilizando a infraestrutura global da AWS, &eacute; poss&iacute;vel implantar sua
@@ -143,7 +143,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Servi&ccedil;os gerenciados em n&iacute;veis mais altos:</strong></h3>
+              <h3>Servi&ccedil;os gerenciados em n&iacute;veis mais altos:</h3>
 
               <ul>
                 <li>Os clientes da AWS t&ecirc;m acesso a um amplo conjunto de servi&ccedil;os de
@@ -155,7 +155,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Seguran&ccedil;a incorporada:</strong></h3>
+              <h3>Seguran&ccedil;a incorporada:</h3>
 
               <ul>
                 <li>A nuvem AWS oferece capacidades de governan&ccedil;a que possibilitam o monitoramento
@@ -166,12 +166,12 @@
             </li>
           </ol>
 
-          <hr />
-          <h2><strong>Princ&iacute;pios de Design: Escalabilidade</strong></h2>
+          
+          <h2>Princ&iacute;pios de Design: Escalabilidade</h2>
 
           <ul>
             <li>
-              <h3><strong>Escalabilidade:</strong></h3>
+              <h3>Escalabilidade:</h3>
 
               <ul>
                 <li>Sistemas que esperam crescer ao longo do tempo precisam ser constru&iacute;dos sobre uma arquitetura
@@ -179,7 +179,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Escalonamento Vertical:</strong></h3>
+              <h3>Escalonamento Vertical:</h3>
 
               <ul>
                 <li>O escalonamento vertical ocorre por meio do aumento das especifica&ccedil;&otilde;es de um recurso
@@ -191,7 +191,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Escalonamento Horizontal:</strong></h3>
+              <h3>Escalonamento Horizontal:</h3>
 
               <ul>
                 <li>O escalonamento horizontal ocorre por meio do aumento do n&uacute;mero de recursos (por exemplo,
@@ -203,8 +203,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Diferen&ccedil;as entre Escalonamento Horizontal e Vertical:</strong></h2>
+          
+          <h2>Diferen&ccedil;as entre Escalonamento Horizontal e Vertical:</h2>
 
           <table align="center" border="1" style="width:100%">
             <thead>
@@ -237,15 +237,15 @@
 
           <p>&nbsp;</p>
 
-          <hr />
-          <h2><strong>Aplica&ccedil;&otilde;es Sem Estado:</strong></h2>
+          
+          <h2>Aplica&ccedil;&otilde;es Sem Estado:</h2>
 
           <p>Uma aplica&ccedil;&atilde;o sem estado n&atilde;o requer conhecimento de intera&ccedil;&otilde;es
             anteriores e n&atilde;o armazena informa&ccedil;&otilde;es de sess&atilde;o. Isso permite escalabilidade
             horizontal, j&aacute; que qualquer solicita&ccedil;&atilde;o pode ser atendida por qualquer dos recursos
             computacionais dispon&iacute;veis (por exemplo, inst&acirc;ncias EC2, fun&ccedil;&otilde;es AWS Lambda).</p>
 
-          <h3><strong>Componentes Sem Estado:</strong></h3>
+          <h3>Componentes Sem Estado:</h3>
 
           <ul>
             <li>
@@ -265,7 +265,7 @@
                 informa&ccedil;&otilde;es de sess&atilde;o mais detalhadas no servidor.</p>
             </li>
             <li>
-              <p><strong>Componentes Sem Estado:</strong></p>
+              <p>Componentes Sem Estado:</p>
 
               <ul>
                 <li>DynamoDB &eacute; frequentemente utilizado para armazenar o estado da sess&atilde;o para manter uma
@@ -276,7 +276,7 @@
             </li>
           </ul>
 
-          <h3><strong>Componentes Com Estado:</strong></h3>
+          <h3>Componentes Com Estado:</h3>
 
           <ul>
             <li>Bancos de dados s&atilde;o com estado.</li>
@@ -287,7 +287,7 @@
               n&atilde;o se beneficiam dos n&oacute;s rec&eacute;m-lan&ccedil;ados.</li>
           </ul>
 
-          <h2><strong>Processamento Distribu&iacute;do:</strong></h2>
+          <h2>Processamento Distribu&iacute;do:</h2>
 
           <p>Casos de uso que envolvem o processamento de grandes volumes de dados (por exemplo, qualquer coisa que
             n&atilde;o possa ser tratada por um &uacute;nico recurso computacional de maneira oportuna) requerem uma
@@ -296,8 +296,8 @@
           <p>Ao dividir uma tarefa e seus dados em muitos fragmentos pequenos de trabalho, &eacute; poss&iacute;vel
             executar cada um deles em qualquer conjunto maior de recursos computacionais dispon&iacute;veis.</p>
 
-          <hr />
-          <h2><strong>Recursos Descart&aacute;veis em Vez de Servidores Fixos</strong></h2>
+          
+          <h2>Recursos Descart&aacute;veis em Vez de Servidores Fixos</h2>
 
           <p>Pense em servidores e outros componentes como recursos tempor&aacute;rios.</p>
 
@@ -310,8 +310,8 @@
           <p>Esse problema pode ser resolvido com o padr&atilde;o de &quot;infraestrutura imut&aacute;vel&quot;, onde um
             servidor nunca &eacute; atualizado, mas sim substitu&iacute;do por um novo conforme necess&aacute;rio.</p>
 
-          <hr />
-          <h2><strong>Instanciando Recursos de Computa&ccedil;&atilde;o:</strong></h2>
+          
+          <h2>Instanciando Recursos de Computa&ccedil;&atilde;o:</h2>
 
           <p>Voc&ecirc; n&atilde;o quer configurar manualmente novos recursos com sua configura&ccedil;&atilde;o e
             c&oacute;digo.</p>
@@ -321,7 +321,7 @@
 
           <ul>
             <li>
-              <h3><strong>Inicializa&ccedil;&atilde;o:</strong></h3>
+              <h3>Inicializa&ccedil;&atilde;o:</h3>
 
               <ul>
                 <li>Execute a&ccedil;&otilde;es automatizadas de inicializa&ccedil;&atilde;o para modificar
@@ -333,7 +333,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Imagens Douradas (do ingl&ecirc;s, image gold):</strong></h3>
+              <h3>Imagens Douradas (do ingl&ecirc;s, image gold):</h3>
 
               <ul>
                 <li>Alguns tipos de recursos podem ser iniciados a partir de uma imagem dourada.</li>
@@ -345,7 +345,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Infraestrutura como C&oacute;digo:</strong></h3>
+              <h3>Infraestrutura como C&oacute;digo:</h3>
 
               <ul>
                 <li>Os ativos da AWS s&atilde;o program&aacute;veis, ent&atilde;o voc&ecirc; pode aplicar
@@ -355,8 +355,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Automa&ccedil;&atilde;o:</strong></h2>
+          
+          <h2>Automa&ccedil;&atilde;o:</h2>
 
           <p>Em uma infraestrutura de TI tradicional, frequentemente &eacute; necess&aacute;rio reagir manualmente a uma
             variedade de eventos.</p>
@@ -370,7 +370,7 @@
 
           <ul>
             <li>
-              <h3><strong>AWS Elastic Beanstalk:</strong></h3>
+              <h3>AWS Elastic Beanstalk:</h3>
 
               <ul>
                 <li>A maneira mais r&aacute;pida e simples de colocar uma aplica&ccedil;&atilde;o em
@@ -378,7 +378,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Amazon EC2 Auto Recovery:</strong></h3>
+              <h3>Amazon EC2 Auto Recovery:</h3>
 
               <ul>
                 <li>Voc&ecirc; pode criar um alarme do Amazon CloudWatch que monitora uma inst&acirc;ncia Amazon EC2 e a
@@ -386,7 +386,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Auto Scaling:</strong></h3>
+              <h3>Auto Scaling:</h3>
 
               <ul>
                 <li>Com o Auto Scaling, voc&ecirc; pode manter a disponibilidade da aplica&ccedil;&atilde;o e
@@ -395,7 +395,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Amazon CloudWatch Alarms:</strong></h3>
+              <h3>Amazon CloudWatch Alarms:</h3>
 
               <ul>
                 <li>Voc&ecirc; pode criar um alarme do CloudWatch que envia uma mensagem do Amazon Simple Notification
@@ -404,7 +404,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Amazon CloudWatch Events:</strong></h3>
+              <h3>Amazon CloudWatch Events:</h3>
 
               <ul>
                 <li>O servi&ccedil;o CloudWatch entrega um fluxo quase em tempo real de eventos do sistema que descrevem
@@ -412,7 +412,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Eventos do Ciclo de Vida do AWS OpsWorks:</strong></h3>
+              <h3>Eventos do Ciclo de Vida do AWS OpsWorks:</h3>
 
               <ul>
                 <li>O AWS OpsWorks suporta a configura&ccedil;&atilde;o cont&iacute;nua por meio de eventos do ciclo de
@@ -421,7 +421,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Eventos Agendados do AWS Lambda:</strong></h3>
+              <h3>Eventos Agendados do AWS Lambda:</h3>
 
               <ul>
                 <li>Esses eventos permitem criar uma fun&ccedil;&atilde;o Lambda e direcionar o AWS Lambda para
@@ -430,8 +430,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Loose Coupling (Desvincula&ccedil;&atilde;o):</strong></h2>
+          
+          <h2>Loose Coupling (Desvincula&ccedil;&atilde;o):</h2>
 
           <p>&Agrave; medida que a complexidade da aplica&ccedil;&atilde;o aumenta, uma caracter&iacute;stica
             desej&aacute;vel de um sistema de TI &eacute; que ele possa ser dividido em componentes menores e
@@ -445,7 +445,7 @@
 
           <ul>
             <li>
-              <h3><strong>Interfaces bem definidas:</strong></h3>
+              <h3>Interfaces bem definidas:</h3>
 
               <ul>
                 <li>Reduzem as interdepend&ecirc;ncias em um sistema, permitindo a intera&ccedil;&atilde;o apenas por
@@ -454,7 +454,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Descoberta de Servi&ccedil;os:</strong></h3>
+              <h3>Descoberta de Servi&ccedil;os:</h3>
 
               <ul>
                 <li>Recursos diversos devem ter uma maneira de se descobrir sem conhecimento pr&eacute;vio da topologia
@@ -462,7 +462,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Integra&ccedil;&atilde;o Ass&iacute;ncrona:</strong></h3>
+              <h3>Integra&ccedil;&atilde;o Ass&iacute;ncrona:</h3>
 
               <ul>
                 <li>Esta &eacute; outra forma de desvincula&ccedil;&atilde;o, onde uma intera&ccedil;&atilde;o
@@ -470,7 +470,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Falha Graciosa:</strong></h3>
+              <h3>Falha Graciosa:</h3>
 
               <ul>
                 <li>Construa aplica&ccedil;&otilde;es de forma que lidem com falhas de maneira graciosa (reduza o
@@ -479,8 +479,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Servi&ccedil;os, N&atilde;o Servidores:</strong></h2>
+          
+          <h2>Servi&ccedil;os, N&atilde;o Servidores:</h2>
 
           <p>Com a infraestrutura de TI tradicional, as organiza&ccedil;&otilde;es precisam construir e operar uma ampla
             variedade de componentes tecnol&oacute;gicos.</p>
@@ -491,7 +491,7 @@
 
           <ul>
             <li>
-              <h3><strong>Servi&ccedil;os Gerenciados:</strong></h3>
+              <h3>Servi&ccedil;os Gerenciados:</h3>
 
               <ul>
                 <li>Na AWS, h&aacute; um conjunto de servi&ccedil;os que oferecem blocos de constru&ccedil;&atilde;o que
@@ -501,7 +501,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Arquiteturas sem Servidor:</strong></h3>
+              <h3>Arquiteturas sem Servidor:</h3>
 
               <ul>
                 <li>Outra abordagem que pode reduzir a complexidade operacional da execu&ccedil;&atilde;o de
@@ -513,8 +513,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Bancos de Dados:</strong></h2>
+          
+          <h2>Bancos de Dados:</h2>
 
           <p>Com a infraestrutura de TI tradicional, as organiza&ccedil;&otilde;es muitas vezes eram limitadas pelas
             tecnologias de banco de dados e armazenamento que podiam usar.</p>
@@ -522,7 +522,7 @@
           <p>Com a AWS, essas restri&ccedil;&otilde;es s&atilde;o removidas por servi&ccedil;os de banco de dados
             gerenciados que oferecem desempenho empresarial a um custo de c&oacute;digo aberto.</p>
 
-          <h3><strong>Bancos de Dados Relacionais:</strong></h3>
+          <h3>Bancos de Dados Relacionais:</h3>
 
           <p>Bancos de dados relacionais (frequentemente chamados de RDBS ou bancos de dados SQL) normalizam dados em
             estruturas tabulares bem definidas conhecidas como tabelas, que consistem em linhas e colunas.</p>
@@ -535,7 +535,7 @@
 
           <ul>
             <li>
-              <h3><strong>Escalabilidade:</strong></h3>
+              <h3>Escalabilidade:</h3>
 
               <ul>
                 <li>Bancos de dados relacionais podem escalar verticalmente (por exemplo, atualizando para uma
@@ -547,7 +547,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Alta Disponibilidade:</strong></h3>
+              <h3>Alta Disponibilidade:</h3>
 
               <ul>
                 <li>Para bancos de dados de produ&ccedil;&atilde;o, a Amazon recomenda o uso do RDS Multi-AZ, que cria
@@ -557,7 +557,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Anti-Padr&otilde;es:</strong></h3>
+              <h3>Anti-Padr&otilde;es:</h3>
 
               <ul>
                 <li>Se sua aplica&ccedil;&atilde;o indexa e consulta principalmente dados sem a necessidade de
@@ -569,7 +569,7 @@
             </li>
           </ul>
 
-          <h2><strong>Bancos de Dados NoSQL:</strong></h2>
+          <h2>Bancos de Dados NoSQL:</h2>
 
           <p>NoSQL &eacute; um termo usado para descrever bancos de dados que trocam algumas das capacidades de consulta
             e transa&ccedil;&atilde;o de bancos de dados relacionais por um modelo de dados mais flex&iacute;vel que se
@@ -582,7 +582,7 @@
 
           <ul>
             <li>
-              <h3><strong>Escalabilidade:</strong></h3>
+              <h3>Escalabilidade:</h3>
 
               <ul>
                 <li>Motores de banco de dados NoSQL geralmente realizam particionamento de dados e
@@ -591,7 +591,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Alta Disponibilidade:</strong></h3>
+              <h3>Alta Disponibilidade:</h3>
 
               <ul>
                 <li>DynamoDB replica dados de forma s&iacute;ncrona em tr&ecirc;s instala&ccedil;&otilde;es em uma
@@ -599,7 +599,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Anti-Padr&otilde;es:</strong></h3>
+              <h3>Anti-Padr&otilde;es:</h3>
 
               <ul>
                 <li>Se seu esquema n&atilde;o puder ser desnormalizado e sua aplica&ccedil;&atilde;o precisar de
@@ -611,8 +611,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Data Warehouse (Armaz&eacute;m de Dados)</strong></h2>
+          
+          <h2>Data Warehouse (Armaz&eacute;m de Dados)</h2>
 
           <p>Um armaz&eacute;m de dados &eacute; um tipo especializado de banco de dados relacional, otimizado para
             an&aacute;lise e gera&ccedil;&atilde;o de relat&oacute;rios de grandes volumes de dados.</p>
@@ -623,7 +623,7 @@
           <p>O Amazon Redshift &eacute; um servi&ccedil;o gerenciado de armaz&eacute;m de dados projetado para operar a
             menos de um d&eacute;cimo do custo de solu&ccedil;&otilde;es tradicionais.</p>
 
-          <h3><strong>Escalabilidade:</strong></h3>
+          <h3>Escalabilidade:</h3>
 
           <ul>
             <li>O Amazon Redshift alcan&ccedil;a armazenamento eficiente e desempenho &oacute;timo de consulta por meio
@@ -633,7 +633,7 @@
               relat&oacute;rios em conjuntos de dados muito grandes.</li>
           </ul>
 
-          <h3><strong>Alta Disponibilidade:</strong></h3>
+          <h3>Alta Disponibilidade:</h3>
 
           <ul>
             <li>O Redshift possui v&aacute;rias caracter&iacute;sticas que aprimoram a confiabilidade do cluster do seu
@@ -644,7 +644,7 @@
               substitui n&oacute;s conforme necess&aacute;rio.</li>
           </ul>
 
-          <h3><strong>Anti-Padr&otilde;es:</strong></h3>
+          <h3>Anti-Padr&otilde;es:</h3>
 
           <ul>
             <li>Por ser um sistema de gerenciamento de banco de dados relacional (RDBMS) baseado em SQL, o Amazon
@@ -655,8 +655,8 @@
               projetado para essas cargas de trabalho.</li>
           </ul>
 
-          <hr />
-          <h2><strong>Pesquisa</strong></h2>
+          
+          <h2>Pesquisa</h2>
 
           <p>Aplica&ccedil;&otilde;es que requerem funcionalidades de pesquisa sofisticadas normalmente
             ultrapassar&atilde;o as capacidades de bancos de dados relacionais ou NoSQL.</p>
@@ -666,22 +666,22 @@
             classifica&ccedil;&atilde;o personaliz&aacute;vel de resultados, facetamento para filtragem,
             sin&ocirc;nimos, stemming, etc.</p>
 
-          <h3><strong>Escalabilidade:</strong></h3>
+          <h3>Escalabilidade:</h3>
 
           <ul>
             <li>Tanto o Amazon CloudSearch quanto o Amazon ES utilizam particionamento de dados e
               replica&ccedil;&atilde;o para escalar horizontalmente.</li>
           </ul>
 
-          <h3><strong>Alta Disponibilidade:</strong></h3>
+          <h3>Alta Disponibilidade:</h3>
 
           <ul>
             <li>Ambos os servi&ccedil;os fornecem recursos que armazenam dados de forma redundante em Zonas de
               Disponibilidade.</li>
           </ul>
 
-          <hr />
-          <h2><strong>Remo&ccedil;&atilde;o de Pontos &Uacute;nicos de Falha</strong></h2>
+          
+          <h2>Remo&ccedil;&atilde;o de Pontos &Uacute;nicos de Falha</h2>
 
           <p>Um sistema &eacute; altamente dispon&iacute;vel quando pode resistir &agrave; falha de um ou v&aacute;rios
             componentes.</p>
@@ -689,7 +689,7 @@
           <p>Automatize a recupera&ccedil;&atilde;o e reduza a interrup&ccedil;&atilde;o em cada camada de sua
             arquitetura.</p>
 
-          <h3><strong>Introdu&ccedil;&atilde;o de Redund&acirc;ncia</strong></h3>
+          <h3>Introdu&ccedil;&atilde;o de Redund&acirc;ncia</h3>
 
           <p>Pontos &uacute;nicos de falha podem ser removidos introduzindo redund&acirc;ncia.</p>
 
@@ -701,7 +701,7 @@
             recursos de computa&ccedil;&atilde;o redundantes e, quando um deles falha, os demais podem simplesmente
             absorver uma parcela maior da carga de trabalho.</p>
 
-          <h3><strong>Detectar Falhas</strong></h3>
+          <h3>Detectar Falhas</h3>
 
           <p>Construa o m&aacute;ximo de automa&ccedil;&atilde;o poss&iacute;vel tanto na detec&ccedil;&atilde;o quanto
             na rea&ccedil;&atilde;o a falhas.</p>
@@ -715,7 +715,7 @@
           <p>Voc&ecirc; tamb&eacute;m pode substituir n&oacute;s n&atilde;o saud&aacute;veis usando o auto-recuperamento
             do EC2, OpsWorks e Elastic Beanstalk.</p>
 
-          <h3><strong>Armazenamento Dur&aacute;vel de Dados</strong></h3>
+          <h3>Armazenamento Dur&aacute;vel de Dados</h3>
 
           <p>Projete sua arquitetura para proteger tanto a disponibilidade quanto a integridade dos dados.</p>
 
@@ -729,7 +729,7 @@
 
           <ul>
             <li>
-              <h3><strong>Replica&ccedil;&atilde;o S&iacute;ncrona:</strong></h3>
+              <h3>Replica&ccedil;&atilde;o S&iacute;ncrona:</h3>
 
               <ul>
                 <li>Transa&ccedil;&otilde;es s&atilde;o confirmadas apenas ap&oacute;s os dados serem armazenados de
@@ -739,7 +739,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Replica&ccedil;&atilde;o Ass&iacute;ncrona:</strong></h3>
+              <h3>Replica&ccedil;&atilde;o Ass&iacute;ncrona:</h3>
 
               <ul>
                 <li>Mudan&ccedil;as na inst&acirc;ncia prim&aacute;ria n&atilde;o s&atilde;o refletidas imediatamente em
@@ -749,7 +749,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Replica&ccedil;&atilde;o baseada em Qu&oacute;rum:</strong></h3>
+              <h3>Replica&ccedil;&atilde;o baseada em Qu&oacute;rum:</h3>
 
               <ul>
                 <li>Combina replica&ccedil;&atilde;o s&iacute;ncrona e ass&iacute;ncrona e &eacute; adequada para
@@ -758,8 +758,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Resili&ecirc;ncia Automatizada em M&uacute;ltiplos Data Centers</strong></h2>
+          
+          <h2>Resili&ecirc;ncia Automatizada em M&uacute;ltiplos Data Centers</h2>
 
           <p>Com infraestrutura tradicional, a falha entre data centers &eacute; realizada usando um plano de
             recupera&ccedil;&atilde;o de desastres.</p>
@@ -785,7 +785,7 @@
           <p>Isso permite replicar dados entre data centers de forma s&iacute;ncrona para que a falha possa ser
             automatizada e transparente para seus usu&aacute;rios.</p>
 
-          <h3><strong>Isolamento de Falhas e Escalonamento Horizontal Tradicional</strong></h3>
+          <h3>Isolamento de Falhas e Escalonamento Horizontal Tradicional</h3>
 
           <p>Embora o padr&atilde;o de redund&acirc;ncia ativa seja &oacute;timo para equilibrar o tr&aacute;fego e
             lidar com interrup&ccedil;&otilde;es de inst&acirc;ncias ou Zonas de Disponibilidade, n&atilde;o &eacute;
@@ -805,7 +805,7 @@
           <p>Dessa forma, voc&ecirc; pode reduzir o impacto nos clientes em propor&ccedil;&atilde;o direta ao
             n&uacute;mero de shards que possui.</p>
 
-          <h3><strong>Otimiza&ccedil;&atilde;o de Custos</strong></h3>
+          <h3>Otimiza&ccedil;&atilde;o de Custos</h3>
 
           <p>A simples mudan&ccedil;a de arquiteturas existentes para a nuvem permite que organiza&ccedil;&otilde;es
             reduzam despesas de capital e alcancem economias devido &agrave; escala oferecida pela AWS.</p>
@@ -813,7 +813,7 @@
           <p>Ao iterar e aproveitar mais recursos da AWS, h&aacute; oportunidades adicionais para criar arquiteturas na
             nuvem otimizadas para custos.</p>
 
-          <h3><strong>Dimensionamento Adequado:</strong></h3>
+          <h3>Dimensionamento Adequado:</h3>
 
           <ul>
             <li>Em alguns casos, escolha o tipo mais barato que atenda aos requisitos de carga de trabalho.</li>
@@ -832,7 +832,7 @@
             </li>
           </ul>
 
-          <h3><strong>Elasticidade:</strong></h3>
+          <h3>Elasticidade:</h3>
 
           <ul>
             <li>Planeje implementar Auto Scaling para o maior n&uacute;mero poss&iacute;vel de cargas de trabalho do
@@ -859,8 +859,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Aproveite a Variedade de Op&ccedil;&otilde;es de Compra:</strong></h2>
+          
+          <h2>Aproveite a Variedade de Op&ccedil;&otilde;es de Compra:</h2>
 
           <ul>
             <li>A precifica&ccedil;&atilde;o de inst&acirc;ncias On-Demand do EC2 oferece m&aacute;xima flexibilidade
@@ -869,7 +869,7 @@
               gastos: Inst&acirc;ncias Reservadas e Inst&acirc;ncias Spot.</li>
           </ul>
 
-          <h3><strong>Capacidade Reservada:</strong></h3>
+          <h3>Capacidade Reservada:</h3>
 
           <ul>
             <li>
@@ -883,7 +883,7 @@
             </li>
           </ul>
 
-          <h3><strong>Inst&acirc;ncias Spot:</strong></h3>
+          <h3>Inst&acirc;ncias Spot:</h3>
 
           <ul>
             <li>
@@ -914,15 +914,15 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Caching:</strong></h2>
+          
+          <h2>Caching:</h2>
 
           <p>O caching &eacute; uma t&eacute;cnica que armazena dados previamente calculados para uso futuro, melhorando
             o desempenho da aplica&ccedil;&atilde;o e aumentando a efici&ecirc;ncia de custos.</p>
 
           <ul>
             <li>
-              <h3><strong>Caching de Dados de Aplicativos:</strong></h3>
+              <h3>Caching de Dados de Aplicativos:</h3>
 
               <ul>
                 <li>As aplica&ccedil;&otilde;es podem ser projetadas para armazenar e recuperar
@@ -931,7 +931,7 @@
               </ul>
             </li>
             <li>
-              <h3><strong>Caching de Borda:</strong></h3>
+              <h3>Caching de Borda:</h3>
 
               <ul>
                 <li>
@@ -949,8 +949,8 @@
             </li>
           </ul>
 
-          <hr />
-          <h2><strong>Seguran&ccedil;a:</strong></h2>
+          
+          <h2>Seguran&ccedil;a:</h2>
 
           <p>A maioria das ferramentas e t&eacute;cnicas de seguran&ccedil;a que voc&ecirc; j&aacute; pode estar
             familiarizado em uma infraestrutura de TI tradicional pode ser usada na nuvem.</p>
@@ -962,7 +962,7 @@
               pr&oacute;pria plataforma.</li>
           </ul>
 
-          <h3><strong>Utilize Recursos AWS para Defesa em Profundidade</strong></h3>
+          <h3>Utilize Recursos AWS para Defesa em Profundidade</h3>
 
           <p>A seguran&ccedil;a em n&iacute;vel de rede inclui a constru&ccedil;&atilde;o de uma topologia de VPC que
             isola partes da infraestrutura usando sub-redes, grupos de seguran&ccedil;a e controles de roteamento.</p>
@@ -977,14 +977,14 @@
           <p>Finalmente, a plataforma AWS oferece uma variedade de op&ccedil;&otilde;es para proteger dados, estejam
             eles em tr&acirc;nsito ou em repouso, com criptografia.</p>
 
-          <hr />
-          <h2><strong>Delegue Responsabilidade de Seguran&ccedil;a para a AWS</strong></h2>
+          
+          <h2>Delegue Responsabilidade de Seguran&ccedil;a para a AWS</h2>
 
           <p>A AWS opera sob um modelo de responsabilidade de seguran&ccedil;a compartilhada, em que a AWS &eacute;
             respons&aacute;vel pela seguran&ccedil;a da infraestrutura de nuvem subjacente, e voc&ecirc; &eacute;
             respons&aacute;vel por garantir a seguran&ccedil;a das cargas de trabalho que implanta na AWS.</p>
 
-          <h3><strong>Reduza o Acesso Privil&eacute;giado</strong></h3>
+          <h3>Reduza o Acesso Privil&eacute;giado</h3>
 
           <p>Ao tratar servidores como recursos program&aacute;veis, voc&ecirc; pode capitalizar isso para obter
             benef&iacute;cios na &aacute;rea de seguran&ccedil;a.</p>
@@ -1001,8 +1001,8 @@
           <p>Na AWS, voc&ecirc; pode usar fun&ccedil;&otilde;es IAM para conceder permiss&otilde;es a aplicativos em
             execu&ccedil;&atilde;o em inst&acirc;ncias do Amazon EC2 usando credenciais de curto prazo.</p>
 
-          <hr />
-          <h3><strong>Seguran&ccedil;a como C&oacute;digo</strong></h3>
+          
+          <h3>Seguran&ccedil;a como C&oacute;digo</h3>
 
           <p>Estruturas de seguran&ccedil;a tradicionais, regulamenta&ccedil;&otilde;es e pol&iacute;ticas
             organizacionais definem requisitos de seguran&ccedil;a relacionados a coisas como regras de firewall,
@@ -1020,8 +1020,8 @@
           <p>Voc&ecirc; pode realizar testes de seguran&ccedil;a como parte do seu ciclo de lan&ccedil;amento e
             descobrir automaticamente lacunas e desvios de sua pol&iacute;tica de seguran&ccedil;a.</p>
 
-          <hr />
-          <h3><strong>Auditoria em Tempo Real</strong></h3>
+          
+          <h3>Auditoria em Tempo Real</h3>
 
           <p>Testar e auditar seu ambiente &eacute; fundamental para avan&ccedil;ar rapidamente mantendo-se seguro.</p>
 

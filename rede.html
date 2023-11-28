@@ -118,127 +118,176 @@
         <div>
           <h2>Amazon Virtual Private Cloud (VPC)</h2>
 
-          <p>Um <em>Amazon Virtual Private Cloud (VPC)</em> &eacute; uma rede virtual dedicada &agrave; sua conta AWS.</p>
-          
+          <p>Um <em>Amazon Virtual Private Cloud (VPC)</em> &eacute; uma rede virtual dedicada &agrave; sua conta AWS.
+          </p>
+
           <p>Use como analogia, ter seu pr&oacute;prio data center dentro da AWS.</p>
-          
+
           <p>Ele &eacute; logicamente isolado de outras redes virtuais na AWS Cloud.</p>
-          
-          <p>O seguinte diagrama mostra uma VPC, que possui uma sub-rede em cada zona de disponibilidade na regi&atilde;o, inst&acirc;ncias do EC2 em cada sub-rede e um gateway da Internet para permitir a comunica&ccedil;&atilde;o entre os recursos em sua VPC e a Internet:</p>
-          
+
+          <p>O seguinte diagrama mostra uma VPC, que possui uma sub-rede em cada zona de disponibilidade na
+            regi&atilde;o, inst&acirc;ncias do EC2 em cada sub-rede e um gateway da Internet para permitir a
+            comunica&ccedil;&atilde;o entre os recursos em sua VPC e a Internet:</p>
+
           <img src="imagens/amazon-vpc.png" alt="Amazon VPC" width="75%" class="centralizado" border="1">
-          
-          <p>Oferece controle total sobre o ambiente de rede virtual, incluindo sele&ccedil;&atilde;o de intervalos de IP, cria&ccedil;&atilde;o de sub-redes e configura&ccedil;&atilde;o de tabelas de roteamento e gateways.</p>
-          
+
+          <p>Oferece controle total sobre o ambiente de rede virtual, incluindo sele&ccedil;&atilde;o de intervalos de
+            IP, cria&ccedil;&atilde;o de sub-redes e configura&ccedil;&atilde;o de tabelas de roteamento e gateways.</p>
+
           <p>Voc&ecirc; pode iniciar seus recursos AWS, como inst&acirc;ncias Amazon EC2, em sua VPC.</p>
-          
-          <p>Quando voc&ecirc; cria uma VPC, &eacute; necess&aacute;rio especificar um intervalo de endere&ccedil;os IPv4 para a VPC na forma de um bloco de Classless Inter-Domain Routing (<strong>CIDR</strong>), por exemplo, 10.0.0.0/16.</p>
-          
+
+          <p>Quando voc&ecirc; cria uma VPC, &eacute; necess&aacute;rio especificar um intervalo de endere&ccedil;os
+            IPv4 para a VPC na forma de um bloco de Classless Inter-Domain Routing (<strong>CIDR</strong>), por exemplo,
+            10.0.0.0/16.</p>
+
           <p>Uma VPC abrange todas as Zonas de Disponibilidade (AZ) na regi&atilde;o.</p>
-          
+
           <p>Voc&ecirc; tem controle total sobre quem tem acesso aos recursos AWS dentro de sua VPC.</p>
-          
-          <p>Voc&ecirc; pode <strong>criar seus pr&oacute;prios intervalos de endere&ccedil;os IP</strong> e <strong>criar sub-redes</strong>, <strong>tabelas de roteamento</strong> e <strong>gateways de rede</strong>.</p>
-          
-          <p>Quando voc&ecirc; cria sua conta AWS pela primeira vez, uma VPC padr&atilde;o &eacute; criada para voc&ecirc; em cada regi&atilde;o AWS, com uma sub-rede em cada AZ (zona de disponibilidade).</p>
-          
+
+          <p>Voc&ecirc; pode <strong>criar seus pr&oacute;prios intervalos de endere&ccedil;os IP</strong> e
+            <strong>criar sub-redes</strong>, <strong>tabelas de roteamento</strong> e <strong>gateways de
+              rede</strong>.</p>
+
+          <p>Quando voc&ecirc; cria sua conta AWS pela primeira vez, uma VPC padr&atilde;o &eacute; criada para
+            voc&ecirc; em cada regi&atilde;o AWS, com uma sub-rede em cada AZ (zona de disponibilidade).</p>
+
           <p>Por padr&atilde;o, voc&ecirc; pode criar at&eacute; 5 VPCs por regi&atilde;o.</p>
-          
-          <p>Uma VPC padr&atilde;o &eacute; automaticamente criada para cada conta AWS na primeira vez que os recursos Amazon EC2 s&atilde;o provisionados.</p>
-          
+
+          <p>Uma VPC padr&atilde;o &eacute; automaticamente criada para cada conta AWS na primeira vez que os recursos
+            Amazon EC2 s&atilde;o provisionados.</p>
+
           <p>A VPC padr&atilde;o possui todas as sub-redes p&uacute;blicas.</p>
-          
+
           <p>As sub-redes p&uacute;blicas s&atilde;o sub-redes que t&ecirc;m:</p>
-          
+
           <ul>
             <li>&quot;Auto-atribuir endere&ccedil;o IPv4 p&uacute;blico&quot; definido como &quot;Sim&quot;.</li>
             <li>A tabela de roteamento da sub-rede tem um Gateway de Internet anexado.</li>
           </ul>
-          
-          <p>As inst&acirc;ncias na VPC padr&atilde;o sempre t&ecirc;m tanto um endere&ccedil;o IP p&uacute;blico quanto um endere&ccedil;o IP privado.</p>
-          
-          <p>Os nomes das AZs (zonas de disponibilidade) s&atilde;o mapeados para diferentes zonas para diferentes usu&aacute;rios (ou seja, a AZ &quot;ap-southeast-2a&quot; pode mapear para uma zona f&iacute;sica diferente para um usu&aacute;rio diferente).</p>
-          
+
+          <p>As inst&acirc;ncias na VPC padr&atilde;o sempre t&ecirc;m tanto um endere&ccedil;o IP p&uacute;blico quanto
+            um endere&ccedil;o IP privado.</p>
+
+          <p>Os nomes das AZs (zonas de disponibilidade) s&atilde;o mapeados para diferentes zonas para diferentes
+            usu&aacute;rios (ou seja, a AZ &quot;ap-southeast-2a&quot; pode mapear para uma zona f&iacute;sica diferente
+            para um usu&aacute;rio diferente).</p>
+
           <h3>Componentes de uma VPC:</h3>
-          
+
           <ul>
-            <li><strong>Virtual Private Cloud:</strong> Uma rede virtual logicamente isolada na AWS. Voc&ecirc; define o espa&ccedil;o de endere&ccedil;o IP de uma VPC a partir dos intervalos que voc&ecirc; seleciona.</li>
-            <li><strong>Subnet:</strong> Um segmento do intervalo de endere&ccedil;os IP de uma VPC onde voc&ecirc; pode colocar grupos de recursos isolados (um para um mapeamento com uma AZ).</li>
-            <li><strong>Internet Gateway:</strong> A parte da Amazon VPC de uma conex&atilde;o com a Internet p&uacute;blica.</li>
-            <li><strong>NAT Gateway:</strong> Um servi&ccedil;o de Tradu&ccedil;&atilde;o de Endere&ccedil;o de Rede (NAT) gerenciado e altamente dispon&iacute;vel para seus recursos em uma sub-rede privada acessarem a Internet.</li>
-            <li><strong>Conex&atilde;o VPN de hardware:</strong> Uma conex&atilde;o VPN baseada em hardware entre sua Amazon VPC e seu data center, rede dom&eacute;stica ou instala&ccedil;&atilde;o de co-localiza&ccedil;&atilde;o.</li>
+            <li><strong>Virtual Private Cloud:</strong> Uma rede virtual logicamente isolada na AWS. Voc&ecirc; define o
+              espa&ccedil;o de endere&ccedil;o IP de uma VPC a partir dos intervalos que voc&ecirc; seleciona.</li>
+            <li><strong>Subnet:</strong> Um segmento do intervalo de endere&ccedil;os IP de uma VPC onde voc&ecirc; pode
+              colocar grupos de recursos isolados (um para um mapeamento com uma AZ).</li>
+            <li><strong>Internet Gateway:</strong> A parte da Amazon VPC de uma conex&atilde;o com a Internet
+              p&uacute;blica.</li>
+            <li><strong>NAT Gateway:</strong> Um servi&ccedil;o de Tradu&ccedil;&atilde;o de Endere&ccedil;o de Rede
+              (NAT) gerenciado e altamente dispon&iacute;vel para seus recursos em uma sub-rede privada acessarem a
+              Internet.</li>
+            <li><strong>Conex&atilde;o VPN de hardware:</strong> Uma conex&atilde;o VPN baseada em hardware entre sua
+              Amazon VPC e seu data center, rede dom&eacute;stica ou instala&ccedil;&atilde;o de
+              co-localiza&ccedil;&atilde;o.</li>
             <li><strong>Virtual Private Gateway:</strong> A parte da Amazon VPC de uma conex&atilde;o VPN.</li>
             <li><strong>Customer Gateway:</strong> Sua parte de uma conex&atilde;o VPN.</li>
-            <li><strong>Roteador:</strong> Roteadores interconectam sub-redes e direcionam o tr&aacute;fego entre Gateways de Internet, Gateways Privados Virtuais, Gateways NAT e sub-redes.</li>
-            <li><strong>Conex&atilde;o de Interliga&ccedil;&atilde;o:</strong> Uma conex&atilde;o de interliga&ccedil;&atilde;o permite que voc&ecirc; roteie o tr&aacute;fego via endere&ccedil;os IP privados entre duas VPCs interligadas.</li>
-            <li><strong>Pontos de Extremidade da VPC:</strong> Permitem conectividade privada a servi&ccedil;os hospedados na AWS, de dentro da sua VPC, sem usar um Gateway de Internet, VPN, dispositivos de Tradu&ccedil;&atilde;o de Endere&ccedil;os de Rede (NAT) ou proxies de firewall.</li>
-            <li><strong>Gateway de Internet somente de sa&iacute;da:</strong> Um gateway com estado para fornecer acesso de sa&iacute;da somente para o tr&aacute;fego IPv6 da VPC para a Internet.</li>
+            <li><strong>Roteador:</strong> Roteadores interconectam sub-redes e direcionam o tr&aacute;fego entre
+              Gateways de Internet, Gateways Privados Virtuais, Gateways NAT e sub-redes.</li>
+            <li><strong>Conex&atilde;o de Interliga&ccedil;&atilde;o:</strong> Uma conex&atilde;o de
+              interliga&ccedil;&atilde;o permite que voc&ecirc; roteie o tr&aacute;fego via endere&ccedil;os IP privados
+              entre duas VPCs interligadas.</li>
+            <li><strong>Pontos de Extremidade da VPC:</strong> Permitem conectividade privada a servi&ccedil;os
+              hospedados na AWS, de dentro da sua VPC, sem usar um Gateway de Internet, VPN, dispositivos de
+              Tradu&ccedil;&atilde;o de Endere&ccedil;os de Rede (NAT) ou proxies de firewall.</li>
+            <li><strong>Gateway de Internet somente de sa&iacute;da:</strong> Um gateway com estado para fornecer acesso
+              de sa&iacute;da somente para o tr&aacute;fego IPv6 da VPC para a Internet.</li>
           </ul>
-          
+
           <h3>Op&ccedil;&otilde;es para se conectar com seguran&ccedil;a a uma VPC:</h3>
-          
+
           <ul>
             <li><strong>VPN gerenciada pela AWS:</strong> R&aacute;pido de configurar.</li>
-            <li><strong>Direct Connect:</strong> Alta largura de banda, baixa lat&ecirc;ncia, mas leva semanas a meses para configurar.</li>
+            <li><strong>Direct Connect:</strong> Alta largura de banda, baixa lat&ecirc;ncia, mas leva semanas a meses
+              para configurar.</li>
             <li><strong>VPN CloudHub:</strong> Usado para conectar v&aacute;rios locais &agrave; AWS.</li>
             <li><strong>VPN de software:</strong> Usar software de terceiros.</li>
           </ul>
-          
-          <p>Uma <strong>Interface de Rede El&aacute;stica (ENI)</strong> &eacute; um componente l&oacute;gico de rede que representa uma NIC.</p>
-          
-          <p>ENIs podem ser anexadas e desanexadas de inst&acirc;ncias EC2, e a configura&ccedil;&atilde;o da ENI ser&aacute; mantida.</p>
-          
-          <p><strong>Flow Logs</strong> capturam informa&ccedil;&otilde;es sobre o tr&aacute;fego IP que entra e sai das interfaces de rede em uma VPC.</p>
-          
+
+          <p>Uma <strong>Interface de Rede El&aacute;stica (ENI)</strong> &eacute; um componente l&oacute;gico de rede
+            que representa uma NIC.</p>
+
+          <p>ENIs podem ser anexadas e desanexadas de inst&acirc;ncias EC2, e a configura&ccedil;&atilde;o da ENI
+            ser&aacute; mantida.</p>
+
+          <p><strong>Flow Logs</strong> capturam informa&ccedil;&otilde;es sobre o tr&aacute;fego IP que entra e sai das
+            interfaces de rede em uma VPC.</p>
+
           <p>Dados de Flow Log s&atilde;o armazenados usando o <strong>Amazon CloudWatch Logs</strong>.</p>
-          
+
           <p>Os Flow Logs podem ser criados nos seguintes n&iacute;veis:</p>
-          
+
           <ul>
             <li>VPC.</li>
             <li>Subnet.</li>
             <li>Interface de rede.</li>
           </ul>
-          
-          <p><strong>Conex&otilde;es de Interliga&ccedil;&atilde;o</strong> podem ser criadas com VPCs em diferentes regi&otilde;es (dispon&iacute;veis na maioria das regi&otilde;es agora).</p>
-          
+
+          <p><strong>Conex&otilde;es de Interliga&ccedil;&atilde;o</strong> podem ser criadas com VPCs em diferentes
+            regi&otilde;es (dispon&iacute;veis na maioria das regi&otilde;es agora).</p>
+
           <h3>Sub-redes</h3>
-          
-          <p>Ap&oacute;s criar uma VPC, voc&ecirc; pode adicionar uma ou mais sub-redes em cada Zona de Disponibilidade.</p>
-          
-          <p>Ao criar uma sub-rede, voc&ecirc; especifica o bloco CIDR para a sub-rede, que &eacute; um subconjunto do bloco CIDR da VPC.</p>
-          
-          <p>Cada sub-rede deve residir inteiramente em uma Zona de Disponibilidade e n&atilde;o pode abranger zonas.</p>
-          
+
+          <p>Ap&oacute;s criar uma VPC, voc&ecirc; pode adicionar uma ou mais sub-redes em cada Zona de Disponibilidade.
+          </p>
+
+          <p>Ao criar uma sub-rede, voc&ecirc; especifica o bloco CIDR para a sub-rede, que &eacute; um subconjunto do
+            bloco CIDR da VPC.</p>
+
+          <p>Cada sub-rede deve residir inteiramente em uma Zona de Disponibilidade e n&atilde;o pode abranger zonas.
+          </p>
+
           <h3>Tipos de sub-rede:</h3>
-          
+
           <ul>
-            <li>Se o tr&aacute;fego de uma sub-rede <strong>for roteado para um gateway de internet</strong>, a sub-rede &eacute; conhecida como <strong>sub-rede p&uacute;blica</strong>.</li>
-            <li>Se uma sub-rede <strong>n&atilde;o tiver uma rota para o gateway de internet</strong>, a sub-rede &eacute; conhecida como <strong>sub-rede privada</strong>.</li>
-            <li>Se uma sub-rede n&atilde;o tiver uma rota para o gateway de internet, mas tiver seu<strong> tr&aacute;fego roteado para um gateway privado virtual para uma conex&atilde;o VPN</strong>, a sub-rede &eacute; conhecida como s<strong>ub-rede somente VPN</strong>.</li>
-            <li>Se uma sub-rede <strong>n&atilde;o tem rotas para destinos fora de sua VPC</strong>, a sub-rede &eacute; conhecida como <strong>sub-rede Isolada</strong>.</li>
+            <li>Se o tr&aacute;fego de uma sub-rede <strong>for roteado para um gateway de internet</strong>, a sub-rede
+              &eacute; conhecida como <strong>sub-rede p&uacute;blica</strong>.</li>
+            <li>Se uma sub-rede <strong>n&atilde;o tiver uma rota para o gateway de internet</strong>, a sub-rede
+              &eacute; conhecida como <strong>sub-rede privada</strong>.</li>
+            <li>Se uma sub-rede n&atilde;o tiver uma rota para o gateway de internet, mas tiver seu<strong>
+                tr&aacute;fego roteado para um gateway privado virtual para uma conex&atilde;o VPN</strong>, a sub-rede
+              &eacute; conhecida como s<strong>ub-rede somente VPN</strong>.</li>
+            <li>Se uma sub-rede <strong>n&atilde;o tem rotas para destinos fora de sua VPC</strong>, a sub-rede &eacute;
+              conhecida como <strong>sub-rede Isolada</strong>.</li>
           </ul>
-          
+
           <p>O diagrama a seguir mostra duas VPCs em uma regi&atilde;o:</p>
-          
-          <img src="imagens/amazon-vpc-diagrama-subrede.png" alt="Amazon VPC Diagrama Subrede" width="75%" class="centralizado" border="1">
-          
+
+          <img src="imagens/amazon-vpc-diagrama-subrede.png" alt="Amazon VPC Diagrama Subrede" width="75%"
+            class="centralizado" border="1">
+
           <p>Cada VPC tem sub-redes p&uacute;blicas e privadas, al&eacute;m de um gateway da Internet.</p>
-          
-          <p>&Eacute; poss&iacute;vel adicionar sub-redes opcionalmente a uma zona local, conforme mostrado no diagrama.</p>
-          
-          <p>Uma <strong>zona local</strong> &eacute; uma implanta&ccedil;&atilde;o de infraestrutura da AWS que coloca servi&ccedil;os selecionados mais pr&oacute;ximos de seus usu&aacute;rios finais. Quando uma zona local &eacute; usada, os usu&aacute;rios finais podem executar aplica&ccedil;&otilde;es que exigem lat&ecirc;ncias de milissegundos da ordem de um d&iacute;gito.</p>
-          
-          <p>Um <strong>Gateway de Internet</strong> &eacute; um componente da VPC escal&aacute;vel horizontalmente, redundante e altamente dispon&iacute;vel que permite a comunica&ccedil;&atilde;o entre inst&acirc;ncias em sua VPC e a internet.</p>
-          
+
+          <p>&Eacute; poss&iacute;vel adicionar sub-redes opcionalmente a uma zona local, conforme mostrado no diagrama.
+          </p>
+
+          <p>Uma <strong>zona local</strong> &eacute; uma implanta&ccedil;&atilde;o de infraestrutura da AWS que coloca
+            servi&ccedil;os selecionados mais pr&oacute;ximos de seus usu&aacute;rios finais. Quando uma zona local
+            &eacute; usada, os usu&aacute;rios finais podem executar aplica&ccedil;&otilde;es que exigem lat&ecirc;ncias
+            de milissegundos da ordem de um d&iacute;gito.</p>
+
+          <p>Um <strong>Gateway de Internet</strong> &eacute; um componente da VPC escal&aacute;vel horizontalmente,
+            redundante e altamente dispon&iacute;vel que permite a comunica&ccedil;&atilde;o entre inst&acirc;ncias em
+            sua VPC e a internet.</p>
+
           <h3>Firewalls</h3>
-          
-          <p>As <strong>Listas de Controle de Acesso &agrave; Rede (ACLs)</strong> fornecem uma camada de firewall/seguran&ccedil;a no n&iacute;vel de sub-rede.</p>
-          
-          <p>Os <strong>Security Groups</strong> fornecem uma camada de firewall/seguran&ccedil;a no n&iacute;vel de inst&acirc;ncia.</p>
-          
-          <p>A tabela abaixo descreve algumas diferen&ccedil;as entre <strong>Security Groups</strong> e <strong>Network ACLs</strong>:</p>
-          
+
+          <p>As <strong>Listas de Controle de Acesso &agrave; Rede (ACLs)</strong> fornecem uma camada de
+            firewall/seguran&ccedil;a no n&iacute;vel de sub-rede.</p>
+
+          <p>Os <strong>Security Groups</strong> fornecem uma camada de firewall/seguran&ccedil;a no n&iacute;vel de
+            inst&acirc;ncia.</p>
+
+          <p>A tabela abaixo descreve algumas diferen&ccedil;as entre <strong>Security Groups</strong> e <strong>Network
+              ACLs</strong>:</p>
+
           <table align="center" border="1" style="width:100%">
             <thead>
               <tr>
@@ -265,68 +314,88 @@
               </tr>
               <tr>
                 <td>Aplica-se a uma inst&acirc;ncia apenas se associada a um grupo</td>
-                <td>Aplica-se automaticamente a todas as inst&acirc;ncias nas sub-redes com as quais est&aacute; associada</td>
+                <td>Aplica-se automaticamente a todas as inst&acirc;ncias nas sub-redes com as quais est&aacute;
+                  associada</td>
               </tr>
             </tbody>
           </table>
-          
+
           <h3>Assistente de VPC</h3>
-          
-          <p>O <strong>Assistente de VPC</strong> pode ser usado para criar as quatro configura&ccedil;&otilde;es a seguir:</p>
-          
+
+          <p>O <strong>Assistente de VPC</strong> pode ser usado para criar as quatro configura&ccedil;&otilde;es a
+            seguir:</p>
+
           <ol>
             <li>
-            <p><strong>VPC com uma &uacute;nica sub-rede p&uacute;blica:</strong></p>
-          
-            <ul>
-              <li>Suas inst&acirc;ncias s&atilde;o executadas em uma se&ccedil;&atilde;o privada e isolada da nuvem AWS com acesso direto &agrave; Internet.</li>
-              <li>Listas de controle de acesso &agrave; rede e grupos de seguran&ccedil;a podem ser usados para fornecer controle estrito sobre o tr&aacute;fego de entrada e sa&iacute;da para suas inst&acirc;ncias.</li>
-              <li>Cria uma rede /16 com uma sub-rede /24. As inst&acirc;ncias da sub-rede p&uacute;blica usam IPs el&aacute;sticos ou IPs p&uacute;blicos para acessar a Internet.</li>
-            </ul>
+              <p><strong>VPC com uma &uacute;nica sub-rede p&uacute;blica:</strong></p>
+
+              <ul>
+                <li>Suas inst&acirc;ncias s&atilde;o executadas em uma se&ccedil;&atilde;o privada e isolada da nuvem
+                  AWS com acesso direto &agrave; Internet.</li>
+                <li>Listas de controle de acesso &agrave; rede e grupos de seguran&ccedil;a podem ser usados para
+                  fornecer controle estrito sobre o tr&aacute;fego de entrada e sa&iacute;da para suas inst&acirc;ncias.
+                </li>
+                <li>Cria uma rede /16 com uma sub-rede /24. As inst&acirc;ncias da sub-rede p&uacute;blica usam IPs
+                  el&aacute;sticos ou IPs p&uacute;blicos para acessar a Internet.</li>
+              </ul>
             </li>
             <li>
-            <p><strong>VPC com sub-redes p&uacute;blicas e privadas:</strong></p>
-          
-            <ul>
-              <li>Al&eacute;m de conter uma sub-rede p&uacute;blica, esta configura&ccedil;&atilde;o adiciona uma sub-rede privada cujas inst&acirc;ncias n&atilde;o s&atilde;o acess&iacute;veis pela Internet.</li>
-              <li>As inst&acirc;ncias na sub-rede privada podem estabelecer conex&otilde;es de sa&iacute;da com a Internet atrav&eacute;s da sub-rede p&uacute;blica usando Tradu&ccedil;&atilde;o de Endere&ccedil;os de Rede (NAT).</li>
-              <li>Cria uma rede /16 com duas sub-redes /24.</li>
-              <li>As inst&acirc;ncias da sub-rede p&uacute;blica usam IPs el&aacute;sticos para acessar a Internet.</li>
-              <li>As inst&acirc;ncias da sub-rede privada acessam a Internet via Tradu&ccedil;&atilde;o de Endere&ccedil;os de Rede (NAT).</li>
-            </ul>
+              <p><strong>VPC com sub-redes p&uacute;blicas e privadas:</strong></p>
+
+              <ul>
+                <li>Al&eacute;m de conter uma sub-rede p&uacute;blica, esta configura&ccedil;&atilde;o adiciona uma
+                  sub-rede privada cujas inst&acirc;ncias n&atilde;o s&atilde;o acess&iacute;veis pela Internet.</li>
+                <li>As inst&acirc;ncias na sub-rede privada podem estabelecer conex&otilde;es de sa&iacute;da com a
+                  Internet atrav&eacute;s da sub-rede p&uacute;blica usando Tradu&ccedil;&atilde;o de Endere&ccedil;os
+                  de Rede (NAT).</li>
+                <li>Cria uma rede /16 com duas sub-redes /24.</li>
+                <li>As inst&acirc;ncias da sub-rede p&uacute;blica usam IPs el&aacute;sticos para acessar a Internet.
+                </li>
+                <li>As inst&acirc;ncias da sub-rede privada acessam a Internet via Tradu&ccedil;&atilde;o de
+                  Endere&ccedil;os de Rede (NAT).</li>
+              </ul>
             </li>
             <li>
-            <p><strong>VPC com sub-redes p&uacute;blicas e privadas e Acesso VPN de Hardware:</strong></p>
-          
-            <ul>
-              <li>Esta configura&ccedil;&atilde;o adiciona uma conex&atilde;o de Rede Privada Virtual (VPN) de IPsec entre sua Amazon VPC e seu data center, estendendo efetivamente seu data center para a nuvem e fornecendo acesso direto &agrave; Internet para inst&acirc;ncias da sub-rede p&uacute;blica em sua Amazon VPC.</li>
-              <li>Cria uma rede /16 com duas sub-redes /24.</li>
-              <li>Uma sub-rede est&aacute; diretamente conectada &agrave; Internet, enquanto a outra est&aacute; conectada &agrave; sua rede corporativa via um t&uacute;nel VPN IPsec.</li>
-            </ul>
+              <p><strong>VPC com sub-redes p&uacute;blicas e privadas e Acesso VPN de Hardware:</strong></p>
+
+              <ul>
+                <li>Esta configura&ccedil;&atilde;o adiciona uma conex&atilde;o de Rede Privada Virtual (VPN) de IPsec
+                  entre sua Amazon VPC e seu data center, estendendo efetivamente seu data center para a nuvem e
+                  fornecendo acesso direto &agrave; Internet para inst&acirc;ncias da sub-rede p&uacute;blica em sua
+                  Amazon VPC.</li>
+                <li>Cria uma rede /16 com duas sub-redes /24.</li>
+                <li>Uma sub-rede est&aacute; diretamente conectada &agrave; Internet, enquanto a outra est&aacute;
+                  conectada &agrave; sua rede corporativa via um t&uacute;nel VPN IPsec.</li>
+              </ul>
             </li>
             <li>
-            <p><strong>VPC com apenas uma Sub-rede Privada e Acesso VPN de Hardware:</strong></p>
-          
-            <ul>
-              <li>Suas inst&acirc;ncias s&atilde;o executadas em uma se&ccedil;&atilde;o privada e isolada da nuvem AWS com uma sub-rede privada cujas inst&acirc;ncias n&atilde;o s&atilde;o acess&iacute;veis pela Internet.</li>
-              <li>Voc&ecirc; pode conectar esta sub-rede privada ao seu data center corporativo via um t&uacute;nel VPN IPsec.</li>
-              <li>Cria uma rede /16 com uma sub-rede /24 e provisiona um t&uacute;nel VPN IPsec entre sua Amazon VPC e sua rede corporativa.</li>
-            </ul>
+              <p><strong>VPC com apenas uma Sub-rede Privada e Acesso VPN de Hardware:</strong></p>
+
+              <ul>
+                <li>Suas inst&acirc;ncias s&atilde;o executadas em uma se&ccedil;&atilde;o privada e isolada da nuvem
+                  AWS com uma sub-rede privada cujas inst&acirc;ncias n&atilde;o s&atilde;o acess&iacute;veis pela
+                  Internet.</li>
+                <li>Voc&ecirc; pode conectar esta sub-rede privada ao seu data center corporativo via um t&uacute;nel
+                  VPN IPsec.</li>
+                <li>Cria uma rede /16 com uma sub-rede /24 e provisiona um t&uacute;nel VPN IPsec entre sua Amazon VPC e
+                  sua rede corporativa.</li>
+              </ul>
             </li>
           </ol>
-          
+
           <h3>Inst&acirc;ncias NAT</h3>
-          
+
           <ul>
             <li>As inst&acirc;ncias NAT s&atilde;o gerenciadas por voc&ecirc;.</li>
             <li>Usadas para permitir que inst&acirc;ncias na sub-rede privada acessem a Internet.</li>
-            <li>Ao criar inst&acirc;ncias NAT, sempre desative a verifica&ccedil;&atilde;o de origem/destino na inst&acirc;ncia.</li>
+            <li>Ao criar inst&acirc;ncias NAT, sempre desative a verifica&ccedil;&atilde;o de origem/destino na
+              inst&acirc;ncia.</li>
             <li>As inst&acirc;ncias NAT devem estar em uma &uacute;nica sub-rede p&uacute;blica.</li>
             <li>As inst&acirc;ncias NAT precisam ser atribu&iacute;das a grupos de seguran&ccedil;a.</li>
           </ul>
-          
+
           <h3>Gateways NAT</h3>
-          
+
           <ul>
             <li>Os gateways NAT s&atilde;o gerenciados pela AWS.</li>
             <li>Os gateways NAT s&atilde;o altamente dispon&iacute;veis em cada AZ na qual s&atilde;o implantados.</li>
@@ -335,9 +404,9 @@
             <li>N&atilde;o &eacute; necess&aacute;rio aplicar patches.</li>
             <li>N&atilde;o associados a nenhum grupo de seguran&ccedil;a.</li>
           </ul>
-          
+
           <h3>Diferen&ccedil;as entre Inst&acirc;ncias NAT e Gateways NAT:</h3>
-          
+
           <table align="center" border="1" style="width:100%">
             <thead>
               <tr>
@@ -355,8 +424,10 @@
                 <td>Escalabilidade el&aacute;stica de at&eacute; 45 Gbps</td>
               </tr>
               <tr>
-                <td>Sem alta disponibilidade - alta disponibilidade roteirizada/escalada automaticamente poss&iacute;vel usando v&aacute;rias inst&acirc;ncias NAT em v&aacute;rias sub-redes</td>
-                <td>Fornece alta disponibilidade autom&aacute;tica dentro de uma AZ e pode ser colocada em v&aacute;rias AZs</td>
+                <td>Sem alta disponibilidade - alta disponibilidade roteirizada/escalada automaticamente poss&iacute;vel
+                  usando v&aacute;rias inst&acirc;ncias NAT em v&aacute;rias sub-redes</td>
+                <td>Fornece alta disponibilidade autom&aacute;tica dentro de uma AZ e pode ser colocada em v&aacute;rias
+                  AZs</td>
               </tr>
               <tr>
                 <td>Necessidade de atribuir grupo de seguran&ccedil;a</td>
@@ -368,89 +439,126 @@
               </tr>
             </tbody>
           </table>
-          
+
           <h2>AWS Direct Connect (DX):</h2>
-          
-          <p>O <strong>AWS Direct Connect</strong> &eacute; um servi&ccedil;o de rede que fornece uma alternativa ao uso da Internet para conectar os locais no local do cliente &agrave; AWS.</p>
-          
-          <img src="imagens/aws-direct-connect.png" alt="AWS Direct Connect" width="75%" class="centralizado" border="1">
-          
-          <p>Os dados s&atilde;o transmitidos por meio de uma conex&atilde;o de rede privada entre a AWS e o centro de dados ou rede corporativa do cliente.</p>
-          
+
+          <p>O <strong>AWS Direct Connect</strong> &eacute; um servi&ccedil;o de rede que fornece uma alternativa ao uso
+            da Internet para conectar os locais no local do cliente &agrave; AWS.</p>
+
+          <img src="imagens/aws-direct-connect.png" alt="AWS Direct Connect" width="75%" class="centralizado"
+            border="1">
+
+          <p>Os dados s&atilde;o transmitidos por meio de uma conex&atilde;o de rede privada entre a AWS e o centro de
+            dados ou rede corporativa do cliente.</p>
+
           <p>Benef&iacute;cios do Direct Connect:</p>
-          
+
           <ul>
             <li>Redu&ccedil;&atilde;o de custos ao usar grandes volumes de tr&aacute;fego.</li>
             <li>Aumento da confiabilidade (desempenho previs&iacute;vel).</li>
             <li>Aumento da largura de banda (largura de banda previs&iacute;vel).</li>
             <li>Diminui&ccedil;&atilde;o da lat&ecirc;ncia.</li>
           </ul>
-          
-          <p>Cada conex&atilde;o <strong>AWS Direct Connect</strong> pode ser configurada com uma ou mais interfaces virtuais (VIFs).</p>
-          
+
+          <p>Cada conex&atilde;o <strong>AWS Direct Connect</strong> pode ser configurada com uma ou mais interfaces
+            virtuais (VIFs).</p>
+
           <ul>
             <li>As VIFs p&uacute;blicas permitem acesso a servi&ccedil;os p&uacute;blicos como S3, EC2 e DynamoDB.</li>
             <li>As VIFs privadas permitem acesso &agrave; sua VPC.</li>
           </ul>
-          
-          <p>A partir do Direct Connect, voc&ecirc; pode se conectar a todas as Zonas de Disponibilidade dentro da regi&atilde;o.</p>
-          
-          <p>Voc&ecirc; pode estabelecer conex&otilde;es IPSec sobre VIFs p&uacute;blicas para regi&otilde;es remotas.</p>
-          
+
+          <p>A partir do Direct Connect, voc&ecirc; pode se conectar a todas as Zonas de Disponibilidade dentro da
+            regi&atilde;o.</p>
+
+          <p>Voc&ecirc; pode estabelecer conex&otilde;es IPSec sobre VIFs p&uacute;blicas para regi&otilde;es remotas.
+          </p>
+
           <p>O Direct Connect &eacute; cobrado por horas de porta e transfer&ecirc;ncia de dados.</p>
-          
+
           <p>Est&aacute; dispon&iacute;vel em 1 Gbps e 10 Gbps.</p>
-          
-          <p>Velocidades de 50 Mbps, 100 Mbps, 200 Mbps, 300 Mbps, 400 Mbps e 500 Mbps podem ser adquiridas por meio de Parceiros do AWS Direct Connect.</p>
-          
-          <p>Cada conex&atilde;o consiste em uma &uacute;nica conex&atilde;o dedicada entre portas no roteador do cliente e um roteador da Amazon.</p>
-          
-          <p>Para alta disponibilidade, voc&ecirc; deve ter 2 conex&otilde;es DX - podem ser ativas/ativas ou ativas/standby.</p>
-          
+
+          <p>Velocidades de 50 Mbps, 100 Mbps, 200 Mbps, 300 Mbps, 400 Mbps e 500 Mbps podem ser adquiridas por meio de
+            Parceiros do AWS Direct Connect.</p>
+
+          <p>Cada conex&atilde;o consiste em uma &uacute;nica conex&atilde;o dedicada entre portas no roteador do
+            cliente e um roteador da Amazon.</p>
+
+          <p>Para alta disponibilidade, voc&ecirc; deve ter 2 conex&otilde;es DX - podem ser ativas/ativas ou
+            ativas/standby.</p>
+
           <p>As tabelas de roteamento precisam ser atualizadas para apontar para uma conex&atilde;o Direct Connect.</p>
-          
+
           <h2>AWS Global Accelerator:</h2>
-          
-          <p>O <strong>AWS Global Accelerator</strong> &eacute; um servi&ccedil;o que melhora a disponibilidade e o desempenho de aplicativos com usu&aacute;rios locais ou globais.</p>
-          
-          <p>Ele fornece endere&ccedil;os IP est&aacute;ticos que funcionam como um ponto de entrada fixo para os pontos finais do aplicativo em uma ou v&aacute;rias Regi&otilde;es da AWS, como Application Load Balancers, Network Load Balancers ou inst&acirc;ncias EC2.</p>
-          
-          <img src="imagens/aws-global-accelerator.png" alt="AWS Global Accelerator" width="70%" class="centralizado" border="1">
-          
-          <p>Usa a rede global da AWS para otimizar o caminho dos usu&aacute;rios para aplicativos, melhorando o desempenho do tr&aacute;fego TCP e UDP.</p>
-          
-          <p>O <strong>AWS Global Accelerator</strong> monitora continuamente a sa&uacute;de dos pontos finais do aplicativo e detectar&aacute; um ponto final n&atilde;o saud&aacute;vel, redirecionando o tr&aacute;fego para pontos finais saud&aacute;veis em menos de 1 minuto.</p>
-          
+
+          <p>O <strong>AWS Global Accelerator</strong> &eacute; um servi&ccedil;o que melhora a disponibilidade e o
+            desempenho de aplicativos com usu&aacute;rios locais ou globais.</p>
+
+          <p>Ele fornece endere&ccedil;os IP est&aacute;ticos que funcionam como um ponto de entrada fixo para os pontos
+            finais do aplicativo em uma ou v&aacute;rias Regi&otilde;es da AWS, como Application Load Balancers, Network
+            Load Balancers ou inst&acirc;ncias EC2.</p>
+
+          <img src="imagens/aws-global-accelerator.png" alt="AWS Global Accelerator" width="70%" class="centralizado"
+            border="1">
+
+          <p>Usa a rede global da AWS para otimizar o caminho dos usu&aacute;rios para aplicativos, melhorando o
+            desempenho do tr&aacute;fego TCP e UDP.</p>
+
+          <p>O <strong>AWS Global Accelerator</strong> monitora continuamente a sa&uacute;de dos pontos finais do
+            aplicativo e detectar&aacute; um ponto final n&atilde;o saud&aacute;vel, redirecionando o tr&aacute;fego
+            para pontos finais saud&aacute;veis em menos de 1 minuto.</p>
+
           <h3>Detalhes e Benef&iacute;cios:</h3>
-          
+
           <ul>
-            <li>Usa endere&ccedil;os IP anycast est&aacute;ticos redundantes (dois) em diferentes zonas de rede (A e B).</li>
+            <li>Usa endere&ccedil;os IP anycast est&aacute;ticos redundantes (dois) em diferentes zonas de rede (A e B).
+            </li>
             <li>O par redundante &eacute; anunciado globalmente.</li>
-            <li>Usa Localidades Edge da AWS - os endere&ccedil;os s&atilde;o anunciados de v&aacute;rias localidades de borda ao mesmo tempo.</li>
+            <li>Usa Localidades Edge da AWS - os endere&ccedil;os s&atilde;o anunciados de v&aacute;rias localidades de
+              borda ao mesmo tempo.</li>
             <li>Os endere&ccedil;os s&atilde;o associados a recursos ou pontos finais regionais da AWS.</li>
             <li>Os endere&ccedil;os IP do AWS Global Accelerator servem como a interface frontal dos aplicativos.</li>
-            <li>Distribui&ccedil;&atilde;o inteligente de tr&aacute;fego: Roteia conex&otilde;es para o ponto de presen&ccedil;a mais pr&oacute;ximo dos aplicativos.</li>
-            <li>Os alvos podem ser inst&acirc;ncias Amazon EC2 ou Balanceadores de Carga El&aacute;sticos (ALB e NLB).</li>
-            <li>Usando os endere&ccedil;os IP est&aacute;ticos, voc&ecirc; n&atilde;o precisa fazer altera&ccedil;&otilde;es voltadas para o cliente ou atualizar registros DNS ao modificar ou substituir pontos finais.</li>
-            <li>Os endere&ccedil;os s&atilde;o atribu&iacute;dos ao seu acelerador enquanto ele existir, mesmo se voc&ecirc; desativar o acelerador e ele n&atilde;o aceitar ou rotear mais tr&aacute;fego.</li>
+            <li>Distribui&ccedil;&atilde;o inteligente de tr&aacute;fego: Roteia conex&otilde;es para o ponto de
+              presen&ccedil;a mais pr&oacute;ximo dos aplicativos.</li>
+            <li>Os alvos podem ser inst&acirc;ncias Amazon EC2 ou Balanceadores de Carga El&aacute;sticos (ALB e NLB).
+            </li>
+            <li>Usando os endere&ccedil;os IP est&aacute;ticos, voc&ecirc; n&atilde;o precisa fazer
+              altera&ccedil;&otilde;es voltadas para o cliente ou atualizar registros DNS ao modificar ou substituir
+              pontos finais.</li>
+            <li>Os endere&ccedil;os s&atilde;o atribu&iacute;dos ao seu acelerador enquanto ele existir, mesmo se
+              voc&ecirc; desativar o acelerador e ele n&atilde;o aceitar ou rotear mais tr&aacute;fego.</li>
           </ul>
-          
+
           <h2><strong>AWS Outposts:</strong></h2>
-          
-          <p><img alt="AWS Outposts" src="imagens/aws-outposts.jpeg" class="centralizado" border="1" style="border-style:solid; border-width:1px; float:left; height:300px; margin:1px 5px; width:200px" />O <strong>AWS Outposts</strong> &eacute; um servi&ccedil;o totalmente gerenciado que estende a infraestrutura, os servi&ccedil;os, as APIs e as ferramentas da AWS no local do cliente.</p>
-          
-          <p>Ao fornecer acesso local &agrave; infraestrutura gerenciada pela AWS, o AWS Outposts permite que os clientes criem e executem aplica&ccedil;&otilde;es on-premises usando as mesmas interfaces de programa&ccedil;&atilde;o que nas regi&otilde;es da AWS, ao mesmo tempo que usam recursos locais de computa&ccedil;&atilde;o e armazenamento para menor lat&ecirc;ncia e necessidades de processamento de dados locais.</p>
-          
-          <p>O <strong>AWS Outposts</strong> &eacute; ideal para cargas de trabalho que exigem acesso de baixa lat&ecirc;ncia a sistemas no local, processamento local de dados, resid&ecirc;ncia de dados e migra&ccedil;&atilde;o de aplicativos com interdepend&ecirc;ncias de sistemas locais.</p>
-          
-          <p>Os servi&ccedil;os da AWS, como Amazon EC2, Amazon EBS, Amazon S3, Amazon VPC, Amazon ECS/EKS, Amazon RDS e Amazon EMR, s&atilde;o executados localmente no Outposts, e voc&ecirc; pode acessar a gama completa de servi&ccedil;os da AWS dispon&iacute;veis na regi&atilde;o para construir, gerenciar e dimensionar seus aplicativos no local usando servi&ccedil;os e ferramentas familiares da AWS.</p>
-          
-          <p>O <strong>AWS Outposts</strong>&nbsp;est&aacute; dispon&iacute;vel como um rack de 42U ou servidores 1U / 2U.</p>
-          
-          <img src="imagens/aws-outposts-racks.png" alt="AWS Outposts Racks" height="30%" class="centralizado" border="1">          
-          
+
+          <p><img alt="AWS Outposts" src="imagens/aws-outposts.jpeg" class="centralizado" border="1"
+              style="border-style:solid; border-width:1px; float:left; height:300px; margin:1px 5px; width:200px" />O
+            <strong>AWS Outposts</strong> &eacute; um servi&ccedil;o totalmente gerenciado que estende a infraestrutura,
+            os servi&ccedil;os, as APIs e as ferramentas da AWS no local do cliente.</p>
+
+          <p>Ao fornecer acesso local &agrave; infraestrutura gerenciada pela AWS, o AWS Outposts permite que os
+            clientes criem e executem aplica&ccedil;&otilde;es on-premises usando as mesmas interfaces de
+            programa&ccedil;&atilde;o que nas regi&otilde;es da AWS, ao mesmo tempo que usam recursos locais de
+            computa&ccedil;&atilde;o e armazenamento para menor lat&ecirc;ncia e necessidades de processamento de dados
+            locais.</p>
+
+          <p>O <strong>AWS Outposts</strong> &eacute; ideal para cargas de trabalho que exigem acesso de baixa
+            lat&ecirc;ncia a sistemas no local, processamento local de dados, resid&ecirc;ncia de dados e
+            migra&ccedil;&atilde;o de aplicativos com interdepend&ecirc;ncias de sistemas locais.</p>
+
+          <p>Os servi&ccedil;os da AWS, como Amazon EC2, Amazon EBS, Amazon S3, Amazon VPC, Amazon ECS/EKS, Amazon RDS e
+            Amazon EMR, s&atilde;o executados localmente no Outposts, e voc&ecirc; pode acessar a gama completa de
+            servi&ccedil;os da AWS dispon&iacute;veis na regi&atilde;o para construir, gerenciar e dimensionar seus
+            aplicativos no local usando servi&ccedil;os e ferramentas familiares da AWS.</p>
+
+          <p>O <strong>AWS Outposts</strong>&nbsp;est&aacute; dispon&iacute;vel como um rack de 42U ou servidores 1U /
+            2U.</p>
+
+          <img src="imagens/aws-outposts-racks.png" alt="AWS Outposts Racks" height="30%" class="centralizado"
+            border="1">
+
           <h3>Os servi&ccedil;os que voc&ecirc; pode executar no AWS Outposts incluem:</h3>
-          
+
           <ul>
             <li>Amazon EC2.</li>
             <li>Amazon EBS.</li>
@@ -460,7 +568,7 @@
             <li>Amazon RDS.</li>
             <li>Amazon EMR.</li>
           </ul>
-          
+
 
         </div>
 

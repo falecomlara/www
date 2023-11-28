@@ -41,6 +41,13 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   </style>
 
 </head>
@@ -109,74 +116,103 @@
       <div class="uk-container uk-position-relative">
         <h2 class="uk-h1 uk-text-center">AWS Auto Scaling e Elastic Load Balance</h2>
 
-<div>
+        <div>
 
-  <p>O AWS Auto Scaling e o AWS Elastic Load Balancing s&atilde;o recursos da AWS que podem ser usados separadamente ou em conjunto para elasticidade e alta disponibilidade.</p>
+          <p>O AWS Auto Scaling e o AWS Elastic Load Balancing s&atilde;o recursos da AWS que podem ser usados
+            separadamente ou em conjunto para elasticidade e alta disponibilidade.</p>
 
-  <hr />
-  <p><strong>Amazon EC2 Auto Scaling</strong></p>
-  
-  <p>O Amazon EC2 Auto Scaling automatiza o processo de lan&ccedil;amento (escalonamento para fora) e t&eacute;rmino (escalonamento para dentro) de inst&acirc;ncias Amazon EC2 com base na demanda de tr&aacute;fego para sua aplica&ccedil;&atilde;o.</p>
-  
-  <p>O Auto Scaling ajuda a garantir que voc&ecirc; tenha o n&uacute;mero correto de inst&acirc;ncias EC2 dispon&iacute;veis para lidar com a carga da aplica&ccedil;&atilde;o.</p>
-  
-  <p>O Amazon EC2 Auto Scaling fornece elasticidade e escalabilidade.</p>
-  
-  <p>Voc&ecirc; cria cole&ccedil;&otilde;es de inst&acirc;ncias EC2, chamadas de grupo Auto Scaling (ASG).</p>
-  
-  <p>Voc&ecirc; pode especificar o n&uacute;mero m&iacute;nimo de inst&acirc;ncias em cada ASG, e o AWS Auto Scaling garantir&aacute; que o grupo nunca fique abaixo desse tamanho.</p>
-  
-  <p>Voc&ecirc; tamb&eacute;m pode especificar o n&uacute;mero m&aacute;ximo de inst&acirc;ncias em cada ASG, e o grupo nunca ultrapassar&aacute; esse tamanho.</p>
-  
-  <p>Uma capacidade desejada pode ser configurada, e o AWS Auto Scaling garantir&aacute; que o grupo tenha esse n&uacute;mero de inst&acirc;ncias.</p>
-  
-  <p>Voc&ecirc; tamb&eacute;m pode especificar pol&iacute;ticas de dimensionamento que controlam quando o Auto Scaling inicia ou termina inst&acirc;ncias.</p>
-  
-  <p>As pol&iacute;ticas de dimensionamento determinam quando, se e como o ASG escala e diminui (escalonamento din&acirc;mico/on-demand, escalonamento c&iacute;clico/agendado).</p>
-  
-  <p>Os Planos de Dimensionamento definem os gatilhos e quando as inst&acirc;ncias devem ser provisionadas/desprovisionadas.</p>
-  
-  <p>Uma configura&ccedil;&atilde;o de lan&ccedil;amento &eacute; o modelo usado para criar novas inst&acirc;ncias EC2 e inclui par&acirc;metros como fam&iacute;lia de inst&acirc;ncias, tipo de inst&acirc;ncia, AMI, par de chaves e grupos de seguran&ccedil;a.</p>
-  
-  <hr />
-  <p><strong>Amazon Elastic Load Balancing (ELB)</strong></p>
-  
-  <p>ELB distribui automaticamente o tr&aacute;fego de aplicativos recebido entre v&aacute;rios destinos, como inst&acirc;ncias Amazon EC2, cont&ecirc;ineres e endere&ccedil;os IP.</p>
-  
-  <p>ELB pode lidar com a carga vari&aacute;vel do tr&aacute;fego da sua aplica&ccedil;&atilde;o em uma &uacute;nica Zona de Disponibilidade ou em v&aacute;rias Zonas de Disponibilidade.</p>
-  
-  <p>ELB possui alta disponibilidade, dimensionamento autom&aacute;tico e seguran&ccedil;a robusta necess&aacute;ria para tornar suas aplica&ccedil;&otilde;es tolerantes a falhas.</p>
-  
-  <p>Existem tr&ecirc;s tipos de Balanceador de Carga El&aacute;stico (ELB) na AWS:</p>
-  
-  <ol>
-    <li><strong>Application Load Balancer (ALB):</strong> Balanceador de carga na camada 7 que roteia conex&otilde;es com base no conte&uacute;do da solicita&ccedil;&atilde;o.</li>
-    <li><strong>Network Load Balancer (NLB):</strong> Balanceador de carga na camada 4 que roteia conex&otilde;es com base em dados de protocolo IP.</li>
-    <li><strong>Gateway Load Balancer (GLB):</strong> Distribui conex&otilde;es para dispositivos virtuais e dimensiona-os para cima ou para baixo.
-    <ol>
-      <li>A &uacute;nica caracter&iacute;sticas que voc&ecirc; precisa lembrar desse balanceador de carga &eacute; que ele atua com o protocolo Geneve,&nbsp;na porta 6081.</li>
-    </ol>
-    </li>
-  </ol>
-  
-  <hr />
-  <p><strong>Application Load Balancer (ALB)</strong></p>
-  
-  <p>O ALB &eacute; mais adequado para o balanceamento de tr&aacute;fego HTTP e HTTPS, oferecendo roteamento avan&ccedil;ado de solicita&ccedil;&otilde;es voltado para a entrega de arquiteturas de aplicativos modernos, incluindo microsservi&ccedil;os e cont&ecirc;ineres.</p>
-  
-  <p>Operando no n&iacute;vel de solicita&ccedil;&atilde;o individual (Camada 7), o Application Load Balancer roteia o tr&aacute;fego para destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) com base no conte&uacute;do da solicita&ccedil;&atilde;o.</p>
-  
-  <hr />
-  <p><strong>Network Load Balancer (NLB)</strong></p>
-  
-  <p>O NLB &eacute; mais <strong>adequado</strong> para o balanceamento de tr&aacute;fego TCP, <strong>onde &eacute; necess&aacute;rio um desempenho extremo</strong>.</p>
-  
-  <p>Operando no n&iacute;vel de conex&atilde;o (Camada 4), o Network Load Balancer roteia o tr&aacute;fego para destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) e &eacute; capaz de lidar com milh&otilde;es de solicita&ccedil;&otilde;es por segundo, mantendo lat&ecirc;ncias ultra baixas.</p>
-  
-  <p>O Network Load Balancer tamb&eacute;m &eacute; otimizado para lidar com padr&otilde;es de tr&aacute;fego repentinos e vol&aacute;teis.</p>
-  
+          <h2>Amazon EC2 Auto Scaling</h2>
 
-</div>
+          <p>O Amazon EC2 Auto Scaling automatiza o processo de lan&ccedil;amento (escalonamento para fora) e
+            t&eacute;rmino (escalonamento para dentro) de inst&acirc;ncias Amazon EC2 com base na demanda de
+            tr&aacute;fego para sua aplica&ccedil;&atilde;o.</p>
+
+          <p>O Auto Scaling ajuda a garantir que voc&ecirc; tenha o n&uacute;mero correto de inst&acirc;ncias EC2
+            dispon&iacute;veis para lidar com a carga da aplica&ccedil;&atilde;o.</p>
+
+          <p>O Amazon EC2 Auto Scaling fornece elasticidade e escalabilidade.</p>
+
+          <p>Voc&ecirc; cria cole&ccedil;&otilde;es de inst&acirc;ncias EC2, chamadas de grupo Auto Scaling (ASG).</p>
+
+          <p>Voc&ecirc; pode especificar um n&uacute;mero m&iacute;nimo, desejado e m&aacute;ximo de inst&acirc;ncias em
+            cada ASG.</p>
+
+          <p>Por exemplo, o seguinte grupo do Auto Scaling tem um tamanho m&iacute;nimo de uma (01) inst&acirc;ncia, uma
+            capacidade desejada de duas (02) inst&acirc;ncias e um tamanho m&aacute;ximo de quatro (04)
+            inst&acirc;ncias.</p>
+
+            <img src="imagens/aws-asg.png" alt="AWS Auto Scaling Group" width="40%" class="centralizado" border="1">
+
+          <p>As pol&iacute;ticas de escalabilidade que voc&ecirc; define ajustam o n&uacute;mero de inst&acirc;ncias, em
+            seu n&uacute;mero m&iacute;nimo e m&aacute;ximo de inst&acirc;ncias, com base nos crit&eacute;rios que
+            voc&ecirc; especifica.</p>
+
+          <p>As pol&iacute;ticas de dimensionamento determinam quando, se e como o ASG escala e diminui (escalonamento
+            din&acirc;mico/on-demand, escalonamento c&iacute;clico/agendado).</p>
+
+          <p>Os Planos de Dimensionamento definem os gatilhos e quando as inst&acirc;ncias devem ser
+            provisionadas/desprovisionadas.</p>
+
+          <p>Voc&ecirc; tamb&eacute;m pode especificar pol&iacute;ticas de dimensionamento que controlam quando o Auto
+            Scaling inicia ou termina inst&acirc;ncias.</p>
+
+          <p>Uma configura&ccedil;&atilde;o de lan&ccedil;amento &eacute; o modelo usado para criar novas
+            inst&acirc;ncias EC2 e inclui par&acirc;metros como fam&iacute;lia de inst&acirc;ncias, tipo de
+            inst&acirc;ncia, AMI, par de chaves e grupos de seguran&ccedil;a.</p>
+
+          <h2>Amazon Elastic Load Balancing (ELB)</h2>
+
+          <p>ELB distribui automaticamente o tr&aacute;fego de aplicativos recebido entre v&aacute;rios destinos, como
+            inst&acirc;ncias Amazon EC2, cont&ecirc;ineres e endere&ccedil;os IP.</p>
+
+          <p>ELB pode lidar com a carga vari&aacute;vel do tr&aacute;fego da sua aplica&ccedil;&atilde;o em uma
+            &uacute;nica Zona de Disponibilidade ou em v&aacute;rias Zonas de Disponibilidade.</p>
+
+          <p>ELB possui alta disponibilidade, dimensionamento autom&aacute;tico e seguran&ccedil;a robusta
+            necess&aacute;ria para tornar suas aplica&ccedil;&otilde;es tolerantes a falhas.</p>
+
+            <img src="imagens/aws-elb.png" alt="AWS Elastic Load Balance" width="40%" class="centralizado" border="1">
+
+          <p>Existem tr&ecirc;s tipos de Balanceador de Carga El&aacute;stico (ELB) na AWS:</p>
+
+          <ol>
+            <li><strong>Application Load Balancer (ALB):</strong> Balanceador de carga na camada 7 que roteia
+              conex&otilde;es com base no conte&uacute;do da solicita&ccedil;&atilde;o.</li>
+            <li><strong>Network Load Balancer (NLB):</strong> Balanceador de carga na camada 4 que roteia
+              conex&otilde;es com base em dados de protocolo IP.</li>
+            <li><strong>Gateway Load Balancer (GLB):</strong> Distribui conex&otilde;es para dispositivos virtuais e
+              dimensiona-os para cima ou para baixo.
+              <ol>
+                <li>A &uacute;nica caracter&iacute;sticas que voc&ecirc; precisa lembrar desse balanceador de carga
+                  &eacute; que ele atua com o protocolo Geneve,&nbsp;na porta 6081.</li>
+              </ol>
+            </li>
+          </ol>
+
+          <h3>Application Load Balancer (ALB)</h3>
+
+          <p>O ALB &eacute; mais adequado para o balanceamento de tr&aacute;fego HTTP e HTTPS, oferecendo roteamento
+            avan&ccedil;ado de solicita&ccedil;&otilde;es voltado para a entrega de arquiteturas de aplicativos
+            modernos, incluindo microsservi&ccedil;os e cont&ecirc;ineres.</p>
+
+          <p>Operando no n&iacute;vel de solicita&ccedil;&atilde;o individual (Camada 7), o Application Load Balancer
+            roteia o tr&aacute;fego para destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) com base no
+            conte&uacute;do da solicita&ccedil;&atilde;o.</p>
+
+          <h3>Network Load Balancer (NLB)</h3>
+
+          <p>O NLB &eacute; mais <strong>adequado</strong> para o balanceamento de tr&aacute;fego TCP, <strong>onde
+              &eacute; necess&aacute;rio um desempenho extremo</strong>.</p>
+
+          <p>Operando no n&iacute;vel de conex&atilde;o (Camada 4), o Network Load Balancer roteia o tr&aacute;fego para
+            destinos dentro da Amazon Virtual Private Cloud (Amazon VPC) e &eacute; capaz de lidar com milh&otilde;es de
+            solicita&ccedil;&otilde;es por segundo, mantendo lat&ecirc;ncias ultra baixas.</p>
+
+          <p>O Network Load Balancer tamb&eacute;m &eacute; otimizado para lidar com padr&otilde;es de tr&aacute;fego
+            repentinos e vol&aacute;teis.</p>
+
+
+        </div>
 
         <div style="text-align: center;">
           <div>
