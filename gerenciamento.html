@@ -41,6 +41,13 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   </style>
 
 </head>
@@ -114,27 +121,74 @@
           <p>Os servi&ccedil;os de gerenciamento na nuvem da AWS podem ser usados para gerenciamento de contas,
             conformidade de configura&ccedil;&atilde;o, entrega de aplicativos e gerenciamento de sistemas.</p>
 
-          <p><strong>AWS Organizations</strong></p>
+          <h2>AWS Organizations</h2>
 
           <ul>
-            <li>A AWS Organizations permite consolidar v&aacute;rias contas da AWS em uma organiza&ccedil;&atilde;o que
-              voc&ecirc; cria e gerencia centralmente.</li>
-            <li>Dispon&iacute;vel em dois conjuntos de recursos:
-              <ul>
-                <li><strong>Faturamento Consolidado</strong>: Todas as caracter&iacute;sticas, incluindo contas raiz e
-                  unidades organizacionais (OUs).</li>
-                <li><strong>Faturamento Consolidado</strong>: Conta pagadora independente, sem acesso a recursos de
-                  outras contas. Contas vinculadas s&atilde;o independentes.</li>
-              </ul>
-            </li>
-            <li>Pol&iacute;ticas s&atilde;o aplicadas a contas raiz ou OUs.</li>
+            <li>O AWS Organizations &eacute; um servi&ccedil;o de gerenciamento de contas, que permite
+              <strong>consolidar v&aacute;rias contas AWS</strong>, <strong>em uma &uacute;nica
+                organiza&ccedil;&atilde;o</strong>.</li>
+            <li>A grande vantagem de utilizar o AWS Organizations &eacute; obter <strong>faturamento
+                consolidado</strong>.</li>
           </ul>
 
-          <hr />
-          <p><strong>AWS Control Tower</strong></p>
+          <p>Nesse diagrama do AWS Organizations, &eacute; poss&iacute;vel ver a Master Account, Unidades Organizacionas (OUs), Contas AWS
+            e pol&iacute;ticas de acesso (SCP).</p>
+
+            <img src="imagens/aws-organizations.jpeg" alt="AWS Organizations" width="50%" class="centralizado" border="1">
+
+          <ol>
+            <li>
+              <p><strong>AWS Organizations:</strong> Servi&ccedil;o que permite consolidar v&aacute;rias contas AWS em
+                uma &uacute;nica estrutura organizacional.</p>
+
+              <ul>
+                <li>
+                  <p>Dentro do AWS Organizations, voc&ecirc; pode ter Unidades Organizacionais (OUs) que podem conter
+                    uma ou mais contas AWS.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Master account:&nbsp;</strong>Refere-se &agrave; conta de faturamento
+                principal&nbsp;e&nbsp;possui o controle geral sobre a AWS.</p>
+            </li>
+            <li>
+              <p><strong>Conta AWS</strong>: Pode conter&nbsp;v&aacute;rias credenciais de acesso associadas a ela.</p>
+
+              <ul>
+                <li>
+                  <p>Cada conta AWS pode ter v&aacute;rias credenciais de acesso associadas a diferentes
+                    usu&aacute;rios, cada uma com suas pr&oacute;prias permiss&otilde;es.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Credenciais de Acesso (Logins de Usu&aacute;rios):</strong> As credenciais de acesso referem-se
+                &agrave;s informa&ccedil;&otilde;es usadas para autenticar e autorizar usu&aacute;rios e aplicativos
+                para interagir com os recursos AWS</p>
+            </li>
+            <li>
+              <p><strong>Service Control Policies (SCPs):</strong> S&atilde;o pol&iacute;ticas que voc&ecirc; pode usar
+                para controlar o acesso &agrave;s contas membros da sua organiza&ccedil;&atilde;o AWS, incluindo
+                restri&ccedil;&otilde;es adicionais al&eacute;m das pol&iacute;ticas IAM (Identity and Access
+                Management).</p>
+
+              <ul>
+                <li>
+                  <p>SCPs ajudam a definir permiss&otilde;es a n&iacute;vel de organiza&ccedil;&atilde;o, restringindo
+                    ou permitindo o acesso a servi&ccedil;os espec&iacute;ficos, regi&otilde;es ou a&ccedil;&otilde;es
+                    dentro da organiza&ccedil;&atilde;o. Isso &eacute; particularmente &uacute;til para garantir
+                    conformidade e seguran&ccedil;a em ambientes organizacionais complexos.</p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2>AWS Control Tower</h2>
 
           <ul>
-            <li>Simplifica o processo de cria&ccedil;&atilde;o de ambientes de v&aacute;rias contas.</li>
+            <li>O AWS Control Tower <strong>simplifica o processo de cria&ccedil;&atilde;o de ambientes de v&aacute;rias
+                contas</strong>, seguindo as melhores pr&aacute;ticas do mercado.</li>
             <li>Estabelece diretrizes de governan&ccedil;a, conformidade e seguran&ccedil;a para voc&ecirc;.</li>
             <li>Integra-se com outros servi&ccedil;os e recursos para configurar o ambiente, incluindo AWS
               Organizations, SCPs, OUs, AWS Config, AWS CloudTrail, Amazon S3, Amazon SNS, AWS CloudFormation, AWS
@@ -151,13 +205,12 @@
             </li>
           </ul>
 
-          <hr />
-          <p><strong>AWS Config</strong></p>
+          <h2>AWS Config</h2>
 
           <ul>
-            <li>Servi&ccedil;o totalmente gerenciado que fornece invent&aacute;rio de recursos da AWS, hist&oacute;rico
-              de configura&ccedil;&atilde;o e notifica&ccedil;&otilde;es de altera&ccedil;&atilde;o de
-              configura&ccedil;&atilde;o em tempo real.</li>
+            <li>Servi&ccedil;o totalmente gerenciado que fornece<strong> invent&aacute;rio de recursos</strong> da AWS,
+              <strong>hist&oacute;rico de configura&ccedil;&atilde;o</strong> e <strong>notifica&ccedil;&otilde;es de
+                altera&ccedil;&atilde;o de configura&ccedil;&atilde;o </strong>em tempo real.</li>
             <li>Possibilita auditoria de conformidade, an&aacute;lise de seguran&ccedil;a, rastreamento de
               altera&ccedil;&otilde;es de recursos e solu&ccedil;&atilde;o de problemas.</li>
             <li>Permite descobrir recursos da AWS existentes e exclu&iacute;dos, avaliar conformidade geral em
@@ -165,12 +218,11 @@
               ponto no tempo.</li>
           </ul>
 
-          <hr />
-          <p><strong>AWS Service Catalog</strong></p>
+          <h2>AWS Service Catalog</h2>
 
           <ul>
-            <li>Permite que organiza&ccedil;&otilde;es criem e gerenciem cat&aacute;logos de servi&ccedil;os de TI
-              aprovados para uso na AWS.</li>
+            <li>Permite que organiza&ccedil;&otilde;es <strong>criem e gerenciem cat&aacute;logos de servi&ccedil;os de
+                TI </strong>aprovados para uso na AWS.</li>
             <li>Facilita o gerenciamento centralizado de servi&ccedil;os de TI comumente implantados.</li>
             <li>Inclui imagens de m&aacute;quinas virtuais, servidores, software, bancos de dados e arquiteturas de
               aplicativos de v&aacute;rios n&iacute;veis.</li>
@@ -178,8 +230,7 @@
               precisam.</li>
           </ul>
 
-          <hr />
-          <p><strong>AWS Systems Manager</strong></p>
+          <h2>AWS Systems Manager</h2>
 
           <ul>
             <li>Gerencia v&aacute;rios recursos da AWS, incluindo Amazon EC2, Amazon S3, Amazon RDS, etc.</li>
@@ -195,53 +246,44 @@
             </li>
           </ul>
 
-          <hr />
-
-
-          <hr />
-          <p><strong>Service Health Dashboard</strong></p>
-
-          <ul>
-            <li>A AWS publica informa&ccedil;&otilde;es em tempo real sobre a disponibilidade do servi&ccedil;o.</li>
-          </ul>
-
-          <hr />
-          <p><strong>AWS OpsWorks</strong></p>
+          <h2>AWS OpsWorks</h2>
 
           <ul>
             <li>Servi&ccedil;o de gerenciamento de configura&ccedil;&atilde;o que fornece inst&acirc;ncias gerenciadas
-              do Chef e Puppet.</li>
+              do<strong> Chef e Puppet</strong>.</li>
             <li>Inclui atualiza&ccedil;&otilde;es para aplica&ccedil;&atilde;o de patches, atualiza&ccedil;&atilde;o,
               backup, configura&ccedil;&atilde;o e gerenciamento de conformidade.</li>
           </ul>
 
-          <hr />
-          <p><strong>AWS Trusted Advisor</strong></p>
+          <p><strong>Dica exame</strong>: Enunciado comentou sobre <strong>Chef e Puppet</strong>, escolha <strong>AWS
+              OpsWorks</strong>.</p>
+
+          <h2>AWS CloudFormation</h2>
 
           <ul>
-            <li>Ferramenta online que fornece orienta&ccedil;&otilde;es em tempo real para ajudar no provisionamento de
-              recursos seguindo as melhores pr&aacute;ticas da AWS.</li>
-            <li>Verifica&ccedil;&otilde;es do Trusted Advisor ajudam a otimizar a infraestrutura da AWS, melhorar
-              seguran&ccedil;a e desempenho, reduzir custos gerais e monitorar limites de servi&ccedil;o.</li>
-            <li>Clientes do AWS Basic Support e AWS Developer Support t&ecirc;m acesso a 6 verifica&ccedil;&otilde;es de
-              seguran&ccedil;a e 50 verifica&ccedil;&otilde;es de limites de servi&ccedil;o.</li>
-            <li>Clientes do AWS Business Support e AWS Enterprise Support t&ecirc;m acesso a todas as 115
-              verifica&ccedil;&otilde;es do Trusted Advisor e recomenda&ccedil;&otilde;es.</li>
-          </ul>
-
-          <p><strong>AWS CloudFormation</strong></p>
-
-          <ul>
-            <li>
-              <hr />Fornece uma linguagem comum para descrever e provisionar todos os recursos de infraestrutura em seu
-              ambiente de nuvem.
-            </li>
+            <li>Infraestrutura como C&oacute;digo (IaaC)</li>
+            <li>Fornece uma linguagem comum para descrever e provisionar todos os recursos de infraestrutura em seu
+              ambiente de nuvem.</li>
             <li>Permite o uso de um arquivo de texto simples para modelar e provisionar, de maneira automatizada e
               segura, todos os recursos necess&aacute;rios para suas aplica&ccedil;&otilde;es em todas as regi&otilde;es
               e contas.</li>
-            <li>Este arquivo serve como a &uacute;nica fonte de verdade para seu ambiente na nuvem.</li>
-            <li>Pode-se usar JSON ou YAML para descrever os recursos da AWS desejados.</li>
+            <li>Utiliza um &uacute;nico arquivo em JSON ou YAML, para descrever o seu ambiente e&nbsp;recursos da AWS, e
+              subir sua infraestrutura como c&oacute;digo.</li>
+            <li>A vantagem &eacute; conseguir replicar a sua infraestrutura rapidamente em qualquer conta, usando apenas
+              o c&oacute;digo descrito no documento.</li>
           </ul>
+
+          <p>Entenda em tr&ecirc;s etapas:</p>
+
+          <img src="imagens/aws-cloud-formation-stack.png" alt="AWS CloudFormation" width="60%" class="centralizado" border="1">
+
+          <ol>
+            <li>Criar um arquivo JSON ou YAML com a infraestrutura desejada, <strong>ou</strong> utilize&nbsp;um
+              <em>template</em> dispon&iacute;vel pela AWS.</li>
+            <li>Salve o arquivo em seu computador <strong>ou</strong> em um bucket S3.</li>
+            <li>Use o CloudFormation para criar um stack (pilha) de recursos, baseado no seu c&oacute;digo.</li>
+          </ol>
+
 
 
         </div>
