@@ -41,6 +41,12 @@
       cursor: pointer;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
+
+    .centralizado {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -109,542 +115,626 @@
       <div class="uk-container uk-position-relative">
         <h2 class="uk-h1 uk-text-center">Preço e Faturamento</h2>
 
-<div>
+        <div>
 
-  <p>A AWS possui tr&ecirc;s tipos de ofertas:</p>
+          <p>A AWS possui tr&ecirc;s tipos de ofertas:</p>
 
-  <ol>
-    <li>
-    <p><strong>Avalia&ccedil;&otilde;es Gratuitas (Free Trials):</strong></p>
-  
-    <ul>
-      <li>As avalia&ccedil;&otilde;es gratuitas da AWS s&atilde;o oferecidas para v&aacute;rios servi&ccedil;os e permitem que os usu&aacute;rios testem e experimentem os recursos da AWS sem custos iniciais.</li>
-      <li>Essas avalia&ccedil;&otilde;es geralmente incluem uma quantidade limitada de uso gratuito durante um per&iacute;odo espec&iacute;fico.</li>
-    </ul>
-    </li>
-    <li>
-    <p><strong>12 Meses Gratuitos (AWS Free Tier for 12 Months):</strong></p>
-  
-    <ul>
-      <li>O AWS Free Tier permite que os usu&aacute;rios tenham acesso gratuito a uma variedade de servi&ccedil;os AWS por um per&iacute;odo de 12 meses ap&oacute;s a inscri&ccedil;&atilde;o.</li>
-      <li>Inclui um conjunto espec&iacute;fico de servi&ccedil;os que podem ser usados dentro dos limites definidos sem custos durante esse per&iacute;odo.</li>
-    </ul>
-    </li>
-    <li>
-    <p><strong>Sempre Gratuito (AWS Always Free):</strong></p>
-  
-    <ul>
-      <li>O conceito de &quot;Sempre Gratuito&quot; refere-se a uma camada permanente de uso gratuito para alguns servi&ccedil;os espec&iacute;ficos que est&atilde;o sempre dispon&iacute;veis, independentemente do per&iacute;odo de avalia&ccedil;&atilde;o ou da oferta de 12 meses.</li>
-      <li>Esses servi&ccedil;os incluem uma quantidade limitada de recursos gratuitos que podem ser usados continuamente sem incorrer em custos.</li>
-    </ul>
-    </li>
-  </ol>
-  
-  <hr />
-  <p><strong>Modelo de Opera&ccedil;&atilde;o na AWS</strong></p>
-  
-  <p>A AWS opera em um modelo de pagamento conforme o uso, no qual voc&ecirc; paga apenas pelo que utiliza quando est&aacute; usando.</p>
-  
-  <p>Se voc&ecirc; desativar recursos, n&atilde;o paga por eles (podendo pagar pelo armazenamento consumido).</p>
-  
-  <p>N&atilde;o h&aacute; custos iniciais, e voc&ecirc; para de pagar por um servi&ccedil;o quando deixa de us&aacute;-lo.</p>
-  
-  <p>Exceto pelas inst&acirc;ncias reservadas do EC2, voc&ecirc; n&atilde;o est&aacute; vinculado a contratos de longo prazo e pode encerrar quando desejar.</p>
-  
-  <p>Descontos por volume est&atilde;o dispon&iacute;veis, quanto mais voc&ecirc; usa um servi&ccedil;o, mais barato ele fica (por unidade utilizada).</p>
-  
-  <p>N&atilde;o h&aacute; taxas de rescis&atilde;o.</p>
-  
-  <p>Os tr&ecirc;s principais impulsionadores de custo na AWS s&atilde;o: computa&ccedil;&atilde;o, armazenamento e transfer&ecirc;ncia de dados de sa&iacute;da.</p>
-  
-  <p>Na maioria dos casos, n&atilde;o h&aacute; cobran&ccedil;a pela transfer&ecirc;ncia de dados de entrada ou pela transfer&ecirc;ncia de dados entre outros servi&ccedil;os da AWS na mesma regi&atilde;o (com algumas exce&ccedil;&otilde;es).</p>
-  
-  <p>A transfer&ecirc;ncia de dados de sa&iacute;da &eacute; agregada entre os servi&ccedil;os e, em seguida, cobrada &agrave; taxa de transfer&ecirc;ncia de dados de sa&iacute;da.</p>
-  
-  <p>A camada gratuita permite que voc&ecirc; execute determinados recursos gratuitamente.</p>
-  
-  <p>A camada gratuita inclui ofertas que expiram ap&oacute;s 12 meses e ofertas que nunca expiram.</p>
-  
-  <p>As pol&iacute;ticas de pre&ccedil;os incluem:</p>
-  
-  <ul>
-    <li>Pague conforme o uso.</li>
-    <li>Pague menos quando reservar.</li>
-    <li>Pague ainda menos por unidade ao usar mais.</li>
-    <li>Pague ainda menos &agrave; medida que a AWS cresce.</li>
-    <li>Pre&ccedil;os personalizados (somente para clientes empresariais).</li>
-  </ul>
-  
-  <p>Os servi&ccedil;os gratuitos incluem:</p>
-  
-  <ul>
-    <li>Amazon VPC.</li>
-    <li>Elastic Beanstalk (mas n&atilde;o os recursos criados).</li>
-    <li>CloudFormation (mas n&atilde;o os recursos criados).</li>
-    <li>Identity Access Management (IAM).</li>
-    <li>Auto Scaling (mas n&atilde;o os recursos criados).</li>
-    <li>OpsWorks.</li>
-    <li>Faturamento consolidado.</li>
-  </ul>
-  
-  <p>Basicamente, as cobran&ccedil;as incluem:</p>
-  
-  <ul>
-    <li>Computa&ccedil;&atilde;o.</li>
-    <li>Armazenamento.</li>
-    <li>Transfer&ecirc;ncia de dados.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Pre&ccedil;os do Amazon EC2</strong></p>
-  
-  <p>O pre&ccedil;o do EC2 &eacute; baseado em:</p>
-  
-  <ul>
-    <li>Horas de atividade do servidor.</li>
-    <li>Configura&ccedil;&atilde;o da inst&acirc;ncia.</li>
-    <li>Tipo de inst&acirc;ncia.</li>
-    <li>N&uacute;mero de inst&acirc;ncias.</li>
-    <li>Balanceamento de carga.</li>
-    <li>Monitoramento detalhado.</li>
-    <li>Auto Scaling (recursos criados).</li>
-    <li>Endere&ccedil;os IP el&aacute;sticos (cobrados se alocados, mas n&atilde;o utilizados).</li>
-    <li>Sistemas operacionais e pacotes de software.</li>
-  </ul>
-  
-  <p>Existem v&aacute;rios modelos de pre&ccedil;os para os servi&ccedil;os da AWS, incluindo:</p>
-  
-  <p><strong>Sob Demanda:</strong></p>
-  
-  <ul>
-    <li>Significa que voc&ecirc; paga pela capacidade de computa&ccedil;&atilde;o ou de banco de dados sem compromissos de longo prazo ou pagamentos iniciais.</li>
-    <li>Voc&ecirc; paga pela capacidade de computa&ccedil;&atilde;o por hora ou por segundo (apenas Linux e se aplica a inst&acirc;ncias On-Demand, Reserved e Spot).</li>
-    <li>Recomendado para usu&aacute;rios que preferem baixo custo e flexibilidade sem pagamento antecipado ou compromissos de longo prazo.</li>
-    <li>Bom para aplicativos com cargas de trabalho de curto prazo, pontuais ou imprevis&iacute;veis que n&atilde;o podem ser interrompidas.</li>
-  </ul>
-  
-  <p><strong>Hospedagem Dedicada:</strong></p>
-  
-  <ul>
-    <li>Um host dedicado &eacute; um servidor EC2 dedicado a um &uacute;nico cliente.</li>
-    <li>Executa-se em sua VPC.</li>
-    <li>Bom quando voc&ecirc; deseja aproveitar as licen&ccedil;as de software vinculadas ao servidor existentes, como o Windows Server, SQL Server e o SUSE Linux Enterprise Server.</li>
-    <li>Tamb&eacute;m &eacute; bom para atender aos requisitos de conformidade.</li>
-  </ul>
-  
-  <p><strong>Inst&acirc;ncias Dedicadas:</strong></p>
-  
-  <ul>
-    <li>S&atilde;o inst&acirc;ncias Amazon EC2 que s&atilde;o executadas em uma VPC em hardware dedicado a um &uacute;nico cliente.</li>
-    <li>As inst&acirc;ncias dedicadas s&atilde;o fisicamente isoladas no n&iacute;vel do hardware do host de inst&acirc;ncias que pertencem a outras contas da AWS.</li>
-    <li>As inst&acirc;ncias dedicadas podem compartilhar hardware com outras inst&acirc;ncias da mesma conta da AWS que n&atilde;o s&atilde;o inst&acirc;ncias dedicadas.</li>
-  </ul>
-  
-  <p><strong>Inst&acirc;ncias Spot:</strong></p>
-  
-  <ul>
-    <li>Compra de capacidade de computa&ccedil;&atilde;o ociosa sem compromisso antecipado a taxas hor&aacute;rias com desconto.</li>
-    <li>Oferece at&eacute; 90% de desconto em rela&ccedil;&atilde;o ao pre&ccedil;o On-Demand.</li>
-    <li>Recomendado para aplicativos com hor&aacute;rios flex&iacute;veis de in&iacute;cio e t&eacute;rmino, aplicativos que s&oacute; s&atilde;o vi&aacute;veis a pre&ccedil;os muito baixos de computa&ccedil;&atilde;o e usu&aacute;rios com necessidades urgentes de muita capacidade adicional.</li>
-    <li>No antigo modelo, as inst&acirc;ncias Spot eram encerradas devido a lances concorrentes mais altos; no novo modelo, isso n&atilde;o acontece, mas as inst&acirc;ncias ainda podem ser encerradas (com aviso de 2 minutos) quando o EC2 precisa da capacidade de volta. - Observa&ccedil;&atilde;o: o exame pode n&atilde;o estar atualizado para refletir isso ainda.</li>
-  </ul>
-  
-  <p><strong>Savings Plans:</strong></p>
-  
-  <ul>
-    <li>Compromisso com uma quantidade consistente de uso (EC2 + Fargate + Lambda).</li>
-    <li>Pagamento por hora.</li>
-    <li>Compromisso de 1 ou 3 anos.</li>
-  </ul>
-  
-  <p><strong>Reservas:</strong></p>
-  
-  <ul>
-    <li>As inst&acirc;ncias reservadas oferecem descontos significativos, at&eacute; 75% em compara&ccedil;&atilde;o com os pre&ccedil;os sob demanda, ao pagar pela capacidade antecipadamente.</li>
-    <li>Fornecem uma reserva de capacidade quando aplicadas a uma Zona de Disponibilidade espec&iacute;fica.</li>
-    <li>Bom para aplicativos com uso previs&iacute;vel, que precisam de capacidade reservada, e para clientes que podem se comprometer por 1 ou 3 anos.</li>
-    <li>Aplicam-se a v&aacute;rios servi&ccedil;os, incluindo:
-    <ul>
-      <li>Amazon EC2 Reserved Instances.</li>
-      <li>Amazon DynamoDB Reserved Capacity.</li>
-      <li>Amazon ElastiCache Reserved Nodes.</li>
-      <li>Amazon RDS Reserved Instances.</li>
-      <li>Amazon RedShift Reserved Instances.</li>
-    </ul>
-    </li>
-    <li>Op&ccedil;&otilde;es de reserva incluem sem pagamento antecipado, pagamento parcial antecipado e pagamento total antecipado.</li>
-    <li>Termos de reserva s&atilde;o de 1 ou 3 anos.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Pre&ccedil;os do Amazon Simple Storage Service (S3):</strong></p>
-  
-  <ul>
-    <li>O pre&ccedil;o do armazenamento &eacute; determinado por:
-    <ul>
-      <li>Classe de armazenamento, por exemplo, Padr&atilde;o ou IA.</li>
-      <li>Quantidade de armazenamento, ou seja, volume de dados armazenados em seus buckets com base em GB.</li>
-      <li>N&uacute;mero de solicita&ccedil;&otilde;es, tipo de solicita&ccedil;&otilde;es, como GET, PUT, POST, LIST, COPY.</li>
-      <li>Solicita&ccedil;&otilde;es de transi&ccedil;&atilde;o de ciclo de vida, movimenta&ccedil;&atilde;o de dados entre classes de armazenamento.</li>
-      <li>Transfer&ecirc;ncia de dados, cobrada para dados transferidos para fora de uma regi&atilde;o S3.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon Glacier:</strong></p>
-  
-  <ul>
-    <li>Custos extremamente baixos, paga apenas pelo que precisa, sem compromissos ou taxas antecipadas.</li>
-    <li>Cobrado por solicita&ccedil;&otilde;es e transfer&ecirc;ncia de dados para fora do Glacier.</li>
-    <li>O &quot;Amazon Glacier Select&quot; permite consultas diretamente nos dados armazenados no Glacier sem recuperar o arquivo. O pre&ccedil;o &eacute; baseado na quantidade de dados analisados, retornados e no n&uacute;mero de solicita&ccedil;&otilde;es iniciadas.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Snowball:</strong></p>
-  
-  <ul>
-    <li>Pague uma taxa de servi&ccedil;o por trabalho de transfer&ecirc;ncia de dados e o custo de envio do dispositivo.</li>
-    <li>Cada trabalho permite o uso gratuito do dispositivo Snowball por 10 dias no local.</li>
-    <li>A transfer&ecirc;ncia de dados para a AWS &eacute; gratuita, e a sa&iacute;da &eacute; cobrada (pre&ccedil;o por regi&atilde;o).</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon Relational Database Service (RDS):</strong></p>
-  
-  <ul>
-    <li>O pre&ccedil;o do RDS &eacute; determinado por:
-    <ul>
-      <li>Horas de atividade do servidor, tempo em que a inst&acirc;ncia do banco de dados est&aacute; em execu&ccedil;&atilde;o.</li>
-      <li>Caracter&iacute;sticas do banco de dados, por exemplo, mecanismo do banco de dados, tamanho e classe de mem&oacute;ria.</li>
-      <li>Tipo de compra do banco de dados, por exemplo, Sob Demanda, Reservado.</li>
-      <li>N&uacute;mero de inst&acirc;ncias do banco de dados.</li>
-      <li>Armazenamento provisionado, o backup est&aacute; inclu&iacute;do at&eacute; 100% do tamanho do banco de dados. Ap&oacute;s o t&eacute;rmino do banco de dados, o armazenamento de backup &eacute; cobrado por GB por m&ecirc;s.</li>
-      <li>Armazenamento adicional, a quantidade de armazenamento al&eacute;m do armazenamento provisionado &eacute; cobrada por GB por m&ecirc;s.</li>
-      <li>Solicita&ccedil;&otilde;es, o n&uacute;mero de solicita&ccedil;&otilde;es de entrada e sa&iacute;da para o banco de dados.</li>
-      <li>Tipo de implanta&ccedil;&atilde;o, &uacute;nico AZ ou m&uacute;ltiplo AZ.</li>
-      <li>Transfer&ecirc;ncia de dados, entrada &eacute; gratuita, as cobran&ccedil;as de sa&iacute;da de dados s&atilde;o escalonadas.</li>
-      <li>Inst&acirc;ncias Reservadas, podem ser adquiridas com termos Sem Pagamento Antecipado, Pagamento Parcial Antecipado ou Pagamento Total Antecipado. Dispon&iacute;vel para Aurora, MySQL, MariaDB, Oracle e SQL Server.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon CloudFront:</strong></p>
-  
-  <ul>
-    <li>O pre&ccedil;o do CloudFront &eacute; determinado por:
-    <ul>
-      <li>Distribui&ccedil;&atilde;o de tr&aacute;fego, pre&ccedil;o de transfer&ecirc;ncia de dados e solicita&ccedil;&otilde;es, varia entre regi&otilde;es e &eacute; baseado na localiza&ccedil;&atilde;o de borda de onde o conte&uacute;do &eacute; servido.</li>
-      <li>Solicita&ccedil;&otilde;es, n&uacute;mero e tipo de solicita&ccedil;&otilde;es (HTTP ou HTTPS) e regi&atilde;o geogr&aacute;fica em que s&atilde;o feitas.</li>
-      <li>Transfer&ecirc;ncia de dados para fora, quantidade de dados transferidos das localiza&ccedil;&otilde;es de borda do CloudFront.</li>
-      <li>Existem itens adicionais sujeitos a tarifas, como solicita&ccedil;&otilde;es de invalida&ccedil;&atilde;o, solicita&ccedil;&otilde;es de criptografia em n&iacute;vel de campo e certificados SSL personalizados.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Lambda:</strong></p>
-  
-  <ul>
-    <li>Pague apenas pelo que usa e cobrado com base no <strong>n&uacute;mero de solicita&ccedil;&otilde;es </strong>para fun&ccedil;&otilde;es <strong>e</strong> no <strong>tempo que leva para executar o c&oacute;digo</strong>.</li>
-    <li>O pre&ccedil;o depende da <strong>quantidade de mem&oacute;ria alocada</strong> para a fun&ccedil;&atilde;o.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon Elastic Block Store (EBS):</strong></p>
-  
-  <ul>
-    <li>O pre&ccedil;o &eacute; baseado em tr&ecirc;s fatores:
-    <ul>
-      <li>Volumes, armazenamento de volume para todos os tipos de volumes EBS &eacute; cobrado pela quantidade de GB provisionados por m&ecirc;s.</li>
-      <li>Snapshots, com base na quantidade de espa&ccedil;o consumido por snapshots no S3. A c&oacute;pia de snapshots &eacute; cobrada pela quantidade de dados copiados entre regi&otilde;es.</li>
-      <li>Transfer&ecirc;ncia de dados, a transfer&ecirc;ncia de dados de entrada &eacute; gratuita, as cobran&ccedil;as de transfer&ecirc;ncia de dados de sa&iacute;da s&atilde;o escalonadas.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Amazon DynamoDB:</strong></p>
-  
-  <ul>
-    <li>Cobrado com base em:
-    <ul>
-      <li>Throughput provisionado (grava&ccedil;&atilde;o).</li>
-      <li>Throughput provisionado (leitura).</li>
-      <li>Armazenamento de dados indexados.</li>
-      <li>Transfer&ecirc;ncia de dados, sem cobran&ccedil;a para transfer&ecirc;ncia de dados entre o DynamoDB e outros servi&ccedil;os da AWS dentro da mesma regi&atilde;o; a transfer&ecirc;ncia entre regi&otilde;es &eacute; cobrada nos dois lados da transfer&ecirc;ncia.</li>
-      <li>Tabelas globais, cobradas com base nos recursos associados a cada r&eacute;plica da tabela (unidades de capacidade de grava&ccedil;&atilde;o replicadas, ou rWCUs).</li>
-      <li>Capacidade Reservada, op&ccedil;&atilde;o dispon&iacute;vel por uma taxa &uacute;nica antecipada e compromisso de pagar um n&iacute;vel m&iacute;nimo de uso a taxas hor&aacute;rias espec&iacute;ficas pelo tempo do termo. A capacidade adicional &eacute; cobrada nas taxas padr&atilde;o.</li>
-      <li>Modo de capacidade sob demanda, cobrado por leituras e grava&ccedil;&otilde;es. N&atilde;o &eacute; necess&aacute;rio especificar quanto &eacute; necess&aacute;rio.</li>
-      <li>Modo de capacidade provisionada, especifica o n&uacute;mero de leituras e grava&ccedil;&otilde;es por segundo. Pode usar o Auto Scaling. Bom para cargas de trabalho previs&iacute;veis.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>Planos de Suporte AWS:</strong></p>
-  
-  <p>Existem cinco planos de suporte AWS dispon&iacute;veis:</p>
-  
-  <table align="center" border="1" style="width:100%">
-    <thead>
-      <tr>
-        <th><strong>Caracter&iacute;stica / Plano de Suporte</strong></th>
-        <th><strong>B&aacute;sico (Basic)</strong></th>
-        <th><strong>Developer</strong></th>
-        <th><strong>Business</strong></th>
-        <th><strong>Enterprise On-ramp</strong></th>
-        <th><strong>Enterprise</strong></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align:center"><strong>Custo Mensal (Percentagem da Fatura)</strong></td>
-        <td style="text-align:center">Gratuito</td>
-        <td style="text-align:center">Come&ccedil;a em 29 d&oacute;lares ou 3% da fatura</td>
-        <td style="text-align:center">Come&ccedil;a em 100 d&oacute;lares ou 10% da fatura</td>
-        <td style="text-align:center">Contato a AWS para pre&ccedil;os personalizados</td>
-        <td style="text-align:center">Contato a AWS para pre&ccedil;os personalizados</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Acesso ao Console de Suporte 24x7</strong></td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Suporte por E-mail durante o Expediente Comercial</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Suporte por Chat durante o Expediente Comercial</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Suporte T&eacute;cnico para Incidentes de Sistema e Operacionais</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Resposta a Incidentes Cr&iacute;ticos (Tempo de Resposta)</strong></td>
-        <td style="text-align:center">N&atilde;o especificado</td>
-        <td style="text-align:center">N&atilde;o especificado</td>
-        <td style="text-align:center">1 hora</td>
-        <td style="text-align:center">15 minutos</td>
-        <td style="text-align:center">15 minutos</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Arquivamento de Casos de Suporte</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Acesso &agrave; Base de Conhecimento</strong></td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>AWS Trusted Advisor (Check de Seguran&ccedil;a &ndash; Semanal)</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>AWS Personal Health Dashboard</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Relat&oacute;rio Mensal de Uso</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Acesso ao AWS Support API</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>AWS Support Concierge e Gerente de Conta T&eacute;cnica (TAM)</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Sess&otilde;es de Treinamento</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><strong>Revis&otilde;es Mensais de Desempenho Operacional (OPR)</strong></td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">❌</td>
-        <td style="text-align:center">✅</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <p>&nbsp;</p>
-  
-  <hr />
-  <p><strong>Grupos de Recursos e Tags:</strong></p>
-  
-  <ul>
-    <li>As tags s&atilde;o pares de chave/valor que podem ser anexados aos recursos da AWS.</li>
-    <li>Cont&ecirc;m metadados (dados sobre dados).</li>
-    <li>&Agrave;s vezes, as tags podem ser herdadas, por exemplo, recursos criados pelo Auto Scaling, CloudFormation ou Elastic Beanstalk.</li>
-    <li>Os grupos de recursos facilitam a agrupa&ccedil;&atilde;o de recursos usando as tags atribu&iacute;das a eles. &Eacute; poss&iacute;vel agrupar recursos que compartilham uma ou mais tags.</li>
-    <li>Os grupos de recursos cont&ecirc;m informa&ccedil;&otilde;es gerais, como:
-    <ul>
-      <li>Regi&atilde;o.</li>
-      <li>Nome.</li>
-      <li>Verifica&ccedil;&otilde;es de sa&uacute;de.</li>
-    </ul>
-    </li>
-    <li>E informa&ccedil;&otilde;es espec&iacute;ficas, como:
-    <ul>
-      <li>Endere&ccedil;os IP p&uacute;blicos e privados (para EC2).</li>
-      <li>Configura&ccedil;&otilde;es de porta (para ELB).</li>
-      <li>Motor do banco de dados (para RDS).</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Organiza&ccedil;&otilde;es e Faturamento Consolidado:</strong></p>
-  
-  <ul>
-    <li>A AWS Organiza&ccedil;&otilde;es permite consolidar v&aacute;rias contas AWS em uma organiza&ccedil;&atilde;o que voc&ecirc; cria e gerencia centralmente.</li>
-    <li>Dispon&iacute;vel em dois conjuntos de recursos:
-    <ul>
-      <li>Faturamento consolidado.</li>
-      <li>Todos os recursos.</li>
-      <li>Inclui contas raiz e unidades organizacionais (OUs).</li>
-    </ul>
-    </li>
-    <li>As pol&iacute;ticas s&atilde;o aplicadas a contas raiz ou OUs.</li>
-    <li>O faturamento consolidado inclui:
-    <ul>
-      <li>Conta pagante &ndash; independente e n&atilde;o pode acessar recursos de outras contas.</li>
-      <li>Contas vinculadas &ndash; todas as contas vinculadas s&atilde;o independentes.</li>
-    </ul>
-    </li>
-    <li>Benef&iacute;cios do faturamento consolidado:
-    <ul>
-      <li>Uma fatura &ndash; voc&ecirc; recebe uma fatura para v&aacute;rias contas.</li>
-      <li>Rastreamento f&aacute;cil &ndash; &eacute; poss&iacute;vel rastrear as cobran&ccedil;as em v&aacute;rias contas e baixar os dados de custo e uso combinados.</li>
-      <li>Uso combinado &ndash; &eacute; poss&iacute;vel combinar o uso em todas as contas da organiza&ccedil;&atilde;o para compartilhar os descontos de pre&ccedil;o de volume e os descontos de Inst&acirc;ncia Reservada. Isso pode resultar em uma cobran&ccedil;a menor para seu projeto, departamento ou empresa do que com contas aut&ocirc;nomas individuais.</li>
-      <li>Sem taxa extra &ndash; o faturamento consolidado &eacute; oferecido sem custo adicional.</li>
-    </ul>
-    </li>
-    <li>Limite de 20 contas vinculadas (por padr&atilde;o).</li>
-    <li>Melhores pr&aacute;ticas:
-    <ul>
-      <li>Sempre ative a autentica&ccedil;&atilde;o multifator (MFA) na conta raiz.</li>
-      <li>Sempre use uma senha forte e complexa na conta raiz.</li>
-      <li>A conta pagante deve ser usada apenas para fins de faturamento. N&atilde;o implante recursos na conta pagante.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Quick Starts:</strong></p>
-  
-  <ul>
-    <li>Criados por arquitetos e parceiros da AWS para ajudar a implantar solu&ccedil;&otilde;es populares na AWS, com base nas melhores pr&aacute;ticas de seguran&ccedil;a e alta disponibilidade da AWS.</li>
-    <li>Implementam automaticamente tecnologias-chave na Nuvem AWS, muitas vezes com um &uacute;nico clique e em menos de uma hora.</li>
-    <li>Alavanca o CloudFormation.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>Calculadoras e Ferramentas de Custos da AWS:</strong></p>
-  
-  <ul>
-    <li><strong>AWS Cost Explorer:</strong>
-  
-    <ul>
-      <li>Permite visualizar padr&otilde;es de uso ao longo do tempo e identificar os principais fatores de custo.</li>
-      <li>Pode ser usado para descobrir padr&otilde;es de gastos em recursos da AWS ao longo do tempo.</li>
-    </ul>
-    </li>
-    <li><strong>AWS Pricing Calculator:</strong>
-    <ul>
-      <li>Servi&ccedil;o baseado na web para criar estimativas de custos para casos de uso da AWS.</li>
-      <li>&Uacute;til tanto para pessoas que nunca usaram a AWS quanto para aquelas que desejam reorganizar ou expandir seu uso.</li>
-    </ul>
-    </li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Cost &amp; Usage Report:</strong></p>
-  
-  <ul>
-    <li>Publica relat&oacute;rios de faturamento da AWS em um bucket do Amazon S3.</li>
-    <li>Os relat&oacute;rios detalham os custos por hora, dia, m&ecirc;s, produto, recurso do produto e tags.</li>
-    <li>Pode atualizar o relat&oacute;rio at&eacute; tr&ecirc;s vezes ao dia.</li>
-    <li>Cria, recupera e exclui relat&oacute;rios usando a Refer&ecirc;ncia da API AWS CUR.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Price List API:</strong></p>
-  
-  <ul>
-    <li>Consulta os pre&ccedil;os dos servi&ccedil;os AWS.</li>
-    <li>AWS Price List Service API (tamb&eacute;m conhecida como Query API) &ndash; consulta com JSON.</li>
-    <li>AWS Price List API (tamb&eacute;m conhecida como Bulk API) &ndash; consulta com HTML.</li>
-    <li>Alertas via Amazon SNS quando os pre&ccedil;os mudam.</li>
-  </ul>
-  
-  <hr />
-  <p><strong>AWS Budgets:</strong></p>
-  
-  <ul>
-    <li>Usado para rastrear custos, uso, cobertura e utiliza&ccedil;&atilde;o de suas Inst&acirc;ncias Reservadas e Savings Plans, em v&aacute;rias dimens&otilde;es, como servi&ccedil;o ou Categorias de Custo.</li>
-    <li>Alertas atrav&eacute;s de notifica&ccedil;&otilde;es de alerta baseadas em eventos quando o custo ou uso real ou previsto ultrapassa o limite do or&ccedil;amento, ou quando a cobertura ou utiliza&ccedil;&atilde;o de seus Inst&acirc;ncias Reservadas e Savings Plans cai abaixo do seu limiar.</li>
-    <li>Cria&ccedil;&atilde;o de or&ccedil;amentos anuais, trimestrais, mensais ou di&aacute;rios, dependendo das necessidades comerciais.</li>
-    <li>Os planos empresarial e empresarial permitem que contatos ilimitados abram casos ilimitados.</li>
-  </ul>
-  
+          <img src="imagens/aws-free-tier.jpg" alt="AWS Free Tier" width="60%" class="centralizado" border="1">
 
-</div>
+          <ol>
+            <li>
+              <p><strong>Avalia&ccedil;&otilde;es Gratuitas (Free Trials):</strong></p>
+
+              <ul>
+                <li>As avalia&ccedil;&otilde;es gratuitas da AWS s&atilde;o oferecidas para v&aacute;rios
+                  servi&ccedil;os e permitem que os usu&aacute;rios testem e experimentem os recursos da AWS sem custos
+                  iniciais.</li>
+                <li>Essas avalia&ccedil;&otilde;es geralmente incluem uma quantidade limitada de uso gratuito durante um
+                  per&iacute;odo espec&iacute;fico.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>12 Meses Gratuitos (AWS Free Tier for 12 Months):</strong></p>
+
+              <ul>
+                <li>O AWS Free Tier permite que os usu&aacute;rios tenham acesso gratuito a uma variedade de
+                  servi&ccedil;os AWS por um per&iacute;odo de 12 meses ap&oacute;s a inscri&ccedil;&atilde;o.</li>
+                <li>Inclui um conjunto espec&iacute;fico de servi&ccedil;os que podem ser usados dentro dos limites
+                  definidos sem custos durante esse per&iacute;odo.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Sempre Gratuito (AWS Always Free):</strong></p>
+
+              <ul>
+                <li>O conceito de &quot;Sempre Gratuito&quot; refere-se a uma camada permanente de uso gratuito para
+                  alguns servi&ccedil;os espec&iacute;ficos que est&atilde;o sempre dispon&iacute;veis,
+                  independentemente do per&iacute;odo de avalia&ccedil;&atilde;o ou da oferta de 12 meses.</li>
+                <li>Esses servi&ccedil;os incluem uma quantidade limitada de recursos gratuitos que podem ser usados
+                  continuamente sem incorrer em custos.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2>Modelo de Opera&ccedil;&atilde;o na AWS</h2>
+
+          <p>A AWS opera em um modelo de pagamento conforme o uso, no qual voc&ecirc; paga apenas pelo que utiliza
+            quando est&aacute; usando.</p>
+
+          <p>Se voc&ecirc; desativar recursos, n&atilde;o paga por eles (podendo pagar pelo armazenamento consumido).
+          </p>
+
+          <p>N&atilde;o h&aacute; custos iniciais, e voc&ecirc; para de pagar por um servi&ccedil;o quando deixa de
+            us&aacute;-lo.</p>
+
+          <p>Exceto pelas inst&acirc;ncias reservadas do EC2, voc&ecirc; n&atilde;o est&aacute; vinculado a contratos de
+            longo prazo e pode encerrar quando desejar.</p>
+
+          <p>Descontos por volume est&atilde;o dispon&iacute;veis, quanto mais voc&ecirc; usa um servi&ccedil;o, mais
+            barato ele fica (por unidade utilizada).</p>
+
+          <p>N&atilde;o h&aacute; taxas de rescis&atilde;o.</p>
+
+          <p>Os tr&ecirc;s principais impulsionadores de custo na AWS s&atilde;o: computa&ccedil;&atilde;o,
+            armazenamento e transfer&ecirc;ncia de dados de sa&iacute;da.</p>
+
+          <p>Na maioria dos casos, n&atilde;o h&aacute; cobran&ccedil;a pela transfer&ecirc;ncia de dados de entrada ou
+            pela transfer&ecirc;ncia de dados entre outros servi&ccedil;os da AWS na mesma regi&atilde;o (com algumas
+            exce&ccedil;&otilde;es).</p>
+
+          <p>A transfer&ecirc;ncia de dados de sa&iacute;da &eacute; agregada entre os servi&ccedil;os e, em seguida,
+            cobrada &agrave; taxa de transfer&ecirc;ncia de dados de sa&iacute;da.</p>
+
+          <p>A camada gratuita permite que voc&ecirc; execute determinados recursos gratuitamente.</p>
+
+          <p>A camada gratuita inclui ofertas que expiram ap&oacute;s 12 meses e ofertas que nunca expiram.</p>
+
+          <p>As pol&iacute;ticas de pre&ccedil;os incluem:</p>
+
+          <ul>
+            <li>Pague conforme o uso.</li>
+            <li>Pague menos quando reservar.</li>
+            <li>Pague ainda menos por unidade ao usar mais.</li>
+            <li>Pague ainda menos &agrave; medida que a AWS cresce.</li>
+            <li>Pre&ccedil;os personalizados (somente para clientes empresariais).</li>
+          </ul>
+
+          <p>Os servi&ccedil;os gratuitos incluem:</p>
+
+          <ul>
+            <li>Amazon VPC.</li>
+            <li>Elastic Beanstalk (mas n&atilde;o os recursos criados).</li>
+            <li>CloudFormation (mas n&atilde;o os recursos criados).</li>
+            <li>Identity Access Management (IAM).</li>
+            <li>Auto Scaling (mas n&atilde;o os recursos criados).</li>
+            <li>OpsWorks.</li>
+            <li>Faturamento consolidado.</li>
+          </ul>
+
+          <p>Basicamente, as cobran&ccedil;as incluem:</p>
+
+          <ul>
+            <li>Computa&ccedil;&atilde;o.</li>
+            <li>Armazenamento.</li>
+            <li>Transfer&ecirc;ncia de dados.</li>
+          </ul>
+
+          <h2>Pre&ccedil;os do Amazon EC2</h2>
+
+          <p>O pre&ccedil;o do EC2 &eacute; baseado em:</p>
+
+          <ul>
+            <li>Horas de atividade do servidor.</li>
+            <li>Configura&ccedil;&atilde;o da inst&acirc;ncia.</li>
+            <li>Tipo de inst&acirc;ncia.</li>
+            <li>N&uacute;mero de inst&acirc;ncias.</li>
+            <li>Balanceamento de carga.</li>
+            <li>Monitoramento detalhado.</li>
+            <li>Auto Scaling (recursos criados).</li>
+            <li>Endere&ccedil;os IP el&aacute;sticos (cobrados se alocados, mas n&atilde;o utilizados).</li>
+            <li>Sistemas operacionais e pacotes de software.</li>
+          </ul>
+
+          <p>Existem v&aacute;rios modelos de pre&ccedil;os para os servi&ccedil;os da AWS, incluindo:</p>
+
+          <h3>Sob Demanda:</h3>
+
+          <ul>
+            <li>Significa que voc&ecirc; paga pela capacidade de computa&ccedil;&atilde;o ou de banco de dados sem
+              compromissos de longo prazo ou pagamentos iniciais.</li>
+            <li>Voc&ecirc; paga pela capacidade de computa&ccedil;&atilde;o por hora ou por segundo (apenas Linux e se
+              aplica a inst&acirc;ncias On-Demand, Reserved e Spot).</li>
+            <li>Recomendado para usu&aacute;rios que preferem baixo custo e flexibilidade sem pagamento antecipado ou
+              compromissos de longo prazo.</li>
+            <li>Bom para aplicativos com cargas de trabalho de curto prazo, pontuais ou imprevis&iacute;veis que
+              n&atilde;o podem ser interrompidas.</li>
+          </ul>
+
+          <h3>Hospedagem Dedicada:</h3>
+
+          <ul>
+            <li>Um host dedicado &eacute; um servidor EC2 dedicado a um &uacute;nico cliente.</li>
+            <li>Executa-se em sua VPC.</li>
+            <li>Bom quando voc&ecirc; deseja aproveitar as licen&ccedil;as de software vinculadas ao servidor
+              existentes, como o Windows Server, SQL Server e o SUSE Linux Enterprise Server.</li>
+            <li>Tamb&eacute;m &eacute; bom para atender aos requisitos de conformidade.</li>
+          </ul>
+
+          <h3>Inst&acirc;ncias Dedicadas:</h3>
+
+          <ul>
+            <li>S&atilde;o inst&acirc;ncias Amazon EC2 que s&atilde;o executadas em uma VPC em hardware dedicado a um
+              &uacute;nico cliente.</li>
+            <li>As inst&acirc;ncias dedicadas s&atilde;o fisicamente isoladas no n&iacute;vel do hardware do host de
+              inst&acirc;ncias que pertencem a outras contas da AWS.</li>
+            <li>As inst&acirc;ncias dedicadas podem compartilhar hardware com outras inst&acirc;ncias da mesma conta da
+              AWS que n&atilde;o s&atilde;o inst&acirc;ncias dedicadas.</li>
+          </ul>
+
+          <h3>Inst&acirc;ncias Spot:</h3>
+
+          <ul>
+            <li>Compra de capacidade de computa&ccedil;&atilde;o ociosa sem compromisso antecipado a taxas
+              hor&aacute;rias com desconto.</li>
+            <li>Oferece at&eacute; 90% de desconto em rela&ccedil;&atilde;o ao pre&ccedil;o On-Demand.</li>
+            <li>Recomendado para aplicativos com hor&aacute;rios flex&iacute;veis de in&iacute;cio e t&eacute;rmino,
+              aplicativos que s&oacute; s&atilde;o vi&aacute;veis a pre&ccedil;os muito baixos de
+              computa&ccedil;&atilde;o e usu&aacute;rios com necessidades urgentes de muita capacidade adicional.</li>
+            <li>No antigo modelo, as inst&acirc;ncias Spot eram encerradas devido a lances concorrentes mais altos; no
+              novo modelo, isso n&atilde;o acontece, mas as inst&acirc;ncias ainda podem ser encerradas (com aviso de 2
+              minutos) quando o EC2 precisa da capacidade de volta. - Observa&ccedil;&atilde;o: o exame pode n&atilde;o
+              estar atualizado para refletir isso ainda.</li>
+          </ul>
+
+          <h3>Savings Plans:</h3>
+
+          <ul>
+            <li>Compromisso com uma quantidade consistente de uso (EC2 + Fargate + Lambda).</li>
+            <li>Pagamento por hora.</li>
+            <li>Compromisso de 1 ou 3 anos.</li>
+          </ul>
+
+          <h3>Reservadas:</h3>
+
+          <ul>
+            <li>As inst&acirc;ncias reservadas oferecem descontos significativos, at&eacute; 75% em
+              compara&ccedil;&atilde;o com os pre&ccedil;os sob demanda, ao pagar pela capacidade antecipadamente.</li>
+            <li>Fornecem uma reserva de capacidade quando aplicadas a uma Zona de Disponibilidade espec&iacute;fica.
+            </li>
+            <li>Bom para aplicativos com uso previs&iacute;vel, que precisam de capacidade reservada, e para clientes
+              que podem se comprometer por 1 ou 3 anos.</li>
+            <li>Aplicam-se a v&aacute;rios servi&ccedil;os, incluindo:
+              <ul>
+                <li>Amazon EC2 Reserved Instances.</li>
+                <li>Amazon DynamoDB Reserved Capacity.</li>
+                <li>Amazon ElastiCache Reserved Nodes.</li>
+                <li>Amazon RDS Reserved Instances.</li>
+                <li>Amazon RedShift Reserved Instances.</li>
+              </ul>
+            </li>
+            <li>Op&ccedil;&otilde;es de reserva incluem sem pagamento antecipado, pagamento parcial antecipado e
+              pagamento total antecipado.</li>
+            <li>Termos de reserva s&atilde;o de 1 ou 3 anos.</li>
+          </ul>
+
+          <h2>Pre&ccedil;os do Amazon Simple Storage Service (S3):</h2>
+
+          <ul>
+            <li>O pre&ccedil;o do armazenamento &eacute; determinado por:
+              <ul>
+                <li>Classe de armazenamento, por exemplo, Padr&atilde;o ou IA.</li>
+                <li>Quantidade de armazenamento, ou seja, volume de dados armazenados em seus buckets com base em GB.
+                </li>
+                <li>N&uacute;mero de solicita&ccedil;&otilde;es, tipo de solicita&ccedil;&otilde;es, como GET, PUT,
+                  POST, LIST, COPY.</li>
+                <li>Solicita&ccedil;&otilde;es de transi&ccedil;&atilde;o de ciclo de vida, movimenta&ccedil;&atilde;o
+                  de dados entre classes de armazenamento.</li>
+                <li>Transfer&ecirc;ncia de dados, cobrada para dados transferidos para fora de uma regi&atilde;o S3.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Amazon Glacier:</h2>
+
+          <ul>
+            <li>Custos extremamente baixos, paga apenas pelo que precisa, sem compromissos ou taxas antecipadas.</li>
+            <li>Cobrado por solicita&ccedil;&otilde;es e transfer&ecirc;ncia de dados para fora do Glacier.</li>
+            <li>O &quot;Amazon Glacier Select&quot; permite consultas diretamente nos dados armazenados no Glacier sem
+              recuperar o arquivo. O pre&ccedil;o &eacute; baseado na quantidade de dados analisados, retornados e no
+              n&uacute;mero de solicita&ccedil;&otilde;es iniciadas.</li>
+          </ul>
+
+          <h2>AWS Snowball:</h2>
+
+          <ul>
+            <li>Pague uma taxa de servi&ccedil;o por trabalho de transfer&ecirc;ncia de dados e o custo de envio do
+              dispositivo.</li>
+            <li>Cada trabalho permite o uso gratuito do dispositivo Snowball por 10 dias no local.</li>
+            <li>A transfer&ecirc;ncia de dados para a AWS &eacute; gratuita, e a sa&iacute;da &eacute; cobrada
+              (pre&ccedil;o por regi&atilde;o).</li>
+          </ul>
+
+          <h2>Amazon Relational Database Service (RDS):</h2>
+
+          <ul>
+            <li>O pre&ccedil;o do RDS &eacute; determinado por:
+              <ul>
+                <li>Horas de atividade do servidor, tempo em que a inst&acirc;ncia do banco de dados est&aacute; em
+                  execu&ccedil;&atilde;o.</li>
+                <li>Caracter&iacute;sticas do banco de dados, por exemplo, mecanismo do banco de dados, tamanho e classe
+                  de mem&oacute;ria.</li>
+                <li>Tipo de compra do banco de dados, por exemplo, Sob Demanda, Reservado.</li>
+                <li>N&uacute;mero de inst&acirc;ncias do banco de dados.</li>
+                <li>Armazenamento provisionado, o backup est&aacute; inclu&iacute;do at&eacute; 100% do tamanho do banco
+                  de dados. Ap&oacute;s o t&eacute;rmino do banco de dados, o armazenamento de backup &eacute; cobrado
+                  por GB por m&ecirc;s.</li>
+                <li>Armazenamento adicional, a quantidade de armazenamento al&eacute;m do armazenamento provisionado
+                  &eacute; cobrada por GB por m&ecirc;s.</li>
+                <li>Solicita&ccedil;&otilde;es, o n&uacute;mero de solicita&ccedil;&otilde;es de entrada e sa&iacute;da
+                  para o banco de dados.</li>
+                <li>Tipo de implanta&ccedil;&atilde;o, &uacute;nico AZ ou m&uacute;ltiplo AZ.</li>
+                <li>Transfer&ecirc;ncia de dados, entrada &eacute; gratuita, as cobran&ccedil;as de sa&iacute;da de
+                  dados s&atilde;o escalonadas.</li>
+                <li>Inst&acirc;ncias Reservadas, podem ser adquiridas com termos Sem Pagamento Antecipado, Pagamento
+                  Parcial Antecipado ou Pagamento Total Antecipado. Dispon&iacute;vel para Aurora, MySQL, MariaDB,
+                  Oracle e SQL Server.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Amazon CloudFront:</h2>
+
+          <ul>
+            <li>O pre&ccedil;o do CloudFront &eacute; determinado por:
+              <ul>
+                <li>Distribui&ccedil;&atilde;o de tr&aacute;fego, pre&ccedil;o de transfer&ecirc;ncia de dados e
+                  solicita&ccedil;&otilde;es, varia entre regi&otilde;es e &eacute; baseado na localiza&ccedil;&atilde;o
+                  de borda de onde o conte&uacute;do &eacute; servido.</li>
+                <li>Solicita&ccedil;&otilde;es, n&uacute;mero e tipo de solicita&ccedil;&otilde;es (HTTP ou HTTPS) e
+                  regi&atilde;o geogr&aacute;fica em que s&atilde;o feitas.</li>
+                <li>Transfer&ecirc;ncia de dados para fora, quantidade de dados transferidos das
+                  localiza&ccedil;&otilde;es de borda do CloudFront.</li>
+                <li>Existem itens adicionais sujeitos a tarifas, como solicita&ccedil;&otilde;es de
+                  invalida&ccedil;&atilde;o, solicita&ccedil;&otilde;es de criptografia em n&iacute;vel de campo e
+                  certificados SSL personalizados.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>AWS Lambda:</h2>
+
+          <ul>
+            <li>Pague apenas pelo que usa e cobrado com base no <strong>n&uacute;mero de solicita&ccedil;&otilde;es
+              </strong>para fun&ccedil;&otilde;es <strong>e</strong> no <strong>tempo que leva para executar o
+                c&oacute;digo</strong>.</li>
+            <li>O pre&ccedil;o depende da <strong>quantidade de mem&oacute;ria alocada</strong> para a
+              fun&ccedil;&atilde;o.</li>
+          </ul>
+
+          <h2>Amazon Elastic Block Store (EBS):</h2>
+
+          <ul>
+            <li>O pre&ccedil;o &eacute; baseado em tr&ecirc;s fatores:
+              <ul>
+                <li>Volumes, armazenamento de volume para todos os tipos de volumes EBS &eacute; cobrado pela quantidade
+                  de GB provisionados por m&ecirc;s.</li>
+                <li>Snapshots, com base na quantidade de espa&ccedil;o consumido por snapshots no S3. A c&oacute;pia de
+                  snapshots &eacute; cobrada pela quantidade de dados copiados entre regi&otilde;es.</li>
+                <li>Transfer&ecirc;ncia de dados, a transfer&ecirc;ncia de dados de entrada &eacute; gratuita, as
+                  cobran&ccedil;as de transfer&ecirc;ncia de dados de sa&iacute;da s&atilde;o escalonadas.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Amazon DynamoDB:</h2>
+
+          <ul>
+            <li>Cobrado com base em:
+              <ul>
+                <li>Throughput provisionado (grava&ccedil;&atilde;o).</li>
+                <li>Throughput provisionado (leitura).</li>
+                <li>Armazenamento de dados indexados.</li>
+                <li>Transfer&ecirc;ncia de dados, sem cobran&ccedil;a para transfer&ecirc;ncia de dados entre o DynamoDB
+                  e outros servi&ccedil;os da AWS dentro da mesma regi&atilde;o; a transfer&ecirc;ncia entre
+                  regi&otilde;es &eacute; cobrada nos dois lados da transfer&ecirc;ncia.</li>
+                <li>Tabelas globais, cobradas com base nos recursos associados a cada r&eacute;plica da tabela (unidades
+                  de capacidade de grava&ccedil;&atilde;o replicadas, ou rWCUs).</li>
+                <li>Capacidade Reservada, op&ccedil;&atilde;o dispon&iacute;vel por uma taxa &uacute;nica antecipada e
+                  compromisso de pagar um n&iacute;vel m&iacute;nimo de uso a taxas hor&aacute;rias espec&iacute;ficas
+                  pelo tempo do termo. A capacidade adicional &eacute; cobrada nas taxas padr&atilde;o.</li>
+                <li>Modo de capacidade sob demanda, cobrado por leituras e grava&ccedil;&otilde;es. N&atilde;o &eacute;
+                  necess&aacute;rio especificar quanto &eacute; necess&aacute;rio.</li>
+                <li>Modo de capacidade provisionada, especifica o n&uacute;mero de leituras e grava&ccedil;&otilde;es
+                  por segundo. Pode usar o Auto Scaling. Bom para cargas de trabalho previs&iacute;veis.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Planos de Suporte AWS:</h2>
+
+          <p>Existem cinco planos de suporte AWS dispon&iacute;veis:</p>
+
+          <table align="center" border="1" style="width:100%">
+            <thead>
+              <tr>
+                <th><strong>Caracter&iacute;stica / Plano de Suporte</strong></th>
+                <th><strong>B&aacute;sico (Basic)</strong></th>
+                <th><strong>Developer</strong></th>
+                <th><strong>Business</strong></th>
+                <th><strong>Enterprise On-ramp</strong></th>
+                <th><strong>Enterprise</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center"><strong>Custo Mensal (Percentagem da Fatura)</strong></td>
+                <td style="text-align:center">Gratuito</td>
+                <td style="text-align:center">Come&ccedil;a em 29 d&oacute;lares ou 3% da fatura</td>
+                <td style="text-align:center">Come&ccedil;a em 100 d&oacute;lares ou 10% da fatura</td>
+                <td style="text-align:center">Contato a AWS para pre&ccedil;os personalizados</td>
+                <td style="text-align:center">Contato a AWS para pre&ccedil;os personalizados</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Acesso ao Console de Suporte 24x7</strong></td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Suporte por E-mail durante o Expediente Comercial</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Suporte por Chat durante o Expediente Comercial</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Suporte T&eacute;cnico para Incidentes de Sistema e
+                    Operacionais</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Resposta a Incidentes Cr&iacute;ticos (Tempo de Resposta)</strong>
+                </td>
+                <td style="text-align:center">N&atilde;o especificado</td>
+                <td style="text-align:center">N&atilde;o especificado</td>
+                <td style="text-align:center">1 hora</td>
+                <td style="text-align:center">15 minutos</td>
+                <td style="text-align:center">15 minutos</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Arquivamento de Casos de Suporte</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Acesso &agrave; Base de Conhecimento</strong></td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>AWS Trusted Advisor (Check de Seguran&ccedil;a &ndash;
+                    Semanal)</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>AWS Personal Health Dashboard</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Relat&oacute;rio Mensal de Uso</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Acesso ao AWS Support API</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>AWS Support Concierge e Gerente de Conta T&eacute;cnica
+                    (TAM)</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Sess&otilde;es de Treinamento</strong></td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+              <tr>
+                <td style="text-align:center"><strong>Revis&otilde;es Mensais de Desempenho Operacional (OPR)</strong>
+                </td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">❌</td>
+                <td style="text-align:center">✅</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Grupos de Recursos e Tags:</h2>
+
+          <ul>
+            <li>As tags s&atilde;o pares de chave/valor que podem ser anexados aos recursos da AWS.</li>
+            <li>Cont&ecirc;m metadados (dados sobre dados).</li>
+            <li>&Agrave;s vezes, as tags podem ser herdadas, por exemplo, recursos criados pelo Auto Scaling,
+              CloudFormation ou Elastic Beanstalk.</li>
+            <li>Os grupos de recursos facilitam a agrupa&ccedil;&atilde;o de recursos usando as tags atribu&iacute;das a
+              eles. &Eacute; poss&iacute;vel agrupar recursos que compartilham uma ou mais tags.</li>
+            <li>Os grupos de recursos cont&ecirc;m informa&ccedil;&otilde;es gerais, como:
+              <ul>
+                <li>Regi&atilde;o.</li>
+                <li>Nome.</li>
+                <li>Verifica&ccedil;&otilde;es de sa&uacute;de.</li>
+              </ul>
+            </li>
+            <li>E informa&ccedil;&otilde;es espec&iacute;ficas, como:
+              <ul>
+                <li>Endere&ccedil;os IP p&uacute;blicos e privados (para EC2).</li>
+                <li>Configura&ccedil;&otilde;es de porta (para ELB).</li>
+                <li>Motor do banco de dados (para RDS).</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>AWS Organiza&ccedil;&otilde;es e Faturamento Consolidado:</h2>
+
+          <ul>
+            <li>A AWS Organiza&ccedil;&otilde;es permite consolidar v&aacute;rias contas AWS em uma
+              organiza&ccedil;&atilde;o que voc&ecirc; cria e gerencia centralmente.</li>
+            <li>Dispon&iacute;vel em dois conjuntos de recursos:
+              <ul>
+                <li>Faturamento consolidado.</li>
+                <li>Todos os recursos.</li>
+                <li>Inclui contas raiz e unidades organizacionais (OUs).</li>
+              </ul>
+            </li>
+            <li>As pol&iacute;ticas s&atilde;o aplicadas a contas raiz ou OUs.</li>
+            <li>O faturamento consolidado inclui:
+              <ul>
+                <li>Conta pagante &ndash; independente e n&atilde;o pode acessar recursos de outras contas.</li>
+                <li>Contas vinculadas &ndash; todas as contas vinculadas s&atilde;o independentes.</li>
+              </ul>
+            </li>
+            <li>Benef&iacute;cios do faturamento consolidado:
+              <ul>
+                <li>Uma fatura &ndash; voc&ecirc; recebe uma fatura para v&aacute;rias contas.</li>
+                <li>Rastreamento f&aacute;cil &ndash; &eacute; poss&iacute;vel rastrear as cobran&ccedil;as em
+                  v&aacute;rias contas e baixar os dados de custo e uso combinados.</li>
+                <li>Uso combinado &ndash; &eacute; poss&iacute;vel combinar o uso em todas as contas da
+                  organiza&ccedil;&atilde;o para compartilhar os descontos de pre&ccedil;o de volume e os descontos de
+                  Inst&acirc;ncia Reservada. Isso pode resultar em uma cobran&ccedil;a menor para seu projeto,
+                  departamento ou empresa do que com contas aut&ocirc;nomas individuais.</li>
+                <li>Sem taxa extra &ndash; o faturamento consolidado &eacute; oferecido sem custo adicional.</li>
+              </ul>
+            </li>
+            <li>Limite de 20 contas vinculadas (por padr&atilde;o).</li>
+            <li>Melhores pr&aacute;ticas:
+              <ul>
+                <li>Sempre ative a autentica&ccedil;&atilde;o multifator (MFA) na conta raiz.</li>
+                <li>Sempre use uma senha forte e complexa na conta raiz.</li>
+                <li>A conta pagante deve ser usada apenas para fins de faturamento. N&atilde;o implante recursos na
+                  conta pagante.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>AWS Quick Starts:</h2>
+
+          <ul>
+            <li>Criados por arquitetos e parceiros da AWS para ajudar a implantar solu&ccedil;&otilde;es populares na
+              AWS, com base nas melhores pr&aacute;ticas de seguran&ccedil;a e alta disponibilidade da AWS.</li>
+            <li>Implementam automaticamente tecnologias-chave na Nuvem AWS, muitas vezes com um &uacute;nico clique e em
+              menos de uma hora.</li>
+            <li>Alavanca o CloudFormation.</li>
+          </ul>
+
+          <h2>Calculadoras e Ferramentas de Custos da AWS:</h2>
+
+          <h3>AWS Cost Explorer:</h3>
+
+          <ul>
+            <li>Permite visualizar padr&otilde;es de uso ao longo do tempo e identificar os principais fatores de custo.
+            </li>
+            <li>Pode ser usado para descobrir padr&otilde;es de gastos em recursos da AWS ao longo do tempo.</li>
+          </ul>
+
+          <h3>AWS Pricing Calculator:</h3>
+
+          <ul>
+            <li>Servi&ccedil;o baseado na web para criar estimativas de custos para casos de uso da AWS.</li>
+            <li>&Uacute;til tanto para pessoas que nunca usaram a AWS quanto para aquelas que desejam reorganizar ou
+              expandir seu uso.</li>
+          </ul>
+
+          <h2>AWS Cost &amp; Usage Report:</h2>
+
+          <ul>
+            <li>Publica relat&oacute;rios de faturamento da AWS em um bucket do Amazon S3.</li>
+            <li>Os relat&oacute;rios detalham os custos por hora, dia, m&ecirc;s, produto, recurso do produto e tags.
+            </li>
+            <li>Pode atualizar o relat&oacute;rio at&eacute; tr&ecirc;s vezes ao dia.</li>
+            <li>Cria, recupera e exclui relat&oacute;rios usando a Refer&ecirc;ncia da API AWS CUR.</li>
+          </ul>
+
+          <h2>AWS Price List API:</h2>
+
+          <ul>
+            <li>Consulta os pre&ccedil;os dos servi&ccedil;os AWS.</li>
+            <li>AWS Price List Service API (tamb&eacute;m conhecida como Query API) &ndash; consulta com JSON.</li>
+            <li>AWS Price List API (tamb&eacute;m conhecida como Bulk API) &ndash; consulta com HTML.</li>
+            <li>Alertas via Amazon SNS quando os pre&ccedil;os mudam.</li>
+          </ul>
+
+          <h2>AWS Budgets:</h2>
+
+          <ul>
+            <li>
+              <p>Usado para rastrear custos, uso, cobertura e utiliza&ccedil;&atilde;o de suas Inst&acirc;ncias
+                Reservadas e Savings Plans, em v&aacute;rias dimens&otilde;es, como servi&ccedil;o ou Categorias de
+                Custo.</p>
+            </li>
+            <li>
+              <p>Alertas atrav&eacute;s de notifica&ccedil;&otilde;es de alerta baseadas em eventos quando o custo ou
+                uso real ou previsto ultrapassa o limite do or&ccedil;amento, ou quando a cobertura ou
+                utiliza&ccedil;&atilde;o de seus Inst&acirc;ncias Reservadas e Savings Plans cai abaixo do seu limiar.
+              </p>
+            </li>
+            <li>
+              <p>Cria&ccedil;&atilde;o de or&ccedil;amentos anuais, trimestrais, mensais ou di&aacute;rios, dependendo
+                das necessidades comerciais.</p>
+            </li>
+            <li>
+              <p>Os planos business e enterprise permitem que contatos ilimitados abram casos ilimitados.</p>
+            </li>
+          </ul>
+
+
+
+        </div>
 
         <div style="text-align: center;">
           <div>
